@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+
+  background-color: #E6FBE1;
+
+}
+
+
+h1 {
+
+  font-family: 'Oswald', sans-serif;
+  font-size: 42px;
+  margin-bottom: 5px!important;
+  margin-top: 0px;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 28px;
+  margin-bottom: 24px!important;
+  margin-top: 0px;
+}
+button {
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  background-color: #84C374;
+  border-radius: 20px;
+  padding: 6px 20px;
+  box-shadow: 2px 8px 11px 2px rgb(0 0 0 / 10%)
+
+}
+
+/*INTRODUCCION */
+
+/*fondo y movimiento del auto*/
+.fondo {
+  height: 100vh;
+  width: auto;
+  background-image: url(../img/fondo_introduccion.png);
+  background-size:cover;
+  /*lo siguiente es para el fondo full screen*/
+  background-position: center;
+  position: relative;
+  overflox-x: hidden;
+
+}
+
+/*BOTON NUCLEO Y ACTIVA EL AUTO */
+
+#boton{
+
+	padding: 10px;
+
+	background: orange;
+
+	width: 95px;
+
+	cursor: pointer;
+
+	margin-top: 10px;
+
+	margin-bottom: 10px;
+
+	box-shadow: 0px 0px 1px #000;
+
+	display: inline-block;
+
+}
+
+#boton:hover{
+
+	opacity: .8;
+
+}
+ /*AUTO*/
+.auto {
+
+  width: 350px;
+  left: -10%;
+  right: 0%;
+  bottom: 100px;
+  transform: translateX(-50%);
+  position: absolute;
+  z-index: 2;
+  background-repeat: no-repeat;
+
+}
+
+
+.auto img {
+  width: 100%;
+  background-repeat: no-repeat;
+  animation: car 5s linear infinite;
+}
+@keyframes car
+{
+  100% {
+    transform: translateX(3600px);
+  }
+
+}
+
+
+
+/*fin fondo y movimiento del auto*/
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  position: absolute;
+  top: 50%; /* Buscamos el centro horizontal (relativo) del navegador */
+  left: 50%; /* Buscamos el centro vertical (relativo) del navegador */
+  width: 600 px; /* Definimos el ancho del objeto a centrar */
+  height: 400px; /* Definimos el alto del objeto a centrar */
+  margin-top: -200px; /* Restamos la mitad de la altura del objeto con un margin-top */
+  margin-left: -300px; /* Restamos la mitad de la anchura del objeto con un margin-left */
+}
+
+
+
+/* CSS BARRA DE PROGRESO */
+
+.RadialProgress {
+
+  --hue: 137;
+  --holesize: 65%;
+  --track-bg: hsl(137 59% 73%);
+
+
+  inline-size: 50vmin;
+  min-inline-size: 100px;
+  min-block-size: 100px;
+  display: grid;
+  place-items: center;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: max(10vmin, 1.4rem);
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 50%;
+    z-index: -1;
+    background: conic-gradient(
+      hsl(var(--hue) 100% 70%),
+      hsl(var(--hue) 100% 40%),
+      hsl(var(--hue) 100% 70%) var(--progress, 0%),
+      var(--track-bg) var(--progress, 0%) 100%
+    );
+
+
+  }
+
+  /* prueba para modificar estilo de la barra
+input.range {
+    background-color: black;
+    -webkit-appearance: none;
+    border-radius: 20px;
+    width: 50%;
+
+}  */
