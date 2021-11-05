@@ -126,6 +126,31 @@ button {
 }
 
 
+/*PAGINA CONCLUSION Y ESTILOS */
+
+.contenedor_conclusion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-top: 5%;
+}
+/*fondo conclusion*/
+.fondo_conclusion {
+  height: 100vh;
+  width: auto;
+  background-image: url(../img/fondo_conclusion.png);
+  background-size:cover;
+  /*lo siguiente es para el fondo full screen*/
+ background-position: center;
+  position: relative;
+  overflox-x: hidden;
+
+}
+
+
+
 
 /* CSS BARRA DE PROGRESO */
 
@@ -146,7 +171,7 @@ button {
   font-weight: 700;
   font-size: max(10vmin, 1.4rem);
 
-  &::before {
+  /* &::before {
     content: '';
     position: absolute;
     top: 0;
@@ -161,7 +186,7 @@ button {
       hsl(var(--hue) 100% 70%) var(--progress, 0%),
       var(--track-bg) var(--progress, 0%) 100%
     );
-
+*/
 
   }
 
