@@ -70,6 +70,8 @@ button {
 
 	display: inline-block;
 
+  
+
 }
 
 #boton:hover{
@@ -116,9 +118,9 @@ button {
   align-items: center;
   align-content: center;
   position: absolute;
-  top: 30%;
-  left: 50%;
-  width: 600px;
+  top: 50%;
+  left: 45%;
+  width: auto;
   /* height: 400px; */
   margin-top: -200px;
   margin-left: -300px;
@@ -170,73 +172,4 @@ button {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: max(10vmin, 1.4rem);
-}
-  /*NUCLEO 3*/
-
-  .fondo_3 {
-    height: 100vh;
-    width: auto;
-    background-image: url(../img/fondo_introduccion.png);
-    background-size:cover;
-    /*lo siguiente es para el fondo full screen*/
-    background-position: center;
-    position: relative;
-    overflow-x: hidden;
-    
-  
-  }
-
-  div.grafico_3 {
-    width: 50em;
-    margin-top: 5%;
-    height: 404px;
-    display: flex;
-    flex-direction: initial;
-    justify-content: center;
-    justify-items: center;
-}
-
-.g_n_3_i {
-  background-color: #FA8D78;
-  height: auto;
-  width: 10em;
-  
-}
-
-.g_n_3_m {
-  background-color: rgba(255,255,255,0.5);
-  height: auto;
-  width: 26em;
-  margin-left: 15%;
-  display: flex;
-  flex-direction: initial;
-  justify-content: flex-start;
-  justify-items: center;
-
-}
-/*aca hago la separacion de los tres colores del grafico*/
-.\33 _m_i {
-  background-color: rgba(250,141,120,0.7);
-  height: 404px;
-  width: 8em;
-}
-
-.\33 _m_m {
-  width: 100px;
-}
-
-.\33 _m_d {
-  background-color: rgba(164,232,182,0.7);
-  height: 404px;
-  width: 8em;
-}
-
-/*fin de la separacion*/
-
-
-.g_n_3_d {
-  background-color: #A4E8B6;
-  height: autox;
-  width: 10em;
-  margin-left: 15%;
 }
