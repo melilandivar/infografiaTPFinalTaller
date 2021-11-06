@@ -1,42 +1,56 @@
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>Infografía | Autos electricos</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel= "stylesheet" href="css/estilos.css">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Infografía | Autos electricos</title>
 
+    <!--Links a css-->
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="css/carrete.css" />
 
+    <!--tipografias-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
 
-<!--tipografias-->
+    <!--fin tipografias -->
+  </head>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto&display=swap" rel="stylesheet">
+  <body>
+    <div id="carrete" class="mainContainer">
+      <div id="nucleo0">
+        <div class="fondo">
+          <div id="auto_intro" class="auto">
+            <img src="img/cuerpo_auto.png" alt="" />
+          </div>
+        </div>
 
-<!--fin tipografias -->
+        <div class="contenedor">
+          <h1>¿Qué tan ecológicos son los autos electricos?</h1>
+          <h2>Infografía intractiva. TDMM2</h2>
 
-
-</head>
-<body>
-<div class="fondo">
-
-  <div id="auto_intro" class="auto">
-    <img src="img/cuerpo_auto.png" alt="">
-  </div>
-
-
-</div>
-
-  <div class="contenedor">
-    <h1>¿Qué tan ecológicos son los autos electricos?</h1>
-    <h2>Infografía intractiva. TDMM2</h2>
-
-
-    <button id="btn_intro" type="button" name="button"><a href="#"></a>Iniciar el viaje</button>
-  </div>
-</body>
+          <button id="btn_intro" type="button" name="button">
+            <a href="#"></a>Iniciar el viaje
+          </button>
+        </div>
+        <!--Fin de Nucleo 1-->
+      </div>
+      <div id="nucleo1"></div>
+      <div id="nucleo2"></div>
+      <div id="nucleo3"></div>
+      <div id="nucleo4"></div>
+      <div id="nucleo5"></div>
+      <div id="nucleo6"></div>
+      <!--Fin de Carrete-->
+    </div>
+  </body>
 </html>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="js/index.js"> </script> <!--link al archivo js-->
+<script src="js/index.js"></script>
+<script src="js/carrete.js"></script>
+<!--link al archivo js-->
