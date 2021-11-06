@@ -1,0 +1,77 @@
+* {
+  overflow-x: hidden;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.mainContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 700vw;
+  height: 100vh;
+}
+
+#nucleo0 {
+  position: absolute;
+  left: 0vw;
+  width: 100vw;
+  height: 100vh;
+  /*background-color: rgb(223, 99, 202);*/
+}
+
+#nucleo1 {
+  position: absolute;
+  left: 100vw;
+  width: 100vw;
+  height: 100vh;
+  background-color: blueviolet;
+}
+
+#nucleo2 {
+  position: absolute;
+  left: 200vw;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(24, 167, 100);
+}
+
+#nucleo3 {
+  position: absolute;
+  left: 300vw;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(52, 41, 202);
+}
+
+#nucleo4 {
+  position: absolute;
+  left: 400vw;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(228, 40, 112);
+}
+
+#nucleo5 {
+  position: absolute;
+  left: 500vw;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(230, 130, 16);
+}
+
+#nucleo6 {
+  position: absolute;
+  left: 600vw;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(228, 224, 13);
+}
