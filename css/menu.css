@@ -70,6 +70,13 @@
     overflow: hidden;
     animation: closeMenu 300ms ease-in-out forwards;
   }
+.menu {
+  /*
+  position: fixed;
+  z-index: 5;
+  */
+}
+
   .menu a {
     padding: 12px 24px;
     margin: 0 16px;

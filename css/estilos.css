@@ -59,12 +59,7 @@ button {
 
   box-shadow: 0px 0px 1px #000;
 
-<<<<<<< HEAD
   display: inline-block;
-=======
-  
-
->>>>>>> 9a9ff38564f5399edb70b190cb05c76f47caed81
 }
 
 #boton:hover {
@@ -143,8 +138,6 @@ button {
   position: relative;
 }
 
-<<<<<<< HEAD
-=======
 .item{
   background-color: #E6FBE1;
   height: 80px;
@@ -175,7 +168,6 @@ button {
 
 
 
->>>>>>> 9a9ff38564f5399edb70b190cb05c76f47caed81
 /* CSS BARRA DE PROGRESO */
 
 .RadialProgress {
@@ -192,7 +184,6 @@ button {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: max(10vmin, 1.4rem);
-<<<<<<< HEAD
 }
 /*NUCLEO 3*/
 
@@ -258,6 +249,3 @@ div.grafico_3 {
   width: 10em;
   margin-left: 15%;
 }
-=======
-}
->>>>>>> 9a9ff38564f5399edb70b190cb05c76f47caed81
