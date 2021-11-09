@@ -12,7 +12,9 @@ h1 {
   margin-bottom: 5px !important;
   margin-top: 0px;
 }
-
+p {
+  font-family: 'Roboto', sans-serif;
+}
 h2,h3,h4 {
   font-family: 'Roboto', sans-serif;
   font-size: 28px;
@@ -116,62 +118,6 @@ button {
   margin-bottom: 0px;
   padding: 0px;
 }
-
-/*PAGINA CONCLUSION Y ESTILOS */
-
-.contenedor_conclusion {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  margin-top: 5%;
-}
-/*fondo conclusion*/
-.fondo_conclusion {
-  height: 100vh;
-  width: auto;
-  background-image: url(../img/fondo_conclusion.png);
-  background-size: cover;
-  /*lo siguiente es para el fondo full screen*/
-  background-position: center;
-  position: relative;
-}
-
-.item{
-  background-color: #E6FBE1;
-  height: 80px;
-  width: 80px;
-  border: 2px solid #84C374;
-  border-radius: 50%;
-  display: inline-block;
-}
-
-.item svg {
-  display: block;
-    margin: auto;
-    margin-top: 15%;
-}
-.item:hover {
-  background-color: #84C374;
-  height: 80px;
-  width: 80px;
-  border: 2px solid #84C374;
-  border-radius: 50%;
-  display: inline-block;
-}
-
-.item1 h4{
-  font-size: 28px;
-  color: #84C374;
-}
-.item1 h3{
-  font-size: 72px;
-  color: #84C374;
-}
-
-
-
 /* CSS BARRA DE PROGRESO */
 
 .RadialProgress {
