@@ -14,7 +14,7 @@ controller.oninput = () => {
 }
 
 
-
+/*
 
 let values = [1,3,5,10,20,50,100];    //values to step to
 
@@ -33,4 +33,6 @@ function toggleSteps(element) {
   } else {
       element.step = 1;
   }
-}
+} */
+
+
