@@ -59,7 +59,12 @@ button {
 
   box-shadow: 0px 0px 1px #000;
 
+<<<<<<< HEAD
   display: inline-block;
+=======
+  
+
+>>>>>>> 9a9ff38564f5399edb70b190cb05c76f47caed81
 }
 
 #boton:hover {
@@ -107,9 +112,9 @@ button {
   align-items: center;
   align-content: center;
   position: absolute;
-  top: 30%;
-  left: 50%;
-  width: 600px;
+  top: 50%;
+  left: 45%;
+  width: auto;
   /* height: 400px; */
   margin-top: -200px;
   margin-left: -300px;
@@ -138,6 +143,39 @@ button {
   position: relative;
 }
 
+<<<<<<< HEAD
+=======
+.item{
+  background-color: #E6FBE1;
+  height: 80px;
+  width: 80px;
+  border: 2px solid #84C374;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.item svg {
+  display: block;
+    margin: auto;
+    margin-top: 15%;
+}
+.item:hover {
+  background-color: #84C374;
+  height: 80px;
+  width: 80px;
+  border: 2px solid #84C374;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.item1{
+  background-color: black;
+  color: white;
+}
+
+
+
+>>>>>>> 9a9ff38564f5399edb70b190cb05c76f47caed81
 /* CSS BARRA DE PROGRESO */
 
 .RadialProgress {
@@ -154,6 +192,7 @@ button {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: max(10vmin, 1.4rem);
+<<<<<<< HEAD
 }
 /*NUCLEO 3*/
 
@@ -219,3 +258,6 @@ div.grafico_3 {
   width: 10em;
   margin-left: 15%;
 }
+=======
+}
+>>>>>>> 9a9ff38564f5399edb70b190cb05c76f47caed81
