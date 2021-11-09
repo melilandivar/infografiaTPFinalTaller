@@ -17,7 +17,7 @@ h1 {
   margin-top: 0px;
 }
 
-h2 {
+h2,h3,h4 {
   font-family: 'Roboto', sans-serif;
   font-size: 28px;
   margin-bottom: 24px!important;
@@ -174,9 +174,13 @@ button {
   display: inline-block;
 }
 
-.item1{
-  background-color: black;
-  color: white;
+.item1 h4{
+  font-size: 28px;
+  color: #84C374;
+}
+.item1 h3{
+  font-size: 72px;
+  color: #84C374;
 }
 
 
