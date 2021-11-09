@@ -8,10 +8,10 @@
     position: absolute;
     top: 30%;
     left: 50%;
-    width: 600px;
+    width: 982px;
     /* height: 400px; */
     margin-top: -200px;
-    margin-left: -300px;
+    margin-left: -460px;
     margin-bottom: 0px;
     padding: 0px;
   }
@@ -83,3 +83,37 @@
   width: 10em;
   margin-left: 15%;
 }
+
+
+
+/*FONDO DEL GRAFICO
+.nucleo3_grafico_contenedor {
+  background-image: url(../img/fondo_nucleo3_grafico.png);
+  width: 927px;
+  height: 425px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nucleo3_grafico_row {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.nucleo_3_grafico_columna1 {
+  width: 28%;
+  height: auto;
+}
+.nucleo_3_grafico_columna2 {
+  width: 45%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.nucleo_3_grafico_columna3 {
+  width: 28%;
+} */
+

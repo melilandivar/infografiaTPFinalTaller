@@ -14,25 +14,19 @@ controller.oninput = () => {
 }
 
 
-/*
+/*JS DEL MENU*/
+'use strict';
 
-let values = [1,3,5,10,20,50,100];    //values to step to
+(function() {
+  var body = document.body;
+  var burgerMenu = document.getElementsByClassName('b-menu')[0];
+  var burgerContain = document.getElementsByClassName('b-container')[0];
+  var burgerNav = document.getElementsByClassName('b-nav')[0];
 
-let input = document.getElementById('input'),
-   output = document.getElementById('output');
-
-input.oninput = function(){
-    output.innerHTML = values[this.value];
-};
-input.oninput(); //set default value 
-
-function toggleSteps(element) {
-  let minutes = parseInt(element.value);
-  if (minutes > 10) {
-      element.step = 10;
-  } else {
-      element.step = 1;
-  }
-} */
-
+  burgerMenu.addEventListener('click', function toggleClasses() {
+    [body, burgerContain, burgerNav].forEach(function (el) {
+      el.classList.toggle('open');
+    });
+  }, false);
+})();
 
