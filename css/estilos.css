@@ -3,110 +3,101 @@
   padding: 0;
 }
 body {
-
-  background-color: #E6FBE1;
-
+  background-color: #e6fbe1;
 }
 
-
 h1 {
-
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 42px;
-  margin-bottom: 5px!important;
+  margin-bottom: 5px !important;
   margin-top: 0px;
 }
 
 h2 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 28px;
-  margin-bottom: 24px!important;
+  margin-bottom: 24px !important;
   margin-top: 0px;
 }
 button {
   border: none;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 28px;
   font-weight: bold;
-  background-color: #84C374;
+  background-color: #84c374;
   border-radius: 20px;
   padding: 6px 20px;
-  box-shadow: 2px 8px 11px 2px rgb(0 0 0 / 10%)
-
+  box-shadow: 2px 8px 11px 2px rgb(0 0 0 / 10%);
 }
 
 /*INTRODUCCION */
 
 /*fondo y movimiento del auto*/
-.fondo {
-  height: 100vh;
-  width: auto;
+
+.nucleo0 {
   background-image: url(../img/fondo_introduccion.png);
-  background-size:cover;
+  background-size: cover;
   /*lo siguiente es para el fondo full screen*/
   background-position: center;
   position: relative;
-  overflow-x: hidden;
-
 }
 
 /*BOTON NUCLEO Y ACTIVA EL AUTO */
 
-#boton{
+#boton {
+  padding: 10px;
 
-	padding: 10px;
+  background: orange;
 
-	background: orange;
+  width: 95px;
 
-	width: 95px;
+  cursor: pointer;
 
-	cursor: pointer;
+  margin-top: 10px;
 
-	margin-top: 10px;
+  margin-bottom: 10px;
 
-	margin-bottom: 10px;
+  box-shadow: 0px 0px 1px #000;
 
-	box-shadow: 0px 0px 1px #000;
-
-	display: inline-block;
-
+  display: inline-block;
 }
 
-#boton:hover{
-
-	opacity: .8;
-
+#boton:hover {
+  opacity: 0.8;
 }
- /*AUTO*/
-.auto {
 
-  width: 350px;
+/*
+
+*/
+/* --- AUTO --- */
+.nucleo0__auto-estatico {
+  position: absolute;
   left: -10%;
-  right: 0%;
   bottom: 100px;
   transform: translateX(-50%);
-  position: absolute;
-  z-index: 2;
-  background-repeat: no-repeat;
-
 }
 
-
-.auto img {
+.nucleo0__auto img {
   width: 100%;
-  background-repeat: no-repeat;
+}
+
+.nucleo0__auto-animado {
   animation: car 5s linear infinite;
 }
-@keyframes car
-{
+
+@keyframes car {
   100% {
     transform: translateX(3600px);
   }
-
 }
 
+#nucleo0__boton {
+  cursor: pointer;
+}
 
+/*
 
+*/
 /*fin fondo y movimiento del auto*/
 
 .contenedor {
@@ -141,25 +132,18 @@ button {
   height: 100vh;
   width: auto;
   background-image: url(../img/fondo_conclusion.png);
-  background-size:cover;
+  background-size: cover;
   /*lo siguiente es para el fondo full screen*/
- background-position: center;
+  background-position: center;
   position: relative;
-  overflow-x: hidden;
-
 }
-
-
-
 
 /* CSS BARRA DE PROGRESO */
 
 .RadialProgress {
-
   --hue: 137;
   --holesize: 65%;
   --track-bg: hsl(137 59% 73%);
-
 
   inline-size: 50vmin;
   min-inline-size: 100px;
@@ -167,44 +151,41 @@ button {
   display: grid;
   place-items: center;
   position: relative;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: max(10vmin, 1.4rem);
 }
-  /*NUCLEO 3*/
+/*NUCLEO 3*/
 
-  .fondo_3 {
-    height: 100vh;
-    width: auto;
-    background-image: url(../img/fondo_introduccion.png);
-    background-size:cover;
-    /*lo siguiente es para el fondo full screen*/
-    background-position: center;
-    position: relative;
-    overflow-x: hidden;
-    
-  
-  }
+.fondo_3 {
+  height: 100vh;
+  width: auto;
+  background-image: url(../img/fondo_introduccion.png);
+  background-size: cover;
+  /*lo siguiente es para el fondo full screen*/
+  background-position: center;
+  position: relative;
+  overflow-x: hidden;
+}
 
-  div.grafico_3 {
-    width: 50em;
-    margin-top: 5%;
-    height: 404px;
-    display: flex;
-    flex-direction: initial;
-    justify-content: center;
-    justify-items: center;
+div.grafico_3 {
+  width: 50em;
+  margin-top: 5%;
+  height: 404px;
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  justify-items: center;
 }
 
 .g_n_3_i {
-  background-color: #FA8D78;
+  background-color: #fa8d78;
   height: auto;
   width: 10em;
-  
 }
 
 .g_n_3_m {
-  background-color: rgba(255,255,255,0.5);
+  background-color: rgba(255, 255, 255, 0.5);
   height: auto;
   width: 26em;
   margin-left: 15%;
@@ -212,11 +193,10 @@ button {
   flex-direction: initial;
   justify-content: flex-start;
   justify-items: center;
-
 }
 /*aca hago la separacion de los tres colores del grafico*/
 .\33 _m_i {
-  background-color: rgba(250,141,120,0.7);
+  background-color: rgba(250, 141, 120, 0.7);
   height: 404px;
   width: 8em;
 }
@@ -226,16 +206,15 @@ button {
 }
 
 .\33 _m_d {
-  background-color: rgba(164,232,182,0.7);
+  background-color: rgba(164, 232, 182, 0.7);
   height: 404px;
   width: 8em;
 }
 
 /*fin de la separacion*/
 
-
 .g_n_3_d {
-  background-color: #A4E8B6;
+  background-color: #a4e8b6;
   height: autox;
   width: 10em;
   margin-left: 15%;

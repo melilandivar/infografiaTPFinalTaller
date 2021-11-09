@@ -13,5 +13,6 @@ Estamos trabajando todos en un mismo html, por lo que intenten agregrar nombres 
         <div class="nucleo1__auto__ruedas">
 Ese es un metodo para nombrar las clases, pero hay muchos. Si conocen otro, podemos ver cual no es mas comodo.
 
-Para facilitar el manejo de codigo, creen un css para cada nucleo. Lo mismo con js.
+Para facilitar el manejo de codigo, creen un css para cada nucleo.
+
 

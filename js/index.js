@@ -1,4 +1,4 @@
- const controller = document.querySelector('input[type=range]');
+const controller = document.querySelector('input[type=range]');
 const radialProgress = document.querySelector('.RadialProgress');
 
 const setProgress = (progress) => {
@@ -16,9 +16,9 @@ controller.oninput = () => {
 
 
 
-var values = [1,3,5,10,20,50,100];    //values to step to
+let values = [1,3,5,10,20,50,100];    //values to step to
 
-var input = document.getElementById('input'),
+let input = document.getElementById('input'),
    output = document.getElementById('output');
 
 input.oninput = function(){
@@ -27,7 +27,7 @@ input.oninput = function(){
 input.oninput(); //set default value 
 
 function toggleSteps(element) {
-  var minutes = parseInt(element.value);
+  let minutes = parseInt(element.value);
   if (minutes > 10) {
       element.step = 10;
   } else {
