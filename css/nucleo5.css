@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
     align-content: center;
-    margin-top: 5%;
+   
   }
   /*fondo conclusion*/
   .fondo_conclusion {
@@ -21,7 +21,7 @@
   
   .items {
     width: 625px;
-    margin-top: 5%;
+    margin-top: 2%;
     margin-left: 5%;
   }
   #item{

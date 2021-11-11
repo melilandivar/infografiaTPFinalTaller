@@ -29,6 +29,28 @@
 
 }
 
+#bg_comb label {
+  font-family: 'Roboto';
+  font-size: 48px;
+  font-weight: bolder;
+}
+
+#bg_combD label {
+  font-family: 'Roboto';
+  font-size: 44px;
+  font-weight: bolder;
+}
+#bg_elec label {
+  font-family: 'Roboto';
+  font-size: 48px;
+  font-weight: bolder;
+}
+#bg_elecD label {
+  font-family: 'Roboto';
+  font-size: 44px;
+  font-weight: bolder;
+}
+
 #bg_comb {
 background-color: #FA8D78;
 height: 90px;
