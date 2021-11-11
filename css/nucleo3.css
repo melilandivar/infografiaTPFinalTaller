@@ -1,50 +1,50 @@
  /*NUCLEO 3*/
  .contenedor_nucleo3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    width: 982px;
-    /* height: 400px; */
-    margin-top: -200px;
-    margin-left: -460px;
-    margin-bottom: 0px;
-    padding: 0px;
-  }
-  
- .fondo_3 {
-    height: 100vh;
-    width: auto;
-    background-image: url(../img/fondo_introduccion.png);
-    background-size:cover;
-    /*lo siguiente es para el fondo full screen*/
-    background-position: center;
-    position: relative;
-    overflow-x: hidden;
-    
-  
-  }
-
- #bg_comb {
-  background-color: #FA8D78;
-  border-color:#FA8D78 ;
- }
- #bg_elec{
-   background-color: #A4E8B6;
- }
- #bg_combD{
-   background-color: #F4AE98;
- }
- #bg_elecD {
-  background-color: #B6ECBF;
- }
-
- .carousel {
-  max-width: 800px;
-  margin: 0 auto;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  width: 982px;
+  /* height: 400px; */
+  margin-top: -200px;
+  margin-left: -460px;
+  margin-bottom: 0px;
+  padding: 0px;
+}
+
+.fondo_3 {
+  height: 100vh;
+  width: auto;
+  background-image: url(../img/fondo_introduccion.png);
+  background-size:cover;
+  /*lo siguiente es para el fondo full screen*/
+  background-position: center;
+  position: relative;
+  overflow-x: hidden;
+  
+
+}
+
+#bg_comb {
+background-color: #FA8D78;
+border-color:#FA8D78 ;
+}
+#bg_elec{
+ background-color: #A4E8B6;
+}
+#bg_combD{
+ background-color: #F4AE98;
+}
+#bg_elecD {
+background-color: #B6ECBF;
+}
+
+.carousel {
+max-width: 800px;
+margin: 0 auto;
+display: flex;
 }
