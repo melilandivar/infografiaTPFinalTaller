@@ -28,12 +28,12 @@ h5 {
   font-family: "Oswald", sans-serif;
 }
 button {
-  border: none;
+  border: none !important;
   font-family: "Roboto", sans-serif;
   font-size: 28px;
   font-weight: bold;
   background-color: #84c374;
-  border-radius: 20px;
+  border-radius: 20px !important;
   padding: 6px 20px;
   box-shadow: 2px 8px 11px 2px rgb(0 0 0 / 10%);
 }

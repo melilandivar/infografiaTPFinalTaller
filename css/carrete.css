@@ -65,13 +65,7 @@ html {
   left: 500vw;
   width: 100vw;
   height: 100vh;
-  background-color: rgb(230, 130, 16);
+  
 }
 
-#nucleo6 {
-  position: absolute;
-  left: 600vw;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgb(228, 224, 13);
-}
+

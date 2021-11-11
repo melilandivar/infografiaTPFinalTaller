@@ -167,7 +167,9 @@
               <progress id="file" max="12267" value="0"> 0 Kg-Co2 </progress>
             </div>
           </div>
-          <div class="nucleo2_auto_grafico"></div>  <!-- grafico interactivo del auto-->
+          <div class="nucleo2_auto_grafico">
+            <img src="img/nucleo2_auto_electico_1.svg" alt="" />
+          </div>  <!-- grafico interactivo del auto-->
           
         </div>
 
@@ -187,6 +189,9 @@
               <progress id="file" max="12267" value="0"> 0 Kg-Co2 </progress>
             </div>
           </div>
+          <div class="nucleo2_auto_grafico">
+            <img src="img/nucleo2_auto_combustion_1.svg" alt="" />
+          </div>  
         </div>
 
 
@@ -202,7 +207,7 @@
             for (i = 0; i < tablinks.length; i++) {
               tablinks[i].style.backgroundColor = "";
             }
-            document.getElementById(pageName).style.display = "block";
+            document.getElementById(pageName).style.display = "flex";
             elmnt.style.backgroundColor = color;
           }
 

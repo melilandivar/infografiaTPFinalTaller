@@ -48,7 +48,8 @@
           /* Style the tab content (and add height:100% for full page content) */
           .tabcontent {
             color: black;
-            display: none;
+           /* display: none; */
+           display: flex;
             padding-top: 12em;
            
             height: 100%;
@@ -82,3 +83,11 @@
             width: 100%;
             padding: 20px;
         } 
+
+
+        .nucleo2_auto_grafico {
+          display: flex;
+          width: 50%;
+          justify-content: center;
+          align-items: center;
+      }
