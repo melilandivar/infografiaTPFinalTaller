@@ -30,16 +30,8 @@ controller.oninput = () => {
   }, false);
 })();
 
-/*------------NUCLEO 3-----------*/
-/*var min = "0";
-var max = "40";
-var step = "10";
-document.getElementById('min').innerHTML = min; 
-document.getElementById('max').innerHTML = max; 
-document.getElementById('step').innerHTML = step; */
-
 //variables 20km
-var valor='10';
+var valor='20';
 
 if(valor=='20'){
   var kgDia= "2.0";
@@ -48,6 +40,7 @@ if(valor=='20'){
   var kgDiaC= "4.2";
   var kgMesC= "126";
   var kgAño = "1512";
+  console.log("holaaa");
 }
 
 //tomar variables de js y utilizarlas en html mediante el id
@@ -100,8 +93,5 @@ window.onload = function () {
   // Eventos
   $botonAvanzar.addEventListener('click', pasarFoto);
   $botonRetroceder.addEventListener('click', retrocederFoto);
-  $botonPlay.addEventListener('click', playIntervalo);
-  $botonStop.addEventListener('click', stopIntervalo);
-  // Iniciar
-  renderizarImagen();
 } 
+
