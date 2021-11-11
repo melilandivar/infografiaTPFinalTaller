@@ -1,97 +1,109 @@
-const controller = document.querySelector('input[type=range]');
-const radialProgress = document.querySelector('.RadialProgress');
+const controller = document.querySelector("input[type=range]");
+const radialProgress = document.querySelector(".RadialProgress");
 
 const setProgress = (progress) => {
   const value = `${progress}`;
-  radialProgress.style.setProperty('--progress', value)
-  radialProgress.innerHTML = value
-  radialProgress.setAttribute('aria-valuenow', value)
-}
+  radialProgress.style.setProperty("--progress", value);
+  radialProgress.innerHTML = value;
+  radialProgress.setAttribute("aria-valuenow", value);
+};
 
-setProgress(controller.value)
+setProgress(controller.value);
 controller.oninput = () => {
-  setProgress(controller.value)
-}
-
+  setProgress(controller.value);
+};
 
 /*JS DEL MENU*/
-'use strict';
+("use strict");
 
-(function() {
+(function () {
   var body = document.body;
-  var burgerMenu = document.getElementsByClassName('b-menu')[0];
-  var burgerContain = document.getElementsByClassName('b-container')[0];
-  var burgerNav = document.getElementsByClassName('b-nav')[0];
+  var burgerMenu = document.getElementsByClassName("b-menu")[0];
+  var burgerContain = document.getElementsByClassName("b-container")[0];
+  var burgerNav = document.getElementsByClassName("b-nav")[0];
 
-  burgerMenu.addEventListener('click', function toggleClasses() {
-    [body, burgerContain, burgerNav].forEach(function (el) {
-      el.classList.toggle('open');
-    });
-  }, false);
+  burgerMenu.addEventListener(
+    "click",
+    function toggleClasses() {
+      [body, burgerContain, burgerNav].forEach(function (el) {
+        el.classList.toggle("open");
+      });
+    },
+    false
+  );
 })();
 
-//variables 20km
-var valor='20';
 
-if(valor=='20'){
-  var kgDia= "2.0";
-  var kgMes= "62";
-  var kgAño = "744";
-  var kgDiaC= "4.2";
-  var kgMesC= "126";
-  var kgAño = "1512";
-  console.log("holaaa");
+(function(){
+var kgDia = "1.2";
+var kgMes = "36";
+var kgAño = "432";
+var kgDiaC = "2.14";
+var kgMesC = "64.2";
+var kgAño = "770";
+//tomar variables de js y utilizarlas en html mediante el id
+document.getElementById("kgAño").innerHTML = kgAño;
+document.getElementById("kgMes").innerHTML = kgMes;
+document.getElementById("kgDia").innerHTML = kgDia;
+document.getElementById("kgAñoC").innerHTML = kgAño;
+document.getElementById("kgMesC").innerHTML = kgMesC;
+document.getElementById("kgDiaC").innerHTML = kgDiaC;
+})
+
+
+
+function progreso() {
+  var valor = document.getElementById("progressbar");
+
+  if (valor.ariaValueNow == "0") {
+    kgDia = "1.2";
+    kgMes = "36";
+    kgAño = "432";
+    kgDiaC = "2.14";
+    kgMesC = "64.2";
+    kgAño = "770";
+  }
+  if (valor.ariaValueNow == "10") {
+    kgDia = "1.2";
+    kgMes = "36";
+    kgAño = "432";
+    kgDiaC = "2.14";
+    kgMesC = "64.2";
+    kgAño = "770";
+  }
+  if (valor.ariaValueNow == "20") {
+    kgDia = "2.0";
+    kgMes = "62";
+    kgAño = "744";
+    kgDiaC = "4.2";
+    kgMesC = "126";
+    kgAño = "1512";
+  }
+  if (valor.ariaValueNow == "30") {
+    kgDia = "6.4";
+    kgMes = "192";
+    kgAño = "2034";
+    kgDiaC = "3.0";
+    kgMesC = "90";
+    kgAño = "1080";
+  }
+  if (valor.ariaValueNow == "40") {
+    kgDia = "8.5";
+    kgMes = "255";
+    kgAño = "3060";
+    kgDiaC = "4.1";
+    kgMesC = "123";
+    kgAño = "1476";
+  }
+  
+    //tomar variables de js y utilizarlas en html mediante el id
+    document.getElementById("kgAño").innerHTML = kgAño;
+    document.getElementById("kgMes").innerHTML = kgMes;
+    document.getElementById("kgDia").innerHTML = kgDia;
+    document.getElementById("kgAñoC").innerHTML = kgAño;
+    document.getElementById("kgMesC").innerHTML = kgMesC;
+    document.getElementById("kgDiaC").innerHTML = kgDiaC;
+
 }
 
-//tomar variables de js y utilizarlas en html mediante el id
-document.getElementById('kgAño').innerHTML = kgAño; 
-document.getElementById('kgMes').innerHTML = kgMes;
-document.getElementById('kgDia').innerHTML = kgDia;
-document.getElementById('kgAñoC').innerHTML = kgAño;
-document.getElementById('kgMesC').innerHTML = kgMes;
-document.getElementById('kgDiaC').innerHTML = kgDia;
-document.getElementById('valor').innerHTML = valor;
-
-
-window.onload = function () {
-
-  let $botonRetroceder = document.querySelector('#retroceder');
-  let $botonAvanzar = document.querySelector('#avanzar');
-
-  // Funciones
-
-  /**
-   * Funcion que cambia la foto en la siguiente posicion
-   */
-  function pasarFoto() {
-      if(valor=='10'){
-        valor='20';
-      }
-      if(valor=='20'){
-        valor='30';
-      }
-      if(valor=='30'){
-        valor='40';
-      }
-      console.log(valor);
-  }
-
-  /**
-   * Funcion que cambia la foto en la anterior posicion
-   */
-  function retrocederFoto() {
-    if(valor=='20'){
-      valor='10';
-    }
-    if(valor=='30'){
-      valor='20';
-    }
-    if(valor=='40'){
-      valor='30';
-    }
-  }
-  // Eventos
-  $botonAvanzar.addEventListener('click', pasarFoto);
-  $botonRetroceder.addEventListener('click', retrocederFoto);
-} 
 

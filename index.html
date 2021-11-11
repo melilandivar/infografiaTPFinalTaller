@@ -228,16 +228,16 @@
 
       <div class="contenedor_nucleo3">
         <h1>¿Cuanto Co2 emites?</h1>
-        <div class="row">
+        <div class="row" id="contenedorGrafico">
           <div class="col sm-2" id="bg_comb">
             <h5>Día</h5>
             <label for="" id="kgDiaC"></label>
           </div>
-          <div class="row">
+          <div class="row" id="rowM">
             <div class="col sm-2" id="bg_combD">36</div>
             <div class="col sm-2">
-              <img src="img/nucleo3_botella.svg" alt="" />
-              <p>Botella de plástico</p>
+              <img src="img/nucleo3_botella.png" style="width: 60px; height: 60px;" alt="" />
+              <p id="texto">Botella de plástico</p>
             </div>
             <div class="col sm-2" id="bg_elecD">17</div>
           </div>
@@ -253,11 +253,11 @@
             <h5>Mes</h5>
             <label for="" id="kgMesC"></label>
           </div>
-          <div class="row">
+          <div class="row" id="rowM">
             <div class="col sm-2" id="bg_combD">36</div>
             <div class="col sm-2">
-              <img src="img/nucleo3_celular.svg" alt="" />
-              <p>Celulares fabricados</p>
+              <img src="img/nucleo3_celular.png" alt="" />
+              <p id="texto" >Celulares fabricados</p>
             </div>
             <div class="col sm-2" id="bg_elecD">17</div>
           </div>
@@ -273,11 +273,11 @@
             <h5>Año</h5>
             <label for="" id="kgAñoC"></label>
           </div>
-          <div class="row">
+          <div class="row" id="rowM">
             <div class="col sm-2" id="bg_combD">36</div>
             <div class="col sm-2">
-              <img src="img/nucleo3_viajero.svg" alt="" />
-              <p>Pasajeros en un vuelo Madrid - Barcelona</p>
+              <img src="img/nucleo3_viajero.png" alt="" />
+              <p id="texto" >Pasajeros en un vuelo Madrid - Barcelona</p>
             </div>
             <div class="col sm-2" id="bg_elecD">17</div>
           </div>
@@ -286,41 +286,15 @@
             <label for="" id="kgAño"></label>
           </div>
         </div>
+      <div  class="RadialProgress" id="progressbar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="40">
 
-        <div class="carousel">
-          <button id="retroceder"><i class="ri-arrow-left-line"></i></button>
-          <div id="imagen">
-            <labelv id="valor"></label>
-          </div>
-          <button id="avanzar"><i class="ri-arrow-right-line"></i></button>   
-        </div>
-       <!-- <div
-          class="RadialProgress"
-          role="progressbar"
-          aria-valuenow="0"
-          aria-valuemin="0"
-          aria-valuemax="40"
-        ></div>
+      </div>
         <h2>km/día</h2>
-
-        la barra interactiva está hecha con bootstrap
-        <input
-          type="range"
-          class="form-range"
-          value="0"
-          min="0"
-          max="40"
-          step="10"
-          id="customRange3"
-        />
-      </div> -->
-
-
-        <div class="RadialProgress" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="40"></div>
-        <h2>km/día</h2>
-
         <!--la barra interactiva está hecha con bootstrap-->
-        <input type="range" class="form-range" value="0" min="0" max="40" step="10" id="customRange3" />
+        <div onclick="progreso()">
+          <input  type="range" class="form-range" value="0" min="0" max="40" step="10" id="customRange3" />
+        </div>
+        
       </div>
     </div>
     <div id="nucleo4">

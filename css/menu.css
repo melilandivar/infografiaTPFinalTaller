@@ -148,6 +148,8 @@ body.open:after {
   position: absolute;
   top: 30px;
   overflow-x: hidden;
+  
+overflow-y:hidden;
 }
 .b-container:hover:not(.open) .bun-top, .b-container:hover:not(.open) .bun-mid, .b-container:hover:not(.open) .bun-bottom {
   background: rgba(255, 255, 255, 1);

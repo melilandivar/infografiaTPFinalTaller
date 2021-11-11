@@ -31,20 +31,36 @@
 
 #bg_comb {
 background-color: #FA8D78;
-border-color:#FA8D78 ;
+height: 90px;
+}
+h5 {
+overflow-y:hidden;
 }
 #bg_elec{
  background-color: #A4E8B6;
+ height: 90px;
 }
 #bg_combD{
  background-color: #F4AE98;
+ height: 90px;
 }
 #bg_elecD {
 background-color: #B6ECBF;
+height: 90px;
+}
+#rowM{
+  height: 90px;
+  overflow-y:hidden;
 }
 
 .carousel {
 max-width: 800px;
 margin: 0 auto;
 display: flex;
+}
+#texto {
+  font-size: 12px;
+}
+#contenedorGrafico {
+  margin-top: 2%;
 }
