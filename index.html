@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="css/menu.css" />
 
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
   <!--tipografias-->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -243,29 +244,92 @@
 
       <div class="contenedor_nucleo3">
         <h1>¿Cuanto Co2 emites?</h1>
-        <!--tabla grafica comparativa del núcleo III -->
-        <!-- <section class="nucleo3_grafico_contenedor">
-
-        <div class="nucleo3_grafico_row">
-          <div class="nucleo_3_grafico_columna1">
-
+        <div class="row">
+          <div class="col sm-2" id="bg_comb">
+            <h5>Día</h5>
+            <label for="" id="kgDiaC"></label>
           </div>
-          <div class="nucleo_3_grafico_columna2">
-           
-            <img class="nucleo3_iconos_grafico" src="img/nucleo3_botella.svg" alt="Botella grafico 3" />
-            <img class="nucleo3_iconos_grafico" src="img/nucleo3_celular.svg" alt="Celular grafico 3" />
-            <img class="nucleo3_iconos_grafico" src="img/nucleo3_viajero.svg" alt="Viajero grafico 3" />
-            
-
-            
+          <div class="row">
+            <div class="col sm-2" id="bg_combD">36</div>
+            <div class="col sm-2">
+              <img src="img/nucleo3_botella.svg" alt="" />
+              <p>Botella de plástico</p>
+            </div>
+            <div class="col sm-2" id="bg_elecD">17</div>
           </div>
-          <div class="nucleo_3_grafico_columna3">
-            
+          <div class="col sm-2" id="bg_elec">
+            <h5>Día</h5>
+            <label for="" id="kgDia"></label>
           </div>
 
+          <!-- Force next columns to break to new line at md breakpoint and up -->
+          <div class="w-100 d-none d-md-block"></div>
+
+          <div class="col sm-2" id="bg_comb">
+            <h5>Mes</h5>
+            <label for="" id="kgMesC"></label>
+          </div>
+          <div class="row">
+            <div class="col sm-2" id="bg_combD">36</div>
+            <div class="col sm-2">
+              <img src="img/nucleo3_celular.svg" alt="" />
+              <p>Celulares fabricados</p>
+            </div>
+            <div class="col sm-2" id="bg_elecD">17</div>
+          </div>
+          <div class="col sm-2" id="bg_elec">
+            <h5>Mes</h5>
+            <label for="" id="kgMes"></label>
+          </div>
+
+          <!-- Force next columns to break to new line at md breakpoint and up -->
+          <div class="w-100 d-none d-md-block"></div>
+
+          <div class="col sm-2" id="bg_comb">
+            <h5>Año</h5>
+            <label for="" id="kgAñoC"></label>
+          </div>
+          <div class="row">
+            <div class="col sm-2" id="bg_combD">36</div>
+            <div class="col sm-2">
+              <img src="img/nucleo3_viajero.svg" alt="" />
+              <p>Pasajeros en un vuelo Madrid - Barcelona</p>
+            </div>
+            <div class="col sm-2" id="bg_elecD">17</div>
+          </div>
+          <div class="col sm-2" id="bg_elec">
+            <h5>Año</h5>
+            <label for="" id="kgAño"></label>
+          </div>
         </div>
-        
-       </section> -->
+
+        <div class="carousel">
+          <button id="retroceder"><i class="ri-arrow-left-line"></i></button>
+          <div id="imagen">
+            <labelv id="valor"></label>
+          </div>
+          <button id="avanzar"><i class="ri-arrow-right-line"></i></button>   
+        </div>
+       <!-- <div
+          class="RadialProgress"
+          role="progressbar"
+          aria-valuenow="0"
+          aria-valuemin="0"
+          aria-valuemax="40"
+        ></div>
+        <h2>km/día</h2>
+
+        la barra interactiva está hecha con bootstrap
+        <input
+          type="range"
+          class="form-range"
+          value="0"
+          min="0"
+          max="40"
+          step="10"
+          id="customRange3"
+        />
+      </div> -->
 
 
         <div class="RadialProgress" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="40"></div>
