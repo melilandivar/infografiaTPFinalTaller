@@ -1,0 +1,86 @@
+
+          * {box-sizing: border-box}
+          
+    
+          .contenedor_nucleo2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            position: absolute;
+            top: 30%;
+            left: 45%;
+            width: auto;
+            /* height: 400px; */
+            margin-top: -200px;
+            margin-left: -300px;
+            margin-bottom: 0px;
+            padding: 0px;
+          }
+      
+          
+          /* Style tab links */
+          .tablink {
+            box-shadow: none;
+            background-color: transparent !important;
+            color: black;
+            float: left;
+            border: none;
+           
+           border-radius: 0px;
+            outline: none;
+            
+            padding: 14px 16px;
+            font-size: 28px;
+            width: 25%;
+          }
+          
+          .tablink:hover {
+            background-color: #777;
+            border-bottom: black solid 2px;
+          }
+
+          .tablink:active {
+            border-bottom: black solid 2px;
+          }
+          
+          /* Style the tab content (and add height:100% for full page content) */
+          .tabcontent {
+            color: black;
+            display: none;
+            padding-top: 20%;
+           
+            height: 100%;
+            width: 100%;
+            
+          }
+          
+          #Home {background-color: #E6FBE1;}
+          #News {background-color: #FFE3DF;}
+         
+          .botones_seleccion_nucleo2 {
+            display: flex;
+            justify-content: center;
+            width: 200%;
+            background-color: transparent !important;
+        }
+
+        .barras_de_progreso_nucleo2 {
+            width: 50%;
+           
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .barras_de_progreso_nucleo2_combustion {
+            margin-top: 20%;
+        }
+
+        progress#file {  /*aca se modifica la barra de progreso */
+            width: 100%;
+            padding: 20px
+        ;
+        } 

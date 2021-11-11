@@ -29,91 +29,22 @@
   
   }
 
-  div.grafico_3 {
-    width: 50em;
-    margin-top: 5%;
-    height: 404px;
-    display: flex;
-    flex-direction: initial;
-    justify-content: center;
-    justify-items: center;
-}
-
-.g_n_3_i {
+ #bg_comb {
   background-color: #FA8D78;
-  height: auto;
-  width: 10em;
-  
-}
+  border-color:#FA8D78 ;
+ }
+ #bg_elec{
+   background-color: #A4E8B6;
+ }
+ #bg_combD{
+   background-color: #F4AE98;
+ }
+ #bg_elecD {
+  background-color: #B6ECBF;
+ }
 
-.g_n_3_m {
-  background-color: rgba(255,255,255,0.5);
-  height: auto;
-  width: 26em;
-  margin-left: 15%;
+ .carousel {
+  max-width: 800px;
+  margin: 0 auto;
   display: flex;
-  flex-direction: initial;
-  justify-content: flex-start;
-  justify-items: center;
-
 }
-/*aca hago la separacion de los tres colores del grafico*/
-.\33 _m_i {
-  background-color: rgba(250,141,120,0.7);
-  height: 404px;
-  width: 8em;
-}
-
-.\33 _m_m {
-  width: 100px;
-}
-
-.\33 _m_d {
-  background-color: rgba(164,232,182,0.7);
-  height: 404px;
-  width: 8em;
-}
-
-/*fin de la separacion*/
-
-
-.g_n_3_d {
-  background-color: #A4E8B6;
-  height: autox;
-  width: 10em;
-  margin-left: 15%;
-}
-
-
-
-/*FONDO DEL GRAFICO
-.nucleo3_grafico_contenedor {
-  background-image: url(../img/fondo_nucleo3_grafico.png);
-  width: 927px;
-  height: 425px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.nucleo3_grafico_row {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-}
-
-.nucleo_3_grafico_columna1 {
-  width: 28%;
-  height: auto;
-}
-.nucleo_3_grafico_columna2 {
-  width: 45%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-}
-.nucleo_3_grafico_columna3 {
-  width: 28%;
-} */
-
