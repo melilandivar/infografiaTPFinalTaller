@@ -68,7 +68,6 @@
 
         .barras_de_progreso_nucleo2 {
             width: 50%;
-           
             display: flex;
             align-items: center;
             flex-direction: column;
@@ -81,6 +80,5 @@
 
         progress#file {  /*aca se modifica la barra de progreso */
             width: 100%;
-            padding: 20px
-        ;
+            padding: 20px;
         } 
