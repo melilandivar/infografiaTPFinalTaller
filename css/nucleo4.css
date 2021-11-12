@@ -1,0 +1,130 @@
+
+          * {box-sizing: border-box}
+          
+    
+          .contenedor_nucleo4 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            margin-top: 3%;
+           
+          }
+      
+.fondo_4 {
+  height: 100vh;
+  width: auto;
+  background-image: url(../img/fondo_introduccion.png);
+  background-size:cover;
+  /*lo siguiente es para el fondo full screen*/
+  background-position: center;
+  position: relative;
+  overflow-x: hidden;
+  
+
+}
+          
+          /* Style tab links */
+          .tablink {
+            box-shadow: none;
+            background-color: transparent !important;
+            color: black;
+            float: left;
+            border: none;
+           
+           border-radius: 0px;
+            outline: none;
+            
+            padding: 14px 16px;
+            font-size: 28px;
+            width: 25%;
+          }
+          
+          .tablink:hover {
+            background-color: #777;
+            border-bottom: black solid 2px;
+          }
+
+          .tablink:active {
+            border-bottom: black solid 2px;
+          }
+          
+          /* Style the tab content (and add height:100% for full page content) */
+          .tabcontent {
+            color: black;
+            display: flex;
+            padding-top: 12em;
+            height: 100%;
+            width: 100%;
+          }
+          
+          #Home {
+            background-image: url(../img/fondo_introduccion.png);
+          }
+          #News {
+            background-image: url(../img/fondo_desventajas.png);
+          }
+         
+
+
+          .botones_seleccion_nucleo4 {
+            display: flex;
+            justify-content: center;
+            width: 200%;
+            background-color: transparent !important;
+        }
+
+        .items4 {
+          width: 1300px;
+          margin-top: 2%;
+          margin-left: 5%;
+        }
+        #item4{
+          background-color: #E6FBE1;
+          height: 80px;
+          width: 80px;
+          border: 2px solid #84C374;
+          border-radius: 50%;
+          display: inline-block;
+          margin-right: 2%;
+          text-align: center;
+        }
+        #flecha {
+
+          display: inline-block;
+          margin-right: 2%;
+          text-align: center;
+        }
+        #item4 P {
+          display: block;
+            margin: auto;
+            margin-top: 25%;
+        }
+        #item4:hover {
+          background-color: #84C374;
+          height: 80px;
+          width: 80px;
+          border: 2px solid #84C374;
+          border-radius: 50%;
+          display: inline-block;
+        }
+        
+        
+        #oculta {
+          display: none;
+          position: absolute;
+          text-align: center;
+        }
+        p {
+          font-weight: bold;
+        }
+        p#oculta{
+          margin-top: 30%;
+        }
+        
+        #texto_verde {
+          color: #84c374;
+          font-size: 72px;
+          font-weight: bold;
+        }

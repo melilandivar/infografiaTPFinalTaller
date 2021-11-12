@@ -153,5 +153,3 @@ function progreso() {
     document.getElementById("cantidadPasajerosE").innerHTML = cantidadPasajerosE;
 
 }
-
-
