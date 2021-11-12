@@ -9,10 +9,9 @@
             align-items: center;
             align-content: center;
             position: absolute;
-            top: 30%;
+            top: 35%;
             left: 45%;
             width: auto;
-            /* height: 400px; */
             margin-top: -200px;
             margin-left: -300px;
             margin-bottom: 0px;
@@ -20,13 +19,14 @@
           }
       
           
+          
           /* Style tab links */
           .tablink {
             box-shadow: none;
             background-color: transparent !important;
             color: black;
             float: left;
-            border: none;
+            border: none !important;
            
            border-radius: 0px;
             outline: none;
@@ -42,16 +42,17 @@
           }
 
           .tablink:active {
-            border-bottom: black solid 2px;
+            border-bottom: black solid 2px !important;
           }
           
           /* Style the tab content (and add height:100% for full page content) */
           .tabcontent {
             color: black;
-           /* display: none; */
+            left: 0% !important;
+            margin-left: 0px;
            display: flex;
             padding-top: 12em;
-           
+           flex-direction: column;
             height: 100%;
             width: 100%;
             
@@ -68,16 +69,15 @@
         }
 
         .barras_de_progreso_nucleo2 {
-            width: 50%;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            height: 100%;
-        }
-
-        .barras_de_progreso_nucleo2_combustion {
-            margin-top: 20%;
-        }
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: initial;
+          height: 70%;
+          margin-top: -5%;
+      }
+        
 
         progress#file {  /*aca se modifica la barra de progreso */
             width: 100%;
@@ -87,7 +87,77 @@
 
         .nucleo2_auto_grafico {
           display: flex;
-          width: 50%;
+          width: 100%;
           justify-content: center;
           align-items: center;
+          margin-top: 24px;
       }
+      .barras_de_progreso_nucleo2_electico {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: initial;
+        flex-wrap: wrap;
+        width: 50%;
+        position: relative;
+        left: 10%;
+    }
+      
+
+      /* items */
+      .items_nucleo2 {
+        width: 625px;
+        margin-top: 2%;
+        margin-left: 5%;
+        display: contents;
+      }
+      #item_nucleo2 {
+        background-color: #D1E8BA;
+        height: 89px;
+        width: 89px;
+        border-radius: 50%;
+        display: inline-block;
+        margin-right: 10%;
+        text-align: center;
+        margin-top: 7%;
+    }
+      #item_nucleo2 svg {
+        display: block;
+          margin: auto;
+          margin-top: 15%;
+      }
+      #item_nucleo2:hover {
+        background-color: #84C374;
+        height: 89px;
+        width: 89px;
+        border: 2px solid #84C374;
+        border-radius: 50%;
+        display: inline-block;
+      }
+
+      img#auto_nucleo2 {
+        width: 35em;
+    }
+
+
+    /*grafico bottom*/
+    .nucleo2_grafico_resultados {
+      background-color: black;
+      width: 100%;
+      height: 30%;
+      display: flex;
+      margin: 0px;
+      flex-direction: row;
+      padding-left: 0px;
+  }
+
+  .nucleo2_grafico_resultados_electrico {
+    display: flex;
+    width: 50%;
+    background-color: #B6E9AA;
+}
+.nucleo2_grafico_resultados_combustion {
+  display: flex;
+  width: 50%;
+  background-color: #E3A69E;
+}
