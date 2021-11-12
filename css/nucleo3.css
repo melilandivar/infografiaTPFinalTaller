@@ -6,15 +6,15 @@
   align-items: center;
   align-content: center;
   position: absolute;
-  top: 30%;
+  top: 35%;
   left: 50%;
   width: 982px;
-  /* height: 400px; */
   margin-top: -200px;
   margin-left: -460px;
   margin-bottom: 0px;
   padding: 0px;
 }
+
 
 .fondo_3 {
   height: 100vh;
