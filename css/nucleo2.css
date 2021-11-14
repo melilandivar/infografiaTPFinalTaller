@@ -90,11 +90,18 @@
           width: 100%;
           justify-content: center;
          
-          
       }
       .nucleo2_auto_grafico img {
         width: 30em;
 
+      }
+      .nucleo2_auto_carroceria{
+        display: none;
+        width: 100%;
+        justify-content: center;
+      }
+      .nucleo2_auto_carroceria img {
+        width: 30em;
       }
       .barras_de_progreso_nucleo2_electico {
         display: flex;
@@ -160,7 +167,9 @@
   width: 50%;
   background-color: #E3A69E;
 }
-
+#item_nucleo2{
+  overflow-y: hidden;
+}
 #item_nucleo2 img {
   padding-top: 10%;
   width: 55px;
@@ -169,7 +178,9 @@
   padding-top: 10%;
   width: 55px;
 }
-
+#item_nucleo2_combustion{
+  overflow-y: hidden;
+}
 #item_nucleo2_combustion {
   background-color: #FFCBC3;
   height: 89px;
@@ -192,13 +203,17 @@
 
 /*agregar/sacar icono */
 
-#item_agregregar_nucleo2 img {
-
+#nucleo2_icono_agregar img {
 width: 24px;
 }
 
-div#item_agregregar_nucleo2 {
+div#nucleo2_icono_agregar {
   position: absolute;
   display: flex;
+  margin-left: 60px;
+}
+div#nucleo2_icono_eliminar {
+  position: absolute;
+  display: none;
   margin-left: 60px;
 }

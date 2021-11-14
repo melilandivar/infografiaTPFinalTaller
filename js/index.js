@@ -34,8 +34,30 @@ controller.oninput = () => {
 })();
 
 /*fin js del menu*/
+/*FUNCIONES NUCLEO 2*/
 
+function cambiarIcono() {
 
+  if(document.getElementById('nucleo2_icono_agregar').style.display='flex') { //si se puede agregar 
+    document.getElementById('nucleo2_icono_agregar').style.display='none'; //que se elimine el de agregar
+    document.getElementById('nucleo2_icono_eliminar').style.display='flex'; //se agrega el de quitar
+  } else {
+    document.getElementById('nucleo2_icono_agregar').style.display='flex'; //sino, se agrega el de agregar
+    document.getElementById('nucleo2_icono_eliminar').style.display='none'; //se quita el de eliminar
+  } 
+
+  if(document.getElementById('nucleo2_auto_grafico').style.display='flex'){
+    document.getElementById('nucleo2_auto_grafico').style.display='none';
+    document.getElementById('nucleo2_auto_carroceria').style.display='flex';
+  } else {
+    document.getElementById('nucleo2_auto_grafico').style.display='flex';
+    document.getElementById('nucleo2_auto_carroceria').style.display='none';
+
+  }
+}
+
+/*FIN NUCLEO 2*/
+/* FUNCIONES NUCLEO 3*/
 (function(){
 var kgDia = "1.2";
 var kgMes = "36";
@@ -155,3 +177,4 @@ function progreso() {
     document.getElementById("cantidadPasajerosE").innerHTML = cantidadPasajerosE;
 
 }
+ 
