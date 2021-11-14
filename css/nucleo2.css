@@ -71,11 +71,11 @@
         .barras_de_progreso_nucleo2 {
           width: 100%;
           display: flex;
-          align-items: center;
+          /* align-items: center; */
+          margin-top: 4%;
           justify-content: center;
-          flex-direction: initial;
-          height: 70%;
-          margin-top: -5%;
+          flex-direction: row;
+          height: 32%;
       }
         
 
@@ -89,8 +89,12 @@
           display: flex;
           width: 100%;
           justify-content: center;
-          align-items: center;
-          margin-top: 24px;
+         
+          
+      }
+      .nucleo2_auto_grafico img {
+        width: 30em;
+
       }
       .barras_de_progreso_nucleo2_electico {
         display: flex;
@@ -104,33 +108,28 @@
     }
       
 
-      /* items */
-      .items_nucleo2 {
-        width: 625px;
-        margin-top: 2%;
-        margin-left: 5%;
-        display: contents;
-      }
+    .items_nucleo2 {
+      width: 100%;
+      margin-top: 2%;
+      margin-left: 5%;
+      display: contents;
+  }
       #item_nucleo2 {
         background-color: #D1E8BA;
         height: 89px;
         width: 89px;
         border-radius: 50%;
         display: inline-block;
-        margin-right: 10%;
+        margin-right: 3%;
         text-align: center;
-        margin-top: 7%;
+       
     }
-      #item_nucleo2 svg {
-        display: block;
-          margin: auto;
-          margin-top: 15%;
-      }
+     
       #item_nucleo2:hover {
-        background-color: #84C374;
+        background-color: #9FD791;
         height: 89px;
         width: 89px;
-        border: 2px solid #84C374;
+        border: 2px solid #9FD791;
         border-radius: 50%;
         display: inline-block;
       }
@@ -160,4 +159,46 @@
   display: flex;
   width: 50%;
   background-color: #E3A69E;
+}
+
+#item_nucleo2 img {
+  padding-top: 10%;
+  width: 55px;
+}
+#item_nucleo2_combustion img {
+  padding-top: 10%;
+  width: 55px;
+}
+
+#item_nucleo2_combustion {
+  background-color: #FFCBC3;
+  height: 89px;
+  width: 89px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 3%;
+  text-align: center;
+ 
+}
+
+#item_nucleo2_combustion:hover {
+  background-color: #9FD791;
+  height: 89px;
+  width: 89px;
+  border: 2px solid #9FD791;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/*agregar/sacar icono */
+
+#item_agregregar_nucleo2 img {
+
+width: 24px;
+}
+
+div#item_agregregar_nucleo2 {
+  position: absolute;
+  display: flex;
+  margin-left: 60px;
 }
