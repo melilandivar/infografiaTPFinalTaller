@@ -33,6 +33,8 @@ controller.oninput = () => {
   );
 })();
 
+/*fin js del menu*/
+
 
 (function(){
 var kgDia = "1.2";

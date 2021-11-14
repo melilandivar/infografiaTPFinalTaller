@@ -27,7 +27,7 @@ body:after {
   opacity: 0;
   overflow: auto;
   padding: 0;
- /* position: absolute; */
+
   top: 0;
   transition: all 0.4s ease;
   width: 100%;
@@ -100,7 +100,7 @@ body.open:after {
   height: 60px;
   padding-left: 15.5px;
   padding-top: 17.5px;
-  position: relative;
+  position: fixed;
   transition: all 0.4s ease;
   user-select: none;
   width: 60px;
