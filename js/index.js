@@ -177,4 +177,17 @@ function progreso() {
     document.getElementById("cantidadPasajerosE").innerHTML = cantidadPasajerosE;
 
 }
+/*FIN NUCLEO 3*/
+
+/*FUNCIONES NUCLEO 4*/
+
+function mostrarElementos() {
+  console.log("lementso");
+
+  if(document.getElementById('oculta4-1').style.display='none') { //si se puede agregar 
+    document.getElementById('oculta4-1').style.display='flex'; 
+  }
+}
+
+/*FIN NUCLEO 4*/
  

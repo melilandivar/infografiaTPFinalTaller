@@ -110,8 +110,37 @@
           display: inline-block;
         }
         
-        
-        #oculta {
+        #oculta4-1 {
+          display: none;
+          position: absolute;
+          text-align: center;
+        }
+        #oculta4-2 {
+          display: none;
+          position: absolute;
+          text-align: center;
+        }
+        #oculta4-3 {
+          display: none;
+          position: absolute;
+          text-align: center;
+        }
+        #oculta4-4 {
+          display: none;
+          position: absolute;
+          text-align: center;
+        }
+        #oculta4-5 {
+          display: none;
+          position: absolute;
+          text-align: center;
+        }
+        #oculta4-6 {
+          display: none;
+          position: absolute;
+          text-align: center;
+        }
+        #oculta4-7 {
           display: none;
           position: absolute;
           text-align: center;
@@ -119,7 +148,7 @@
         p {
           font-weight: bold;
         }
-        p#oculta{
+        p#oculta4{
           margin-top: 30%;
         }
         
