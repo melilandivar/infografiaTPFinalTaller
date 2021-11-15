@@ -217,3 +217,31 @@ div#nucleo2_icono_eliminar {
   display: none;
   margin-left: 60px;
 }
+
+/*grafico */
+
+.nucleo2_div_resultados {
+  display: flex;
+  width: 100%;
+  height: 200px;
+  flex-direction: row;
+}
+
+
+.nucleo2_resultados_electricos {
+  background-color: #B6E9AA;
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.nucleo2_resultados_combustion {
+  background-color: #E3A69E;
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
