@@ -6,7 +6,7 @@ let moveDistance;
 let nucleo = new Array(6);
 let nucleoPositionX = new Array(nucleo.length);
 
-let nucleoActual = 0; //Si ponen el numero del nucleo en el que trabajan, la web empieza alli
+let nucleoActual = 4; //Si ponen el numero del nucleo en el que trabajan, la web empieza alli
 
 GetNucleoReference();
 SetNucleosPosition();
