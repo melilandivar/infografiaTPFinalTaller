@@ -34,6 +34,32 @@ controller.oninput = () => {
 })();
 
 /*fin js del menu*/
+
+/* FUNCIONES NUCLEO 1*/
+function agregarPlug(){
+  if(document.getElementById('plugCarga').style.display='none'){
+    document.getElementById('plugCarga').style.display='flex';
+  } else
+  if(document.getElementById('plugCarga').style.display='flex'){
+    document.getElementById('plugCarga').style.display='none';
+  } 
+}
+function agregarBateria(){
+
+  if(document.getElementById('bateriaLitio').style.display='none'){
+    document.getElementById('bateriaLitio').style.display='flex';
+  } else {
+    document.getElementById('bateriaLitio').style.display='none';
+  }
+}
+function agregarMotor(){
+
+  if(document.getElementById('motorElectrico').style.display='none'){
+    document.getElementById('motorElectrico').style.display='flex';
+  } else {
+    document.getElementById('motorElectrico').style.display='none';
+  }
+}
 /*FUNCIONES NUCLEO 2*/
 
 function cambiarIcono() {
