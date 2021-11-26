@@ -113,6 +113,7 @@
           position: absolute;
           text-align: center;
           align-items: center;
+          top:50%;
         }
         #oculta4-2 {
           display: none;
