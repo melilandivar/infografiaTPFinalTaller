@@ -202,6 +202,11 @@
   display: inline-block;
 }
 
+#item_nucleo3 img {
+  padding-top: 10%;
+  width: 55px;
+}
+
 /*agregar/sacar icono */
 
 #nucleo2_icono_agregar img {

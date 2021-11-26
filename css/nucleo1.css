@@ -71,14 +71,20 @@
    #plugCarga {
        display:none;
        position: absolute;
+       top:42%;
+       left:39%;
    }
    #bateriaLitio {
        display: none;
        position: absolute;
+       top:50%;
+       left:48%;
    }
    #motorElectrico {
        display: none;
        position: absolute;
+       top:43%;
+       left:57%;
    }
     #item_nucleo1:hover {
       background-color: #9FD791;
