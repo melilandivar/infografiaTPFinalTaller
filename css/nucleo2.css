@@ -241,7 +241,7 @@ div#nucleo2_icono_eliminar {
   width: 50%;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .nucleo2_resultados_combustion {
@@ -250,6 +250,6 @@ div#nucleo2_icono_eliminar {
   width: 50%;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
 }
 

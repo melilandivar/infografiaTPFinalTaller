@@ -80,6 +80,10 @@ function cambiarIcono() {
     document.getElementById('nucleo2_auto_carroceria').style.display='none';
 
   }
+
+ 
+
+
 }
 
 /*FIN NUCLEO 2*/
