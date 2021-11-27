@@ -12,7 +12,7 @@ GetNucleoReference();
 SetNucleosPosition();
 ReubicarCarrete(); //Ubica el carrete en el "nucleoActual" al inicio
 
-document.onmousedown = function (e) {
+carrete.onmousedown = function (e) {
   isDown = true;
 };
 document.onmouseup = function (e) {

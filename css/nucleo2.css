@@ -33,26 +33,31 @@
 
 .nucleo2__autopartes {
   display: flex;
-  flex-direction: column;
-}
-
-.barras_de_progreso_nucleo2 {
-  display: flex;
+  justify-content: center;
+  width: 100%;
   margin-top: 2%;
-  justify-content: center;
-  flex-direction: row;
+  margin-bottom: 2%;
 }
 
-.barras_de_progreso_nucleo2_electico {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: initial;
-  flex-wrap: wrap;
-  width: 50%;
-  position: relative;
-  left: 10%;
+.nucleo2__autopartes__item {
+  background-color: #d1e8ba;
+  height: 89px;
+  width: 89px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 3%;
+  text-align: center;
 }
+
+.nucleo2__autopartes__item:hover {
+  background-color: #9fd791;
+  height: 89px;
+  width: 89px;
+  border: 2px solid #9fd791;
+  border-radius: 50%;
+  display: inline-block;
+}
+/**/
 
 /*
 
@@ -93,6 +98,17 @@
 }
 */
 
+.barras_de_progreso_nucleo2_electico {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: initial;
+  flex-wrap: wrap;
+  width: 50%;
+  position: relative;
+  left: 10%;
+}
+
 .tablink:hover {
   background-color: #777;
   border-bottom: black solid 2px;
@@ -123,31 +139,6 @@ progress#file {
 }
 .nucleo2_auto_carroceria img {
   width: 30em;
-}
-
-.items_nucleo2 {
-  width: 100%;
-  margin-top: 2%;
-  margin-left: 5%;
-  display: contents;
-}
-#item_nucleo2 {
-  background-color: #d1e8ba;
-  height: 89px;
-  width: 89px;
-  border-radius: 50%;
-  display: inline-block;
-  margin-right: 3%;
-  text-align: center;
-}
-
-#item_nucleo2:hover {
-  background-color: #9fd791;
-  height: 89px;
-  width: 89px;
-  border: 2px solid #9fd791;
-  border-radius: 50%;
-  display: inline-block;
 }
 
 img#auto_nucleo2 {

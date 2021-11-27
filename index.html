@@ -198,125 +198,125 @@
       <div id="nucleo2">
         <div class="nucleo2__header">
           <h1>Comparación de los procesos de producción</h1>
-
           <div class="nucleo2__header__botones">
-            <button class="nucleo2__header__botones__item" onclick="openPage('Home', this, 'green')">
-              Auto electrico
-            </button>
-            <button class="nucleo2__header__botones__item" onclick="openPage('News', this, 'red')">
-              Auto a combustión
-            </button>
+            <button class="nucleo2__header__botones__item" id="nucleo2__autoElectrico">Auto electrico</button>
+            <button class="nucleo2__header__botones__item" id="nucleo2__autoCombustion">Auto a combustión</button>
           </div>
         </div>
 
-        <div class="barras_de_progreso_nucleo2">
-          <!--barras de progreso del nucleo-->
+        <div class="nucleo2__autopartes">
+          <!-- Carroceria -->
+          <div class="nucleo2__autopartes__item" id="nucleo2__carroceria">
+            <img src="img/nucleo2/carroceria.svg" />
+            <div class="nucleo2_icono_eliminar" id="nucleo2_icono_eliminar">
+              <svg id="quitar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path
+                  d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zM7 11v2h10v-2H7z"
+                  fill="rgba(177,49,49,1)"
+                />
+              </svg>
+            </div>
+            <div id="nucleo2_icono_agregar">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path
+                  d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-1-11H7v2h4v4h2v-4h4v-2h-4V7h-2v4z"
+                  fill="rgba(132,195,116,1)"
+                />
+              </svg>
+            </div>
+          </div>
 
-          <div class="items_nucleo2">
-            <div class="item1" id="item_nucleo2" onclick="cambiarIcono()">
-              <img src="img/nucleo2_icono_carroceria.png" />
-              <div class="nucleo2_icono_eliminar" id="nucleo2_icono_eliminar">
-                <svg id="quitar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                  <path fill="none" d="M0 0h24v24H0z" />
-                  <path
-                    d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zM7 11v2h10v-2H7z"
-                    fill="rgba(177,49,49,1)"
-                  />
-                </svg>
-              </div>
-              <div id="nucleo2_icono_agregar">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                  <path fill="none" d="M0 0h24v24H0z" />
-                  <path
-                    d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-1-11H7v2h4v4h2v-4h4v-2h-4V7h-2v4z"
-                    fill="rgba(132,195,116,1)"
-                  />
-                </svg>
-              </div>
+          <!-- Motor -->
+          <div class="nucleo2__autopartes__item" id="nucleo2__motor">
+            <img src="img/nucleo2/motorElectrico.svg" />
+            <div class="nucleo2_icono_eliminar" id="nucleo2_icono_eliminar">
+              <svg id="quitar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path
+                  d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zM7 11v2h10v-2H7z"
+                  fill="rgba(177,49,49,1)"
+                />
+              </svg>
             </div>
-            <div class="item2" id="item_nucleo2" onclick="cambiarIcono()">
-              <img src="img/nucleo2_icono_carroceria.png" />
-              <div class="nucleo2_icono_eliminar" id="nucleo2_icono_eliminar">
-                <svg id="quitar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                  <path fill="none" d="M0 0h24v24H0z" />
-                  <path
-                    d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zM7 11v2h10v-2H7z"
-                    fill="rgba(177,49,49,1)"
-                  />
-                </svg>
-              </div>
-              <div id="nucleo2_icono_agregar">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                  <path fill="none" d="M0 0h24v24H0z" />
-                  <path
-                    d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-1-11H7v2h4v4h2v-4h4v-2h-4V7h-2v4z"
-                    fill="rgba(132,195,116,1)"
-                  />
-                </svg>
-              </div>
+            <div id="nucleo2_icono_agregar">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path
+                  d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-1-11H7v2h4v4h2v-4h4v-2h-4V7h-2v4z"
+                  fill="rgba(132,195,116,1)"
+                />
+              </svg>
             </div>
-            <div class="item3" id="item_nucleo2">
-              <img src="img/nucleo2_icono_carroceria.png" />
-              <div class="nucleo2_icono_eliminar" id="nucleo2_icono_eliminar">
-                <svg id="quitar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                  <path fill="none" d="M0 0h24v24H0z" />
-                  <path
-                    d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zM7 11v2h10v-2H7z"
-                    fill="rgba(177,49,49,1)"
-                  />
-                </svg>
-              </div>
-              <div id="nucleo2_icono_agregar">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                  <path fill="none" d="M0 0h24v24H0z" />
-                  <path
-                    d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-1-11H7v2h4v4h2v-4h4v-2h-4V7h-2v4z"
-                    fill="rgba(132,195,116,1)"
-                  />
-                </svg>
-              </div>
+          </div>
+
+          <!-- Bateria -->
+          <div class="nucleo2__autopartes__item" id="nucleo2__bateria">
+            <img src="img/nucleo2/bateriaElectrico.svg" />
+            <div class="nucleo2_icono_eliminar" id="nucleo2_icono_eliminar">
+              <svg id="quitar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path
+                  d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zM7 11v2h10v-2H7z"
+                  fill="rgba(177,49,49,1)"
+                />
+              </svg>
             </div>
-            <div class="item4" id="item_nucleo2">
-              <img src="img/nucleo2_icono_carroceria.png" />
-              <div class="nucleo2_icono_eliminar" id="nucleo2_icono_eliminar">
-                <svg id="quitar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                  <path fill="none" d="M0 0h24v24H0z" />
-                  <path
-                    d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zM7 11v2h10v-2H7z"
-                    fill="rgba(177,49,49,1)"
-                  />
-                </svg>
-              </div>
-              <div id="nucleo2_icono_agregar">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                  <path fill="none" d="M0 0h24v24H0z" />
-                  <path
-                    d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-1-11H7v2h4v4h2v-4h4v-2h-4V7h-2v4z"
-                    fill="rgba(132,195,116,1)"
-                  />
-                </svg>
-              </div>
+            <div id="nucleo2_icono_agregar">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path
+                  d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-1-11H7v2h4v4h2v-4h4v-2h-4V7h-2v4z"
+                  fill="rgba(132,195,116,1)"
+                />
+              </svg>
             </div>
-            <div class="item5" id="item_nucleo2">
-              <img src="img/nucleo2_icono_carroceria.png" />
-              <div class="nucleo2_icono_eliminar" id="nucleo2_icono_eliminar">
-                <svg id="quitar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                  <path fill="none" d="M0 0h24v24H0z" />
-                  <path
-                    d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zM7 11v2h10v-2H7z"
-                    fill="rgba(177,49,49,1)"
-                  />
-                </svg>
-              </div>
-              <div id="nucleo2_icono_agregar">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                  <path fill="none" d="M0 0h24v24H0z" />
-                  <path
-                    d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-1-11H7v2h4v4h2v-4h4v-2h-4V7h-2v4z"
-                    fill="rgba(132,195,116,1)"
-                  />
-                </svg>
-              </div>
+          </div>
+
+          <!-- Inversor/Aceite -->
+          <div class="nucleo2__autopartes__item" id="nucleo2__inversor">
+            <img src="img/nucleo2/inversorElectrico.svg" />
+            <div class="nucleo2_icono_eliminar" id="nucleo2_icono_eliminar">
+              <svg id="quitar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path
+                  d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zM7 11v2h10v-2H7z"
+                  fill="rgba(177,49,49,1)"
+                />
+              </svg>
+            </div>
+            <div id="nucleo2_icono_agregar">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path
+                  d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-1-11H7v2h4v4h2v-4h4v-2h-4V7h-2v4z"
+                  fill="rgba(132,195,116,1)"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <!-- Neumaticos -->
+          <div class="nucleo2__autopartes__item" id="nucleo2__neumatico">
+            <img src="img/nucleo2/neumatico.svg" />
+            <div class="nucleo2_icono_eliminar" id="nucleo2_icono_eliminar">
+              <svg id="quitar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path
+                  d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zM7 11v2h10v-2H7z"
+                  fill="rgba(177,49,49,1)"
+                />
+              </svg>
+            </div>
+            <div id="nucleo2_icono_agregar">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path
+                  d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-1-11H7v2h4v4h2v-4h4v-2h-4V7h-2v4z"
+                  fill="rgba(132,195,116,1)"
+                />
+              </svg>
             </div>
           </div>
         </div>
@@ -344,82 +344,6 @@
             <img src="img/nucleo2_icono_bateria.png" alt="bateria" />
             <img src="img/nucleo2_icono_inversor.png" alt="inversor" />
             <img src="img/nucleo2_icono_neumatico.png" alt="neumatico" />
-          </div>
-        </div>
-
-        <div id="News" class="tabcontent">
-          <div class="barras_de_progreso_nucleo2">
-            <!--barras de progreso del nucleo-->
-
-            <div class="items_nucleo2">
-              <div class="item1" id="item_nucleo2_combustion">
-                <img src="img/nucleo2_icono_carroceria.png" />
-                <div class="nucleo2_icono_agregar" id="item_agregregar_nucleo2">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                    <path fill="none" d="M0 0h24v24H0z" />
-                    <path
-                      d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-1-11H7v2h4v4h2v-4h4v-2h-4V7h-2v4z"
-                      fill="rgba(132,195,116,1)"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <div class="item2" id="item_nucleo2_combustion">
-                <img src="img/nucleo2_icono_motor.png" />
-                <div class="nucleo2_icono_agregar" id="item_agregregar_nucleo2">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                    <path fill="none" d="M0 0h24v24H0z" />
-                    <path
-                      d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-1-11H7v2h4v4h2v-4h4v-2h-4V7h-2v4z"
-                      fill="rgba(132,195,116,1)"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <div class="item3" id="item_nucleo2_combustion">
-                <img src="img/nucleo2_icono_bateria.png" />
-                <div class="nucleo2_icono_agregar" id="item_agregregar_nucleo2">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                    <path fill="none" d="M0 0h24v24H0z" />
-                    <path
-                      d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-1-11H7v2h4v4h2v-4h4v-2h-4V7h-2v4z"
-                      fill="rgba(132,195,116,1)"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <div class="item4" id="item_nucleo2_combustion">
-                <img src="img/nucleo2_icono_inversor.png" />
-                <div class="nucleo2_icono_agregar" id="item_agregregar_nucleo2">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                    <path fill="none" d="M0 0h24v24H0z" />
-                    <path
-                      d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-1-11H7v2h4v4h2v-4h4v-2h-4V7h-2v4z"
-                      fill="rgba(132,195,116,1)"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <div class="item5" id="item_nucleo2_combustion">
-                <img src="img/nucleo2_icono_neumatico.png" />
-                <div class="nucleo2_icono_agregar" id="item_agregregar_nucleo2">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                    <path fill="none" d="M0 0h24v24H0z" />
-                    <path
-                      d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-1-11H7v2h4v4h2v-4h4v-2h-4V7h-2v4z"
-                      fill="rgba(132,195,116,1)"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="nucleo2_auto_grafico">
-            <img src="img/nucleo2_auto_combustion_1.svg" alt="" />
-          </div>
-          <div class="nucleo2_div_resultados">
-            <div class="nucleo2_resultados_electricos"></div>
-            <div class="nucleo2_resultados_combustion"></div>
           </div>
         </div>
       </div>
@@ -675,7 +599,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="js/nucleo5.js"></script>
 <script src="js/nucleo4.js"></script>
-<!--<script src="js/nucleo2.js"></script>-->
+<script src="js/nucleo2.js"></script>
 <script src="js/index.js"></script>
 <script src="js/carrete.js"></script>
 <script src="js/main.js"></script>
