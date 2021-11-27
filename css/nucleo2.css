@@ -1,173 +1,181 @@
+/* Utilidades */
+#nucleo2 {
+  background-color: #e6fbe1;
+}
 
-          * {box-sizing: border-box}
-          
-    
-          .contenedor_nucleo2 {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            align-content: center;
-            position: absolute;
-            top: 35%;
-            left: 45%;
-            width: auto;
-            margin-top: -200px;
-            margin-left: -300px;
-            margin-bottom: 0px;
-            padding: 0px;
-          }
-      
-          
-          
-          /* Style tab links */
-          .tablink {
-            box-shadow: none;
-            background-color: transparent !important;
-            color: black;
-            float: left;
-            border: none !important;
-           
-           border-radius: 0px;
-            outline: none;
-            
-            padding: 14px 16px;
-            font-size: 28px;
-            width: 25%;
-          }
-          
-          .tablink:hover {
-            background-color: #777;
-            border-bottom: black solid 2px;
-          }
-
-          .tablink:active {
-            border-bottom: black solid 2px !important;
-          }
-          
-          /* Style the tab content (and add height:100% for full page content) */
-          .tabcontent {
-            color: black;
-            left: 0% !important;
-            margin-left: 0px;
-           display: flex;
-            padding-top: 12em;
-           flex-direction: column;
-            height: 100%;
-            width: 100%;
-            
-          }
-          
-          #Home {background-color: #E6FBE1;}
-          #News {background-color: #FFE3DF;}
-         
-          .botones_seleccion_nucleo2 {
-            display: flex;
-            justify-content: center;
-            width: 200%;
-            background-color: transparent !important;
-        }
-
-        .barras_de_progreso_nucleo2 {
-          width: 100%;
-          display: flex;
-          /* align-items: center; */
-          margin-top: 4%;
-          justify-content: center;
-          flex-direction: row;
-          height: 32%;
-      }
-        
-
-        progress#file {  /*aca se modifica la barra de progreso */
-            width: 100%;
-            padding: 20px;
-        } 
+/*
 
 
-        .nucleo2_auto_grafico {
-          display: flex;
-          width: 100%;
-          justify-content: center;
-         
-      }
-      .nucleo2_auto_grafico img {
-        width: 30em;
+*/
+/* General */
+.nucleo2__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
 
-      }
-      .nucleo2_auto_carroceria{
-        display: none;
-        width: 100%;
-        justify-content: center;
-      }
-      .nucleo2_auto_carroceria img {
-        width: 30em;
-      }
-      .barras_de_progreso_nucleo2_electico {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: initial;
-        flex-wrap: wrap;
-        width: 50%;
-        position: relative;
-        left: 10%;
-    }
-      
+.nucleo2__header__botones {
+  display: flex;
+  justify-content: center;
+}
 
-    .items_nucleo2 {
-      width: 100%;
-      margin-top: 2%;
-      margin-left: 5%;
-      display: contents;
-  }
-      #item_nucleo2 {
-        background-color: #D1E8BA;
-        height: 89px;
-        width: 89px;
-        border-radius: 50%;
-        display: inline-block;
-        margin-right: 3%;
-        text-align: center;
-       
-    }
-     
-      #item_nucleo2:hover {
-        background-color: #9FD791;
-        height: 89px;
-        width: 89px;
-        border: 2px solid #9FD791;
-        border-radius: 50%;
-        display: inline-block;
-      }
+.nucleo2__header__botones__item {
+  margin-top: 20px;
+  padding: 0 16px;
+  font-size: 28px;
+  box-shadow: none;
+  border-radius: 0px;
+  background-color: transparent;
+}
 
-      img#auto_nucleo2 {
-        width: 35em;
-    }
+.nucleo2__autopartes {
+  display: flex;
+  flex-direction: column;
+}
+
+.barras_de_progreso_nucleo2 {
+  display: flex;
+  margin-top: 2%;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.barras_de_progreso_nucleo2_electico {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: initial;
+  flex-wrap: wrap;
+  width: 50%;
+  position: relative;
+  left: 10%;
+}
+
+/*
 
 
-    /*grafico bottom*/
-    .nucleo2_grafico_resultados {
-      background-color: black;
-      width: 100%;
-      height: 30%;
-      display: flex;
-      margin: 0px;
-      flex-direction: row;
-      padding-left: 0px;
-  }
 
-  .nucleo2_grafico_resultados_electrico {
-    display: flex;
-    width: 50%;
-    background-color: #B6E9AA;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+/* Style tab links */
+/*
+.tablink {
+  box-shadow: none;
+  background-color: transparent !important;
+  color: black;
+  float: left;
+  border: none !important;
+
+  border-radius: 0px;
+  outline: none;
+
+  padding: 14px 16px;
+  font-size: 28px;
+  width: 25%;
+}
+*/
+
+.tablink:hover {
+  background-color: #777;
+  border-bottom: black solid 2px;
+}
+
+.tablink:active {
+  border-bottom: black solid 2px !important;
+}
+
+progress#file {
+  /*aca se modifica la barra de progreso */
+  width: 100%;
+  padding: 20px;
+}
+
+.nucleo2_auto_grafico {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.nucleo2_auto_grafico img {
+  width: 30em;
+}
+.nucleo2_auto_carroceria {
+  display: none;
+  width: 100%;
+  justify-content: center;
+}
+.nucleo2_auto_carroceria img {
+  width: 30em;
+}
+
+.items_nucleo2 {
+  width: 100%;
+  margin-top: 2%;
+  margin-left: 5%;
+  display: contents;
+}
+#item_nucleo2 {
+  background-color: #d1e8ba;
+  height: 89px;
+  width: 89px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 3%;
+  text-align: center;
+}
+
+#item_nucleo2:hover {
+  background-color: #9fd791;
+  height: 89px;
+  width: 89px;
+  border: 2px solid #9fd791;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+img#auto_nucleo2 {
+  width: 35em;
+}
+
+/*grafico bottom*/
+.nucleo2_grafico_resultados {
+  background-color: black;
+  width: 100%;
+  height: 30%;
+  display: flex;
+  margin: 0px;
+  flex-direction: row;
+  padding-left: 0px;
+}
+
+.nucleo2_grafico_resultados_electrico {
+  display: flex;
+  width: 50%;
+  background-color: #b6e9aa;
 }
 .nucleo2_grafico_resultados_combustion {
   display: flex;
   width: 50%;
-  background-color: #E3A69E;
+  background-color: #e3a69e;
 }
-#item_nucleo2{
+#item_nucleo2 {
   overflow-y: hidden;
   margin-top: 1%;
 }
@@ -179,25 +187,24 @@
   padding-top: 10%;
   width: 55px;
 }
-#item_nucleo2_combustion{
+#item_nucleo2_combustion {
   overflow-y: hidden;
 }
 #item_nucleo2_combustion {
-  background-color: #FFCBC3;
+  background-color: #ffcbc3;
   height: 89px;
   width: 89px;
   border-radius: 50%;
   display: inline-block;
   margin-right: 3%;
   text-align: center;
- 
 }
 
 #item_nucleo2_combustion:hover {
-  background-color: #9FD791;
+  background-color: #9fd791;
   height: 89px;
   width: 89px;
-  border: 2px solid #9FD791;
+  border: 2px solid #9fd791;
   border-radius: 50%;
   display: inline-block;
 }
@@ -210,7 +217,7 @@
 /*agregar/sacar icono */
 
 #nucleo2_icono_agregar img {
-width: 24px;
+  width: 24px;
 }
 
 div#nucleo2_icono_agregar {
@@ -234,9 +241,8 @@ div#nucleo2_icono_eliminar {
   flex-direction: row;
 }
 
-
 .nucleo2_resultados_electricos {
-  background-color: #B6E9AA;
+  background-color: #b6e9aa;
   display: flex;
   width: 50%;
   align-items: center;
@@ -245,11 +251,10 @@ div#nucleo2_icono_eliminar {
 }
 
 .nucleo2_resultados_combustion {
-  background-color: #E3A69E;
+  background-color: #e3a69e;
   display: flex;
   width: 50%;
   align-items: center;
   justify-content: center;
   flex-direction: row;
 }
-
