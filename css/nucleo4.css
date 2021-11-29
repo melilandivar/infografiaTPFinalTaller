@@ -121,31 +121,49 @@
           display: none;
           position: absolute;
           text-align: center;
+          flex-direction: column;
+          height: auto;
+          top:30%;
         }
         #oculta4-3 {
           display: none;
           position: absolute;
           text-align: center;
+          flex-direction: column;
+          height: auto;
+          top:30%;
         }
         #oculta4-4 {
           display: none;
           position: absolute;
           text-align: center;
+          flex-direction: column;
+          height: auto;
+          top:30%;
         }
         #oculta4-5 {
           display: none;
           position: absolute;
           text-align: center;
+          flex-direction: column;
+          height: auto;
+          top:30%;
         }
         #oculta4-6 {
           display: none;
           position: absolute;
           text-align: center;
+          flex-direction: column;
+          height: auto;
+          top:30%;
         }
         #oculta4-7 {
           display: none;
           position: absolute;
           text-align: center;
+          flex-direction: column;
+          height: auto;
+          top:30%;
         }
         p {
           font-weight: bold;
