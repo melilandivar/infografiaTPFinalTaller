@@ -3,6 +3,10 @@
   background-color: #e6fbe1;
 }
 
+.ocultar {
+  display: none !important;
+}
+
 /*
 
 
@@ -39,25 +43,54 @@
   margin-bottom: 2%;
 }
 
+.nucleo2__autopartes__contenedor {
+  width: auto;
+  height: 100px;
+  padding-right: 3%;
+  overflow-y: hidden;
+}
+
 .nucleo2__autopartes__item {
   background-color: #d1e8ba;
-  height: 89px;
-  width: 89px;
+  height: 100px;
+  width: 100px;
   border-radius: 50%;
-  display: inline-block;
-  margin-right: 3%;
   text-align: center;
 }
 
 .nucleo2__autopartes__item:hover {
   background-color: #9fd791;
-  height: 89px;
-  width: 89px;
   border: 2px solid #9fd791;
   border-radius: 50%;
-  display: inline-block;
+}
+
+.nucleo2__autopartes__item img {
+  position: relative;
+  width: 100%;
+}
+
+.nucleo2__autopartes__iconos {
+  position: relative;
+  top: -30px;
+  left: -1px;
+  font-size: 26px;
+  text-align: right;
+  color: #b13131;
 }
 /**/
+
+/*agregar/sacar icono */
+
+div#nucleo2_icono_agregar {
+  position: relative;
+  display: flex;
+  margin-left: 60px;
+}
+div#nucleo2_icono_eliminar {
+  position: absolute;
+  display: none;
+  margin-left: 60px;
+}
 
 /*
 
@@ -203,23 +236,6 @@ img#auto_nucleo2 {
 #item_nucleo3 img {
   padding-top: 10%;
   width: 55px;
-}
-
-/*agregar/sacar icono */
-
-#nucleo2_icono_agregar img {
-  width: 24px;
-}
-
-div#nucleo2_icono_agregar {
-  position: absolute;
-  display: flex;
-  margin-left: 60px;
-}
-div#nucleo2_icono_eliminar {
-  position: absolute;
-  display: none;
-  margin-left: 60px;
 }
 
 /*grafico */

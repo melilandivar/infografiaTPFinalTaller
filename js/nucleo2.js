@@ -22,14 +22,6 @@ function openPage(pageName, elmnt, color) {
 
 
 
-
-
-
-
-
-
-
-
 */
 //
 //
@@ -63,4 +55,70 @@ nucleo2__autoCombustion.onclick = function (e) {
   CambiarAutoPartes(autoPartes.motor, "img/nucleo2/motorCombustion.svg");
   CambiarAutoPartes(autoPartes.bateria, "img/nucleo2/bateriaCombustion.svg");
   CambiarAutoPartes(autoPartes.inversor, "img/nucleo2/inversorCombustion.svg");
+};
+
+/*
+
+
+*/
+
+/* //!PREGUNTAR A LOS PROFES. Js no esta remplazando el codigo html, si lo afecta pero no remplaza las lineas directamente
+function ShowOrHide(element) {
+  let mostrados = element.getElementsByClassName("mostrar");
+  let ocultos = element.getElementsByClassName("ocultar");
+
+  for (let i = 0; i < ocultos.length; i++) {
+    //ocultos[i].classList.add("mostrar");
+    //ocultos[i].classList.remove("ocultar");
+  }
+  for (let i = 0; i < mostrados.length; i++) {
+    mostrados[i].classList.add("ocultar");
+    //mostrados[i].classList.remove("mostrar");
+  }
+  console.log(mostrados);
+  console.log(ocultos);
+}
+autoPartes.carroceria.onclick = function (e) {
+  ShowOrHide(autoPartes.carroceria);
+};
+*/
+
+var itemsElectrico = [false, false, false, false, false];
+
+function ActivarItem(elemento, index) {
+  let iconos = elemento.getElementsByTagName("i");
+  iconos[0].style.cssText = "display: none !important";
+  iconos[1].style.cssText = "display: inline-block !important";
+  itemsElectrico[index] = true;
+}
+
+function DesactivarItem(elemento, index) {
+  let iconos = elemento.getElementsByTagName("i");
+  iconos[0].style.cssText = "display: inline-block !important";
+  iconos[1].style.cssText = "display: none !important";
+  itemsElectrico[index] = false;
+}
+
+function SeleccionarItem(elemento, index) {
+  if (!itemsElectrico[index]) {
+    ActivarItem(elemento, index);
+  } else {
+    DesactivarItem(elemento, index);
+  }
+}
+
+autoPartes.carroceria.onclick = function (e) {
+  SeleccionarItem(this, 0);
+};
+autoPartes.motor.onclick = function (e) {
+  SeleccionarItem(this, 0);
+};
+autoPartes.bateria.onclick = function (e) {
+  SeleccionarItem(this, 0);
+};
+autoPartes.inversor.onclick = function (e) {
+  SeleccionarItem(this, 0);
+};
+autoPartes.neumaticos.onclick = function (e) {
+  SeleccionarItem(this, 0);
 };

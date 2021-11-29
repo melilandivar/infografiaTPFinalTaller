@@ -15,7 +15,19 @@
     <link rel="stylesheet" href="css/nucleo5.css" />
     <link rel="stylesheet" href="css/menu.css" />
 
+    <!-- Link a RemixIcon-->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- Link a FontAwsome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <!-- Link a Bosstrap -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -28,41 +40,41 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto&display=swap" rel="stylesheet" />
 
-    <!--fin tipografias -->
+    <!--fin del head -->
   </head>
 
   <body>
     <!-- menu -->
-
     <div class="b-nav">
       <li>
         <a class="b-link" href="#nucleo1">
-          <img class="menu_numeros_romanos" src="img/numero_romano_I.svg" alt="Nucleo I" /> ¿Cómo se compone un auto
-          eléctrico?</a
-        >
+          <img class="menu_numeros_romanos" src="img/numero_romano_I.svg" alt="Nucleo I" />
+          <span>¿Cómo se compone un auto eléctrico?</span>
+        </a>
       </li>
       <li>
         <a class="b-link" href="#nucleo2">
-          <img class="menu_numeros_romanos" src="img/numero_romano_II.svg" alt="Nucleo II" /> Comparación de los
-          procesos de producción</a
-        >
+          <img class="menu_numeros_romanos" src="img/numero_romano_II.svg" alt="Nucleo II" />
+          <span>Comparación de losprocesos de producción</span>
+        </a>
       </li>
       <li>
         <a class="b-link" href="#nucleo3 ">
-          <img class="menu_numeros_romanos" src="img/numero_romano_III.svg" alt="Nucleo III" /> ¿Cuanto CO2 emites?</a
-        >
+          <img class="menu_numeros_romanos" src="img/numero_romano_III.svg" alt="Nucleo III" />
+          <span>¿Cuanto CO2 emites?</span>
+        </a>
       </li>
       <li>
         <a class="b-link" href="#nucleo4">
-          <img class="menu_numeros_romanos" src="img/numero_romano_IV.svg" alt="Nucleo IV" /> Ventajas y desventajas del
-          uso diario de los autos electricos.
+          <img class="menu_numeros_romanos" src="img/numero_romano_IV.svg" alt="Nucleo IV" />
+          <span>Ventajas y desventajas del uso diario de los autos electricos</span>
         </a>
       </li>
       <li>
         <a class="b-link" href="#nucleo5">
-          <img class="menu_numeros_romanos" src="img/numero_romano_V.svg" alt="Nucleo V" /> ¿Por qué deberia adquirir un
-          auto eléctrico?</a
-        >
+          <img class="menu_numeros_romanos" src="img/numero_romano_V.svg" alt="Nucleo V" />
+          <span>¿Por qué deberia adquirir un auto eléctrico?</span>
+        </a>
       </li>
     </div>
 
@@ -206,121 +218,67 @@
 
         <div class="nucleo2__autopartes">
           <!-- Carroceria -->
-          <div class="nucleo2__autopartes__item" id="nucleo2__carroceria">
-            <img src="img/nucleo2/carroceria.svg" />
-            <div class="nucleo2_icono_eliminar" id="nucleo2_icono_eliminar">
-              <svg id="quitar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                <path fill="none" d="M0 0h24v24H0z" />
-                <path
-                  d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zM7 11v2h10v-2H7z"
-                  fill="rgba(177,49,49,1)"
-                />
-              </svg>
+          <div class="nucleo2__autopartes__contenedor" id="nucleo2__carroceria">
+            <div class="nucleo2__autopartes__item">
+              <img src="img/nucleo2/carroceria.svg" />
             </div>
-            <div id="nucleo2_icono_agregar">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                <path fill="none" d="M0 0h24v24H0z" />
-                <path
-                  d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-1-11H7v2h4v4h2v-4h4v-2h-4V7h-2v4z"
-                  fill="rgba(132,195,116,1)"
-                />
-              </svg>
+            <!-- Iconos -->
+            <div class="nucleo2__autopartes__iconos">
+              <i class="fas fa-plus-circle"></i>
+              <i class="fas fa-minus-circle ocultar"></i>
             </div>
           </div>
 
           <!-- Motor -->
-          <div class="nucleo2__autopartes__item" id="nucleo2__motor">
-            <img src="img/nucleo2/motorElectrico.svg" />
-            <div class="nucleo2_icono_eliminar" id="nucleo2_icono_eliminar">
-              <svg id="quitar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                <path fill="none" d="M0 0h24v24H0z" />
-                <path
-                  d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zM7 11v2h10v-2H7z"
-                  fill="rgba(177,49,49,1)"
-                />
-              </svg>
+          <div class="nucleo2__autopartes__contenedor" id="nucleo2__motor">
+            <div class="nucleo2__autopartes__item">
+              <img src="img/nucleo2/motorElectrico.svg" />
             </div>
-            <div id="nucleo2_icono_agregar">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                <path fill="none" d="M0 0h24v24H0z" />
-                <path
-                  d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-1-11H7v2h4v4h2v-4h4v-2h-4V7h-2v4z"
-                  fill="rgba(132,195,116,1)"
-                />
-              </svg>
+            <!-- Iconos -->
+            <div class="nucleo2__autopartes__iconos">
+              <i class="fas fa-plus-circle"></i>
+              <i class="fas fa-minus-circle ocultar"></i>
             </div>
           </div>
 
           <!-- Bateria -->
-          <div class="nucleo2__autopartes__item" id="nucleo2__bateria">
-            <img src="img/nucleo2/bateriaElectrico.svg" />
-            <div class="nucleo2_icono_eliminar" id="nucleo2_icono_eliminar">
-              <svg id="quitar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                <path fill="none" d="M0 0h24v24H0z" />
-                <path
-                  d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zM7 11v2h10v-2H7z"
-                  fill="rgba(177,49,49,1)"
-                />
-              </svg>
+          <div class="nucleo2__autopartes__contenedor" id="nucleo2__bateria">
+            <div class="nucleo2__autopartes__item">
+              <img src="img/nucleo2/bateriaElectrico.svg" />
             </div>
-            <div id="nucleo2_icono_agregar">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                <path fill="none" d="M0 0h24v24H0z" />
-                <path
-                  d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-1-11H7v2h4v4h2v-4h4v-2h-4V7h-2v4z"
-                  fill="rgba(132,195,116,1)"
-                />
-              </svg>
+            <!-- Iconos -->
+            <div class="nucleo2__autopartes__iconos">
+              <i class="fas fa-plus-circle"></i>
+              <i class="fas fa-minus-circle ocultar"></i>
             </div>
           </div>
 
           <!-- Inversor/Aceite -->
-          <div class="nucleo2__autopartes__item" id="nucleo2__inversor">
-            <img src="img/nucleo2/inversorElectrico.svg" />
-            <div class="nucleo2_icono_eliminar" id="nucleo2_icono_eliminar">
-              <svg id="quitar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                <path fill="none" d="M0 0h24v24H0z" />
-                <path
-                  d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zM7 11v2h10v-2H7z"
-                  fill="rgba(177,49,49,1)"
-                />
-              </svg>
+          <div class="nucleo2__autopartes__contenedor" id="nucleo2__inversor">
+            <div class="nucleo2__autopartes__item">
+              <img src="img/nucleo2/inversorElectrico.svg" />
             </div>
-            <div id="nucleo2_icono_agregar">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                <path fill="none" d="M0 0h24v24H0z" />
-                <path
-                  d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-1-11H7v2h4v4h2v-4h4v-2h-4V7h-2v4z"
-                  fill="rgba(132,195,116,1)"
-                />
-              </svg>
+            <!-- Iconos -->
+            <div class="nucleo2__autopartes__iconos">
+              <i class="fas fa-plus-circle"></i>
+              <i class="fas fa-minus-circle ocultar"></i>
             </div>
           </div>
 
           <!-- Neumaticos -->
-          <div class="nucleo2__autopartes__item" id="nucleo2__neumatico">
-            <img src="img/nucleo2/neumatico.svg" />
-            <div class="nucleo2_icono_eliminar" id="nucleo2_icono_eliminar">
-              <svg id="quitar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                <path fill="none" d="M0 0h24v24H0z" />
-                <path
-                  d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zM7 11v2h10v-2H7z"
-                  fill="rgba(177,49,49,1)"
-                />
-              </svg>
+          <div class="nucleo2__autopartes__contenedor" id="nucleo2__neumaticos">
+            <div class="nucleo2__autopartes__item">
+              <img src="img/nucleo2/neumatico.svg" />
             </div>
-            <div id="nucleo2_icono_agregar">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                <path fill="none" d="M0 0h24v24H0z" />
-                <path
-                  d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-1-11H7v2h4v4h2v-4h4v-2h-4V7h-2v4z"
-                  fill="rgba(132,195,116,1)"
-                />
-              </svg>
+            <!-- Iconos -->
+            <div class="nucleo2__autopartes__iconos">
+              <i class="fas fa-plus-circle"></i>
+              <i class="fas fa-minus-circle ocultar"></i>
             </div>
           </div>
         </div>
 
+        <!--Grafico-->
         <div class="nucleo2_auto_grafico" id="nucleo2_auto_grafico">
           <img src="img/nucleo2_auto_electico_1.svg" alt="" />
         </div>
