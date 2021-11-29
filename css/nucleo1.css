@@ -74,6 +74,7 @@
        position: absolute;
        top:42%;
        left:39%;
+       width: 40px;
    }
    #bateriaLitio {
        display: none;
