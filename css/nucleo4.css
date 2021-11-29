@@ -113,7 +113,9 @@
           position: absolute;
           text-align: center;
           align-items: center;
-          top:50%;
+          flex-direction: column;
+          height: auto;
+          top:30%;
         }
         #oculta4-2 {
           display: none;
@@ -156,4 +158,20 @@
           color: #84c374;
           font-size: 72px;
           font-weight: bold;
+        }
+
+        .txt4-1{
+          height: auto;
+
+        }
+        .img4-1{
+position: relative;
+height: 500px;
+
+        }
+
+        #oculta4-1 .img4-1 img{
+          position: relative;
+          top:60%;
+
         }

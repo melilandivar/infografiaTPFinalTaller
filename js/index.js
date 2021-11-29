@@ -211,13 +211,104 @@ function progreso() {
 
 /*FUNCIONES NUCLEO 4*/
 
-function mostrarElementos() {
+function mostrarItem1() {
   console.log("lementso");
 
   if(document.getElementById('oculta4-1').style.display='none') { //si se puede agregar 
-    document.getElementById('oculta4-1').style.display='flex'; 
-  }
+    document.getElementById('oculta4-1').style.display='flex';
+    document.getElementById('oculta4-2').style.display='none'; 
+     
+  } 
+ 
 }
+
+function mostrarItem2() {
+  console.log("lementso");
+
+  if(document.getElementById('oculta4-2').style.display='none') { //si se puede agregar 
+    document.getElementById('oculta4-2').style.display='flex'; 
+    document.getElementById('oculta4-1').style.display='none';
+     
+  } 
+ 
+}
+function mostrarItem3() {
+  console.log("lementso");
+
+  if(document.getElementById('oculta4-3').style.display='none') { //si se puede agregar 
+    document.getElementById('oculta4-3').style.display='flex'; 
+    document.getElementById('oculta4-1').style.display='none';
+    document.getElementById('oculta4-2').style.display='none';
+    document.getElementById('oculta4-4').style.display='none';
+    document.getElementById('oculta4-5').style.display='none';
+    document.getElementById('oculta4-6').style.display='none';
+    document.getElementById('oculta4-7').style.display='none';
+     
+  } 
+ 
+}
+function mostrarItem4() {
+  console.log("lementso");
+
+  if(document.getElementById('oculta4-4').style.display='none') { //si se puede agregar 
+    document.getElementById('oculta4-4').style.display='flex'; 
+    document.getElementById('oculta4-1').style.display='none';
+    document.getElementById('oculta4-2').style.display='none';
+    document.getElementById('oculta4-3').style.display='none';
+    document.getElementById('oculta4-5').style.display='none';
+    document.getElementById('oculta4-6').style.display='none';
+    document.getElementById('oculta4-7').style.display='none';
+     
+  } 
+ 
+}
+function mostrarItem5() {
+  console.log("lementso");
+
+  if(document.getElementById('oculta4-5').style.display='none') { //si se puede agregar 
+    document.getElementById('oculta4-5').style.display='flex'; 
+    document.getElementById('oculta4-1').style.display='none';
+    document.getElementById('oculta4-2').style.display='none';
+    document.getElementById('oculta4-3').style.display='none';
+    document.getElementById('oculta4-4').style.display='none';
+    document.getElementById('oculta4-6').style.display='none';
+    document.getElementById('oculta4-7').style.display='none';
+     
+  } 
+ 
+}
+function mostrarItem6() {
+  console.log("lementso");
+
+  if(document.getElementById('oculta4-6').style.display='none') { //si se puede agregar 
+    document.getElementById('oculta4-6').style.display='flex'; 
+    document.getElementById('oculta4-1').style.display='none';
+    document.getElementById('oculta4-2').style.display='none';
+    document.getElementById('oculta4-3').style.display='none';
+    document.getElementById('oculta4-4').style.display='none';
+    document.getElementById('oculta4-5').style.display='none';
+    document.getElementById('oculta4-7').style.display='none';
+     
+  } 
+ 
+}
+function mostrarItem7() {
+  console.log("lementso");
+
+  if(document.getElementById('oculta4-7').style.display='none') { //si se puede agregar 
+    document.getElementById('oculta4-7').style.display='flex'; 
+    document.getElementById('oculta4-1').style.display='none';
+    document.getElementById('oculta4-2').style.display='none';
+    document.getElementById('oculta4-3').style.display='none';
+    document.getElementById('oculta4-4').style.display='none';
+    document.getElementById('oculta4-5').style.display='none';
+    document.getElementById('oculta4-6').style.display='none';
+     
+  } 
+ 
+}
+
+
 
 /*FIN NUCLEO 4*/
  
