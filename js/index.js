@@ -216,7 +216,12 @@ function mostrarItem1() {
 
   if(document.getElementById('oculta4-1').style.display='none') { //si se puede agregar 
     document.getElementById('oculta4-1').style.display='flex';
-    document.getElementById('oculta4-2').style.display='none'; 
+    document.getElementById('oculta4-2').style.display='none';
+    document.getElementById('oculta4-3').style.display='none';
+    document.getElementById('oculta4-4').style.display='none';
+    document.getElementById('oculta4-5').style.display='none';
+    document.getElementById('oculta4-6').style.display='none';
+    document.getElementById('oculta4-7').style.display='none'; 
      
   } 
  
@@ -228,6 +233,11 @@ function mostrarItem2() {
   if(document.getElementById('oculta4-2').style.display='none') { //si se puede agregar 
     document.getElementById('oculta4-2').style.display='flex'; 
     document.getElementById('oculta4-1').style.display='none';
+    document.getElementById('oculta4-3').style.display='none';
+    document.getElementById('oculta4-4').style.display='none';
+    document.getElementById('oculta4-5').style.display='none';
+    document.getElementById('oculta4-6').style.display='none';
+    document.getElementById('oculta4-7').style.display='none';
      
   } 
  
