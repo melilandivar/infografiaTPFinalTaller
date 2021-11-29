@@ -55,13 +55,8 @@
   height: 100px;
   width: 100px;
   border-radius: 50%;
+  border-color: transparent;
   text-align: center;
-}
-
-.nucleo2__autopartes__item:hover {
-  background-color: #9fd791;
-  border: 2px solid #9fd791;
-  border-radius: 50%;
 }
 
 .nucleo2__autopartes__item img {
@@ -75,6 +70,13 @@
   left: -1px;
   font-size: 26px;
   text-align: right;
+}
+
+.nucleo2__autopartes__iconos i:nth-child(1) {
+  color: #84c374;
+}
+
+.nucleo2__autopartes__iconos i:nth-child(2) {
   color: #b13131;
 }
 /**/

@@ -1,63 +1,112 @@
-function openPage(pageName, elmnt, color) {
-  /*
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].style.backgroundColor = "";
-  }
-  document.getElementById(pageName).style.display = "flex";
-  elmnt.style.backgroundColor = color;
-  */
-}
-
-// Get the element with id="defaultOpen" and click on it
-//document.getElementById("defaultOpen").click();
-
-/*
-
-
-
-
-*/
-//
-//
-//Edit
-let autoPartes = {
-  carroceria: document.getElementById("nucleo2__carroceria"),
-  motor: document.getElementById("nucleo2__motor"),
-  bateria: document.getElementById("nucleo2__bateria"),
-  inversor: document.getElementById("nucleo2__inversor"),
-  neumaticos: document.getElementById("nucleo2__neumaticos"),
-};
+//Variables
+let autoPartes = [
+  document.getElementById("nucleo2__carroceria"),
+  document.getElementById("nucleo2__motor"),
+  document.getElementById("nucleo2__bateria"),
+  document.getElementById("nucleo2__inversor"),
+  document.getElementById("nucleo2__neumaticos"),
+];
 let nucleo2__autoElectrico = document.getElementById("nucleo2__autoElectrico");
 let nucleo2__autoCombustion = document.getElementById("nucleo2__autoCombustion");
 
-function CambiarAutoPartes(elemento, ruta) {
-  let imagen = elemento.getElementsByTagName("img")[0];
-  imagen.src = ruta;
-  console.log(imagen.src);
-  //elemento.getElementsByTagName("img")[0].src = ruta;
+let eligioElectrico = true;
+let estaActivadoItemElectrico = [false, false, false, false, false];
+let estaActivadoItemCombustion = [false, false, false, false, false];
+
+//----- Listener -----
+//Seleccion de auto electrico
+nucleo2__autoElectrico.onclick = function (e) {
+  eligioElectrico = true;
+  nucleo[2].style.backgroundColor = "#E6FBE1";
+  CambiarImagenAutoPartes(autoPartes[1], "img/nucleo2/motorElectrico.svg");
+  CambiarImagenAutoPartes(autoPartes[2], "img/nucleo2/bateriaElectrico.svg");
+  CambiarImagenAutoPartes(autoPartes[3], "img/nucleo2/inversorElectrico.svg");
+  ActulizarAutoPartesItems();
+};
+
+//Seleccion de auto a combustion
+nucleo2__autoCombustion.onclick = function (e) {
+  eligioElectrico = false;
+  nucleo[2].style.backgroundColor = "#FFE3DF";
+  CambiarImagenAutoPartes(autoPartes[1], "img/nucleo2/motorCombustion.svg");
+  CambiarImagenAutoPartes(autoPartes[2], "img/nucleo2/bateriaCombustion.svg");
+  CambiarImagenAutoPartes(autoPartes[3], "img/nucleo2/inversorCombustion.svg");
+  ActulizarAutoPartesItems();
+};
+
+//Seleccion de items
+for (let i = 0; i < autoPartes.length; i++) {
+  autoPartes[i].onclick = function (e) {
+    ActivarODesactivarItem(this, i);
+  };
 }
 
-nucleo2__autoElectrico.onclick = function (e) {
-  nucleo[2].style.backgroundColor = "#E6FBE1";
-  CambiarAutoPartes(autoPartes.motor, "img/nucleo2/motorElectrico.svg");
-  CambiarAutoPartes(autoPartes.bateria, "img/nucleo2/bateriaElectrico.svg");
-  CambiarAutoPartes(autoPartes.inversor, "img/nucleo2/inversorElectrico.svg");
-};
+//----- Funciones ------
+function CambiarImagenAutoPartes(elemento, ruta) {
+  let imagen = elemento.getElementsByTagName("img")[0];
+  imagen.src = ruta;
+}
 
-nucleo2__autoCombustion.onclick = function (e) {
-  nucleo[2].style.backgroundColor = "#FFE3DF";
-  CambiarAutoPartes(autoPartes.motor, "img/nucleo2/motorCombustion.svg");
-  CambiarAutoPartes(autoPartes.bateria, "img/nucleo2/bateriaCombustion.svg");
-  CambiarAutoPartes(autoPartes.inversor, "img/nucleo2/inversorCombustion.svg");
-};
+function CambiarFondoItem(item, colorElectrico, colorCombustion) {
+  let fondoDelItem = item.getElementsByTagName("div")[0];
+  if (eligioElectrico) {
+    fondoDelItem.style.backgroundColor = colorElectrico;
+  } else {
+    fondoDelItem.style.backgroundColor = colorCombustion;
+  }
+}
+
+function ActivarItem(item, index) {
+  let iconos = item.getElementsByTagName("i");
+  iconos[0].style.cssText = "display: none !important";
+  iconos[1].style.cssText = "display: inline-block !important";
+  CambiarFondoItem(item, "#84C374", "#84C374");
+
+  if (eligioElectrico) estaActivadoItemElectrico[index] = true;
+  else estaActivadoItemCombustion[index] = true;
+}
+
+function DesactivarItem(item, index) {
+  let iconos = item.getElementsByTagName("i");
+  iconos[0].style.cssText = "display: inline-block !important";
+  iconos[1].style.cssText = "display: none !important";
+  CambiarFondoItem(item, "#D1E8BA", "#FFCBC3");
+
+  if (eligioElectrico) estaActivadoItemElectrico[index] = false;
+  else estaActivadoItemCombustion[index] = false;
+}
+
+function ActivarODesactivarItem(elemento, index) {
+  if (eligioElectrico) {
+    if (!estaActivadoItemElectrico[index]) ActivarItem(elemento, index);
+    else DesactivarItem(elemento, index);
+  }
+  if (!eligioElectrico) {
+    if (!estaActivadoItemCombustion[index]) ActivarItem(elemento, index);
+    else DesactivarItem(elemento, index);
+  }
+}
+
+function ActulizarAutoPartesItems() {
+  if (eligioElectrico == true) {
+    for (let i = 0; i < autoPartes.length; i++) {
+      if (estaActivadoItemElectrico[i]) ActivarItem(autoPartes[i], i);
+      else DesactivarItem(autoPartes[i], i);
+    }
+  }
+  if (eligioElectrico == false) {
+    for (let i = 0; i < autoPartes.length; i++) {
+      if (estaActivadoItemCombustion[i]) ActivarItem(autoPartes[i], i);
+      else DesactivarItem(autoPartes[i], i);
+    }
+  }
+}
 
 /*
+
+
+
+
 
 
 */
@@ -82,43 +131,3 @@ autoPartes.carroceria.onclick = function (e) {
   ShowOrHide(autoPartes.carroceria);
 };
 */
-
-var itemsElectrico = [false, false, false, false, false];
-
-function ActivarItem(elemento, index) {
-  let iconos = elemento.getElementsByTagName("i");
-  iconos[0].style.cssText = "display: none !important";
-  iconos[1].style.cssText = "display: inline-block !important";
-  itemsElectrico[index] = true;
-}
-
-function DesactivarItem(elemento, index) {
-  let iconos = elemento.getElementsByTagName("i");
-  iconos[0].style.cssText = "display: inline-block !important";
-  iconos[1].style.cssText = "display: none !important";
-  itemsElectrico[index] = false;
-}
-
-function SeleccionarItem(elemento, index) {
-  if (!itemsElectrico[index]) {
-    ActivarItem(elemento, index);
-  } else {
-    DesactivarItem(elemento, index);
-  }
-}
-
-autoPartes.carroceria.onclick = function (e) {
-  SeleccionarItem(this, 0);
-};
-autoPartes.motor.onclick = function (e) {
-  SeleccionarItem(this, 0);
-};
-autoPartes.bateria.onclick = function (e) {
-  SeleccionarItem(this, 0);
-};
-autoPartes.inversor.onclick = function (e) {
-  SeleccionarItem(this, 0);
-};
-autoPartes.neumaticos.onclick = function (e) {
-  SeleccionarItem(this, 0);
-};
