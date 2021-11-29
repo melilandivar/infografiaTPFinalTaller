@@ -318,7 +318,5 @@ function mostrarItem7() {
  
 }
 
-
-
 /*FIN NUCLEO 4*/
  
