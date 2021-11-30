@@ -23,7 +23,7 @@ botonAutoElectrico.onclick = function (e) {
   CambiarImagen(autoPartes[2], "img/nucleo2/bateriaElectrico.svg");
   CambiarImagen(autoPartes[3], "img/nucleo2/inversorElectrico.svg");
   ActulizarAutoPartesItems();
-  MostrarAuto();
+  CambiarAuto();
 };
 
 //Seleccion de auto a combustion
@@ -34,14 +34,14 @@ botonAutoCombustion.onclick = function (e) {
   CambiarImagen(autoPartes[2], "img/nucleo2/bateriaCombustion.svg");
   CambiarImagen(autoPartes[3], "img/nucleo2/inversorCombustion.svg");
   ActulizarAutoPartesItems();
-  MostrarAuto();
+  CambiarAuto();
 };
 
 //Seleccion de items
 for (let i = 0; i < autoPartes.length; i++) {
   autoPartes[i].onclick = function (e) {
     ActivarODesactivarItem(this, i);
-    MostrarAuto();
+    CambiarAuto();
   };
 }
 
@@ -106,7 +106,7 @@ function ActulizarAutoPartesItems() {
   }
 }
 
-function MostrarAuto() {
+function CambiarAuto() {
   if (eligioElectrico == true) {
     if (estaActivadoItemElectrico[0] == false && estaActivadoItemElectrico[4] == false)
       CambiarImagen(nucleo2__auto, "img/nucleo2/autoElectricoPlaceHolder.svg");

@@ -2,34 +2,39 @@
   margin: 0;
   padding: 0;
 }
+
+html {
+  font-size: 1px !important;
+}
+
 body {
   background-color: #e6fbe1;
 }
 
 h1 {
   font-family: "Oswald", sans-serif;
-  font-size: 42px;
-  margin-bottom: 5px !important;
-  margin-top: 0px;
+  font-size: 42rem;
+  margin-bottom: 5rem !important;
+  margin-top: 0rem;
   overflow-y: hidden;
 }
 
 p {
   font-family: "Roboto", sans-serif;
-  font-size: 24px;
+  font-size: 24rem;
 }
 
 h2,
 h3,
 h4 {
   font-family: "Roboto", sans-serif;
-  font-size: 28px;
-  margin-bottom: 24px !important;
-  margin-top: 0px;
+  font-size: 28rem;
+  margin-bottom: 24rem !important;
+  margin-top: 0rem;
 }
 
 h5 {
-  font-size: 36px;
+  font-size: 36rem;
   font-weight: bold;
   font-family: "Oswald", sans-serif;
 }
@@ -37,12 +42,12 @@ h5 {
 button {
   border: none !important;
   font-family: "Roboto", sans-serif;
-  font-size: 28px;
+  font-size: 28rem;
   font-weight: bold;
   background-color: #84c374;
-  border-radius: 20px !important;
-  padding: 6px 20px;
-  box-shadow: 2px 8px 11px 2px rgb(0 0 0 / 10%);
+  border-radius: 20rem !important;
+  padding: 6rem 20rem;
+  box-shadow: 2rem 8rem 11rem 2rem rgb(0 0 0 / 10%);
 }
 
 button,
@@ -66,13 +71,13 @@ button:focus {
 /*BOTON NUCLEO Y ACTIVA EL AUTO */
 
 #boton {
-  padding: 10px;
+  padding: 10rem;
   background: orange;
-  width: 95px;
+  width: 95rem;
   cursor: pointer;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  box-shadow: 0px 0px 1px #000;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  box-shadow: 0rem 0rem 1rem #000;
   display: inline-block;
 }
 
@@ -87,7 +92,7 @@ button:focus {
 .nucleo0__auto-estatico {
   position: absolute;
   left: -10%;
-  bottom: 100px;
+  bottom: 100rem;
   transform: translateX(-50%);
 }
 
@@ -101,7 +106,7 @@ button:focus {
 
 @keyframes car {
   100% {
-    transform: translateX(3600px);
+    transform: translateX(3600rem);
   }
 }
 
@@ -124,11 +129,11 @@ button:focus {
   top: 50%;
   left: 45%;
   width: auto;
-  /* height: 400px; */
-  margin-top: -200px;
-  margin-left: -300px;
-  margin-bottom: 0px;
-  padding: 0px;
+  /* height: 400rem; */
+  margin-top: -200rem;
+  margin-left: -300rem;
+  margin-bottom: 0rem;
+  padding: 0rem;
 }
 /* CSS BARRA DE PROGRESO */
 
@@ -138,8 +143,8 @@ button:focus {
   --track-bg: hsl(137 59% 73%);
 
   inline-size: 50vmin;
-  min-inline-size: 100px;
-  min-block-size: 100px;
+  min-inline-size: 100rem;
+  min-block-size: 100rem;
   display: grid;
   place-items: center;
   position: relative;

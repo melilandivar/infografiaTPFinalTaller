@@ -22,7 +22,7 @@
   justify-content: center;
   align-content: center;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 50rem;
 }
 
 .nucleo2__header__botones {
@@ -31,11 +31,11 @@
 }
 
 .nucleo2__header__botones__item {
-  margin-top: 20px;
-  padding: 0 16px;
-  font-size: 28px;
+  margin-top: 20rem;
+  padding: 0 16rem;
+  font-size: 28rem;
   box-shadow: none;
-  border-radius: 0px;
+  border-radius: 0rem;
   background-color: transparent;
 }
 
@@ -50,15 +50,15 @@
 
 .nucleo2__autopartes__contenedor {
   width: auto;
-  height: 100px;
+  height: 100rem;
   padding-right: 3%;
   overflow-y: hidden;
 }
 
 .nucleo2__autopartes__item {
   background-color: #d1e8ba;
-  height: 100px;
-  width: 100px;
+  height: 100rem;
+  width: 100rem;
   border-radius: 50%;
   border-color: transparent;
   text-align: center;
@@ -71,9 +71,9 @@
 
 .nucleo2__autopartes__iconos {
   position: relative;
-  top: -30px;
-  left: -1px;
-  font-size: 26px;
+  top: -30rem;
+  left: -1rem;
+  font-size: 26rem;
   text-align: right;
 }
 
@@ -89,17 +89,72 @@
 .nucleo2__auto {
   display: flex;
   justify-content: center;
-  min-height: 210px;
+  min-height: 210rem;
   height: 27vh;
   width: 100%;
 }
 
 .nucleo2__auto img {
   align-self: flex-end;
-  /*min-height: 208px;*/
+  /*min-height: 208rem;*/
   height: 100%;
 }
-/**/
+
+/*
+
+*/
+
+.nucleo2__resultados {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 200rem;
+  margin-top: 32rem;
+}
+
+.nucleo2__resultados__electricos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  background-color: #b6e9aa;
+}
+
+.nucleo2__resultados__electricos h2 {
+  font-size: 54rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.nucleo2__resultados__electricos p {
+  font-size: 18rem;
+  font-weight: normal;
+  margin-top: -10rem;
+  margin-bottom: 0;
+}
+
+.nucleo2__resultados__electricos__iconos {
+  display: flex;
+  flex-direction: row;
+}
+
+.nucleo2__resultados__electricos__iconos img {
+  display: flex;
+  flex-direction: row;
+}
+
+/*
+
+
+*/
+.nucleo2_resultados_combustion {
+  background-color: #e3a69e;
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
 
 /*
 
@@ -129,9 +184,9 @@ EStilos viejos
   width: 100%;
   height: 30%;
   display: flex;
-  margin: 0px;
+  margin: 0rem;
   flex-direction: row;
-  padding-left: 0px;
+  padding-left: 0rem;
 }
 
 .nucleo2_grafico_resultados_electrico {
@@ -150,19 +205,19 @@ EStilos viejos
 }
 #item_nucleo2 img {
   padding-top: 10%;
-  width: 55px;
+  width: 55rem;
 }
 #item_nucleo2_combustion img {
   padding-top: 10%;
-  width: 55px;
+  width: 55rem;
 }
 #item_nucleo2_combustion {
   overflow-y: hidden;
 }
 #item_nucleo2_combustion {
   background-color: #ffcbc3;
-  height: 89px;
-  width: 89px;
+  height: 89rem;
+  width: 89rem;
   border-radius: 50%;
   display: inline-block;
   margin-right: 3%;
@@ -171,42 +226,16 @@ EStilos viejos
 
 #item_nucleo2_combustion:hover {
   background-color: #9fd791;
-  height: 89px;
-  width: 89px;
-  border: 2px solid #9fd791;
+  height: 89rem;
+  width: 89rem;
+  border: 2rem solid #9fd791;
   border-radius: 50%;
   display: inline-block;
 }
 
 #item_nucleo3 img {
   padding-top: 10%;
-  width: 55px;
+  width: 55rem;
 }
 
 /*grafico */
-
-.nucleo2_div_resultados {
-  display: flex;
-  width: 100%;
-  height: 200px;
-  margin-top: 32px;
-  flex-direction: row;
-}
-
-.nucleo2_resultados_electricos {
-  background-color: #b6e9aa;
-  display: flex;
-  width: 50%;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-}
-
-.nucleo2_resultados_combustion {
-  background-color: #e3a69e;
-  display: flex;
-  width: 50%;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-}

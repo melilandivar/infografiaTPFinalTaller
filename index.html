@@ -5,15 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Infografía | Autos electricos</title>
 
-    <!--Links a css-->
-    <link rel="stylesheet" href="css/estilos.css" />
-    <link rel="stylesheet" href="css/carrete.css" />
-    <link rel="stylesheet" href="css/nucleo1.css" />
-    <link rel="stylesheet" href="css/nucleo2.css" />
-    <link rel="stylesheet" href="css/nucleo3.css" />
-    <link rel="stylesheet" href="css/nucleo4.css" />
-    <link rel="stylesheet" href="css/nucleo5.css" />
-    <link rel="stylesheet" href="css/menu.css" />
+    <!-- Link a Bosstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
 
     <!-- Link a RemixIcon-->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
@@ -27,18 +25,20 @@
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-    <!-- Link a Bosstrap -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
-
     <!--tipografias-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto&display=swap" rel="stylesheet" />
+
+    <!--Links a css-->
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="css/carrete.css" />
+    <link rel="stylesheet" href="css/nucleo1.css" />
+    <link rel="stylesheet" href="css/nucleo2.css" />
+    <link rel="stylesheet" href="css/nucleo3.css" />
+    <link rel="stylesheet" href="css/nucleo4.css" />
+    <link rel="stylesheet" href="css/nucleo5.css" />
+    <link rel="stylesheet" href="css/menu.css" />
 
     <!--fin del head -->
   </head>
@@ -109,7 +109,7 @@
         <!--Fin de Nucleo 0-->
       </div>
 
-       <!-- NUCLEO 1 -->  
+      <!-- NUCLEO 1 -->
 
       <div id="nucleo1">
         <div class="contenedor_nucleo1">
@@ -194,56 +194,45 @@
                 </div>
                 <p id="titulos_iconos_nucleo1">Motor eléctrico</p>
               </div>
-                      <!-- MODOS DE CARGA-->  
-              <div class="item1" id="CargaLenta_nucleo1" >
+              <!-- MODOS DE CARGA-->
+              <div class="item1" id="CargaLenta_nucleo1">
                 <p>1</p>
-                                   
+
                 <p id="titulos_iconos_nucleo1">Carga Lenta</p>
-               </div>
-               <div class="item2" id="CargaSemiRapida_nucleo1" >
+              </div>
+              <div class="item2" id="CargaSemiRapida_nucleo1">
                 <p>2</p>
-                                   
+
                 <p id="titulos_iconos_nucleo1">Carga Semi-Rapida</p>
-               </div>
-               <div class="item3" id="CargaRapida_nucleo1" >
+              </div>
+              <div class="item3" id="CargaRapida_nucleo1">
                 <p>2</p>
-                                   
+
                 <p id="titulos_iconos_nucleo1">Carga Rapida</p>
-               </div>
-
-
+              </div>
             </div>
-            
-
-
           </div>
           <div class="nucleo1_grafico">
             <img src="img/cuerpo_auto_nucleo1.png" alt="" />
           </div>
-         </div>
-    
+        </div>
 
-         <div id="infoModosDeCarga" onclick="modosDeCarga()" >
+        <div id="infoModosDeCarga" onclick="modosDeCarga()">
           <p>mas info sobre los modos de carga</p>
-                    
+        </div>
+        <div class="ConexionCargaLenta" id="CargaLenta_secuencia">
+          <div class="itemX" id="itemX_Torre" onclick="torre()">
+            <img src="img/Nucleo1/TorreElectrica.svg" alt="Torre" />
+            <p id="txt_torre">Corriente máxima: 16 Amperios hasta 250 Voltios</p>
           </div>
-          <div class="ConexionCargaLenta" id="CargaLenta_secuencia">
-               <div class="itemX" id="itemX_Torre" onclick="torre()" > <img src="img/Nucleo1/TorreElectrica.svg" alt="Torre">
-                        <p id="txt_torre">Corriente máxima:
-                          16 Amperios 
-                          hasta 250 Voltios</p>
-              </div>
-               <div class="itemX"><img src="img/Nucleo1/Casa.svg" alt="Casa"></div>
-               <div class="itemX"><img src="img/Nucleo1/Conector.svg" alt="Conector"></div>
-               <div class="itemX"><img src="img/Nucleo1/CulataAuto.svg" alt="CulataAuto"></div>
-                   
-            
-          </div>
+          <div class="itemX"><img src="img/Nucleo1/Casa.svg" alt="Casa" /></div>
+          <div class="itemX"><img src="img/Nucleo1/Conector.svg" alt="Conector" /></div>
+          <div class="itemX"><img src="img/Nucleo1/CulataAuto.svg" alt="CulataAuto" /></div>
+        </div>
+      </div>
 
-         </div>
+      <!-- FIN NUCLEO 1 -->
 
-      <!-- FIN NUCLEO 1 -->  
-      
       <!-- NUCLEO 2 -->
       <div id="nucleo2">
         <div class="nucleo2__header">
@@ -318,19 +307,23 @@
         </div>
         <!-- Fin de seleccion de auto partes-->
 
-        <!-- Grafico -->
+        <!-- Auto -->
         <div class="nucleo2__auto" id="nucleo2__auto">
-          <img src="img/nucleo2/autoElectricoPlaceHolder.svg" alt="" />
+          <img src="img/nucleo2/autoElectricoPlaceHolder.svg" />
         </div>
 
         <!-- Resultados Inferiores-->
-        <div class="nucleo2_div_resultados">
-          <div class="nucleo2_resultados_electricos">
-            <img src="img/nucleo2_icono_carroceria.png" alt="carroceria" />
-            <img src="img/nucleo2_icono_motor.png" alt="motor" />
-            <img src="img/nucleo2_icono_bateria.png" alt="bateria" />
-            <img src="img/nucleo2_icono_inversor.png" alt="inversor" />
-            <img src="img/nucleo2_icono_neumatico.png" alt="neumatico" />
+        <div class="nucleo2__resultados">
+          <div class="nucleo2__resultados__electricos">
+            <h2 id="resultadosElectricos">0</h2>
+            <p>KgCO2</p>
+            <div class="nucleo2__resultados__electricos__iconos">
+              <img src="img/nucleo2_icono_carroceria.png" alt="carroceria" />
+              <img src="img/nucleo2_icono_motor.png" alt="motor" />
+              <img src="img/nucleo2_icono_bateria.png" alt="bateria" />
+              <img src="img/nucleo2_icono_inversor.png" alt="inversor" />
+              <img src="img/nucleo2_icono_neumatico.png" alt="neumatico" />
+            </div>
           </div>
           <div class="nucleo2_resultados_combustion">
             <img src="img/nucleo2_icono_carroceria.png" alt="carroceria" />

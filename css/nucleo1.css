@@ -1,207 +1,196 @@
 .contenedor_nucleo1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    margin-top: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-top: 3%;
 }
 
-.nucleo1_contenido{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
+.nucleo1_contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.nucleo1_items{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    margin-bottom: 100px;
+.nucleo1_items {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 100px;
 }
 #titulos_iconos_nucleo1 {
-    position: fixed;
-    margin-top: 32px;
-    font-size: 18px;
+  position: fixed;
+  margin-top: 32px;
+  font-size: 18px;
 }
 
 .items_nucleo1 {
-    width: 100%;
-    margin-top: 2%;
-    margin-left: 5%;
-    align-items: center;
-    justify-content: center;
-    display: contents;
-}   
-   .item1{
-    background-color: #D1E8BA;
-    height: 89px;
-    width: 89px;
-    border-radius: 50%;
-    display: inline-block;
-    margin-right: 10%;
-    align-items: center;
-    text-align: center;
-    overflow-y: hidden;   
-   }
-   .item2{
-    background-color: #D1E8BA;
-    height: 89px;
-    width: 89px;
-    border-radius: 50%;
-    display: inline-block;
-    margin-right: 10%;
-    align-items: center;
-    text-align: center;
-    overflow-y: hidden;   
-   }
-   .item3{
-    background-color: #D1E8BA;
-    height: 89px;
-    width: 89px;
-    border-radius: 50%;
-    display: inline-block;
-    margin-right: 10%;
-    align-items: center;
-    text-align: center;
-    overflow-y: hidden;   
-   }
+  width: 100%;
+  margin-top: 2%;
+  margin-left: 5%;
+  align-items: center;
+  justify-content: center;
+  display: contents;
+}
+.item1 {
+  background-color: #d1e8ba;
+  height: 89px;
+  width: 89px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10%;
+  align-items: center;
+  text-align: center;
+  overflow-y: hidden;
+}
+.item2 {
+  background-color: #d1e8ba;
+  height: 89px;
+  width: 89px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10%;
+  align-items: center;
+  text-align: center;
+  overflow-y: hidden;
+}
+.item3 {
+  background-color: #d1e8ba;
+  height: 89px;
+  width: 89px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10%;
+  align-items: center;
+  text-align: center;
+  overflow-y: hidden;
+}
 
-   #plugCarga {
-       display:none;
-       position: absolute;
-       top:42%;
-       left:39%;
-       width: 40px;
-   }
-   #bateriaLitio {
-       display: none;
-       position: absolute;
-       top:50%;
-       left:48%;
-   }
-   #motorElectrico {
-       display: none;
-       position: absolute;
-       top:43%;
-       left:57%;
-   }
-    #item_nucleo1:hover {
-      background-color: #9FD791;
-      height: 89px;
-      width: 89px;
-      border: 2px solid #9FD791;
-      border-radius: 50%;
-      display: inline-block;
-    }
-
- 
-
- 
+#plugCarga {
+  display: none;
+  position: absolute;
+  top: 42%;
+  left: 39%;
+  width: 40px;
+}
+#bateriaLitio {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 48%;
+}
+#motorElectrico {
+  display: none;
+  position: absolute;
+  top: 43%;
+  left: 57%;
+}
+#item_nucleo1:hover {
+  background-color: #9fd791;
+  height: 89px;
+  width: 89px;
+  border: 2px solid #9fd791;
+  border-radius: 50%;
+  display: inline-block;
+}
 
 #item_nucleo1img {
-padding-top: 10%;
-width: 55px;
+  padding-top: 10%;
+  width: 55px;
 }
 #item_nucleo1_combustion img {
-padding-top: 10%;
-width: 55px;
-}
-#item_nucleo1_combustion{
-overflow-y: hidden;
+  padding-top: 10%;
+  width: 55px;
 }
 #item_nucleo1_combustion {
-background-color: #FFCBC3;
-height: 89px;
-width: 89px;
-border-radius: 50%;
-display: inline-block;
-margin-right: 3%;
-text-align: center;
-
+  overflow-y: hidden;
+}
+#item_nucleo1_combustion {
+  background-color: #ffcbc3;
+  height: 89px;
+  width: 89px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 3%;
+  text-align: center;
 }
 
 #item_nucleo1_combustion:hover {
-background-color: #9FD791;
-height: 89px;
-width: 89px;
-border: 2px solid #9FD791;
-border-radius: 50%;
-display: inline-block;
+  background-color: #9fd791;
+  height: 89px;
+  width: 89px;
+  border: 2px solid #9fd791;
+  border-radius: 50%;
+  display: inline-block;
 }
 
 /*agregar/sacar icono */
 
 #nucleo1_icono_agregar img {
-width: 24px;
+  width: 24px;
 }
 
 div#nucleo1_icono_agregar {
-position: absolute;
-display: flex;
-margin-left: 60px;
+  position: absolute;
+  display: flex;
+  margin-left: 60px;
 }
 div#nucleo1_icono_eliminar {
-position: absolute;
-display: none;
-margin-left: 60px;
+  position: absolute;
+  display: none;
+  margin-left: 60px;
 }
 #item_nucleo1 img {
-    padding-top: 10%;
-    width: 55px;
-  }
+  padding-top: 10%;
+  width: 55px;
+}
 
 /*MODOS DE CARGA*/
 
-div#infoModosDeCarga{
-    display: none;
-position: relative;
-text-align: center;
-background-color: red;
-width: 330px;
-top:11%;
-left:39%;
-padding: 15px;
-
+div#infoModosDeCarga {
+  display: none;
+  position: relative;
+  text-align: center;
+  background-color: red;
+  width: 330px;
+  top: 11%;
+  left: 39%;
+  padding: 15px;
 }
 
-#CargaLenta_nucleo1{
-display: none;
-       top:42%;
-       left:39%;
-      
+#CargaLenta_nucleo1 {
+  display: none;
+  top: 42%;
+  left: 39%;
 }
 
-#CargaSemiRapida_nucleo1{
-    display: none;
-        top:50%;
-    left:48%;
-
+#CargaSemiRapida_nucleo1 {
+  display: none;
+  top: 50%;
+  left: 48%;
 }
 
-#CargaRapida_nucleo1{
-    display: none;
-       
-       top:43%;
-       left:57%;
+#CargaRapida_nucleo1 {
+  display: none;
+
+  top: 43%;
+  left: 57%;
 }
 
-#CargaLenta_secuencia{
-    display: none;
-           top:42%;
-           left:39%;
-          
-    }
-
-.itemX{
-position: relative;
-display: inline;
-margin: auto auto;
+#CargaLenta_secuencia {
+  display: none;
+  top: 42%;
+  left: 39%;
 }
 
-#txt_torre{
-display: none;
+.itemX {
+  position: relative;
+  display: inline;
+  margin: auto auto;
+}
 
+#txt_torre {
+  display: none;
 }

@@ -1,5 +1,5 @@
- /*NUCLEO 3*/
- .contenedor_nucleo3 {
+/*NUCLEO 3*/
+.contenedor_nucleo3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,83 +8,79 @@
   position: absolute;
   top: 35%;
   left: 50%;
-  width: 982px;
-  margin-top: -200px;
-  margin-left: -460px;
-  margin-bottom: 0px;
-  padding: 0px;
+  width: 982rem;
+  margin-top: -200rem;
+  margin-left: -460rem;
+  margin-bottom: 0rem;
+  padding: 0rem;
 }
-
 
 .fondo_3 {
   height: 100vh;
   width: auto;
   background-image: url(../img/fondo_introduccion.png);
-  background-size:cover;
+  background-size: cover;
   /*lo siguiente es para el fondo full screen*/
   background-position: center;
   position: relative;
   overflow-x: hidden;
-  
-
 }
 
 #bg_comb label {
-  font-family: 'Roboto';
-  font-size: 48px;
+  font-family: "Roboto";
+  font-size: 48rem;
   font-weight: bolder;
 }
 
 #bg_combD label {
-  font-family: 'Roboto';
-  font-size: 44px;
+  font-family: "Roboto";
+  font-size: 44rem;
   font-weight: bolder;
 }
 #bg_elec label {
-  font-family: 'Roboto';
-  font-size: 48px;
+  font-family: "Roboto";
+  font-size: 48rem;
   font-weight: bolder;
 }
 #bg_elecD label {
-  font-family: 'Roboto';
-  font-size: 44px;
+  font-family: "Roboto";
+  font-size: 44rem;
   font-weight: bolder;
 }
 
 #bg_comb {
-background-color: #FA8D78;
-height: 90px;
+  background-color: #fa8d78;
+  height: 90rem;
 }
 h5 {
-overflow-y:hidden;
+  overflow-y: hidden;
 }
-#bg_elec{
- background-color: #A4E8B6;
- height: 90px;
+#bg_elec {
+  background-color: #a4e8b6;
+  height: 90rem;
 }
-#bg_combD{
- background-color: #F4AE98;
- height: 90px;
+#bg_combD {
+  background-color: #f4ae98;
+  height: 90rem;
 }
 #bg_elecD {
-background-color: #B6ECBF;
-height: 90px;
+  background-color: #b6ecbf;
+  height: 90rem;
 }
-#rowM{
-  height: 90px;
-  overflow-y:hidden;
+#rowM {
+  height: 90rem;
+  overflow-y: hidden;
 }
 
 .carousel {
-max-width: 800px;
-margin: 0 auto;
-display: flex;
+  max-width: 800rem;
+  margin: 0 auto;
+  display: flex;
 }
 #texto {
-  font-size: 12px;
+  font-size: 12rem;
 }
 #contenedorGrafico {
   margin-top: 2%;
   height: 20em;
-  
 }
