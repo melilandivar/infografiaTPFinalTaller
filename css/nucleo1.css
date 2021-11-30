@@ -152,3 +152,56 @@ margin-left: 60px;
     padding-top: 10%;
     width: 55px;
   }
+
+/*MODOS DE CARGA*/
+
+div#infoModosDeCarga{
+    display: none;
+position: relative;
+text-align: center;
+background-color: red;
+width: 330px;
+top:11%;
+left:39%;
+padding: 15px;
+
+}
+
+#CargaLenta_nucleo1{
+display: none;
+       top:42%;
+       left:39%;
+      
+}
+
+#CargaSemiRapida_nucleo1{
+    display: none;
+        top:50%;
+    left:48%;
+
+}
+
+#CargaRapida_nucleo1{
+    display: none;
+       
+       top:43%;
+       left:57%;
+}
+
+#CargaLenta_secuencia{
+    display: none;
+           top:42%;
+           left:39%;
+          
+    }
+
+.itemX{
+position: relative;
+display: inline;
+margin: auto auto;
+}
+
+#txt_torre{
+display: none;
+
+}

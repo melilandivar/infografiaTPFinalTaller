@@ -39,9 +39,11 @@ controller.oninput = () => {
 function agregarPlug(){
   if(document.getElementById('plugCarga').style.display='none'){
     document.getElementById('plugCarga').style.display='flex';
+    document.getElementById('infoModosDeCarga').style.display='flex';
   } else
   if(document.getElementById('plugCarga').style.display='flex'){
     document.getElementById('plugCarga').style.display='none';
+    
   } 
 }
 function agregarBateria(){
@@ -60,6 +62,31 @@ function agregarMotor(){
     document.getElementById('motorElectrico').style.display='none';
   }
 }
+
+/* FUNCIONES MODOS DE CARGA*/
+function modosDeCarga(){
+  if(document.getElementById('infoModosDeCarga').style.display='flex'){
+    document.getElementById('item_nucleo1').style.display='none';
+    document.getElementById('item_nucleo3').style.display='none';
+    document.getElementById('infoModosDeCarga').style.display='none';
+    document.getElementsByClassName("nucleo1_grafico")[0].style.display='none';
+    document.getElementsByClassName("item2")[0].style.display='none';
+    document.getElementById('CargaLenta_nucleo1').style.display='flex';
+    document.getElementById('CargaSemiRapida_nucleo1').style.display='flex';
+    document.getElementById('CargaRapida_nucleo1').style.display='flex';
+    document.getElementById('CargaLenta_secuencia').style.display='flex';
+
+  } 
+}
+
+function torre(){
+  if(document.getElementById('itemX_Torre').style.display='flex'){
+    document.getElementById('txt_torre').style.display='flex';
+
+  } 
+}
+
+
 /*FUNCIONES NUCLEO 2*/
 
 function cambiarIcono() {
