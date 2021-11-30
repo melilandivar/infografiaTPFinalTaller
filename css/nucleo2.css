@@ -7,11 +7,15 @@
   display: none !important;
 }
 
+.placeHolder {
+  opacity: 30%;
+}
+
 /*
 
 
 */
-/* General */
+/* ----- Header ------ */
 .nucleo2__header {
   display: flex;
   flex-direction: column;
@@ -35,6 +39,7 @@
   background-color: transparent;
 }
 
+/* ----- autopartes interactivas ----- */
 .nucleo2__autopartes {
   display: flex;
   justify-content: center;
@@ -79,21 +84,23 @@
 .nucleo2__autopartes__iconos i:nth-child(2) {
   color: #b13131;
 }
+
+/* ----- Auto ----- */
+.nucleo2__auto {
+  display: flex;
+  justify-content: center;
+  min-height: 210px;
+  height: 27vh;
+  width: 100%;
+}
+
+.nucleo2__auto img {
+  align-self: flex-end;
+  /*min-height: 208px;*/
+  height: 100%;
+}
 /**/
 
-/*agregar/sacar icono */
-
-div#nucleo2_icono_agregar {
-  position: relative;
-  display: flex;
-  margin-left: 60px;
-}
-div#nucleo2_icono_eliminar {
-  position: absolute;
-  display: none;
-  margin-left: 60px;
-}
-
 /*
 
 
@@ -113,72 +120,8 @@ div#nucleo2_icono_eliminar {
 
 
 
-
+EStilos viejos
 */
-/* Style tab links */
-/*
-.tablink {
-  box-shadow: none;
-  background-color: transparent !important;
-  color: black;
-  float: left;
-  border: none !important;
-
-  border-radius: 0px;
-  outline: none;
-
-  padding: 14px 16px;
-  font-size: 28px;
-  width: 25%;
-}
-*/
-
-.barras_de_progreso_nucleo2_electico {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: initial;
-  flex-wrap: wrap;
-  width: 50%;
-  position: relative;
-  left: 10%;
-}
-
-.tablink:hover {
-  background-color: #777;
-  border-bottom: black solid 2px;
-}
-
-.tablink:active {
-  border-bottom: black solid 2px !important;
-}
-
-progress#file {
-  /*aca se modifica la barra de progreso */
-  width: 100%;
-  padding: 20px;
-}
-
-.nucleo2_auto_grafico {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
-.nucleo2_auto_grafico img {
-  width: 30em;
-}
-.nucleo2_auto_carroceria {
-  display: none;
-  width: 100%;
-  justify-content: center;
-}
-.nucleo2_auto_carroceria img {
-  width: 30em;
-}
-
-img#auto_nucleo2 {
-  width: 35em;
-}
 
 /*grafico bottom*/
 .nucleo2_grafico_resultados {

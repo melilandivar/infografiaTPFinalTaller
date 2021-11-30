@@ -211,11 +211,12 @@
         <div class="nucleo2__header">
           <h1>Comparación de los procesos de producción</h1>
           <div class="nucleo2__header__botones">
-            <button class="nucleo2__header__botones__item" id="nucleo2__autoElectrico">Auto electrico</button>
-            <button class="nucleo2__header__botones__item" id="nucleo2__autoCombustion">Auto a combustión</button>
+            <button class="nucleo2__header__botones__item" id="nucleo2__botonAutoElectrico">Auto electrico</button>
+            <button class="nucleo2__header__botones__item" id="nucleo2__botonAutoCombustion">Auto a combustión</button>
           </div>
         </div>
 
+        <!-- Seleccion de auto partes-->
         <div class="nucleo2__autopartes">
           <!-- Carroceria -->
           <div class="nucleo2__autopartes__contenedor" id="nucleo2__carroceria">
@@ -277,17 +278,14 @@
             </div>
           </div>
         </div>
+        <!-- Fin de seleccion de auto partes-->
 
-        <!--Grafico-->
-        <div class="nucleo2_auto_grafico" id="nucleo2_auto_grafico">
-          <img src="img/nucleo2_auto_electico_1.svg" alt="" />
+        <!-- Grafico -->
+        <div class="nucleo2__auto" id="nucleo2__auto">
+          <img src="img/nucleo2/autoElectricoPlaceHolder.svg" alt="" />
         </div>
-        <!-- grafico interactivo del auto-->
-        <div class="nucleo2_auto_carroceria" id="nucleo2_auto_carroceria">
-          <img src="img/nucleo2_carroceria.png" alt="" />
-        </div>
-        <!-- grafico interactivo del auto-->
 
+        <!-- Resultados Inferiores-->
         <div class="nucleo2_div_resultados">
           <div class="nucleo2_resultados_electricos">
             <img src="img/nucleo2_icono_carroceria.png" alt="carroceria" />
@@ -424,7 +422,7 @@
               <div class="item4-2" id="item4" onclick="mostrarItem2()">
                 <p>2</p>
               </div>
-              <div class="item4-3" id="item4"  onclick="mostrarItem3()">
+              <div class="item4-3" id="item4" onclick="mostrarItem3()">
                 <p>3</p>
               </div>
               <div class="item4-4" id="item4" onclick="mostrarItem4()">
@@ -449,45 +447,40 @@
                 </svg>
               </div>
               <div id="oculta4-1">
-                <div class="txt4-1"> <p>No contaminan el aire, ya que no emiten CO2 ni otras partículas tóxicas.</p>
-                  
+                <div class="txt4-1">
+                  <p>No contaminan el aire, ya que no emiten CO2 ni otras partículas tóxicas.</p>
                 </div>
-                <div class="img4-1"> <img src="img/autosNucleo4_0.png" alt="" /></div>
-              
-                              
+                <div class="img4-1"><img src="img/autosNucleo4_0.png" alt="" /></div>
               </div>
               <div id="oculta4-2">
-                       <p>no genera contaminacion sonora</p>
-
+                <p>no genera contaminacion sonora</p>
               </div>
 
               <div id="oculta4-3">
-                <div class="txt4-1"><p>Sus componentes son reemplazables y actualizables,   por lo que mantienen un ciclo de vida más largo. </p></div>
-                <div class="img4-1">  <img src="img/N4Ventaja3.svg" alt="Ventaja3" /></div>
-                
-
-             </div>
-                <div id="oculta4-4">
-                  <div class="txt4-1"> <p>El coste de carga y mantenimiento es relativamente bajo. </p></div>
-                  <div class="img4-1">  <img src="img/N4Ventaja4.svg" alt="Ventaja4" /></div>
-  
-                  </div>
-                  <div id="oculta4-5">
-                   <div class="txt4-1"> <p>Los costos a largo plazo son mucho más accesible en comparación a un auto a combustión. </p> </div> 
-                      <div class="img4-1">  <img src="img/N4Ventaja5.svg" alt="Ventaja5" /></div>
-    
-                    </div>
-                    <div id="oculta4-6">
-                      <p>Su uso masivo disminuye notablemente la emisión de CO2. </p>
-      
-                      </div>
-                      <div id="oculta4-7">
-                        <div class="txt4-1"> <p>Son la nueva apuesta de la industria automotriz moderna.</p> </div> 
-                        <div class="img4-1">  <img src="img/N4Ventaja7.svg" alt="Ventaja7" /></div>
-        
-                        </div>
-
-
+                <div class="txt4-1">
+                  <p>
+                    Sus componentes son reemplazables y actualizables, por lo que mantienen un ciclo de vida más largo.
+                  </p>
+                </div>
+                <div class="img4-1"><img src="img/N4Ventaja3.svg" alt="Ventaja3" /></div>
+              </div>
+              <div id="oculta4-4">
+                <div class="txt4-1"><p>El coste de carga y mantenimiento es relativamente bajo.</p></div>
+                <div class="img4-1"><img src="img/N4Ventaja4.svg" alt="Ventaja4" /></div>
+              </div>
+              <div id="oculta4-5">
+                <div class="txt4-1">
+                  <p>Los costos a largo plazo son mucho más accesible en comparación a un auto a combustión.</p>
+                </div>
+                <div class="img4-1"><img src="img/N4Ventaja5.svg" alt="Ventaja5" /></div>
+              </div>
+              <div id="oculta4-6">
+                <p>Su uso masivo disminuye notablemente la emisión de CO2.</p>
+              </div>
+              <div id="oculta4-7">
+                <div class="txt4-1"><p>Son la nueva apuesta de la industria automotriz moderna.</p></div>
+                <div class="img4-1"><img src="img/N4Ventaja7.svg" alt="Ventaja7" /></div>
+              </div>
             </div>
 
             <!--       <div class="botones_seleccion_nucleo">        
@@ -509,7 +502,6 @@
               <span id="texto_verde">Hasta 25%</span> <br />
               menos en gastos por mantenimiento
             </p> -->
-
           </div>
         </div>
         <!-- <div id="News" class="tabcontent">
