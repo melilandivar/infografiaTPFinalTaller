@@ -71,6 +71,26 @@ function torreCargaSemiRapida(){
     document.getElementById('torreCargaSemiRapida-Noseleccionada').style.display='none';
     document.getElementById('torreCargaSemiRapida-seleccionada').style.display='flex';
     
-
+  } 
+}
+function casaCargaSemiRapida(){
+  if(document.getElementById('itemX_Casa').style.display='flex'){
+       document.getElementById('casaCargaSemiRapida-Noseleccionada').style.display='none';
+    document.getElementById('casaCargaSemiRapida-seleccionada').style.display='flex';
+    
+  } 
+}
+function conectorCargaSemiRapida(){
+  if(document.getElementById('itemX_Conector').style.display='flex'){
+       document.getElementById('conectorCargaSemiRapida-Noseleccionada').style.display='none';
+    document.getElementById('conectorCargaSemiRapida-seleccionada').style.display='flex';
+    
+  } 
+}
+function autoCargaSemiRapida(){
+  if(document.getElementById('itemX_Auto').style.display='flex'){
+       document.getElementById('autoCargaSemiRapida-Noseleccionada').style.display='none';
+    document.getElementById('autoCargaSemiRapida-seleccionada').style.display='flex';
+    
   } 
 }
