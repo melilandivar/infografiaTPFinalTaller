@@ -195,20 +195,20 @@
                 <p id="titulos_iconos_nucleo1">Motor eléctrico</p>
               </div>
               <!-- MODOS DE CARGA-->
-              <div class="item1" id="CargaLenta_nucleo1">
+              <div class="item_Carga1" id="CargaLenta_nucleo1">
                 <p>1</p>
 
-                <p id="titulos_iconos_nucleo1">Carga Lenta</p>
+                <p id="titulos_CARGA">Carga Lenta <br> 7-8 hs</p>
               </div>
-              <div class="item2" id="CargaSemiRapida_nucleo1">
+              <div class="item_Carga2" id="CargaSemiRapida_nucleo1">
                 <p>2</p>
 
-                <p id="titulos_iconos_nucleo1">Carga Semi-Rapida</p>
+                <p id="titulos_CARGA">Carga Semi-Rapida <br> 3-4 hs</p>
               </div>
-              <div class="item3" id="CargaRapida_nucleo1">
+              <div class="item_Carga3" id="CargaRapida_nucleo1">
                 <p>2</p>
 
-                <p id="titulos_iconos_nucleo1">Carga Rapida</p>
+                <p id="titulos_CARGA">Carga Rapida <br> 30-40 min</p>
               </div>
             </div>
           </div>
@@ -221,13 +221,45 @@
           <p>mas info sobre los modos de carga</p>
         </div>
         <div class="ConexionCargaLenta" id="CargaLenta_secuencia">
-          <div class="itemX" id="itemX_Torre" onclick="torre()">
-            <img src="img/Nucleo1/TorreElectrica.svg" alt="Torre" />
-            <p id="txt_torre">Corriente máxima: 16 Amperios hasta 250 Voltios</p>
+          <div class="itemX" id="itemX_Torre" onclick="torreCargaLenta()">
+            <p id="txt_titulo_torre">RED</p>
+            <img src="img/Nucleo1/TorreElectrica.svg" alt="Torre" id="torreCargaLenta-Noseleccionada">
+            <img src="img/Nucleo1/TorreElectrica_Seleccionada.svg" alt="Torre" id="torreCargaLenta-seleccionada">
+            <p id="txt_torre">Corriente máxima:<br>
+              16 Amperios<br>
+              hasta 250 Voltios</p>
+  
           </div>
-          <div class="itemX"><img src="img/Nucleo1/Casa.svg" alt="Casa" /></div>
-          <div class="itemX"><img src="img/Nucleo1/Conector.svg" alt="Conector" /></div>
-          <div class="itemX"><img src="img/Nucleo1/CulataAuto.svg" alt="CulataAuto" /></div>
+          <div class="itemX" id="itemX_Casa" onclick="casaCargaLenta()">
+            <p id="txt_titulo_casa">VIVIENDA</p>
+  
+            <img src="img/Nucleo1/Casa.svg" alt="Casa" id="casaCargaLenta-Noseleccionada">
+            <img src="img/Nucleo1/Casa_Seleccionada.svg" alt="CasaSeleccionada" id="casaCargaLenta-seleccionada">
+            <p id="txt_casaCargaLenta"> El vehículo se conecta
+              a la vivienda <br> a tráves
+              de un enchufe doméstico </p>
+          </div>
+          <div class="itemX" id="itemX_Conector" onclick="conectorCargaLenta()">
+            <p id="txt_titulo_conector">CONECTOR</p>
+  
+            <img src="img/Nucleo1/Conector.svg" alt="Conector" id="conectorCargaLenta-Noseleccionada" >
+            <img src="img/Nucleo1/Conector_Seleccionada.svg" alt="Conector" id="conectorCargaLenta-seleccionada" >
+            <p id="txt_conectorCargaLenta"> Mediante un conector
+              Schuko <br> y corriente
+              alterna </p>
+          </div>
+          <div class="itemX" id="itemX_CulataAuto" onclick="autoCargaLenta()">
+            <p id="txt_titulo_auto">AUTO</p>
+  
+            <img src="img/Nucleo1/CulataAuto.svg" alt="CulataAuto" id="autoCargaLenta-Noseleccionada" >
+            <img src="img/Nucleo1/CulataAuto_Seleccionada.svg" alt="CulataAuto" id="autoCargaLenta-seleccionada" >
+            <p id="txt_autoCargaLenta"> Conexión ideal
+              para automoviles
+              pequeños.</p>
+  
+          </div>
+
+
         </div>
       </div>
 
@@ -705,6 +737,7 @@
 <script src="js/nucleo5.js"></script>
 <script src="js/nucleo4.js"></script>
 <script src="js/nucleo2.js"></script>
+<script src="js/modosdeCarga.js"></script>
 <script src="js/index.js"></script>
 <script src="js/carrete.js"></script>
 <script src="js/main.js"></script>
