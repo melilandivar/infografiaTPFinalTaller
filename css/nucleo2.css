@@ -112,35 +112,48 @@
   margin-top: 32rem;
 }
 
-.nucleo2__resultados__electricos {
+.nucleo2__resultados__item {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   width: 50%;
+}
+
+.nucleo2__resultados__item:first-child {
   background-color: #b6e9aa;
 }
 
-.nucleo2__resultados__electricos h2 {
-  font-size: 54rem;
-  font-weight: bold;
-  margin: 0;
+.nucleo2__resultados__item:last-child {
+  background-color: #e3a69e;
 }
 
-.nucleo2__resultados__electricos p {
+.nucleo2__resultados__item h2 {
+  font-size: 54rem;
+  font-weight: bold;
+  margin-bottom: 0rem !important;
+}
+
+.nucleo2__resultados__item p {
   font-size: 18rem;
   font-weight: normal;
   margin-top: -10rem;
   margin-bottom: 0;
 }
 
-.nucleo2__resultados__electricos__iconos {
+.nucleo2__resultados__item__iconos {
   display: flex;
   flex-direction: row;
 }
 
-.nucleo2__resultados__electricos__iconos img {
-  display: flex;
-  flex-direction: row;
+.nucleo2__resultados__item__iconos img {
+  width: 42rem;
+  margin-right: 22rem;
+  opacity: 0.3;
+}
+
+.nucleo2__resultados__item__iconos img:last-child {
+  margin-right: 0rem;
 }
 
 /*

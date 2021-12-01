@@ -6,6 +6,7 @@ let autoPartes = [
   document.getElementById("nucleo2__inversor"),
   document.getElementById("nucleo2__neumaticos"),
 ];
+
 let botonAutoElectrico = document.getElementById("nucleo2__botonAutoElectrico");
 let botonAutoCombustion = document.getElementById("nucleo2__botonAutoCombustion");
 
@@ -13,6 +14,16 @@ let eligioElectrico = true;
 let estaActivadoItemElectrico = [false, false, false, false, false];
 let estaActivadoItemCombustion = [false, false, false, false, false];
 let nucleo2__auto = document.getElementById("nucleo2__auto");
+
+let contaminacionElectrico = document.getElementById("contaminacionElectrico");
+let contaminacionCombustion = document.getElementById("contaminacionCombustion");
+let autoPartesElectricoCO2 = [4111, 1070, 6337, 641, 108];
+let autoPartesCombustionCO2 = [4111, 1274, 20, 10, 108];
+let co2AutoElectrico = 0;
+let co2AutoCombustion = 0;
+
+let iconosInferioresElectrico = document.getElementById("iconosInferioresElectrico");
+let iconosInferioresCombustion = document.getElementById("iconosInferioresCombustion");
 
 //-------------------- Listener --------------------
 //Seleccion de auto electrico
@@ -41,7 +52,9 @@ botonAutoCombustion.onclick = function (e) {
 for (let i = 0; i < autoPartes.length; i++) {
   autoPartes[i].onclick = function (e) {
     ActivarODesactivarItem(this, i);
+    ContarCO2Total();
     CambiarAuto();
+    CambiarOpacidadDeIconosInferiores();
   };
 }
 
@@ -126,6 +139,46 @@ function CambiarAuto() {
       CambiarImagen(nucleo2__auto, "img/nucleo2/autoCombustionSoloRuedas.svg");
     else if (estaActivadoItemCombustion[0] == true && estaActivadoItemCombustion[4] == true)
       CambiarImagen(nucleo2__auto, "img/nucleo2/autoCombustionCompleto.svg");
+  }
+}
+
+function ContarCO2Total() {
+  let _co2itemsElectrico = [];
+  let _co2itemsCombustion = [];
+  for (let i = 0; i < autoPartes.length; i++) {
+    if (estaActivadoItemElectrico[i]) _co2itemsElectrico[i] = autoPartesElectricoCO2[i];
+    else _co2itemsElectrico[i] = 0;
+
+    if (estaActivadoItemCombustion[i]) _co2itemsCombustion[i] = autoPartesCombustionCO2[i];
+    else _co2itemsCombustion[i] = 0;
+  }
+  co2AutoElectrico =
+    _co2itemsElectrico[0] +
+    _co2itemsElectrico[1] +
+    _co2itemsElectrico[2] +
+    _co2itemsElectrico[3] +
+    _co2itemsElectrico[4];
+
+  co2AutoCombustion =
+    _co2itemsCombustion[0] +
+    _co2itemsCombustion[1] +
+    _co2itemsCombustion[2] +
+    _co2itemsCombustion[3] +
+    _co2itemsCombustion[4];
+
+  contaminacionElectrico.innerHTML = co2AutoElectrico;
+  contaminacionCombustion.innerHTML = co2AutoCombustion;
+}
+
+function CambiarOpacidadDeIconosInferiores() {
+  let _iconosElectrico = iconosInferioresElectrico.getElementsByTagName("img");
+  let _iconosCombustion = iconosInferioresCombustion.getElementsByTagName("img");
+
+  for (let i = 0; i < autoPartes.length; i++) {
+    if (estaActivadoItemElectrico[i]) _iconosElectrico[i].style.cssText = "opacity: 1";
+    else _iconosElectrico[i].style.cssText = "opacity: 0.3";
+    if (estaActivadoItemCombustion[i]) _iconosCombustion[i].style.cssText = "opacity: 1";
+    else _iconosCombustion[i].style.cssText = "opacity: 0.3";
   }
 }
 
