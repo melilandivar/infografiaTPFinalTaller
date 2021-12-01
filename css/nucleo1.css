@@ -96,13 +96,8 @@
       display: inline-block;
     }
 
-  width: 100%;
-  margin-top: 2%;
-  margin-left: 5%;
-  align-items: center;
-  justify-content: center;
-  display: contents;
-}
+
+
 .item1 {
   background-color: #d1e8ba;
   height: 89px;
@@ -277,6 +272,7 @@ div#infoModosDeCarga {
 display: none;
        
        text-align: center;
+}
       
 #CargaSemiRapida_nucleo1 {
   display: none;
@@ -330,7 +326,7 @@ align-items: center;
 margin-bottom: 30px;
 width: 80px;
 height: 80px;
-
+}
 .itemX {
   position: relative;
   display: inline;
