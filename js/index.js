@@ -139,12 +139,12 @@ function progreso() {
     cantidadPasajerosE = "";
   }
   if (valor.ariaValueNow == "30") {
-    kgDia = "6.4";
-    kgMes = "192";
-    kgAño = "2034";
-    kgDiaC = "3.0";
-    kgMesC = "90";
-    kgAñoC = "1080";
+    kgDia = "6.4kg";
+    kgMes = "192kg";
+    kgAño = "2034kg";
+    kgDiaC = "3.0kg";
+    kgMesC = "90kg";
+    kgAñoC = "1080kg";
     cantidadBotellasC = "55";
     cantidadBotellasE = "26";
     cantidadCelularesC = "03";
@@ -153,12 +153,12 @@ function progreso() {
     cantidadPasajerosE = "07";
   }
   if (valor.ariaValueNow == "60") {
-    kgDia = "6.0";
-    kgMes = "180";
-    kgAño = "2160";
-    kgDiaC = "12.8";
-    kgMesC = "384";
-    kgAñoC = "4608";
+    kgDia = "6.0kg";
+    kgMes = "180kg";
+    kgAño = "2160kg";
+    kgDiaC = "12.8kg";
+    kgMesC = "384kg";
+    kgAñoC = "4608kg";
     cantidadBotellasC = "110";
     cantidadBotellasE = "52";
     cantidadCelularesC = "06";
@@ -167,12 +167,12 @@ function progreso() {
     cantidadPasajerosE = "14";
   }
   if (valor.ariaValueNow == "90") {
-    kgDia = "9.0";
-    kgMes = "270";
-    kgAño = "3240";
-    kgDiaC = "19.2";
-    kgMesC = "576";
-    kgAñoC = "6921";
+    kgDia = "9.0kg";
+    kgMes = "270kg";
+    kgAño = "3240kg";
+    kgDiaC = "19.2kg";
+    kgMesC = "576kg";
+    kgAñoC = "6921kg";
     cantidadBotellasC = "165";
     cantidadBotellasE = "78";
     cantidadCelularesC = "09";
@@ -181,12 +181,12 @@ function progreso() {
     cantidadPasajerosE = "21";
   }
   if (valor.ariaValueNow == "120") {
-    kgDia = "12";
-    kgMes = "360";
-    kgAño = "4302";
-    kgDiaC = "25.6";
-    kgMesC = "768";
-    kgAñoC = "9216";
+    kgDia = "12kg";
+    kgMes = "360kg";
+    kgAño = "4302kg";
+    kgDiaC = "25.6kg";
+    kgMesC = "768kg";
+    kgAñoC = "9216kg";
     cantidadBotellasC = "220";
     cantidadBotellasE = "104";
     cantidadCelularesC = "12";

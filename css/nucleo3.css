@@ -134,3 +134,18 @@ h5 {
   flex-direction: column;
   justify-content: space-between;
 }
+
+.nucleo_3_col_row_mid_izq {
+
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nucleo_3_col_row_der {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
