@@ -53,3 +53,24 @@ function autoCargaLenta(){
      document.getElementById('autoCargaLenta-seleccionada').style.display='flex';
   } 
 }
+
+/* CARGA SEMIRAPIDA*/
+
+function CargaSemiRapida(){
+  if(document.getElementById('CargaSemiRapida_nucleo1').style.display='flex'){
+    document.getElementById('CargaLenta_secuencia').style.display='none';
+    document.getElementById('CargaSemiRapida_secuencia').style.display='flex';
+   
+
+  } 
+}
+function torreCargaSemiRapida(){
+  if(document.getElementById('itemX_Torre').style.display='flex'){
+    document.getElementById('txt_torre').style.display='flex';
+    document.getElementById('txt_titulo_torre').style.display='flex';
+    document.getElementById('torreCargaSemiRapida-Noseleccionada').style.display='none';
+    document.getElementById('torreCargaSemiRapida-seleccionada').style.display='flex';
+    
+
+  } 
+}
