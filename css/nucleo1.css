@@ -395,6 +395,7 @@ display: none;
         }
         
         /* CARGA SEMIRAPIDA */
+
         #CargaSemiRapida_secuencia{
 display: none;
 
@@ -408,6 +409,34 @@ display: none;
   display: none;
   
       }
+      #casaCargaSemiRapida-Noseleccionada{
+        display: flex;
+        
+    }
+       
+#casaCargaSemiRapida-seleccionada{
+display: none;
+
+    }
+    #conectorCargaSemiRapida-Noseleccionada{
+      display: flex;
+      
+  }
+     
+#conectorCargaSemiRapida-seleccionada{
+display: none;
+
+  }
+  #autoCargaSemiRapida-Noseleccionada{
+    display: flex;
+    
+}
+   
+#autoCargaSemiRapida-seleccionada{
+display: none;
+
+}
+      
 
    
     
