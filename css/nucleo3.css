@@ -106,10 +106,12 @@ h5 {
 }
 .col_1 {
   background-color: #FA8D78;
-  width: 20% !important;
+  width: 30%;
 }
 .col_3 { 
   background-color:rgba(250, 141, 120, 0.7);
+  display: flex;
+  padding-top: 4%;
 }
 .col_4 { 
   background-color:rgba(255, 255, 255, 0.5);
@@ -120,10 +122,12 @@ h5 {
 }
 .col_5 { 
   background-color:rgba(164, 232, 182, 0.7);
+  display: flex;
+  padding-top: 4%;
 }
 .col_7 {
   background-color: #A4E8B6;
-  width: 20% !important;
+  width: 30%;
 }
 
 

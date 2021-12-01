@@ -97,7 +97,7 @@ function cambiarIcono() {
   var kgAño = "432";
   var kgDiaC = "2.14";
   var kgMesC = "64.2";
-  var kgAño = "770";
+  var kgAñoC= "770";   //aca agregue una C, esta bien?
   cantidadBotellasC = "";
   cantidadBotellasE = "";
   cantidadCelularesC = "";
