@@ -136,6 +136,9 @@ h5 {
   align-items: center;
   justify-content: center;
 }
+#igual_nucleo3 {
+  width: 32px;
+}
 .col_7 {
   background-color: #A4E8B6;
   width: 30%;
