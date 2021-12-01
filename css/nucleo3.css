@@ -84,7 +84,15 @@ h5 {
   margin-top: 2%;
   height: 20em;
 }
-
+#km_dia_nucleo3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+#seleccionar_km_nucleo3 {
+  
+  font-size: 24px;
+  font-weight: 400;
+}
 
 
 /*PRUEBA*/
