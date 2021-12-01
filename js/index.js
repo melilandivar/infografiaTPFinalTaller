@@ -152,7 +152,7 @@ function progreso() {
     cantidadPasajerosC = "15";
     cantidadPasajerosE = "07";
   }
-  if (valor.ariaValueNow == "20") {
+  if (valor.ariaValueNow == "60") {
     kgDia = "2.0";
     kgMes = "62";
     kgAño = "744";
@@ -166,7 +166,7 @@ function progreso() {
     cantidadPasajerosC = "10";
     cantidadPasajerosE = "05";
   }
-  if (valor.ariaValueNow == "30") {
+  if (valor.ariaValueNow == "90") {
     kgDia = "6.4";
     kgMes = "192";
     kgAño = "2034";
@@ -180,7 +180,7 @@ function progreso() {
     cantidadPasajerosC = "15";
     cantidadPasajerosE = "07";
   }
-  if (valor.ariaValueNow == "40") {
+  if (valor.ariaValueNow == "120") {
     kgDia = "8.5";
     kgMes = "255";
     kgAño = "3060";
