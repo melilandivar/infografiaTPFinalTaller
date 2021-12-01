@@ -92,18 +92,18 @@ function cambiarIcono() {
 /*FIN NUCLEO 2*/
 /* FUNCIONES NUCLEO 3*/
 (function(){
-var kgDia = "1.2";
-var kgMes = "36";
-var kgAño = "432";
-var kgDiaC = "2.14";
-var kgMesC = "64.2";
-var kgAño = "770";
-cantidadBotellasC = "";
-cantidadBotellasE = "";
-cantidadCelularesC = "";
-cantidadCelularesE = "";
-cantidadPasajerosC = "";
-cantidadPasajerosE = "";
+  var kgDia = "1.2";
+  var kgMes = "36";
+  var kgAño = "432";
+  var kgDiaC = "2.14";
+  var kgMesC = "64.2";
+  var kgAño = "770";
+  cantidadBotellasC = "";
+  cantidadBotellasE = "";
+  cantidadCelularesC = "";
+  cantidadCelularesE = "";
+  cantidadPasajerosC = "";
+  cantidadPasajerosE = "";
 //tomar variables de js y utilizarlas en html mediante el id
 document.getElementById("kgAño").innerHTML = kgAño;
 document.getElementById("kgMes").innerHTML = kgMes;
@@ -123,14 +123,14 @@ document.getElementById("cantidadPasajerosE").innerHTML = cantidadPasajerosE;
 
 function progreso() {
   var valor = document.getElementById("progressbar");
-
+  console.log("progreso nucleo 3");
   if (valor.ariaValueNow == "0") {
     kgDia = "";
     kgMes = "";
     kgAño = "";
     kgDiaC = "";
     kgMesC = "";
-    kgAño = "";
+    kgAñoC = "";
     cantidadBotellasC = "";
     cantidadBotellasE = "";
     cantidadCelularesC = "";
@@ -144,7 +144,7 @@ function progreso() {
     kgAño = "2034";
     kgDiaC = "3.0";
     kgMesC = "90";
-    kgAño = "1080";
+    kgAñoC = "1080";
     cantidadBotellasC = "55";
     cantidadBotellasE = "26";
     cantidadCelularesC = "03";
@@ -153,53 +153,53 @@ function progreso() {
     cantidadPasajerosE = "07";
   }
   if (valor.ariaValueNow == "60") {
-    kgDia = "2.0";
-    kgMes = "62";
-    kgAño = "744";
-    kgDiaC = "4.2";
-    kgMesC = "126";
-    kgAño = "1512";
-    cantidadBotellasC = "36";
-    cantidadBotellasE = "17";
-    cantidadCelularesC = "02";
-    cantidadCelularesE = "01";
-    cantidadPasajerosC = "10";
-    cantidadPasajerosE = "05";
+    kgDia = "6.0";
+    kgMes = "180";
+    kgAño = "2160";
+    kgDiaC = "12.8";
+    kgMesC = "384";
+    kgAñoC = "4608";
+    cantidadBotellasC = "110";
+    cantidadBotellasE = "52";
+    cantidadCelularesC = "06";
+    cantidadCelularesE = "03";
+    cantidadPasajerosC = "30";
+    cantidadPasajerosE = "14";
   }
   if (valor.ariaValueNow == "90") {
-    kgDia = "6.4";
-    kgMes = "192";
-    kgAño = "2034";
-    kgDiaC = "3.0";
-    kgMesC = "90";
-    kgAño = "1080";
-    cantidadBotellasC = "55";
-    cantidadBotellasE = "26";
-    cantidadCelularesC = "03";
-    cantidadCelularesE = "1.5";
-    cantidadPasajerosC = "15";
-    cantidadPasajerosE = "07";
+    kgDia = "9.0";
+    kgMes = "270";
+    kgAño = "3240";
+    kgDiaC = "19.2";
+    kgMesC = "576";
+    kgAñoC = "6921";
+    cantidadBotellasC = "165";
+    cantidadBotellasE = "78";
+    cantidadCelularesC = "09";
+    cantidadCelularesE = "4.5";
+    cantidadPasajerosC = "45";
+    cantidadPasajerosE = "21";
   }
   if (valor.ariaValueNow == "120") {
-    kgDia = "8.5";
-    kgMes = "255";
-    kgAño = "3060";
-    kgDiaC = "4.1";
-    kgMesC = "123";
-    kgAño = "1476";
-    cantidadBotellasC = "73";
-    cantidadBotellasE = "35";
-    cantidadCelularesC = "04";
-    cantidadCelularesE = "02";
-    cantidadPasajerosC = "20";
-    cantidadPasajerosE = "10";
+    kgDia = "12";
+    kgMes = "360";
+    kgAño = "4302";
+    kgDiaC = "25.6";
+    kgMesC = "768";
+    kgAñoC = "9216";
+    cantidadBotellasC = "220";
+    cantidadBotellasE = "104";
+    cantidadCelularesC = "12";
+    cantidadCelularesE = "06";
+    cantidadPasajerosC = "60";
+    cantidadPasajerosE = "28";
   }
   
     //tomar variables de js y utilizarlas en html mediante el id
     document.getElementById("kgAño").innerHTML = kgAño;
     document.getElementById("kgMes").innerHTML = kgMes;
     document.getElementById("kgDia").innerHTML = kgDia;
-    document.getElementById("kgAñoC").innerHTML = kgAño;
+    document.getElementById("kgAñoC").innerHTML = kgAñoC;
     document.getElementById("kgMesC").innerHTML = kgMesC;
     document.getElementById("kgDiaC").innerHTML = kgDiaC;
     document.getElementById("cantidadBotellasC").innerHTML = cantidadBotellasC;
