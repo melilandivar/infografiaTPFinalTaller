@@ -27,13 +27,77 @@
 }
 
 .items_nucleo1 {
-  width: 100%;
-  margin-top: 2%;
-  margin-left: 5%;
-  align-items: center;
-  justify-content: center;
-  display: contents;
-}
+    width: 100%;
+    margin-top: 2%;
+    margin-left: 5%;
+    align-items: center;
+    justify-content: center;
+    display: contents;
+}   
+   .item1{
+    background-color: #D1E8BA;
+    height: 89px;
+    width: 89px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10%;
+    align-items: center;
+    text-align: center;
+    overflow-y: hidden;   
+   }
+   .item2{
+    background-color: #D1E8BA;
+    height: 89px;
+    width: 89px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10%;
+    align-items: center;
+    text-align: center;
+    overflow-y: hidden;   
+   }
+   .item3{
+    background-color: #D1E8BA;
+    height: 89px;
+    width: 89px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10%;
+    align-items: center;
+    text-align: center;
+    overflow-y: hidden;   
+   }
+
+   #plugCarga {
+       display:none;
+       position: absolute;
+       top:42%;
+       left:39%;
+       width: 40px;
+   }
+   #bateriaLitio {
+       display: none;
+       position: absolute;
+       top:50%;
+       left:48%;
+   }
+   #motorElectrico {
+       display: none;
+       position: absolute;
+       top:43%;
+       left:57%;
+   }
+    #item_nucleo1:hover {
+      background-color: #9FD791;
+      height: 89px;
+      width: 89px;
+      border: 2px solid #9FD791;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+
+
 .item1 {
   background-color: #d1e8ba;
   height: 89px;
@@ -166,11 +230,60 @@ div#infoModosDeCarga {
   left: 39%;
 }
 
+
+.item_Carga1{
+        background-color: #D1E8BA;
+        margin-right: 5%;
+    height: 89px;
+    width: 89px;
+    border-radius: 50%;
+    display: inline-block;
+       align-items: center;
+    text-align: center;
+    overflow-y: hidden; 
+}
+
+.item_Carga2{
+        background-color: #D1E8BA;
+        margin-right: 5%;
+    height: 89px;
+    width: 89px;
+    border-radius: 50%;
+    display: inline-block;
+       align-items: center;
+    text-align: center;
+    overflow-y: hidden; 
+
+}
+.item_Carga3{
+        background-color: #D1E8BA;
+        margin-right: 5%;
+    height: 89px;
+    width: 89px;
+    border-radius: 50%;
+    display: inline-block;
+       align-items: center;
+    text-align: center;
+    overflow-y: hidden; 
+
+}
+
+#CargaLenta_nucleo1{
+display: none;
+       
+       text-align: center;
+}
+      
 #CargaSemiRapida_nucleo1 {
   display: none;
   top: 50%;
   left: 48%;
 }
+#CargaLenta_nucleo1 p{
+    display: block;
+    
+}
+
 
 #CargaRapida_nucleo1 {
   display: none;
@@ -185,6 +298,35 @@ div#infoModosDeCarga {
   left: 39%;
 }
 
+#CargaLenta_secuencia{
+    display: none;
+           top:42%;
+           left:39%;
+          
+    }
+
+#titulos_CARGA{
+    position: fixed;
+    margin-top: 180px;
+    font-size: 18px;
+
+}
+
+.itemX{
+position: relative;
+display: inline;
+margin: 0 auto;
+flex-direction: column;
+align-items: center;
+}
+
+
+.itemX img{
+    margin-top: 10px;
+margin-bottom: 30px;
+width: 80px;
+height: 80px;
+}
 .itemX {
   position: relative;
   display: inline;
@@ -194,3 +336,69 @@ div#infoModosDeCarga {
 #txt_torre {
   display: none;
 }
+#txt_titulo_torre{
+display: none;
+
+}
+
+#txt_casaCargaLenta{
+display: none;
+
+}
+#txt_titulo_casa{
+    display: none;
+    
+    }
+
+#txt_conectorCargaLenta{
+display: none;
+
+}
+#txt_titulo_conector{
+    display: none;
+    
+    }
+
+#txt_autoCargaLenta{
+display: none;
+
+}
+#txt_titulo_auto{
+    display: none;
+    
+    }
+#torreCargaLenta-Noseleccionada{
+        display: flex;
+        
+    }
+       
+#torreCargaLenta-seleccionada{
+display: none;
+
+    }
+#casaCargaLenta-Noseleccionada{
+display: flex;
+
+}
+#casaCargaLenta-seleccionada{
+display: none;
+
+}
+#conectorCargaLenta-Noseleccionada{
+    display: flex;
+    
+    }
+#conectorCargaLenta-seleccionada{
+    display: none;
+    
+    }
+    #autoCargaLenta-Noseleccionada{
+        display: flex;
+        
+        }
+    #autoCargaLenta-seleccionada{
+        display: none;
+        
+        }              
+   
+    
