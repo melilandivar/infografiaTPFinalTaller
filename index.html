@@ -341,14 +341,111 @@
 
         
       -->
-      <!-- NUCLEO 3 -->
+      <!-- NUCLEO 3 --> <!-- AHORA NO SE MUESTRAN LOS CAMBIOS PRODUCIDOS EN EL JAVA, SE MODIFICA LA BARRA PERO NO APARECEN LOS NUMERO-->
       <div id="nucleo3">
         <div class="fondo_3"></div>
 
         <div class="contenedor_nucleo3">
           <h1>¿Cuanto Co2 emites?</h1>
+          <div
+          class="RadialProgress"
+          id="progressbar"
+          role="progressbar"
+          aria-valuenow="0"
+          aria-valuemin="0"
+          aria-valuemax="40"
+        ></div>
+        <h2>km/día</h2>
+        <!--la barra interactiva está hecha con bootstrap-->
+        <div onclick="progreso()">
+          <input type="range" class="form-range" value="0" min="0" max="120" step="30" id="customRange3" />
+        </div>
+
+          <div class="nucleo_3_row">
+            <div class="nucleo_3_col col_1">
+              <div class="nucleo_3_col_row_izq" id="bg_comb">
+                <div class="col" id="bg_comb">
+                  <h5>Día</h5>
+                  <label for="" id="kgDiaC"></label>
+                </div>
+                <div class="col sm-2" id="bg_comb">
+                  <h5>Mes</h5>
+                  <label for="" id="kgMesC"></label>
+                </div>
+                <div class="col sm-2" id="bg_comb">
+                  <h5>Año</h5>
+                  <label for="" id="kgAñoC"></label>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="nucleo_3_col col_2"></div>
+
+            <div class="nucleo_3_col col_3">
+              <div class="nucleo_3_col_row_mid_izq">
+                <div class="col sm-2" id="bg_combD">
+                  <label for="" id="cantidadBotellasC"></label>
+                </div>
+                <div class="col sm-2" id="bg_combD">
+                  <label for="" id="cantidadCelularesC"></label>
+                </div>
+                <div class="col sm-2" id="bg_combD">
+                  <label for="" id="cantidadPasajerosC"></label>
+                </div>
+              </div>
+            </div>
+
+            <div class="nucleo_3_col col_4">
+              <div class="col sm-2">
+                <img src="img/nucleo3/nucleo3_botella.png" alt="" />
+                <p id="texto">Botella de plástico</p>
+              </div>
+              <div class="col sm-2">
+                <img src="img/nucleo3/nucleo3_celular.png" alt="" />
+                <p id="texto">Celulares fabricados</p>
+              </div>
+              <div class="col sm-2">
+                <img src="img/nucleo3/nucleo3_viajero.png" alt="" />
+                <p id="texto">Pasajeros en un vuelo Madrid - Barcelona</p>
+              </div>
+            </div>
+
+            <div class="nucleo_3_col col_5">
+              <div class="col sm-2" id="bg_elecD">
+                <label for="" id="cantidadBotellasE"></label>
+              </div>
+              <div class="col sm-2" id="bg_elecD">
+                <label for="" id="cantidadCelularesE"></label>
+              </div>
+              <div class="col sm-2" id="bg_elecD">
+                <label for="" id="cantidadPasajerosE"></label>
+              </div>
+            </div>
+
+            <div class="nucleo_3_col col_6"></div>
+
+            <div class="nucleo_3_col col_7">
+              <div class="nucleo_3_col_row_izq" id="bg_elect">
+                <div class="col" id="bg_elect">
+                  <h5>Día</h5>
+                  <label for="" id="kgDiaC"></label>
+                </div>
+                <div class="col sm-2" id="bg_elect">
+                  <h5>Mes</h5>
+                  <label for="" id="kgMesC"></label>
+                </div>
+                <div class="col sm-2" id="bg_elect">
+                  <h5>Año</h5>
+                  <label for="" id="kgAñoC"></label>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!--
           <div class="row" id="contenedorGrafico">
-            <div class="col sm-2" id="bg_comb">
+            <div class="col" id="bg_comb">
               <h5>Día</h5>
               <label for="" id="kgDiaC"></label>
             </div>
@@ -369,7 +466,7 @@
               <label for="" id="kgDia"></label>
             </div>
 
-            <!-- Force next columns to break to new line at md breakpoint and up -->
+    
             <div class="w-100 d-none d-md-block"></div>
 
             <div class="col sm-2" id="bg_comb">
@@ -393,7 +490,7 @@
               <label for="" id="kgMes"></label>
             </div>
 
-            <!-- Force next columns to break to new line at md breakpoint and up -->
+            
             <div class="w-100 d-none d-md-block"></div>
 
             <div class="col sm-2" id="bg_comb">
@@ -416,20 +513,8 @@
               <h5>Año</h5>
               <label for="" id="kgAño"></label>
             </div>
-          </div>
-          <div
-            class="RadialProgress"
-            id="progressbar"
-            role="progressbar"
-            aria-valuenow="0"
-            aria-valuemin="0"
-            aria-valuemax="40"
-          ></div>
-          <h2>km/día</h2>
-          <!--la barra interactiva está hecha con bootstrap-->
-          <div onclick="progreso()">
-            <input type="range" class="form-range" value="0" min="0" max="40" step="10" id="customRange3" />
-          </div>
+          </div> -->
+         
         </div>
       </div>
       <div id="nucleo4">
