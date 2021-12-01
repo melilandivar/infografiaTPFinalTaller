@@ -108,6 +108,11 @@ h5 {
   background-color: #FA8D78;
   width: 30%;
 }
+.col_2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .col_3 { 
   background-color:rgba(250, 141, 120, 0.7);
   display: flex;
@@ -125,6 +130,11 @@ h5 {
   background-color:rgba(164, 232, 182, 0.7);
   display: flex;
   padding-top: 4%;
+}
+.col_6 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .col_7 {
   background-color: #A4E8B6;
