@@ -1,27 +1,27 @@
 @keyframes slideInLeft {
   0% {
-    transform: translate3d(-250px, 0, 0);
+    transform: translate3d(-250rem, 0, 0);
     visibility: visible;
- }
+  }
   100% {
     transform: translate3d(0, 0, 0);
- }
+  }
 }
 @keyframes slideOutLeft {
   0% {
     transform: translate3d(0, 0, 0);
- }
+  }
   100% {
-    transform: translate3d(-250px, 0, 0);
+    transform: translate3d(-250rem, 0, 0);
     visibility: hidden;
- }
+  }
 }
 * {
   box-sizing: border-box;
 }
 body:after {
   background: rgba(0, 0, 0, 1);
-  content: '';
+  content: "";
   height: 100%;
   left: 0;
   opacity: 0;
@@ -52,9 +52,9 @@ body.open:after {
 .b-nav li {
   color: rgba(255, 255, 255, 1);
   list-style-type: none;
-  padding: 10px;
+  padding: 10rem;
   text-align: left;
-  transform: translateX(-250px);
+  transform: translateX(-250rem);
 }
 .b-nav li:not(.open) {
   animation-duration: 0.4s;
@@ -62,7 +62,7 @@ body.open:after {
   animation-name: slideOutLeft;
 }
 .b-nav li:first-child {
-  padding-top: 120px;
+  padding-top: 120rem;
 }
 .b-nav.open {
   visibility: visible;
@@ -76,39 +76,40 @@ body.open:after {
   background: transparent;
   display: flex;
   align-items: center;
-  border-left: rgba(68, 68, 68, 0) solid 2px;
+  border-left: rgba(68, 68, 68, 0) solid 2rem;
   color: rgba(255, 255, 255, 1);
   font-family: "Oswald", sans-serif;
-  font-size: 24px;
+  font-size: 24rem;
   font-weight: 300;
-  margin-left: 15px;
+  margin-left: 15rem;
   text-decoration: none;
   transition: all 0.4s ease;
   width: auto;
 }
-.b-link:hover, .b-link--active {
-  border-left: rgba(68, 68, 68, 1) solid 2px;
-  padding-left: 30px;
+.b-link:hover,
+.b-link--active {
+  border-left: rgba(68, 68, 68, 1) solid 2rem;
+  padding-left: 30rem;
 }
 .b-menu {
-  background:#FFC727;
-  border: #FFC727 solid 2px;
+  background: #ffc727;
+  border: #ffc727 solid 2rem;
   border-radius: 50%;
   cursor: pointer;
   display: inline-block;
 
-  height: 60px;
-  padding-left: 15.5px;
-  padding-top: 17.5px;
+  height: 60rem;
+  padding-left: 15.5rem;
+  padding-top: 17.5rem;
   position: fixed;
   transition: all 0.4s ease;
   user-select: none;
-  width: 60px;
+  width: 60rem;
   z-index: 12;
 }
 
 .b-menu:hover {
-  border: rgba(68, 68, 68, 1) solid 2px;
+  border: rgba(68, 68, 68, 1) solid 2rem;
 }
 .b-bun {
   background: rgba(68, 68, 68, 1);
@@ -116,50 +117,52 @@ body.open:after {
   transition: all 0.4s ease;
 }
 .b-bun--top {
-  height: 2px;
+  height: 2rem;
   top: 0;
-  width: 25px;
+  width: 25rem;
 }
 .b-bun--mid {
-  height: 2px;
-  top: 8px;
-  width: 25px;
+  height: 2rem;
+  top: 8rem;
+  width: 25rem;
 }
 .b-bun--bottom {
-  height: 2px;
-  top: 16px;
-  width: 25px;
+  height: 2rem;
+  top: 16rem;
+  width: 25rem;
 }
 .b-brand {
   color: rgba(255, 255, 255, 1);
   font-family: Helvetica-Neue, Helvetica, Arial, sans-serif;
-  font-size: 24px;
+  font-size: 24rem;
   font-weight: 300;
-  margin-left: 30px;
+  margin-left: 30rem;
   position: relative;
   text-decoration: none;
-  top: -21.4285714286px;
+  top: -21.4285714286rem;
   transition: all 0.4s ease;
   z-index: 13;
 }
 .b-container {
-  height: 60px;
-  left: 30px;
+  height: 60rem;
+  left: 30rem;
   position: absolute;
-  top: 30px;
+  top: 30rem;
   overflow-x: hidden;
-  
-overflow-y:hidden;
+
+  overflow-y: hidden;
 }
-.b-container:hover:not(.open) .bun-top, .b-container:hover:not(.open) .bun-mid, .b-container:hover:not(.open) .bun-bottom {
+.b-container:hover:not(.open) .bun-top,
+.b-container:hover:not(.open) .bun-mid,
+.b-container:hover:not(.open) .bun-bottom {
   background: rgba(255, 255, 255, 1);
 }
 .b-container.open .b-main {
-  border: rgba(68, 68, 68, 1) solid 2px;
+  border: rgba(68, 68, 68, 1) solid 2rem;
 }
 .b-container.open .b-bun--top {
   background: rgba(68, 68, 68, 1);
-  top: 9px;
+  top: 9rem;
   transform: rotate(45deg);
 }
 .b-container.open .b-bun--mid {
@@ -167,7 +170,7 @@ overflow-y:hidden;
 }
 .b-container.open .b-bun--bottom {
   background: rgba(68, 68, 68, 1);
-  top: 5px;
+  top: 5rem;
   transform: rotate(-45deg);
 }
 .b-container.open .b-brand {
@@ -175,5 +178,5 @@ overflow-y:hidden;
 }
 
 img.menu_numeros_romanos {
-  margin-right: 24px;
+  margin-right: 24rem;
 }

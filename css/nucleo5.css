@@ -1,69 +1,67 @@
 /*PAGINA CONCLUSION Y ESTILOS */
 
 .contenedor_conclusion {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    margin-top: 3%;
-   
-  }
-  /*fondo conclusion*/
-  .fondo_conclusion {
-    height: 100vh;
-    width: auto;
-    background-image: url(../img/fondo_conclusion.png);
-    background-size: cover;
-    /*lo siguiente es para el fondo full screen*/
-    background-position: center;
-    position: relative;
-  }
-  
-  .items {
-    width: 625px;
-    margin-top: 2%;
-    margin-left: 5%;
-  }
-  #item{
-    background-color: #E6FBE1;
-    height: 80px;
-    width: 80px;
-    border: 2px solid #84C374;
-    border-radius: 50%;
-    display: inline-block;
-    margin-right: 5%;
-    text-align: center;
-  }
-  #item svg {
-    display: block;
-      margin: auto;
-      margin-top: 15%;
-  }
-  #item:hover {
-    background-color: #84C374;
-    height: 80px;
-    width: 80px;
-    border: 2px solid #84C374;
-    border-radius: 50%;
-    display: inline-block;
-  }
-  
-  
-  #oculta {
-    display: none;
-    position: absolute;
-    text-align: center;
-  }
-  p {
-    font-weight: bold;
-  }
-  p#oculta{
-    margin-top: 30%;
-  }
-  
-  #texto_verde {
-    color: #84c374;
-    font-size: 72px;
-    font-weight: bold;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-top: 3%;
+}
+/*fondo conclusion*/
+.fondo_conclusion {
+  height: 100vh;
+  width: auto;
+  background-image: url(../img/fondo_conclusion.png);
+  background-size: cover;
+  /*lo siguiente es para el fondo full screen*/
+  background-position: center;
+  position: relative;
+}
+
+.items {
+  width: 625rem;
+  margin-top: 2%;
+  margin-left: 5%;
+}
+#item {
+  background-color: #e6fbe1;
+  height: 80rem;
+  width: 80rem;
+  border: 2rem solid #84c374;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5%;
+  text-align: center;
+}
+#item svg {
+  display: block;
+  margin: auto;
+  margin-top: 15%;
+}
+#item:hover {
+  background-color: #84c374;
+  height: 80rem;
+  width: 80rem;
+  border: 2rem solid #84c374;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+#oculta {
+  display: none;
+  position: absolute;
+  text-align: center;
+}
+p {
+  font-weight: bold;
+}
+p#oculta {
+  margin-top: 30%;
+}
+
+#texto_verde {
+  color: #84c374;
+  font-size: 72rem;
+  font-weight: bold;
+}

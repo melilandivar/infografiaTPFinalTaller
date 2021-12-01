@@ -138,19 +138,19 @@ function progreso() {
     cantidadPasajerosC = "";
     cantidadPasajerosE = "";
   }
-  if (valor.ariaValueNow == "10") {
-    kgDia = "1.2";
-    kgMes = "36";
-    kgAño = "432";
-    kgDiaC = "2.14";
-    kgMesC = "64.2";
-    kgAño = "770";
-    cantidadBotellasC = "18";
-    cantidadBotellasE = "10";
-    cantidadCelularesC = "01";
-    cantidadCelularesE = "0.5";
-    cantidadPasajerosC = "05";
-    cantidadPasajerosE = "03";
+  if (valor.ariaValueNow == "30") {
+    kgDia = "6.4";
+    kgMes = "192";
+    kgAño = "2034";
+    kgDiaC = "3.0";
+    kgMesC = "90";
+    kgAño = "1080";
+    cantidadBotellasC = "55";
+    cantidadBotellasE = "26";
+    cantidadCelularesC = "03";
+    cantidadCelularesE = "1.5";
+    cantidadPasajerosC = "15";
+    cantidadPasajerosE = "07";
   }
   if (valor.ariaValueNow == "20") {
     kgDia = "2.0";
