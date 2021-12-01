@@ -224,13 +224,6 @@ div#infoModosDeCarga {
   padding: 15px;
 }
 
-#CargaLenta_nucleo1 {
-  display: none;
-  top: 42%;
-  left: 39%;
-}
-
-
 .item_Carga1{
         background-color: #D1E8BA;
         margin-right: 5%;
@@ -330,7 +323,7 @@ height: 80px;
 .itemX {
   position: relative;
   display: inline;
-  margin: auto auto;
+
 }
 
 #txt_torre {
@@ -399,6 +392,22 @@ display: none;
     #autoCargaLenta-seleccionada{
         display: none;
         
-        }              
+        }
+        
+        /* CARGA SEMIRAPIDA */
+        #CargaSemiRapida_secuencia{
+display: none;
+
+        }
+        #torreCargaSemiRapida-Noseleccionada{
+          display: flex;
+          
+      }
+         
+  #torreCargaSemiRapida-seleccionada{
+  display: none;
+  
+      }
+
    
     
