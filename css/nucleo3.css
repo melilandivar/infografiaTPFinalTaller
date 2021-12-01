@@ -37,7 +37,7 @@
   font-size: 44rem;
   font-weight: bolder;
 }
-#bg_elec label {
+#bg_elect label {
   font-family: "Roboto";
   font-size: 48rem;
   font-weight: bolder;
@@ -86,6 +86,7 @@ h5 {
 }
 #km_dia_nucleo3 {
   font-size: 24px;
+  margin-top: -30rem;
   font-weight: bold;
 }
 #progressbar {
