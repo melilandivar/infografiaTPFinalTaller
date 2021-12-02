@@ -109,3 +109,39 @@ function CargaRapida(){
    
   } 
 }
+function torreCargaRapida(){
+  if(document.getElementById('itemX_Torre').style.display='flex'){
+    document.getElementById('txt_torre_cargarapida').style.display='flex';
+    document.getElementById('txt_titulo_torre_cargarapida').style.display='flex';
+    document.getElementById('torreCargaRapida-Noseleccionada').style.display='none';
+    document.getElementById('torreCargaRapida-seleccionada').style.display='flex';
+    
+  } 
+}
+function casaCargaRapida(){
+  if(document.getElementById('itemX_Casa').style.display='flex'){
+    document.getElementById('txt_casa_cargarapida').style.display='flex';
+    document.getElementById('txt_titulo_casa_cargarapida').style.display='flex';
+    document.getElementById('casaCargaRapida-Noseleccionada').style.display='none';
+    document.getElementById('casaCargaRapida-seleccionada').style.display='flex';
+    
+  } 
+}
+function conectorCargaRapida(){
+  if(document.getElementById('itemX_Conector').style.display='flex'){
+    document.getElementById('txt_conector_cargarapida').style.display='flex';
+    document.getElementById('txt_titulo_conector_cargarapida').style.display='flex';
+    document.getElementById('conectorCargaRapida-Noseleccionada').style.display='none';
+    document.getElementById('conectorCargaRapida-seleccionada').style.display='flex';
+    
+  } 
+}
+function autoCargaRapida(){
+  if(document.getElementById('itemX_Auto').style.display='flex'){
+    document.getElementById('txt_auto_cargarapida').style.display='flex';
+    document.getElementById('txt_titulo_auto_cargarapida').style.display='flex';
+    document.getElementById('autoCargaRapida-Noseleccionada').style.display='none';
+    document.getElementById('autoCargaRapida-seleccionada').style.display='flex';
+    
+  } 
+}
