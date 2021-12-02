@@ -17,8 +17,9 @@ carrete.onmousedown = function (e) {
   isDown = true;
 };
 */
-window.onmousedown = function (e) {
+document.onmousedown = function (e) {
   if (estasClickeandoElCarrete(e)) isDown = true;
+  console.log(estasClickeandoElCarrete(e));
 };
 document.onmouseup = function (e) {
   isDown = false;
@@ -90,7 +91,7 @@ function GetCarretePosition() {
 
 //Define la posicion determinada de los nucleos
 function SetNucleosPosition() {
-  for (i = 0; i < nucleo.length; i++) {
+  for (let i = 0; i < nucleo.length; i++) {
     nucleoPositionX[i] = -window.innerWidth * i;
     //nucleoPositionX[i] = -window.screen.width * i;
     console.log(`nucleoPositionX ${i + 1} ` + nucleoPositionX[i]);
@@ -99,7 +100,7 @@ function SetNucleosPosition() {
 
 //Busca el "id" de los nucleos
 function GetNucleoReference() {
-  for (i = 0; i < nucleo.length; i++) {
+  for (let i = 0; i < nucleo.length; i++) {
     nucleo[i] = document.getElementById(`nucleo${i}`);
     console.log(`nucleo ${i} ` + nucleo[i]);
   }
@@ -143,13 +144,21 @@ function ReubicarCarrete() {
 function estasClickeandoElCarrete(_event) {
   _tag = _event.target.tagName;
   _id = _event.target.id;
+  console.log(`uno`);
+  if (_tag == "IMG") return false;
+  console.log("dos");
+
   for (let i = 0; i < nucleo.length; i++) {
-    if (_id == nucleo[i] || _id == ``) {
-      if (_tag == "IMG") return false;
-      console.log(_tag);
-      console.log("activado");
+    if (_id != nucleo[i] || _id == `` || _id == carrete) {
+      console.log(_id);
+      //console.log("activado");
       return true;
     }
+    break;
   }
+  //console.log(_tag);
+  //console.log(_id);
   return false;
 }
+
+//nucleo[0].style.height = "50px";

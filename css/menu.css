@@ -19,6 +19,7 @@
 * {
   box-sizing: border-box;
 }
+
 body:after {
   background: rgba(0, 0, 0, 1);
   content: "";

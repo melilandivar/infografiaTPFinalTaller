@@ -3,6 +3,16 @@
   padding: 0;
 }
 
+* {
+  /* No permite que el texto o imagenes sean subrayados*/
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
 html {
   font-size: 1px !important;
 }
@@ -54,113 +64,4 @@ button,
 button:active,
 button:focus {
   outline: none !important;
-}
-
-/*INTRODUCCION */
-
-/*fondo y movimiento del auto*/
-
-.nucleo0 {
-  background-image: url(../img/fondo_introduccion.png);
-  background-size: cover;
-  /*lo siguiente es para el fondo full screen*/
-  background-position: center;
-  position: relative;
-}
-
-/*BOTON NUCLEO Y ACTIVA EL AUTO */
-
-#boton {
-  padding: 10rem;
-  background: orange;
-  width: 95rem;
-  cursor: pointer;
-  margin-top: 10rem;
-  margin-bottom: 10rem;
-  box-shadow: 0rem 0rem 1rem #000;
-  display: inline-block;
-}
-
-#boton:hover {
-  opacity: 0.8;
-}
-
-/*
-
-*/
-/* --- AUTO --- */
-.nucleo0__auto-estatico {
-  position: absolute;
-  left: -10%;
-  bottom: 100rem;
-  transform: translateX(-50%);
-}
-
-.nucleo0__auto img {
-  width: 100%;
-}
-
-.nucleo0__auto-animado {
-  animation: car 5s linear infinite;
-}
-
-@keyframes car {
-  100% {
-    transform: translateX(3600rem);
-  }
-}
-
-#nucleo0__boton {
-  cursor: pointer;
-}
-
-/*
-
-*/
-/*fin fondo y movimiento del auto*/
-
-.contenedor {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  position: absolute;
-  top: 50%;
-  left: 45%;
-  width: auto;
-  /* height: 400rem; */
-  margin-top: -200rem;
-  margin-left: -300rem;
-  margin-bottom: 0rem;
-  padding: 0rem;
-}
-/* CSS BARRA DE PROGRESO */
-
-.RadialProgress {
-  --hue: 137;
-  --holesize: 65%;
-  --track-bg: hsl(137 59% 73%);
-
-  inline-size: 50vmin;
-  min-inline-size: 100rem;
-  min-block-size: 100rem;
-  display: grid;
-  place-items: center;
-  position: relative;
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: max(10vmin, 1.4rem);
-}
-/*NUCLEO 3*/
-
-.fondo_3 {
-  height: 100vh;
-  width: auto;
-  background-image: url(../img/fondo_introduccion.png);
-  background-size: cover;
-  /*lo siguiente es para el fondo full screen*/
-  background-position: center;
-  position: relative;
-  /* overflow-x: hidden;*/
 }

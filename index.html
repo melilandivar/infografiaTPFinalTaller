@@ -32,14 +32,15 @@
 
     <!--Links a css-->
     <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="css/menu.css" />
     <link rel="stylesheet" href="css/carrete.css" />
+    <link rel="stylesheet" href="css/nucleo0.css" />
     <link rel="stylesheet" href="css/nucleo1.css" />
     <link rel="stylesheet" href="css/nucleo2.css" />
     <link rel="stylesheet" href="css/nucleo3.css" />
     <link rel="stylesheet" href="css/nucleo4.css" />
     <link rel="stylesheet" href="css/nucleo5.css" />
     <link rel="stylesheet" href="css/modosdecarga.css" />
-    <link rel="stylesheet" href="css/menu.css" />
 
     <!--fin del head -->
   </head>
@@ -47,36 +48,38 @@
   <body>
     <!-- menu -->
     <div class="b-nav">
-      <li>
-        <a class="b-link" href="#nucleo1">
-          <img class="menu_numeros_romanos" src="img/numero_romano_I.svg" alt="Nucleo I" />
-          <span>¿Cómo se compone un auto eléctrico?</span>
-        </a>
-      </li>
-      <li>
-        <a class="b-link" href="#nucleo2">
-          <img class="menu_numeros_romanos" src="img/numero_romano_II.svg" alt="Nucleo II" />
-          <span>Comparación de losprocesos de producción</span>
-        </a>
-      </li>
-      <li>
-        <a class="b-link" href="#nucleo3 ">
-          <img class="menu_numeros_romanos" src="img/numero_romano_III.svg" alt="Nucleo III" />
-          <span>¿Cuanto CO2 emites?</span>
-        </a>
-      </li>
-      <li>
-        <a class="b-link" href="#nucleo4">
-          <img class="menu_numeros_romanos" src="img/numero_romano_IV.svg" alt="Nucleo IV" />
-          <span>Ventajas y desventajas del uso diario de los autos electricos</span>
-        </a>
-      </li>
-      <li>
-        <a class="b-link" href="#nucleo5">
-          <img class="menu_numeros_romanos" src="img/numero_romano_V.svg" alt="Nucleo V" />
-          <span>¿Por qué deberia adquirir un auto eléctrico?</span>
-        </a>
-      </li>
+      <ul>
+        <li>
+          <a class="b-link" href="#nucleo1">
+            <img class="menu_numeros_romanos" src="img/numero_romano_I.svg" alt="Nucleo I" />
+            <span>¿Cómo se compone un auto eléctrico?</span>
+          </a>
+        </li>
+        <li>
+          <a class="b-link" href="#nucleo2">
+            <img class="menu_numeros_romanos" src="img/numero_romano_II.svg" alt="Nucleo II" />
+            <span>Comparación de losprocesos de producción</span>
+          </a>
+        </li>
+        <li>
+          <a class="b-link" href="#nucleo3 ">
+            <img class="menu_numeros_romanos" src="img/numero_romano_III.svg" alt="Nucleo III" />
+            <span>¿Cuanto CO2 emites?</span>
+          </a>
+        </li>
+        <li>
+          <a class="b-link" href="#nucleo4">
+            <img class="menu_numeros_romanos" src="img/numero_romano_IV.svg" alt="Nucleo IV" />
+            <span>Ventajas y desventajas del uso diario de los autos electricos</span>
+          </a>
+        </li>
+        <li>
+          <a class="b-link" href="#nucleo5">
+            <img class="menu_numeros_romanos" src="img/numero_romano_V.svg" alt="Nucleo V" />
+            <span>¿Por qué deberia adquirir un auto eléctrico?</span>
+          </a>
+        </li>
+      </ul>
     </div>
 
     <!-- Burger-Icon -->
@@ -96,10 +99,9 @@
     <!--Inicio del Carrete-->
     <div id="carrete" class="mainContainer">
       <!--Nucleo 0-->
-      <div id="nucleo0" class="nucleo0">
+      <div id="nucleo0">
         <div id="nucleo0__auto" class="nucleo0__auto-estatico">
           <img src="img/cuerpo_auto.png" alt="auto" />
-     
         </div>
 
         <div class="contenedor">
@@ -123,23 +125,20 @@
             <div class="items_nucleo1">
               <div class="item1" id="item_nucleo1" onclick="agregarPlug()">
                 <img src="img/nucleo1_icono_plug.png" />
-                               
-                <div id="plugCarga">           
-                </div>
+
+                <div id="plugCarga"></div>
                 <p id="titulos_iconos_nucleo1">Plug de carga</p>
               </div>
               <div class="item2" id="item_nucleo1" onclick="agregarBateria()">
-                <img src="img/nucleo1_icono_bateria.png" />              
-               
-                <div id="bateriaLitio">                  
-                </div>
+                <img src="img/nucleo1_icono_bateria.png" />
+
+                <div id="bateriaLitio"></div>
                 <p id="titulos_iconos_nucleo1">Bateria de Litio</p>
               </div>
               <div class="item3" id="item_nucleo3" onclick="agregarMotor()">
-                <img src="img/nucleo1_icono_motor.png" />                
-                
-                <div id="motorElectrico">                 
-                </div>
+                <img src="img/nucleo1_icono_motor.png" />
+
+                <div id="motorElectrico"></div>
                 <p id="titulos_iconos_nucleo1">Motor eléctrico</p>
               </div>
               <!-- MODOS DE CARGA-->
@@ -170,10 +169,14 @@
             </div>
           </div>
           <div class="nucleo1_grafico">
-            <img src="img/nucleo1/auto_partes.png" alt="" id="auto_cuerpo"/>
-            <img src="img/nucleo1/auto_plug.png" alt="auto y plug de carga" id="auto_plug"/>
-            <img src="img/nucleo1/auto_plug_bateria.png" alt="auto, plug de carga y bateria" id="auto_plug_bateria"/>
-            <img src="img/nucleo1/auto_plug_bateria_motor.png" alt="auto, plug de carga, bateria y motor" id="auto_plug_bateria_motor"/>
+            <img src="img/nucleo1/auto_partes.png" alt="" id="auto_cuerpo" />
+            <img src="img/nucleo1/auto_plug.png" alt="auto y plug de carga" id="auto_plug" />
+            <img src="img/nucleo1/auto_plug_bateria.png" alt="auto, plug de carga y bateria" id="auto_plug_bateria" />
+            <img
+              src="img/nucleo1/auto_plug_bateria_motor.png"
+              alt="auto, plug de carga, bateria y motor"
+              id="auto_plug_bateria_motor"
+            />
           </div>
         </div>
 
@@ -199,8 +202,9 @@
             <img src="img/Nucleo1/Casa.svg" alt="Casa" id="casaCargaLenta-Noseleccionada" />
             <img src="img/Nucleo1/Casa_Seleccionada.svg" alt="CasaSeleccionada" id="casaCargaLenta-seleccionada" />
             <p id="txt_casaCargaLenta">
-              El vehículo se conecta <br /> a la vivienda 
-              a tráves de <br /> un enchufe doméstico
+              El vehículo se conecta <br />
+              a la vivienda a tráves de <br />
+              un enchufe doméstico
             </p>
           </div>
           <div class="itemX" id="itemX_Conector" onclick="conectorCargaLenta()">
@@ -208,15 +212,18 @@
             <img src="img/Nucleo1/Conector.svg" alt="Conector" id="conectorCargaLenta-Noseleccionada" />
             <img src="img/Nucleo1/Conector_Seleccionada.svg" alt="Conector" id="conectorCargaLenta-seleccionada" />
             <p id="txt_conectorCargaLenta">
-              Mediante un conector <br /> Schuko 
-              y corriente alterna
+              Mediante un conector <br />
+              Schuko y corriente alterna
             </p>
           </div>
           <div class="itemX" id="itemX_CulataAuto" onclick="autoCargaLenta()">
             <p id="txt_titulo_auto">AUTO</p>
             <img src="img/Nucleo1/CulataAuto.svg" alt="CulataAuto" id="autoCargaLenta-Noseleccionada" />
             <img src="img/Nucleo1/CulataAuto_Seleccionada.svg" alt="CulataAuto" id="autoCargaLenta-seleccionada" />
-            <p id="txt_autoCargaLenta">Conexión ideal para <br/> automoviles pequeños.</p>
+            <p id="txt_autoCargaLenta">
+              Conexión ideal para <br />
+              automoviles pequeños.
+            </p>
           </div>
           
         </div>
@@ -257,7 +264,10 @@
             <p id="txt_titulo_auto_cargasemirapida">AUTO</p>
             <img src="img/Nucleo1/CulataAuto.svg" alt="CulataAuto" id="autoCargaSemiRapida-Noseleccionada" />
             <img src="img/Nucleo1/CulataAuto_Seleccionada.svg" alt="CulataAuto" id="autoCargaSemiRapida-seleccionada" />
-            <p id="txt_auto_cargasemirapida">Conexión para automoviles <br/> de mediana a alta potencia.</p>
+            <p id="txt_auto_cargasemirapida">
+              Conexión para automoviles <br />
+              de mediana a alta potencia.
+            </p>
           </div>
         </div>
 
@@ -314,7 +324,9 @@
         <div class="nucleo2__header">
           <h1>Comparación de los procesos de producción</h1>
           <div class="nucleo2__header__botones">
-            <button class="nucleo2__header__botones__item" id="nucleo2__botonAutoElectrico">Auto electrico</button>
+            <button class="nucleo2__header__botones__item underline" id="nucleo2__botonAutoElectrico">
+              Auto electrico
+            </button>
             <button class="nucleo2__header__botones__item" id="nucleo2__botonAutoCombustion">Auto a combustión</button>
           </div>
         </div>
@@ -449,7 +461,7 @@
             <input type="range" class="form-range" value="0" min="0" max="120" step="30" id="customRange3" />
           </div>
           <p id="seleccionar_km_nucleo3">Selecciona los kilometros diarios recorridos</p>
-<!--
+          <!--
           <div class="nucleo_3_subtitulos">
             <div class="nucleo_3_subtitulos_contenedor">
               <p id="subtitulos_nucleo3">Co2 emitido en autos a combustión</p>
@@ -479,7 +491,6 @@
                   <label for="" id="kgAñoC"></label>
                 </div>
               </div>
-              
             </div>
 
             <div class="nucleo_3_col col_2">
@@ -809,6 +820,6 @@
 <script src="js/nucleo2.js"></script>
 <script src="js/modosdeCarga.js"></script>
 <script src="js/index.js"></script>
-<script src="js/carrete.js"></script>
 <script src="js/main.js"></script>
+<script src="js/carrete.js"></script>
 <!--link al archivo js-->
