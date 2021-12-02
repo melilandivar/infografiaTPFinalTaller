@@ -24,10 +24,10 @@
 .nucleo2__header {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /*justify-content: center;*/
   align-content: center;
   align-items: center;
-  padding-top: 25rem;
+  padding-top: 30rem;
   /*margin: auto 0;*/
 }
 
@@ -43,6 +43,7 @@
   box-shadow: none;
   border-radius: 0rem;
   background-color: transparent;
+  cursor: pointer;
 }
 
 /* ----- autopartes interactivas ----- */
@@ -62,6 +63,7 @@
   height: 130rem;
   padding: 0% 3%;
   overflow-y: hidden;
+  cursor: pointer;
 }
 
 .nucleo2__autopartes__contenedor p {

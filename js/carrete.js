@@ -12,8 +12,13 @@ GetNucleoReference();
 SetNucleosPosition();
 ReubicarCarrete(); //Ubica el carrete en el "nucleoActual" al inicio
 
+/*
 carrete.onmousedown = function (e) {
   isDown = true;
+};
+*/
+window.onmousedown = function (e) {
+  if (estasClickeandoElCarrete(e)) isDown = true;
 };
 document.onmouseup = function (e) {
   isDown = false;
@@ -133,4 +138,18 @@ function ReubicarCarrete() {
   console.log("Carrete Reubicado");
   SetNucleosPosition();
   carrete.style.left = nucleoPositionX[nucleoActual] + "px";
+}
+
+function estasClickeandoElCarrete(_event) {
+  _tag = _event.target.tagName;
+  _id = _event.target.id;
+  for (let i = 0; i < nucleo.length; i++) {
+    if (_id == nucleo[i] || _id == ``) {
+      if (_tag == "IMG") return false;
+      console.log(_tag);
+      console.log("activado");
+      return true;
+    }
+  }
+  return false;
 }

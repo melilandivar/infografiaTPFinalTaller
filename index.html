@@ -196,19 +196,28 @@
               </div>
               <!-- MODOS DE CARGA-->
               <div class="item_Carga1" id="CargaLenta_nucleo1">
-                <p >1</p>
+                <p>1</p>
 
-                <p id="titulos_CARGA">Carga Lenta <br> 7-8 hs</p>
+                <p id="titulos_CARGA">
+                  Carga Lenta <br />
+                  7-8 hs
+                </p>
               </div>
               <div class="item_Carga2" id="CargaSemiRapida_nucleo1" onclick="CargaSemiRapida()">
                 <p>2</p>
 
-                <p id="titulos_CARGA">Carga Semi-Rapida <br> 3-4 hs</p>
+                <p id="titulos_CARGA">
+                  Carga Semi-Rapida <br />
+                  3-4 hs
+                </p>
               </div>
               <div class="item_Carga3" id="CargaRapida_nucleo1" onclick="CargaRapida()">
                 <p>2</p>
 
-                <p id="titulos_CARGA">Carga Rapida <br> 30-40 min</p>
+                <p id="titulos_CARGA">
+                  Carga Rapida <br />
+                  30-40 min
+                </p>
               </div>
             </div>
           </div>
@@ -221,72 +230,83 @@
           <p>mas info sobre los modos de carga</p>
         </div>
 
-                     <!-- CARGA LENTA -->
+        <!-- CARGA LENTA -->
         <div class="ConexionCargaLenta" id="CargaLenta_secuencia">
           <div class="itemX" id="itemX_Torre" onclick="torreCargaLenta()">
             <p id="txt_titulo_torre">RED</p>
-            <img src="img/Nucleo1/TorreElectrica.svg" alt="Torre" id="torreCargaLenta-Noseleccionada">
-            <img src="img/Nucleo1/TorreElectrica_Seleccionada.svg" alt="Torre" id="torreCargaLenta-seleccionada">
-            <p id="txt_torre">Corriente máxima:<br>
-              16 Amperios<br>
-              hasta 250 Voltios</p>  
+            <img src="img/Nucleo1/TorreElectrica.svg" alt="Torre" id="torreCargaLenta-Noseleccionada" />
+            <img src="img/Nucleo1/TorreElectrica_Seleccionada.svg" alt="Torre" id="torreCargaLenta-seleccionada" />
+            <p id="txt_torre">
+              Corriente máxima:<br />
+              16 Amperios<br />
+              hasta 250 Voltios
+            </p>
           </div>
           <div class="itemX" id="itemX_Casa" onclick="casaCargaLenta()">
-            <p id="txt_titulo_casa">VIVIENDA</p>  
-            <img src="img/Nucleo1/Casa.svg" alt="Casa" id="casaCargaLenta-Noseleccionada">
-            <img src="img/Nucleo1/Casa_Seleccionada.svg" alt="CasaSeleccionada" id="casaCargaLenta-seleccionada">
-            <p id="txt_casaCargaLenta"> El vehículo se conecta
-              a la vivienda <br> a tráves
-              de un enchufe doméstico </p>
+            <p id="txt_titulo_casa">VIVIENDA</p>
+            <img src="img/Nucleo1/Casa.svg" alt="Casa" id="casaCargaLenta-Noseleccionada" />
+            <img src="img/Nucleo1/Casa_Seleccionada.svg" alt="CasaSeleccionada" id="casaCargaLenta-seleccionada" />
+            <p id="txt_casaCargaLenta">
+              El vehículo se conecta a la vivienda <br />
+              a tráves de un enchufe doméstico
+            </p>
           </div>
           <div class="itemX" id="itemX_Conector" onclick="conectorCargaLenta()">
-            <p id="txt_titulo_conector">CONECTOR</p>  
-            <img src="img/Nucleo1/Conector.svg" alt="Conector" id="conectorCargaLenta-Noseleccionada" >
-            <img src="img/Nucleo1/Conector_Seleccionada.svg" alt="Conector" id="conectorCargaLenta-seleccionada" >
-            <p id="txt_conectorCargaLenta"> Mediante un conector
-              Schuko <br> y corriente
-              alterna </p>
+            <p id="txt_titulo_conector">CONECTOR</p>
+            <img src="img/Nucleo1/Conector.svg" alt="Conector" id="conectorCargaLenta-Noseleccionada" />
+            <img src="img/Nucleo1/Conector_Seleccionada.svg" alt="Conector" id="conectorCargaLenta-seleccionada" />
+            <p id="txt_conectorCargaLenta">
+              Mediante un conector Schuko <br />
+              y corriente alterna
+            </p>
           </div>
           <div class="itemX" id="itemX_CulataAuto" onclick="autoCargaLenta()">
-            <p id="txt_titulo_auto">AUTO</p>  
-            <img src="img/Nucleo1/CulataAuto.svg" alt="CulataAuto" id="autoCargaLenta-Noseleccionada" >
-            <img src="img/Nucleo1/CulataAuto_Seleccionada.svg" alt="CulataAuto" id="autoCargaLenta-seleccionada" >
-            <p id="txt_autoCargaLenta"> Conexión ideal
-              para automoviles
-              pequeños.</p>  
+            <p id="txt_titulo_auto">AUTO</p>
+            <img src="img/Nucleo1/CulataAuto.svg" alt="CulataAuto" id="autoCargaLenta-Noseleccionada" />
+            <img src="img/Nucleo1/CulataAuto_Seleccionada.svg" alt="CulataAuto" id="autoCargaLenta-seleccionada" />
+            <p id="txt_autoCargaLenta">Conexión ideal para automoviles pequeños.</p>
           </div>
         </div>
 
-                      <!-- CARGA SEMIRAPIDA -->
-                      <div class="ConexionCargaSemiRapida" id="CargaSemiRapida_secuencia">
-                        <div class="itemX" id="itemX_Torre" onclick="torreCargaSemiRapida()">
-                          <p id="txt_titulo_torre">RED</p>
-                          <img src="img/Nucleo1/TorreElectrica.svg" alt="Torre" id="torreCargaSemiRapida-Noseleccionada">
-                          <img src="img/Nucleo1/TorreElectrica_Seleccionada.svg" alt="Torre" id="torreCargaSemiRapida-seleccionada">
-                          <p id="txt_torre">Corriente máxima:<br>
-                            63 Amperios<br>
-                            hasta 480 Voltios</p>  
-                        </div>
-                        <div class="itemX" id="itemX_Casa" onclick="casaCargaSemiRapida()">
-                          <p id="txt_titulo_casa">VIVIENDA</p>  
-                          <img src="img/Nucleo1/Casa.svg" alt="Casa" id="casaCargaSemiRapida-Noseleccionada">
-                          <img src="img/Nucleo1/Casa_Seleccionada.svg" alt="CasaSeleccionada" id="casaCargaSemiRapida-seleccionada">
-                          <p id="txt_casaCargaLenta"> El vehiculo se conecta<br> a la vivienda a traves <br> de un dispositivo. </p>
-                        </div>
-                        <div class="itemX" id="itemX_Conector" onclick="conectorCargaSemiRapida()">
-                          <p id="txt_titulo_conector">CONECTOR</p>  
-                          <img src="img/Nucleo1/Wallbox.svg" alt="Conector" id="conectorCargaSemiRapida-Noseleccionada" >
-                          <img src="img/Nucleo1/WallboxSeleccionada.svg" alt="Conector" id="conectorCargaSemiRapida-seleccionada" >
-                          <p id="txt_conectorCargaLenta"> Mediante un Wallbox<br> y corriente alterna <br> permite control y seguridad. </p>
-                        </div>
-                        <div class="itemX" id="itemX_Auto" onclick="autoCargaSemiRapida()">
-                          <p id="txt_titulo_auto">AUTO</p>  
-                          <img src="img/Nucleo1/CulataAuto.svg" alt="CulataAuto" id="autoCargaSemiRapida-Noseleccionada" >
-                          <img src="img/Nucleo1/CulataAuto_Seleccionada.svg" alt="CulataAuto" id="autoCargaSemiRapida-seleccionada" >
-                          <p id="txt_autoCargaLenta"> Conexión para automoviles de mediana a alta potencia.</p>  
-                        </div>
-                      </div>
-
+        <!-- CARGA SEMIRAPIDA -->
+        <div class="ConexionCargaSemiRapida" id="CargaSemiRapida_secuencia">
+          <div class="itemX" id="itemX_Torre" onclick="torreCargaSemiRapida()">
+            <p id="txt_titulo_torre">RED</p>
+            <img src="img/Nucleo1/TorreElectrica.svg" alt="Torre" id="torreCargaSemiRapida-Noseleccionada" />
+            <img src="img/Nucleo1/TorreElectrica_Seleccionada.svg" alt="Torre" id="torreCargaSemiRapida-seleccionada" />
+            <p id="txt_torre">
+              Corriente máxima:<br />
+              63 Amperios<br />
+              hasta 480 Voltios
+            </p>
+          </div>
+          <div class="itemX" id="itemX_Casa" onclick="casaCargaSemiRapida()">
+            <p id="txt_titulo_casa">VIVIENDA</p>
+            <img src="img/Nucleo1/Casa.svg" alt="Casa" id="casaCargaSemiRapida-Noseleccionada" />
+            <img src="img/Nucleo1/Casa_Seleccionada.svg" alt="CasaSeleccionada" id="casaCargaSemiRapida-seleccionada" />
+            <p id="txt_casaCargaLenta">
+              El vehiculo se conecta<br />
+              a la vivienda a traves <br />
+              de un dispositivo.
+            </p>
+          </div>
+          <div class="itemX" id="itemX_Conector" onclick="conectorCargaSemiRapida()">
+            <p id="txt_titulo_conector">CONECTOR</p>
+            <img src="img/Nucleo1/Wallbox.svg" alt="Conector" id="conectorCargaSemiRapida-Noseleccionada" />
+            <img src="img/Nucleo1/WallboxSeleccionada.svg" alt="Conector" id="conectorCargaSemiRapida-seleccionada" />
+            <p id="txt_conectorCargaLenta">
+              Mediante un Wallbox<br />
+              y corriente alterna <br />
+              permite control y seguridad.
+            </p>
+          </div>
+          <div class="itemX" id="itemX_Auto" onclick="autoCargaSemiRapida()">
+            <p id="txt_titulo_auto">AUTO</p>
+            <img src="img/Nucleo1/CulataAuto.svg" alt="CulataAuto" id="autoCargaSemiRapida-Noseleccionada" />
+            <img src="img/Nucleo1/CulataAuto_Seleccionada.svg" alt="CulataAuto" id="autoCargaSemiRapida-seleccionada" />
+            <p id="txt_autoCargaLenta">Conexión para automoviles de mediana a alta potencia.</p>
+          </div>
+        </div>
       </div>
 
       <!-- FIN NUCLEO 1 -->
@@ -371,8 +391,10 @@
         <!-- Fin de seleccion de auto partes-->
 
         <!-- Auto -->
-        <div class="nucleo2__auto" id="nucleo2__auto">
-          <img src="img/nucleo2/autoElectricoPlaceHolder.svg" />
+        <div class="nucleo2__auto">
+          <div id="nucleo2__auto">
+            <img src="img/nucleo2/autoElectricoPlaceHolder.svg" />
+          </div>
         </div>
 
         <!-- Resultados de Contaminacion -->
@@ -497,7 +519,7 @@
               <img src="img/nucleo3/equals.png" alt="simbolo igual" id="igual_nucleo3" />
             </div>
 
-<!-- ACA NO SE ESTA MOSTRANDO LOS VALORES, EN DIA/MES/AÑO DEL LADO DE ELECTRICOS. EL JS FUNCIONA, ES UN PROBLEMA DEL LABEL BTML-->
+            <!-- ACA NO SE ESTA MOSTRANDO LOS VALORES, EN DIA/MES/AÑO DEL LADO DE ELECTRICOS. EL JS FUNCIONA, ES UN PROBLEMA DEL LABEL BTML-->
             <div class="nucleo_3_col col_7">
               <div class="nucleo_3_col_row_der" id="bg_elect">
                 <div class="col" id="bg_elect">
