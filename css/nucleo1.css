@@ -217,11 +217,14 @@ div#infoModosDeCarga {
   display: none;
   position: relative;
   text-align: center;
-  background-color: red;
+  background-color: rgba(36, 122, 63, 1);
   width: 330px;
   top: 11%;
   left: 39%;
   padding: 15px;
+  border: 2px solid rgba(36, 122, 63, 1);
+  border-radius: 8px;
+  
 }
 
 .item_Carga1{
@@ -262,9 +265,8 @@ div#infoModosDeCarga {
 }
 
 #CargaLenta_nucleo1{
-display: none;
-       
-       text-align: center;
+  display: none;       
+  text-align: center;
 }
       
 #CargaSemiRapida_nucleo1 {
@@ -273,30 +275,17 @@ display: none;
   left: 48%;
 }
 #CargaLenta_nucleo1 p{
-    display: block;
-    
+    display: block;    
 }
-
 
 #CargaRapida_nucleo1 {
   display: none;
-
   top: 43%;
   left: 57%;
 }
 
-#CargaLenta_secuencia {
-  display: none;
-  top: 42%;
-  left: 39%;
-}
 
-#CargaLenta_secuencia{
-    display: none;
-           top:42%;
-           left:39%;
-          
-    }
+
 
 #titulos_CARGA{
     position: fixed;
@@ -325,74 +314,65 @@ height: 80px;
   display: inline;
 
 }
+   /* CARGA LENTA */
+
+#CargaLenta_secuencia {
+  display: none;
+  top: 42%;
+  left: 39%;
+}
 
 #txt_torre {
   display: none;
 }
 #txt_titulo_torre{
-display: none;
-
+display: flex;
+}
+#torreCargaLenta-Noseleccionada{
+  display: flex;        
+}       
+#torreCargaLenta-seleccionada{
+  display: none;
 }
 
 #txt_casaCargaLenta{
-display: none;
-
+  display: none;
 }
 #txt_titulo_casa{
-    display: none;
-    
-    }
-
-#txt_conectorCargaLenta{
-display: none;
-
+  display: flex;    
 }
-#txt_titulo_conector{
-    display: none;
-    
-    }
-
-#txt_autoCargaLenta{
-display: none;
-
-}
-#txt_titulo_auto{
-    display: none;
-    
-    }
-#torreCargaLenta-Noseleccionada{
-        display: flex;
-        
-    }
-       
-#torreCargaLenta-seleccionada{
-display: none;
-
-    }
 #casaCargaLenta-Noseleccionada{
-display: flex;
-
+  display: flex;
 }
 #casaCargaLenta-seleccionada{
-display: none;
+  display: none;
+}
 
+#txt_conectorCargaLenta{
+   display: none;
+}
+#txt_titulo_conector{
+   display: flex;    
 }
 #conectorCargaLenta-Noseleccionada{
-    display: flex;
-    
-    }
+  display: flex;    
+}
 #conectorCargaLenta-seleccionada{
-    display: none;
-    
-    }
-    #autoCargaLenta-Noseleccionada{
-        display: flex;
-        
-        }
-    #autoCargaLenta-seleccionada{
-        display: none;
-        
-        }
+  display: none;    
+}
+
+#txt_autoCargaLenta{
+  display: none;
+}
+#txt_titulo_auto{
+  display: flex;    
+}
+#autoCargaLenta-Noseleccionada{
+  display: flex;        
+}
+#autoCargaLenta-seleccionada{
+  display: none;        
+}
         
         /* CARGA SEMIRAPIDA */
 #CargaSemiRapida_secuencia{
@@ -406,8 +386,7 @@ display: none;
   display: none;        
 }
 #torreCargaSemiRapida-Noseleccionada{
-  display: flex;
-          
+  display: flex;          
 }         
 #torreCargaSemiRapida-seleccionada{
   display: none;  
@@ -444,16 +423,12 @@ display: none;
 }
 #txt_auto_cargasemirapida{
   display: none;
-}        
-
+}   
 #autoCargaSemiRapida-Noseleccionada{
-  display: flex;
-    
-}
-   
+  display: flex;    
+}     
 #autoCargaSemiRapida-seleccionada{
 display: none;
-
 }
 
 /* CARGA RAPIDA */
