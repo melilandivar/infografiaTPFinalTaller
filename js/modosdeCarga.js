@@ -18,7 +18,7 @@ function CargaLenta(){
   if(document.getElementById('CargaLenta_nucleo1').style.display='flex'){
     document.getElementById('CargaLenta_secuencia').style.display='flex';       
     document.getElementById('CargaSemiRapida_secuencia').style.display='none';
-    document.getElementById('CargaRapida_secuencia').style.display='none';    
+    document.getElementById('CargaRapida_secuencia').style.display='none';      
   } 
 }
 
@@ -27,7 +27,9 @@ function torreCargaLenta(){
     document.getElementById('txt_torre').style.display='flex';
     document.getElementById('txt_titulo_torre').style.display='flex';
     document.getElementById('torreCargaLenta-Noseleccionada').style.display='none';
-    document.getElementById('torreCargaLenta-seleccionada').style.display='flex';  
+    document.getElementById('torreCargaLenta-seleccionada').style.display='flex';
+    document.getElementById('progreso').style.display = 'flex';   
+    document.getElementById('progreso').style.width = `20%`; 
   } 
 }
 
@@ -36,7 +38,8 @@ function casaCargaLenta(){
     document.getElementById('txt_casaCargaLenta').style.display='flex';
      document.getElementById('txt_titulo_casa').style.display='flex';
      document.getElementById('casaCargaLenta-Noseleccionada').style.display='none';
-     document.getElementById('casaCargaLenta-seleccionada').style.display='flex';   
+     document.getElementById('casaCargaLenta-seleccionada').style.display='flex';
+     document.getElementById('progreso').style.width = `40%`;   
   } 
 }
 
@@ -46,6 +49,7 @@ function conectorCargaLenta(){
      document.getElementById('txt_titulo_conector').style.display='flex';
      document.getElementById('conectorCargaLenta-Noseleccionada').style.display='none';
      document.getElementById('conectorCargaLenta-seleccionada').style.display='flex';
+     document.getElementById('progreso').style.width = `60%`; 
   } 
 }
 
@@ -55,6 +59,7 @@ function autoCargaLenta(){
      document.getElementById('txt_titulo_auto').style.display='flex';
      document.getElementById('autoCargaLenta-Noseleccionada').style.display='none';
      document.getElementById('autoCargaLenta-seleccionada').style.display='flex';
+     document.getElementById('progreso').style.width = `70%`; 
   } 
 }
 
