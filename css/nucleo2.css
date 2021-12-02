@@ -11,6 +11,10 @@
   opacity: 30%;
 }
 
+.underline {
+  text-decoration: underline black;
+}
+
 #nucleo2 {
   display: grid;
   grid-template-rows: 20% 25% 30% 25%;
@@ -123,6 +127,7 @@
   /*min-height: 208rem;*/
   height: 100%;
   margin: auto 0%;
+  pointer-events: none; /*sin interaccion*/
 }
 
 /*
@@ -176,6 +181,7 @@
   width: 42rem;
   margin-right: 22rem;
   opacity: 0.3;
+  pointer-events: none; /*sin interaccion*/
 }
 
 .nucleo2__resultados__item__iconos img:last-child {

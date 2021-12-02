@@ -129,6 +129,8 @@ function CambiarAuto() {
       CambiarImagen(nucleo2__auto, "img/nucleo2/autoElectricoSoloRuedas.svg");
     else if (estaActivadoItemElectrico[0] == true && estaActivadoItemElectrico[4] == true)
       CambiarImagen(nucleo2__auto, "img/nucleo2/autoElectricoCompleto.svg");
+    botonAutoElectrico.classList.add("underline");
+    botonAutoCombustion.classList.remove("underline");
   }
   if (eligioElectrico == false) {
     if (estaActivadoItemCombustion[0] == false && estaActivadoItemCombustion[4] == false)
@@ -139,6 +141,8 @@ function CambiarAuto() {
       CambiarImagen(nucleo2__auto, "img/nucleo2/autoCombustionSoloRuedas.svg");
     else if (estaActivadoItemCombustion[0] == true && estaActivadoItemCombustion[4] == true)
       CambiarImagen(nucleo2__auto, "img/nucleo2/autoCombustionCompleto.svg");
+    botonAutoElectrico.classList.remove("underline");
+    botonAutoCombustion.classList.add("underline");
   }
 }
 
