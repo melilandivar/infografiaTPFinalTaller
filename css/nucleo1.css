@@ -395,69 +395,59 @@ display: none;
         }
         
         /* CARGA SEMIRAPIDA */
+#CargaSemiRapida_secuencia{
+  display: none;          
+}
 
-        #txt_torre_cargasemirapida {
-          display: none;
-        }
-        #txt_titulo_torre_cargasemirapida{
-        display: none;
-        
-        }
-        #txt_casa_cargasemirapida{
-          display: none;
-          
-          }
-          #txt_titulo_casa_cargasemirapida{
-              display: none;
-              
-              }
-        #txt_titulo_conector_cargasemirapida{
-display: none;
-
-        }
-        #txt_conector_cargasemirapida{
-display: none;
-        }
-        #txt_titulo_auto_cargasemirapida{
-          display: none;
-        }
-        #txt_auto_cargasemirapida{
-          display: none;
-        }
-
-        #CargaSemiRapida_secuencia{
-display: none;
-
-        }
-        #torreCargaSemiRapida-Noseleccionada{
-          display: flex;
-          
-      }
-         
-  #torreCargaSemiRapida-seleccionada{
+#txt_torre_cargasemirapida {
   display: none;
-  
-      }
-      #casaCargaSemiRapida-Noseleccionada{
-        display: flex;
-        
-    }
-       
+}
+#txt_titulo_torre_cargasemirapida{
+  display: none;        
+}
+#torreCargaSemiRapida-Noseleccionada{
+  display: flex;
+          
+}         
+#torreCargaSemiRapida-seleccionada{
+  display: none;  
+}
+
+#txt_casa_cargasemirapida{
+  display: none;          
+}
+#txt_titulo_casa_cargasemirapida{
+  display: none;              
+}
+#casaCargaSemiRapida-Noseleccionada{
+  display: flex;  
+} 
 #casaCargaSemiRapida-seleccionada{
 display: none;
-
-    }
-    #conectorCargaSemiRapida-Noseleccionada{
-      display: flex;
-      
-  }
-     
+}
+        
+#txt_titulo_conector_cargasemirapida{
+display: none;
+}
+#txt_conector_cargasemirapida{
+display: none;
+}
+#conectorCargaSemiRapida-Noseleccionada{
+  display: flex;      
+}     
 #conectorCargaSemiRapida-seleccionada{
 display: none;
+}
 
-  }
-  #autoCargaSemiRapida-Noseleccionada{
-    display: flex;
+#txt_titulo_auto_cargasemirapida{
+  display: none;
+}
+#txt_auto_cargasemirapida{
+  display: none;
+}        
+
+#autoCargaSemiRapida-Noseleccionada{
+  display: flex;
     
 }
    
@@ -467,7 +457,60 @@ display: none;
 }
 
 /* CARGA RAPIDA */
-      
+#CargaRapida_secuencia{
+  display: none;  
+}
+#txt_torre_cargarapida {
+  display: none;
+}
+#txt_titulo_torre_cargarapida{
+display: none;
+}
+#torreCargaRapida-Noseleccionada{
+  display: flex;  
+} 
+#torreCargaRapida-seleccionada{
+display: none;
+}
+
+#txt_casa_cargarapida {
+  display: none;
+}
+#txt_titulo_casa_cargarapida{
+display: none;
+}
+#casaCargaRapida-Noseleccionada{
+  display: flex;  
+} 
+#casaCargaRapida-seleccionada{
+display: none;
+}
+
+#txt_conector_cargarapida {
+  display: none;
+}
+#txt_titulo_conector_cargarapida{
+display: none;
+}
+#conectorCargaRapida-Noseleccionada{
+  display: flex;  
+} 
+#conectorCargaRapida-seleccionada{
+display: none;
+}
+
+#txt_auto_cargarapida {
+  display: none;
+}
+#txt_titulo_auto_cargarapida{
+display: none;
+}
+#autoCargaRapida-Noseleccionada{
+  display: flex;  
+} 
+#autoCargaRapida-seleccionada{
+display: none;
+}  
 
    
     
