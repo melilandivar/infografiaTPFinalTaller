@@ -98,7 +98,8 @@
       <!--Nucleo 0-->
       <div id="nucleo0" class="nucleo0">
         <div id="nucleo0__auto" class="nucleo0__auto-estatico">
-          <img src="img/cuerpo_auto.png" alt="" />
+          <img src="img/cuerpo_auto.png" alt="auto" />
+     
         </div>
 
         <div class="contenedor">
@@ -122,76 +123,22 @@
             <div class="items_nucleo1">
               <div class="item1" id="item_nucleo1" onclick="agregarPlug()">
                 <img src="img/nucleo1_icono_plug.png" />
-                <div class="nucleo1_icono_eliminar" id="nucleo1_icono_eliminar">
-                  <svg id="quitar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                    <path fill="none" d="M0 0h24v24H0z" />
-                    <path
-                      d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zM7 11v2h10v-2H7z"
-                      fill="rgba(177,49,49,1)"
-                    />
-                  </svg>
-                </div>
-                <div id="nucleo1_icono_agregar1">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                    <path fill="none" d="M0 0h24v24H0z" />
-                    <path
-                      d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-1-11H7v2h4v4h2v-4h4v-2h-4V7h-2v4z"
-                      fill="rgba(132,195,116,1)"
-                    />
-                  </svg>
-                </div>
-                <div id="plugCarga">
-                  <img src="img/nucleo1_plugdecarga_seleccionado.png" alt="" />
+                               
+                <div id="plugCarga">           
                 </div>
                 <p id="titulos_iconos_nucleo1">Plug de carga</p>
               </div>
               <div class="item2" id="item_nucleo1" onclick="agregarBateria()">
-                <img src="img/nucleo1_icono_bateria.png" />
-                <div class="nucleo1_icono_eliminar" id="nucleo1_icono_eliminar">
-                  <svg id="quitar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                    <path fill="none" d="M0 0h24v24H0z" />
-                    <path
-                      d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zM7 11v2h10v-2H7z"
-                      fill="rgba(177,49,49,1)"
-                    />
-                  </svg>
-                </div>
-                <div id="nucleo1_icono_agregar2">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                    <path fill="none" d="M0 0h24v24H0z" />
-                    <path
-                      d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-1-11H7v2h4v4h2v-4h4v-2h-4V7h-2v4z"
-                      fill="rgba(132,195,116,1)"
-                    />
-                  </svg>
-                </div>
-                <div id="bateriaLitio">
-                  <img src="img/nucleo1_icono_bateria.png" alt="" />
+                <img src="img/nucleo1_icono_bateria.png" />              
+               
+                <div id="bateriaLitio">                  
                 </div>
                 <p id="titulos_iconos_nucleo1">Bateria de Litio</p>
               </div>
               <div class="item3" id="item_nucleo3" onclick="agregarMotor()">
-                <img src="img/nucleo1_icono_motor.png" />
-                <div class="nucleo1_icono_eliminar" id="nucleo1_icono_eliminar">
-                  <svg id="quitar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                    <path fill="none" d="M0 0h24v24H0z" />
-                    <path
-                      d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zM7 11v2h10v-2H7z"
-                      fill="rgba(177,49,49,1)"
-                    />
-                  </svg>
-                </div>
-                <div id="nucleo1_icono_agregar3">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                    <path fill="none" d="M0 0h24v24H0z" />
-                    <path
-                      d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-1-11H7v2h4v4h2v-4h4v-2h-4V7h-2v4z"
-                      fill="rgba(132,195,116,1)"
-                    />
-                  </svg>
-                </div>
-                <div id="motorElectrico">
-                  <img src="img/nucleo1_icono_motor.png" alt="" />
+                <img src="img/nucleo1_icono_motor.png" />                
+                
+                <div id="motorElectrico">                 
                 </div>
                 <p id="titulos_iconos_nucleo1">Motor eléctrico</p>
               </div>
@@ -223,7 +170,10 @@
             </div>
           </div>
           <div class="nucleo1_grafico">
-            <img src="img/cuerpo_auto_nucleo1.png" alt="" />
+            <img src="img/nucleo1/auto_partes.png" alt="" id="auto_cuerpo"/>
+            <img src="img/nucleo1/auto_plug.png" alt="auto y plug de carga" id="auto_plug"/>
+            <img src="img/nucleo1/auto_plug_bateria.png" alt="auto, plug de carga y bateria" id="auto_plug_bateria"/>
+            <img src="img/nucleo1/auto_plug_bateria_motor.png" alt="auto, plug de carga, bateria y motor" id="auto_plug_bateria_motor"/>
           </div>
         </div>
 
