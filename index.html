@@ -186,7 +186,7 @@
    
         <!-- CARGA LENTA -->
         <div class="ConexionCargaLenta" id="CargaLenta_secuencia">
-          <div id="progreso"></div>
+          <div id="progresoCargaLenta"></div>
           <div class="itemX" id="itemX_Torre" onclick="torreCargaLenta()">           
             <p id="txt_titulo_torre">RED</p>
             <img src="img/Nucleo1/TorreElectrica.svg" alt="Torre" id="torreCargaLenta-Noseleccionada" />
@@ -230,6 +230,7 @@
 
         <!-- CARGA SEMIRAPIDA -->
         <div class="ConexionCargaSemiRapida" id="CargaSemiRapida_secuencia">
+          <div id="progresoCargaSemiRapida"></div>
           <div class="itemX" id="itemX_Torre" onclick="torreCargaSemiRapida()">
             <p id="txt_titulo_torre_cargasemirapida">RED</p>
             <img src="img/Nucleo1/TorreElectrica.svg" alt="Torre" id="torreCargaSemiRapida-Noseleccionada" />
@@ -273,6 +274,7 @@
 
         <!-- CARGA RAPIDA -->
         <div class="ConexionCargaRapida" id="CargaRapida_secuencia">
+          <div id="progresoCargaRapida"></div>
           <div class="itemX" id="itemX_Torre" onclick="torreCargaRapida()">
             <p id="txt_titulo_torre_cargarapida">RED</p>
             <img src="img/Nucleo1/TorreElectrica.svg" alt="Torre" id="torreCargaRapida-Noseleccionada" />
@@ -285,8 +287,8 @@
           </div>
           <div class="itemX" id="itemX_Casa" onclick="casaCargaRapida()">
             <p id="txt_titulo_casa_cargarapida">EXTERIOR</p>
-            <img src="img/Nucleo1/Casa.svg" alt="Casa" id="casaCargaRapida-Noseleccionada" />
-            <img src="img/Nucleo1/Casa_Seleccionada.svg" alt="CasaSeleccionada" id="casaCargaRapida-seleccionada" />
+            <img src="img/Nucleo1/Exterior.svg" alt="Casa" id="casaCargaRapida-Noseleccionada" />
+            <img src="img/Nucleo1/Exterior_Seleccionada.svg" alt="CasaSeleccionada" id="casaCargaRapida-seleccionada" />
             <p id="txt_casa_cargarapida">
               La carga se realiza<br />
               fuera del hogar en<br />
@@ -295,8 +297,8 @@
           </div>
           <div class="itemX" id="itemX_Conector" onclick="conectorCargaRapida()">
             <p id="txt_titulo_conector_cargarapida">ELECTRONIMERA</p>
-            <img src="img/Nucleo1/Wallbox.svg" alt="Conector" id="conectorCargaRapida-Noseleccionada" />
-            <img src="img/Nucleo1/WallboxSeleccionada.svg" alt="Conector" id="conectorCargaRapida-seleccionada" />
+            <img src="img/Nucleo1/Electronimera.svg" alt="Conector" id="conectorCargaRapida-Noseleccionada" />
+            <img src="img/Nucleo1/Electronimera_Seleccionada.svg" alt="Conector" id="conectorCargaRapida-seleccionada" />
             <p id="txt_conector_cargarapida">
               Una Electrolinera <br />
               emplea corriente <br />
