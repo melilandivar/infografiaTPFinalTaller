@@ -37,7 +37,7 @@
   font-size: 44rem;
   font-weight: bolder;
 }
-#bg_elec label {
+#bg_elect label {
   font-family: "Roboto";
   font-size: 48rem;
   font-weight: bolder;
@@ -84,7 +84,20 @@ h5 {
   margin-top: 2%;
   height: 20em;
 }
+#km_dia_nucleo3 {
+  font-size: 24px;
+  margin-top: -30rem;
+  font-weight: bold;
+}
+#progressbar {
+  font-size: 54px;
+}
 
+#seleccionar_km_nucleo3 {
+  
+  font-size: 24px;
+  font-weight: 400;
+}
 
 
 /*PRUEBA*/
@@ -106,29 +119,63 @@ h5 {
 }
 .col_1 {
   background-color: #FA8D78;
-  width: 20% !important;
+  width: 30%;
 }
-.col_3 { 
-  background-color:rgba(250, 141, 120, 0.7);
-}
-.col_4 { 
-  background-color:rgba(255, 255, 255, 0.5);
+.col_2 {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.col_3 { 
+  background-color:rgba(250, 141, 120, 0.7);
+  display: flex;
+  padding-top: 4%;
+}
+.col_4 { 
+  background-color:rgba(255, 255, 255, 0.5);
+  width: 20%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding-top: 2%;
  
 }
 .col_5 { 
   background-color:rgba(164, 232, 182, 0.7);
+  display: flex;
+  padding-top: 4%;
+}
+.col_6 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#igual_nucleo3 {
+  width: 32px;
 }
 .col_7 {
   background-color: #A4E8B6;
-  width: 20% !important;
+  width: 30%;
 }
 
 
-/*COL 1*/ 
+/*COL elementos*/ 
 .nucleo_3_col_row_izq {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nucleo_3_col_row_mid_izq {
+
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nucleo_3_col_row_der {
   height: 100%;
   display: flex;
   flex-direction: column;
