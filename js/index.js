@@ -40,16 +40,24 @@ function agregarPlug(){
   if(document.getElementById('plugCarga').style.display='none'){
     document.getElementById('plugCarga').style.display='flex';
     document.getElementById('infoModosDeCarga').style.display='flex';
+    document.getElementById('auto_cuerpo').style.display='none';
+    document.getElementById('auto_plug').style.display='flex';
+    
   } else
   if(document.getElementById('plugCarga').style.display='flex'){
     document.getElementById('plugCarga').style.display='none';
     
-  } 
+    
+  }
+  
+  
 }
 function agregarBateria(){
-
   if(document.getElementById('bateriaLitio').style.display='none'){
     document.getElementById('bateriaLitio').style.display='flex';
+    document.getElementById('auto_cuerpo').style.display='none';
+    document.getElementById('auto_plug').style.display='none';
+    document.getElementById('auto_plug_bateria').style.display='flex';
   } else {
     document.getElementById('bateriaLitio').style.display='none';
   }
@@ -58,6 +66,10 @@ function agregarMotor(){
 
   if(document.getElementById('motorElectrico').style.display='none'){
     document.getElementById('motorElectrico').style.display='flex';
+    document.getElementById('auto_cuerpo').style.display='none';
+    document.getElementById('auto_plug').style.display='none';
+    document.getElementById('auto_plug_bateria').style.display='none';
+    document.getElementById('auto_plug_bateria_motor').style.display='flex';
   } else {
     document.getElementById('motorElectrico').style.display='none';
   }
