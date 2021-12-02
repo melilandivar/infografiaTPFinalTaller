@@ -1,0 +1,272 @@
+/*MODOS DE CARGA*/
+
+div#infoModosDeCarga {
+  display: none;
+  position: relative;
+  text-align: center;
+  background-color: rgba(36, 122, 63, 1);
+  width: 330px;
+  top: 11%;
+  left: 39%;
+  padding: 15px;
+  border: 2px solid rgba(36, 122, 63, 1);
+  border-radius: 8px;
+  
+}
+
+.item_Carga1{
+        background-color: #D1E8BA;
+        margin-right: 5%;
+    height: 89px;
+    width: 89px;
+    border-radius: 50%;
+    display: inline-block;
+       align-items: center;
+    text-align: center;
+    overflow-y: hidden; 
+}
+
+.item_Carga2{
+        background-color: #D1E8BA;
+        margin-right: 5%;
+    height: 89px;
+    width: 89px;
+    border-radius: 50%;
+    display: inline-block;
+       align-items: center;
+    text-align: center;
+    overflow-y: hidden; 
+
+}
+.item_Carga3{
+        background-color: #D1E8BA;
+        margin-right: 5%;
+    height: 89px;
+    width: 89px;
+    border-radius: 50%;
+    display: inline-block;
+       align-items: center;
+    text-align: center;
+    overflow-y: hidden; 
+
+}
+
+#CargaLenta_nucleo1{
+  display: none;       
+  text-align: center;
+}
+      
+#CargaSemiRapida_nucleo1 {
+  display: none;
+  top: 50%;
+  left: 48%;
+}
+#CargaLenta_nucleo1 p{
+    display: block;    
+}
+
+#CargaRapida_nucleo1 {
+  display: none;
+  top: 43%;
+  left: 57%;
+}
+
+#titulos_CARGA{
+    position: fixed;
+    margin-top: 180px;
+    font-size: 18px;
+
+}
+
+.itemX{
+position: relative;
+display: inline;
+margin: 0 auto;
+flex-direction: column;
+align-items: center;
+}
+
+
+.itemX img{
+    margin-top: 10px;
+margin-bottom: 30px;
+width: 80px;
+height: 80px;
+}
+.itemX {
+  position: relative;
+  display: inline;
+
+}
+   /* CARGA LENTA */
+
+#CargaLenta_secuencia {
+  display: none;
+  top: 42%;
+  left: 39%;
+}
+
+#txt_torre {
+  display: none;
+}
+#txt_titulo_torre{
+display: flex;
+}
+#torreCargaLenta-Noseleccionada{
+  display: flex;        
+}       
+#torreCargaLenta-seleccionada{
+  display: none;
+}
+
+#txt_casaCargaLenta{
+  display: none;
+}
+#txt_titulo_casa{
+  display: flex;    
+}
+#casaCargaLenta-Noseleccionada{
+  display: flex;
+}
+#casaCargaLenta-seleccionada{
+  display: none;
+}
+
+#txt_conectorCargaLenta{
+   display: none;
+}
+#txt_titulo_conector{
+   display: flex;    
+}
+#conectorCargaLenta-Noseleccionada{
+  display: flex;    
+}
+#conectorCargaLenta-seleccionada{
+  display: none;    
+}
+
+#txt_autoCargaLenta{
+  display: none;
+}
+#txt_titulo_auto{
+  display: flex;    
+}
+#autoCargaLenta-Noseleccionada{
+  display: flex;        
+}
+#autoCargaLenta-seleccionada{
+  display: none;        
+}
+        
+        /* CARGA SEMIRAPIDA */
+#CargaSemiRapida_secuencia{
+  display: none;          
+}
+
+#txt_torre_cargasemirapida {
+  display: none;
+}
+#txt_titulo_torre_cargasemirapida{
+  display: none;        
+}
+#torreCargaSemiRapida-Noseleccionada{
+  display: flex;          
+}         
+#torreCargaSemiRapida-seleccionada{
+  display: none;  
+}
+
+#txt_casa_cargasemirapida{
+  display: none;          
+}
+#txt_titulo_casa_cargasemirapida{
+  display: none;              
+}
+#casaCargaSemiRapida-Noseleccionada{
+  display: flex;  
+} 
+#casaCargaSemiRapida-seleccionada{
+display: none;
+}
+        
+#txt_titulo_conector_cargasemirapida{
+display: none;
+}
+#txt_conector_cargasemirapida{
+display: none;
+}
+#conectorCargaSemiRapida-Noseleccionada{
+  display: flex;      
+}     
+#conectorCargaSemiRapida-seleccionada{
+display: none;
+}
+
+#txt_titulo_auto_cargasemirapida{
+  display: none;
+}
+#txt_auto_cargasemirapida{
+  display: none;
+}   
+#autoCargaSemiRapida-Noseleccionada{
+  display: flex;    
+}     
+#autoCargaSemiRapida-seleccionada{
+display: none;
+}
+
+/* CARGA RAPIDA */
+#CargaRapida_secuencia{
+  display: none;  
+}
+#txt_torre_cargarapida {
+  display: none;
+}
+#txt_titulo_torre_cargarapida{
+display: none;
+}
+#torreCargaRapida-Noseleccionada{
+  display: flex;  
+} 
+#torreCargaRapida-seleccionada{
+display: none;
+}
+
+#txt_casa_cargarapida {
+  display: none;
+}
+#txt_titulo_casa_cargarapida{
+display: none;
+}
+#casaCargaRapida-Noseleccionada{
+  display: flex;  
+} 
+#casaCargaRapida-seleccionada{
+display: none;
+}
+
+#txt_conector_cargarapida {
+  display: none;
+}
+#txt_titulo_conector_cargarapida{
+display: none;
+}
+#conectorCargaRapida-Noseleccionada{
+  display: flex;  
+} 
+#conectorCargaRapida-seleccionada{
+display: none;
+}
+
+#txt_auto_cargarapida {
+  display: none;
+}
+#txt_titulo_auto_cargarapida{
+display: none;
+}
+#autoCargaRapida-Noseleccionada{
+  display: flex;  
+} 
+#autoCargaRapida-seleccionada{
+display: none;
+}  
