@@ -1,11 +1,24 @@
 /*MODOS DE CARGA*/
 
+#progreso{
+display: none;
+position: absolute;
+top: 33%;
+left: 14%;
+width:2%;
+height: 30px;
+border-bottom: 5px solid #4B81BD;
+ 
+  transition: width 1s;
+  overflow-x: hidden; 
+}
+
 div#infoModosDeCarga {
   display: none;
   position: relative;
   text-align: center;
   background-color: rgba(36, 122, 63, 1);
-  width: 330px;
+  width: 420px;
   top: 25%;
    padding: 15px;
    margin: 0 auto;
