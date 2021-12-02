@@ -396,6 +396,35 @@ display: none;
         
         /* CARGA SEMIRAPIDA */
 
+        #txt_torre_cargasemirapida {
+          display: none;
+        }
+        #txt_titulo_torre_cargasemirapida{
+        display: none;
+        
+        }
+        #txt_casa_cargasemirapida{
+          display: none;
+          
+          }
+          #txt_titulo_casa_cargasemirapida{
+              display: none;
+              
+              }
+        #txt_titulo_conector_cargasemirapida{
+display: none;
+
+        }
+        #txt_conector_cargasemirapida{
+display: none;
+        }
+        #txt_titulo_auto_cargasemirapida{
+          display: none;
+        }
+        #txt_auto_cargasemirapida{
+          display: none;
+        }
+
         #CargaSemiRapida_secuencia{
 display: none;
 
@@ -436,6 +465,8 @@ display: none;
 display: none;
 
 }
+
+/* CARGA RAPIDA */
       
 
    
