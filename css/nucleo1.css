@@ -133,23 +133,15 @@
 }
 
 #plugCarga {
-  display: none;
-  position: absolute;
-  top: 42%;
-  left: 39%;
-  width: 40px;
+  display: none; 
+  
 }
 #bateriaLitio {
-  display: none;
-  position: absolute;
-  top: 50%;
-  left: 48%;
+  display: none;  
 }
 #motorElectrico {
   display: none;
-  position: absolute;
-  top: 43%;
-  left: 57%;
+   
 }
 #item_nucleo1:hover {
   background-color: #9fd791;
@@ -211,6 +203,18 @@ div#nucleo1_icono_eliminar {
   width: 55px;
 }
 
+#auto_cuerpo{
+display: flex;
+}
+#auto_plug{
+  display: none;  
+}
+#auto_plug_bateria{
+  display: none;  
+}
+#auto_plug_bateria_motor{
+  display: none;  
+}
 
    
     
