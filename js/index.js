@@ -137,18 +137,18 @@ function progreso() {
   var valor = document.getElementById("progressbar");
   console.log("progreso nucleo 3");
   if (valor.ariaValueNow == "0") {
-    kgDia = "";
-    kgMes = "";
-    kgAño = "";
-    kgDiaC = "";
-    kgMesC = "";
-    kgAñoC = "";
-    cantidadBotellasC = "";
-    cantidadBotellasE = "";
-    cantidadCelularesC = "";
-    cantidadCelularesE = "";
-    cantidadPasajerosC = "";
-    cantidadPasajerosE = "";
+    kgDia = "0kg";
+    kgMes = "0kg";
+    kgAño = "0kg";
+    kgDiaC = "0kg";
+    kgMesC = "0kg";
+    kgAñoC = "0kg";
+    cantidadBotellasC = "0";
+    cantidadBotellasE = "0";
+    cantidadCelularesC = "0";
+    cantidadCelularesE = "0";
+    cantidadPasajerosC = "0";
+    cantidadPasajerosE = "0";
   }
   if (valor.ariaValueNow == "30") {
     kgDia = "6.4kg";

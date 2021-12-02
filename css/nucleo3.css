@@ -100,7 +100,24 @@ h5 {
 }
 
 
-/*PRUEBA*/
+/*PRUEBA
+.nucleo_3_subtitulos{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between ;
+  align-items:flex-start;
+ 
+}
+.nucleo_3_subtitulos_contenedor{
+  width: 50%;
+  margin-right: 60rem;
+  margin-left: 60rem;
+}
+#subtitulos_nucleo3{
+font-size: 14px;
+ 
+
+}*/
 
 .nucleo_3_row{
   width: 100%;
