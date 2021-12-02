@@ -6,11 +6,11 @@ div#infoModosDeCarga {
   text-align: center;
   background-color: rgba(36, 122, 63, 1);
   width: 330px;
-  top: 11%;
-  left: 39%;
-  padding: 15px;
+  top: 25%;
+   padding: 15px;
+   margin: 0 auto;
   border: 2px solid rgba(36, 122, 63, 1);
-  border-radius: 8px;
+  border-radius: 15px;
   
 }
 
@@ -167,7 +167,7 @@ display: flex;
   display: none;
 }
 #txt_titulo_torre_cargasemirapida{
-  display: none;        
+  display: flex;        
 }
 #torreCargaSemiRapida-Noseleccionada{
   display: flex;          
@@ -180,7 +180,7 @@ display: flex;
   display: none;          
 }
 #txt_titulo_casa_cargasemirapida{
-  display: none;              
+  display:  flex;              
 }
 #casaCargaSemiRapida-Noseleccionada{
   display: flex;  
@@ -190,7 +190,7 @@ display: none;
 }
         
 #txt_titulo_conector_cargasemirapida{
-display: none;
+display:  flex;
 }
 #txt_conector_cargasemirapida{
 display: none;
@@ -203,7 +203,7 @@ display: none;
 }
 
 #txt_titulo_auto_cargasemirapida{
-  display: none;
+  display:  flex;
 }
 #txt_auto_cargasemirapida{
   display: none;
@@ -223,7 +223,7 @@ display: none;
   display: none;
 }
 #txt_titulo_torre_cargarapida{
-display: none;
+display:  flex;
 }
 #torreCargaRapida-Noseleccionada{
   display: flex;  
@@ -236,7 +236,7 @@ display: none;
   display: none;
 }
 #txt_titulo_casa_cargarapida{
-display: none;
+display:  flex;
 }
 #casaCargaRapida-Noseleccionada{
   display: flex;  
@@ -249,7 +249,7 @@ display: none;
   display: none;
 }
 #txt_titulo_conector_cargarapida{
-display: none;
+display:  flex;
 }
 #conectorCargaRapida-Noseleccionada{
   display: flex;  
@@ -262,7 +262,7 @@ display: none;
   display: none;
 }
 #txt_titulo_auto_cargarapida{
-display: none;
+display:  flex;
 }
 #autoCargaRapida-Noseleccionada{
   display: flex;  
