@@ -180,10 +180,11 @@
         <div id="infoModosDeCarga" onclick="modosDeCarga()">
           <p>mas info sobre los modos de carga</p>
         </div>
-
+   
         <!-- CARGA LENTA -->
         <div class="ConexionCargaLenta" id="CargaLenta_secuencia">
-          <div class="itemX" id="itemX_Torre" onclick="torreCargaLenta()">
+          <div id="progreso"></div>
+          <div class="itemX" id="itemX_Torre" onclick="torreCargaLenta()">           
             <p id="txt_titulo_torre">RED</p>
             <img src="img/Nucleo1/TorreElectrica.svg" alt="Torre" id="torreCargaLenta-Noseleccionada" />
             <img src="img/Nucleo1/TorreElectrica_Seleccionada.svg" alt="Torre" id="torreCargaLenta-seleccionada" />
@@ -217,6 +218,7 @@
             <img src="img/Nucleo1/CulataAuto_Seleccionada.svg" alt="CulataAuto" id="autoCargaLenta-seleccionada" />
             <p id="txt_autoCargaLenta">Conexión ideal para <br/> automoviles pequeños.</p>
           </div>
+          
         </div>
 
         <!-- CARGA SEMIRAPIDA -->
