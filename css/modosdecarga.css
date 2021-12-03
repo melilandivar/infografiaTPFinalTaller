@@ -28,7 +28,7 @@ display: flex;
 #titulo_mododecarga{
   display: none;
 }
-#subtitul_mododecarga{
+#subtitulo_mododecarga{
 display: none;
 }
 
@@ -66,6 +66,7 @@ display: none;
 }
 
 .item_Carga1{
+  background-color: #E6FBE1;
   justify-content: center;        
   margin-right: 5%;
   height: 89px;
@@ -74,7 +75,8 @@ display: none;
   display: inline-block;
   align-items: center;
   text-align: center;
-  overflow-y: hidden; 
+  overflow-y: hidden;
+  border: 4px solid #84C374; 
 } 
 
 .ConexionCargaLenta{
@@ -88,8 +90,7 @@ display: none;
 
 #CargaLenta_nucleo1{
   display: none;       
-  text-align: center;
-  background-color: #D1E8BA;
+  text-align: center;  
 }
 #CargaLenta_nucleo1 p{
   display: block;    
@@ -177,7 +178,7 @@ display: flex;
 
 .item_Carga2 {
   justify-content: center;   
-  background-color: #D1E8BA;
+  background-color: #E6FBE1;
   margin-right: 5%;
   height: 89px;
   width: 89px;
@@ -185,7 +186,8 @@ display: flex;
   display: inline-block;
   align-items: center;
   text-align: center;
-  overflow-y: hidden;     
+  overflow-y: hidden;
+  border: 4px solid #84C374;     
 }
 
 .ConexionCargaSemiRapida{
@@ -286,7 +288,7 @@ display: none;
 
 .item_Carga3{
   justify-content: center;   
-  background-color: #D1E8BA;
+  background-color: #E6FBE1;
   margin-right: 5%;
   height: 89px;
   width: 89px;
@@ -294,7 +296,8 @@ display: none;
   display: inline-block;
   align-items: center;
   text-align: center;
-  overflow-y: hidden; 
+  overflow-y: hidden;
+  border: 4px solid #84C374; 
 }
 
 .ConexionCargaRapida{
