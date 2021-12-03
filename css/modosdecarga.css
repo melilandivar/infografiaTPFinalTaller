@@ -3,7 +3,7 @@
 #progresoCargaLenta{
 display: none;
 position: absolute;
-top: 33%;
+top: 47%;
 left: 14%;
 width:2%;
 height: 30px;
@@ -15,7 +15,7 @@ border-bottom: 5px solid #4B81BD;
 #progresoCargaSemiRapida{
   display: none;
   position: absolute;
-  top: 33%;
+  top: 47%;
   left: 12%;
   width:2%;
   height: 30px;
@@ -27,7 +27,7 @@ border-bottom: 5px solid #4B81BD;
   #progresoCargaRapida{
     display: none;
     position: absolute;
-    top: 33%;
+    top: 47%;
     left: 12%;
     width:2%;
     height: 30px;
