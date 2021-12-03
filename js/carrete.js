@@ -144,9 +144,7 @@ function ReubicarCarrete() {
 function estasClickeandoElCarrete(_event) {
   _tag = _event.target.tagName;
   _id = _event.target.id;
-  console.log(`uno`);
   if (_tag == "IMG") return false;
-  console.log("dos");
 
   for (let i = 0; i < nucleo.length; i++) {
     if (_id != nucleo[i] || _id == `` || _id == carrete) {
@@ -156,9 +154,5 @@ function estasClickeandoElCarrete(_event) {
     }
     break;
   }
-  //console.log(_tag);
-  //console.log(_id);
   return false;
 }
-
-//nucleo[0].style.height = "50px";
