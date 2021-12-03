@@ -1,166 +1,110 @@
-/*MODOS DE CARGA*/
-
-#progresoCargaLenta{
-display: none;
-position: absolute;
-top: 47%;
-left: 14%;
-width:2%;
-height: 30px;
-border-bottom: 5px solid #4B81BD;
- 
-  transition: width 1s;
-  overflow-x: hidden; 
-}
-#progresoCargaSemiRapida{
-  display: none;
-  position: absolute;
-  top: 47%;
-  left: 14%;
-  width:2%;
-  height: 30px;
-  border-bottom: 5px solid #4B81BD;
-   
-    transition: width 1s;
-    overflow-x: hidden; 
-  }
-  #progresoCargaRapida{
-    display: none;
-    position: absolute;
-    top: 47%;
-    left: 14%;
-    width:2%;
-    height: 30px;
-    border-bottom: 5px solid #4B81BD;     
-      transition: width 1s;
-      overflow-x: hidden; 
-    }
+/*MODOS DE CARGA*/ 
 
 div#infoModosDeCarga {
   display: none;
   position: relative;
   text-align: center;
   background-color: rgba(36, 122, 63, 1);
-  width: 420px;
+  width: 430px;
   top: 25%;
-   padding: 15px;
-   margin: 0 auto;
+  padding: 15px;
+  margin: 0 auto;
   border: 2px solid rgba(36, 122, 63, 1);
   border-radius: 15px;
-  
-}
-
-.item_Carga1{
-        background-color: #D1E8BA;
-        margin-right: 5%;
-    height: 89px;
-    width: 89px;
-    border-radius: 50%;
-    display: inline-block;
-       align-items: center;
-    text-align: center;
-    overflow-y: hidden; 
-}
-
-.item_Carga2{
-        background-color: #D1E8BA;
-        margin-right: 5%;
-    height: 89px;
-    width: 89px;
-    border-radius: 50%;
-    display: inline-block;
-       align-items: center;
-    text-align: center;
-    overflow-y: hidden; 
-
-}
-.item_Carga3{
-        background-color: #D1E8BA;
-        margin-right: 5%;
-    height: 89px;
-    width: 89px;
-    border-radius: 50%;
-    display: inline-block;
-       align-items: center;
-    text-align: center;
-    overflow-y: hidden; 
-
-}
-
-#CargaLenta_nucleo1{
-  display: none;       
-  text-align: center;
-}
-      
-#CargaSemiRapida_nucleo1 {
-  display: none;
-  top: 50%;
-  left: 48%;
-}
-#CargaLenta_nucleo1 p{
-    display: block;    
-}
-
-#CargaRapida_nucleo1 {
-  display: none;
-  top: 43%;
-  left: 57%;
-}
-
+  color:white;
+}   
 #titulos_CARGA{
-    position: fixed;
-    margin-top: 180px;
-    font-size: 18px;
-
+  position: fixed;
+  margin-top: 180px;
+  font-size: 18px;
 }
+
+#titulo_componentes_electricos{
+  display: flex;
+}
+#subtitulo_componenetes_electricos{
+display: flex;
+}
+#titulo_mododecarga{
+  display: none;
+}
+#subtitul_mododecarga{
+display: none;
+}
+
+   /* CARGA LENTA */
 
 .itemX{
-position: relative;
-display: inline;
-margin: 0 auto;
-flex-direction: column;
-align-items: center;
-}
-.item_CargaSemirapida{
   position: relative;
   display: inline-flex;
   margin: 0 auto;
   flex-direction: column;
   align-items: center;
-  }
-  .item_CargaRapida{
-    position: relative;
-    display: inline-flex;
-    margin: 0 auto;
-    flex-direction: column;
-    align-items: center;
-    }
+}
+  
+.itemX img{
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  width: 80px;
+  height: 80px;
+}   
 
+.itemX{
+  position: relative;
+  display: inline;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+}
 
 .itemX img{
-    margin-top: 10px;
-margin-bottom: 30px;
-width: 80px;
-height: 80px;
-}
-.item_CargaSemirapida img{
   margin-top: 10px;
-margin-bottom: 30px;
-width: 80px;
-height: 80px;
+  margin-bottom: 30px;
+  width: 80px;
+  height: 80px;
 }
-.item_CargaRapida img{
-  margin-top: 10px;
-margin-bottom: 30px;
-width: 80px;
-height: 80px;
+
+.item_Carga1{
+  justify-content: center;        
+  margin-right: 5%;
+  height: 89px;
+  width: 89px;
+  border-radius: 50%;
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+  overflow-y: hidden; 
+} 
+
+.ConexionCargaLenta{
+  position: relative;
+  margin-top: 100px;
 }
-   /* CARGA LENTA */
 
 #CargaLenta_secuencia {
+  display: none;  
+}
+
+#CargaLenta_nucleo1{
+  display: none;       
+  text-align: center;
+  background-color: #D1E8BA;
+}
+#CargaLenta_nucleo1 p{
+  display: block;    
+}
+
+#progresoCargaLenta{
   display: none;
-  top: 42%;
-  left: 39%;
+  position: absolute;
+  top: 25%;
+  left: 14%;
+  width:2%;
+  height: 30px;
+  border-bottom: 5px solid #4B81BD; 
+  transition: width 1s;
+  overflow-x: hidden; 
 }
 
 #txt_torre {
@@ -215,10 +159,63 @@ display: flex;
   display: none;        
 }
         
-        /* CARGA SEMIRAPIDA */
+                          /* CARGA SEMIRAPIDA */
+.item_CargaSemirapida{
+  position: relative;
+  display: inline-flex;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item_CargaSemirapida img{
+  margin-top: 10px;
+  margin-bottom: 30px;
+  width: 80px;
+  height: 80px;
+}
+
+.item_Carga2 {
+  justify-content: center;   
+  background-color: #D1E8BA;
+  margin-right: 5%;
+  height: 89px;
+  width: 89px;
+  border-radius: 50%;
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+  overflow-y: hidden;     
+}
+
+.ConexionCargaSemiRapida{
+  position: relative;
+  margin-top: 100px;
+}
+
 #CargaSemiRapida_secuencia{
   display: none;          
 }
+
+#CargaSemiRapida_nucleo1 {
+  display: none;  
+}
+#CargaSemiRapida_nucleo1:hover {
+  display: none;
+  background-color: #9FD791;
+}
+
+#progresoCargaSemiRapida{
+  display: none;
+  position: absolute;
+  top: 25%;
+  left: 14%;
+  width:2%;
+  height: 30px;
+  border-bottom: 5px solid #4B81BD;   
+    transition: width 1s;
+    overflow-x: hidden; 
+  }
 
 #txt_torre_cargasemirapida {
   display: none;
@@ -272,10 +269,63 @@ display: none;
 display: none;
 }
 
-/* CARGA RAPIDA */
+                        /* CARGA RAPIDA */
+.item_CargaRapida{
+  position: relative;
+  display: inline-flex;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+}
+.item_CargaRapida img{
+  margin-top: 10px;
+  margin-bottom: 30px;
+  width: 80px;
+  height: 80px;
+}
+
+.item_Carga3{
+  justify-content: center;   
+  background-color: #D1E8BA;
+  margin-right: 5%;
+  height: 89px;
+  width: 89px;
+  border-radius: 50%;
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+  overflow-y: hidden; 
+}
+
+.ConexionCargaRapida{
+  position: relative;
+  margin-top: 100px;
+}
+
 #CargaRapida_secuencia{
   display: none;  
 }
+
+#CargaRapida_nucleo1 {
+  display: none;  
+}
+#CargaRapida_nucleo1:hover {
+  display: none;
+  background-color: #9FD791;  
+}
+
+#progresoCargaRapida{
+  display: none;
+  position: absolute;
+  top: 25%;
+  left: 14%;
+  width:2%;
+  height: 30px;
+  border-bottom: 5px solid #4B81BD;     
+  transition: width 1s;
+  overflow-x: hidden; 
+}
+
 #txt_torre_cargarapida {
   display: none;
 }
