@@ -12,7 +12,8 @@ function modosDeCarga(){
     document.getElementById('titulo_componentes_electricos').style.display='none';
     document.getElementById('subtitulo_componentes_electricos').style.display='none';
     document.getElementById('titulo_mododecarga').style.display='flex';
-    document.getElementById('subtitulo_mododecarga').style.display='flex';       
+    document.getElementById('subtitulo_mododecarga').style.display='flex';
+    document.getElementsByClassName("nucleo1_items")[0].style.paddingLeft= "5%";       
   }    
 }
 
