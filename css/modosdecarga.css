@@ -1,6 +1,6 @@
 /*MODOS DE CARGA*/
 
-#progreso{
+#progresoCargaLenta{
 display: none;
 position: absolute;
 top: 33%;
@@ -12,6 +12,29 @@ border-bottom: 5px solid #4B81BD;
   transition: width 1s;
   overflow-x: hidden; 
 }
+#progresoCargaSemiRapida{
+  display: none;
+  position: absolute;
+  top: 33%;
+  left: 12%;
+  width:2%;
+  height: 30px;
+  border-bottom: 5px solid #4B81BD;
+   
+    transition: width 1s;
+    overflow-x: hidden; 
+  }
+  #progresoCargaRapida{
+    display: none;
+    position: absolute;
+    top: 33%;
+    left: 12%;
+    width:2%;
+    height: 30px;
+    border-bottom: 5px solid #4B81BD;     
+      transition: width 1s;
+      overflow-x: hidden; 
+    }
 
 div#infoModosDeCarga {
   display: none;
