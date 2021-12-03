@@ -9,17 +9,17 @@ function modosDeCarga(){
     document.getElementById('CargaSemiRapida_nucleo1').style.display='flex';
     document.getElementById('CargaRapida_nucleo1').style.display='flex';
     document.getElementById('CargaLenta_secuencia').style.display='flex';
-    document.getElementById('CargaLenta_nucleo1').style.backgroundcolor ='#D1E8BA';
-    
-  } 
-  
-  
+    document.getElementById('titulo_componentes_electricos').style.display='none';
+    document.getElementById('subtitulo_componentes_electricos').style.display='none';
+    document.getElementById('titulo_mododecarga').style.display='flex';
+    document.getElementById('subtitulo_mododecarga').style.display='flex';       
+  }    
 }
 
 /* CARGA LENTA*/
 function CargaLenta(){
   if(document.getElementById('CargaLenta_nucleo1').style.display='flex'){
-        document.getElementById('CargaLenta_secuencia').style.display='flex';       
+    document.getElementById('CargaLenta_secuencia').style.display='flex';       
     document.getElementById('CargaSemiRapida_secuencia').style.display='none';
     document.getElementById('CargaRapida_secuencia').style.display='none';      
   } 
