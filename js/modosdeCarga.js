@@ -9,14 +9,17 @@ function modosDeCarga(){
     document.getElementById('CargaSemiRapida_nucleo1').style.display='flex';
     document.getElementById('CargaRapida_nucleo1').style.display='flex';
     document.getElementById('CargaLenta_secuencia').style.display='flex';
-
+    document.getElementById('CargaLenta_nucleo1').style.backgroundcolor ='#D1E8BA';
+    
   } 
+  
+  
 }
 
 /* CARGA LENTA*/
 function CargaLenta(){
   if(document.getElementById('CargaLenta_nucleo1').style.display='flex'){
-    document.getElementById('CargaLenta_secuencia').style.display='flex';       
+        document.getElementById('CargaLenta_secuencia').style.display='flex';       
     document.getElementById('CargaSemiRapida_secuencia').style.display='none';
     document.getElementById('CargaRapida_secuencia').style.display='none';      
   } 
