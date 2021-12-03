@@ -12,7 +12,7 @@ GetNucleoReference();
 SetNucleosPosition();
 ReubicarCarrete(); //Ubica el carrete en el "nucleoActual" al inicio
 
-/*
+/* Metodo antiguio y simple para verificar que que presionas el click izq
 carrete.onmousedown = function (e) {
   isDown = true;
 };

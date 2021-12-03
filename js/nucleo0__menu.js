@@ -17,4 +17,6 @@ function OcultarMenu(numNucleo) {
 
   nucleoActual = numNucleo;
   carrete.style.left = nucleoPositionX[numNucleo] + "px";
+  carretePosition = nucleoPositionX[numNucleo];
+  carrete.style.transitionDuration = "0s";
 }
