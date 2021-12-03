@@ -50,31 +50,31 @@
     <div class="b-nav" id="menu">
       <ul>
         <li>
-          <a class="b-link" href="#nucleo1" onclick="OcultarMenu(1)">
+          <a class="b-link" onclick="OcultarMenu(1)">
             <img class="menu_numeros_romanos" src="img/numero_romano_I.svg" alt="Nucleo I" />
             <span>¿Cómo se compone un auto eléctrico?</span>
           </a>
         </li>
         <li>
-          <a class="b-link" href="#nucleo2" onclick="OcultarMenu(2)">
+          <a class="b-link" onclick="OcultarMenu(2)">
             <img class="menu_numeros_romanos" src="img/numero_romano_II.svg" alt="Nucleo II" />
             <span>Comparación de losprocesos de producción</span>
           </a>
         </li>
         <li>
-          <a class="b-link" href="#nucleo3" onclick="OcultarMenu(3)">
+          <a class="b-link" onclick="OcultarMenu(3)">
             <img class="menu_numeros_romanos" src="img/numero_romano_III.svg" alt="Nucleo III" />
             <span>¿Cuanto CO2 emites?</span>
           </a>
         </li>
         <li>
-          <a class="b-link" href="#nucleo4" onclick="OcultarMenu(4)">
+          <a class="b-link" onclick="OcultarMenu(4)">
             <img class="menu_numeros_romanos" src="img/numero_romano_IV.svg" alt="Nucleo IV" />
             <span>Ventajas y desventajas del uso diario de los autos electricos</span>
           </a>
         </li>
         <li>
-          <a class="b-link" href="#nucleo5" onclick="OcultarMenu(5)">
+          <a class="b-link" onclick="OcultarMenu(5)">
             <img class="menu_numeros_romanos" src="img/numero_romano_V.svg" alt="Nucleo V" />
             <span>¿Por qué deberia adquirir un auto eléctrico?</span>
           </a>
@@ -183,11 +183,11 @@
         <div id="infoModosDeCarga" onclick="modosDeCarga()">
           <p>mas info sobre los modos de carga</p>
         </div>
-   
+
         <!-- CARGA LENTA -->
         <div class="ConexionCargaLenta" id="CargaLenta_secuencia">
           <div id="progresoCargaLenta"></div>
-          <div class="itemX" id="itemX_Torre" onclick="torreCargaLenta()">           
+          <div class="itemX" id="itemX_Torre" onclick="torreCargaLenta()">
             <p id="txt_titulo_torre">RED</p>
             <img src="img/Nucleo1/TorreElectrica.svg" alt="Torre" id="torreCargaLenta-Noseleccionada" />
             <img src="img/Nucleo1/TorreElectrica_Seleccionada.svg" alt="Torre" id="torreCargaLenta-seleccionada" />
@@ -225,7 +225,6 @@
               automoviles pequeños.
             </p>
           </div>
-          
         </div>
 
         <!-- CARGA SEMIRAPIDA -->
@@ -298,7 +297,11 @@
           <div class="itemX" id="itemX_Conector" onclick="conectorCargaRapida()">
             <p id="txt_titulo_conector_cargarapida">ELECTRONIMERA</p>
             <img src="img/Nucleo1/Electronimera.svg" alt="Conector" id="conectorCargaRapida-Noseleccionada" />
-            <img src="img/Nucleo1/Electronimera_Seleccionada.svg" alt="Conector" id="conectorCargaRapida-seleccionada" />
+            <img
+              src="img/Nucleo1/Electronimera_Seleccionada.svg"
+              alt="Conector"
+              id="conectorCargaRapida-seleccionada"
+            />
             <p id="txt_conector_cargarapida">
               Una Electrolinera <br />
               emplea corriente <br />
