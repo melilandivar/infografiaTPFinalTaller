@@ -1,11 +1,47 @@
 /*MODOS DE CARGA*/
 
+#progresoCargaLenta{
+display: none;
+position: absolute;
+top: 47%;
+left: 14%;
+width:2%;
+height: 30px;
+border-bottom: 5px solid #4B81BD;
+ 
+  transition: width 1s;
+  overflow-x: hidden; 
+}
+#progresoCargaSemiRapida{
+  display: none;
+  position: absolute;
+  top: 47%;
+  left: 12%;
+  width:2%;
+  height: 30px;
+  border-bottom: 5px solid #4B81BD;
+   
+    transition: width 1s;
+    overflow-x: hidden; 
+  }
+  #progresoCargaRapida{
+    display: none;
+    position: absolute;
+    top: 47%;
+    left: 12%;
+    width:2%;
+    height: 30px;
+    border-bottom: 5px solid #4B81BD;     
+      transition: width 1s;
+      overflow-x: hidden; 
+    }
+
 div#infoModosDeCarga {
   display: none;
   position: relative;
   text-align: center;
   background-color: rgba(36, 122, 63, 1);
-  width: 330px;
+  width: 420px;
   top: 25%;
    padding: 15px;
    margin: 0 auto;
@@ -85,6 +121,13 @@ margin: 0 auto;
 flex-direction: column;
 align-items: center;
 }
+.itemX_2{
+  position: relative;
+  display: inline-flex;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  }
 
 
 .itemX img{
@@ -93,10 +136,11 @@ margin-bottom: 30px;
 width: 80px;
 height: 80px;
 }
-.itemX {
-  position: relative;
-  display: inline;
-
+.itemX_2 img{
+  margin-top: 10px;
+margin-bottom: 30px;
+width: 80px;
+height: 80px;
 }
    /* CARGA LENTA */
 

@@ -18,7 +18,7 @@ function CargaLenta(){
   if(document.getElementById('CargaLenta_nucleo1').style.display='flex'){
     document.getElementById('CargaLenta_secuencia').style.display='flex';       
     document.getElementById('CargaSemiRapida_secuencia').style.display='none';
-    document.getElementById('CargaRapida_secuencia').style.display='none';    
+    document.getElementById('CargaRapida_secuencia').style.display='none';      
   } 
 }
 
@@ -27,7 +27,9 @@ function torreCargaLenta(){
     document.getElementById('txt_torre').style.display='flex';
     document.getElementById('txt_titulo_torre').style.display='flex';
     document.getElementById('torreCargaLenta-Noseleccionada').style.display='none';
-    document.getElementById('torreCargaLenta-seleccionada').style.display='flex';  
+    document.getElementById('torreCargaLenta-seleccionada').style.display='flex';
+    document.getElementById('progresoCargaLenta').style.display = 'flex';   
+    document.getElementById('progresoCargaLenta').style.width = `20%`; 
   } 
 }
 
@@ -36,7 +38,8 @@ function casaCargaLenta(){
     document.getElementById('txt_casaCargaLenta').style.display='flex';
      document.getElementById('txt_titulo_casa').style.display='flex';
      document.getElementById('casaCargaLenta-Noseleccionada').style.display='none';
-     document.getElementById('casaCargaLenta-seleccionada').style.display='flex';   
+     document.getElementById('casaCargaLenta-seleccionada').style.display='flex';
+     document.getElementById('progresoCargaLenta').style.width = `40%`;   
   } 
 }
 
@@ -46,6 +49,7 @@ function conectorCargaLenta(){
      document.getElementById('txt_titulo_conector').style.display='flex';
      document.getElementById('conectorCargaLenta-Noseleccionada').style.display='none';
      document.getElementById('conectorCargaLenta-seleccionada').style.display='flex';
+     document.getElementById('progresoCargaLenta').style.width = `60%`; 
   } 
 }
 
@@ -55,6 +59,7 @@ function autoCargaLenta(){
      document.getElementById('txt_titulo_auto').style.display='flex';
      document.getElementById('autoCargaLenta-Noseleccionada').style.display='none';
      document.getElementById('autoCargaLenta-seleccionada').style.display='flex';
+     document.getElementById('progresoCargaLenta').style.width = `70%`; 
   } 
 }
 
@@ -72,7 +77,9 @@ function torreCargaSemiRapida(){
     document.getElementById('txt_torre_cargasemirapida').style.display='flex';
     document.getElementById('txt_titulo_torre_cargasemirapida').style.display='flex';
     document.getElementById('torreCargaSemiRapida-Noseleccionada').style.display='none';
-    document.getElementById('torreCargaSemiRapida-seleccionada').style.display='flex';    
+    document.getElementById('torreCargaSemiRapida-seleccionada').style.display='flex'; 
+    document.getElementById('progresoCargaSemiRapida').style.display = 'flex';   
+    document.getElementById('progresoCargaSemiRapida').style.width = `20%`;    
   } 
 }
 function casaCargaSemiRapida(){
@@ -80,7 +87,9 @@ function casaCargaSemiRapida(){
       document.getElementById('txt_titulo_casa_cargasemirapida').style.display='flex';
      document.getElementById('txt_casa_cargasemirapida').style.display='flex';
        document.getElementById('casaCargaSemiRapida-Noseleccionada').style.display='none';
-    document.getElementById('casaCargaSemiRapida-seleccionada').style.display='flex';    
+    document.getElementById('casaCargaSemiRapida-seleccionada').style.display='flex';
+    document.getElementById('progresoCargaSemiRapida').style.width = `40%`; 
+        
   } 
 }
 function conectorCargaSemiRapida(){
@@ -88,7 +97,8 @@ function conectorCargaSemiRapida(){
     document.getElementById('txt_titulo_conector_cargasemirapida').style.display='flex';
     document.getElementById('txt_conector_cargasemirapida').style.display='flex';
        document.getElementById('conectorCargaSemiRapida-Noseleccionada').style.display='none';
-    document.getElementById('conectorCargaSemiRapida-seleccionada').style.display='flex';     
+    document.getElementById('conectorCargaSemiRapida-seleccionada').style.display='flex';
+    document.getElementById('progresoCargaSemiRapida').style.width = `60%`;      
   } 
 }
 function autoCargaSemiRapida(){
@@ -96,7 +106,8 @@ function autoCargaSemiRapida(){
     document.getElementById('txt_titulo_auto_cargasemirapida').style.display='flex';
     document.getElementById('txt_auto_cargasemirapida').style.display='flex';
        document.getElementById('autoCargaSemiRapida-Noseleccionada').style.display='none';
-    document.getElementById('autoCargaSemiRapida-seleccionada').style.display='flex';     
+    document.getElementById('autoCargaSemiRapida-seleccionada').style.display='flex';
+    document.getElementById('progresoCargaSemiRapida').style.width = `70%`;      
   } 
 }
 
@@ -113,7 +124,9 @@ function torreCargaRapida(){
     document.getElementById('txt_torre_cargarapida').style.display='flex';
     document.getElementById('txt_titulo_torre_cargarapida').style.display='flex';
     document.getElementById('torreCargaRapida-Noseleccionada').style.display='none';
-    document.getElementById('torreCargaRapida-seleccionada').style.display='flex';     
+    document.getElementById('torreCargaRapida-seleccionada').style.display='flex';
+    document.getElementById('progresoCargaRapida').style.display = 'flex';   
+    document.getElementById('progresoCargaRapida').style.width = `20%`;     
   } 
 }
 function casaCargaRapida(){
@@ -121,7 +134,8 @@ function casaCargaRapida(){
     document.getElementById('txt_casa_cargarapida').style.display='flex';
     document.getElementById('txt_titulo_casa_cargarapida').style.display='flex';
     document.getElementById('casaCargaRapida-Noseleccionada').style.display='none';
-    document.getElementById('casaCargaRapida-seleccionada').style.display='flex';     
+    document.getElementById('casaCargaRapida-seleccionada').style.display='flex';
+    document.getElementById('progresoCargaRapida').style.width = `40%`;       
   } 
 }
 function conectorCargaRapida(){
@@ -129,7 +143,8 @@ function conectorCargaRapida(){
     document.getElementById('txt_conector_cargarapida').style.display='flex';
     document.getElementById('txt_titulo_conector_cargarapida').style.display='flex';
     document.getElementById('conectorCargaRapida-Noseleccionada').style.display='none';
-    document.getElementById('conectorCargaRapida-seleccionada').style.display='flex';     
+    document.getElementById('conectorCargaRapida-seleccionada').style.display='flex';
+    document.getElementById('progresoCargaRapida').style.width = `60%`;       
   } 
 }
 function autoCargaRapida(){
@@ -137,6 +152,7 @@ function autoCargaRapida(){
     document.getElementById('txt_auto_cargarapida').style.display='flex';
     document.getElementById('txt_titulo_auto_cargarapida').style.display='flex';
     document.getElementById('autoCargaRapida-Noseleccionada').style.display='none';
-    document.getElementById('autoCargaRapida-seleccionada').style.display='flex';     
+    document.getElementById('autoCargaRapida-seleccionada').style.display='flex';
+    document.getElementById('progresoCargaRapida').style.width = `70%`;       
   } 
 }
