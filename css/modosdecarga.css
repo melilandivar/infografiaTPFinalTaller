@@ -121,6 +121,13 @@ margin: 0 auto;
 flex-direction: column;
 align-items: center;
 }
+.itemX_2{
+  position: relative;
+  display: inline-flex;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  }
 
 
 .itemX img{
@@ -129,10 +136,11 @@ margin-bottom: 30px;
 width: 80px;
 height: 80px;
 }
-.itemX {
-  position: relative;
-  display: inline;
-
+.itemX_2 img{
+  margin-top: 10px;
+margin-bottom: 30px;
+width: 80px;
+height: 80px;
 }
    /* CARGA LENTA */
 
