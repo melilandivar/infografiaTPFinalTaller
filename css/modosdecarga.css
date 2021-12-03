@@ -16,7 +16,7 @@ border-bottom: 5px solid #4B81BD;
   display: none;
   position: absolute;
   top: 47%;
-  left: 12%;
+  left: 14%;
   width:2%;
   height: 30px;
   border-bottom: 5px solid #4B81BD;
@@ -28,7 +28,7 @@ border-bottom: 5px solid #4B81BD;
     display: none;
     position: absolute;
     top: 47%;
-    left: 12%;
+    left: 14%;
     width:2%;
     height: 30px;
     border-bottom: 5px solid #4B81BD;     
@@ -121,13 +121,20 @@ margin: 0 auto;
 flex-direction: column;
 align-items: center;
 }
-.itemX_2{
+.item_CargaSemirapida{
   position: relative;
   display: inline-flex;
   margin: 0 auto;
   flex-direction: column;
   align-items: center;
   }
+  .item_CargaRapida{
+    position: relative;
+    display: inline-flex;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    }
 
 
 .itemX img{
@@ -136,7 +143,13 @@ margin-bottom: 30px;
 width: 80px;
 height: 80px;
 }
-.itemX_2 img{
+.item_CargaSemirapida img{
+  margin-top: 10px;
+margin-bottom: 30px;
+width: 80px;
+height: 80px;
+}
+.item_CargaRapida img{
   margin-top: 10px;
 margin-bottom: 30px;
 width: 80px;
