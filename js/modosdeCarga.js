@@ -33,7 +33,7 @@ function torreCargaLenta(){
     document.getElementById('torreCargaLenta-Noseleccionada').style.display='none';
     document.getElementById('torreCargaLenta-seleccionada').style.display='flex';
     document.getElementById('progresoCargaLenta').style.display = 'flex';   
-    document.getElementById('progresoCargaLenta').style.width = `20%`; 
+    document.getElementById('progresoCargaLenta').style.width = `15%`; 
   } 
 }
 
@@ -43,7 +43,7 @@ function casaCargaLenta(){
      document.getElementById('txt_titulo_casa').style.display='flex';
      document.getElementById('casaCargaLenta-Noseleccionada').style.display='none';
      document.getElementById('casaCargaLenta-seleccionada').style.display='flex';
-     document.getElementById('progresoCargaLenta').style.width = `40%`;   
+     document.getElementById('progresoCargaLenta').style.width = `35%`;   
   } 
 }
 
@@ -63,7 +63,7 @@ function autoCargaLenta(){
      document.getElementById('txt_titulo_auto').style.display='flex';
      document.getElementById('autoCargaLenta-Noseleccionada').style.display='none';
      document.getElementById('autoCargaLenta-seleccionada').style.display='flex';
-     document.getElementById('progresoCargaLenta').style.width = `70%`; 
+     document.getElementById('progresoCargaLenta').style.width = `7515%`; 
   } 
 }
 
@@ -83,7 +83,7 @@ function torreCargaSemiRapida(){
     document.getElementById('torreCargaSemiRapida-Noseleccionada').style.display='none';
     document.getElementById('torreCargaSemiRapida-seleccionada').style.display='flex'; 
     document.getElementById('progresoCargaSemiRapida').style.display = 'flex';   
-    document.getElementById('progresoCargaSemiRapida').style.width = `20%`;    
+    document.getElementById('progresoCargaSemiRapida').style.width = `15%`;    
   } 
 }
 function casaCargaSemiRapida(){
@@ -92,7 +92,7 @@ function casaCargaSemiRapida(){
      document.getElementById('txt_casa_cargasemirapida').style.visibility='visible';
        document.getElementById('casaCargaSemiRapida-Noseleccionada').style.display='none';
     document.getElementById('casaCargaSemiRapida-seleccionada').style.display='flex';
-    document.getElementById('progresoCargaSemiRapida').style.width = `40%`; 
+    document.getElementById('progresoCargaSemiRapida').style.width = `35%`; 
         
   } 
 }
@@ -111,7 +111,7 @@ function autoCargaSemiRapida(){
     document.getElementById('txt_auto_cargasemirapida').style.visibility='visible';
        document.getElementById('autoCargaSemiRapida-Noseleccionada').style.display='none';
     document.getElementById('autoCargaSemiRapida-seleccionada').style.display='flex';
-    document.getElementById('progresoCargaSemiRapida').style.width = `70%`;      
+    document.getElementById('progresoCargaSemiRapida').style.width = `75%`;      
   } 
 }
 
@@ -130,7 +130,7 @@ function torreCargaRapida(){
     document.getElementById('torreCargaRapida-Noseleccionada').style.display='none';
     document.getElementById('torreCargaRapida-seleccionada').style.display='flex';
     document.getElementById('progresoCargaRapida').style.display = 'flex';   
-    document.getElementById('progresoCargaRapida').style.width = `20%`;     
+    document.getElementById('progresoCargaRapida').style.width = `15%`;     
   } 
 }
 function casaCargaRapida(){
@@ -139,7 +139,7 @@ function casaCargaRapida(){
     document.getElementById('txt_titulo_casa_cargarapida').style.display='flex';
     document.getElementById('casaCargaRapida-Noseleccionada').style.display='none';
     document.getElementById('casaCargaRapida-seleccionada').style.display='flex';
-    document.getElementById('progresoCargaRapida').style.width = `40%`;       
+    document.getElementById('progresoCargaRapida').style.width = `35%`;       
   } 
 }
 function conectorCargaRapida(){
@@ -157,6 +157,6 @@ function autoCargaRapida(){
     document.getElementById('txt_titulo_auto_cargarapida').style.display='flex';
     document.getElementById('autoCargaRapida-Noseleccionada').style.display='none';
     document.getElementById('autoCargaRapida-seleccionada').style.display='flex';
-    document.getElementById('progresoCargaRapida').style.width = `70%`;       
+    document.getElementById('progresoCargaRapida').style.width = `75%`;       
   } 
 }

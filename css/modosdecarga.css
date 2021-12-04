@@ -92,10 +92,10 @@ div#infoModosDeCarga {
   display: none;
   position: absolute;
   top: 25%;
-  left: 14%;
+  left: 12%;
   width: 2%;
   height: 30px;
-  border-bottom: 5px solid #4b81bd;
+  border-bottom: 5px solid #247A3F;
   transition: width 1s;
   overflow-x: hidden;
 }
@@ -208,10 +208,10 @@ div#infoModosDeCarga {
   display: none;
   position: absolute;
   top: 25%;
-  left: 14%;
+  left: 11%;
   width: 2%;
   height: 30px;
-  border-bottom: 5px solid #4b81bd;
+  border-bottom: 5px solid #247A3F;
   transition: width 1s;
   overflow-x: hidden;
 }
@@ -318,10 +318,10 @@ div#infoModosDeCarga {
   display: none;
   position: absolute;
   top: 25%;
-  left: 14%;
+  left: 12%;
   width: 2%;
   height: 30px;
-  border-bottom: 5px solid #4b81bd;
+  border-bottom: 5px solid #247A3F;
   transition: width 1s;
   overflow-x: hidden;
 }
