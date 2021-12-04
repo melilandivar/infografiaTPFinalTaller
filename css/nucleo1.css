@@ -97,42 +97,6 @@
       display: inline-block;
     }
 
-
-
-.item1 {
-  background-color: #d1e8ba;
-  height: 89px;
-  width: 89px;
-  border-radius: 50%;
-  display: inline-block;
-  margin-right: 10%;
-  align-items: center;
-  text-align: center;
-  overflow-y: hidden;
-}
-.item2 {
-  background-color: #d1e8ba;
-  height: 89px;
-  width: 89px;
-  border-radius: 50%;
-  display: inline-block;
-  margin-right: 10%;
-  align-items: center;
-  text-align: center;
-  overflow-y: hidden;
-}
-.item3 {
-  background-color: #d1e8ba;
-  height: 89px;
-  width: 89px;
-  border-radius: 50%;
-  display: inline-block;
-  margin-right: 10%;
-  align-items: center;
-  text-align: center;
-  overflow-y: hidden;
-}
-
 #plugCarga {
   display: none; 
   
