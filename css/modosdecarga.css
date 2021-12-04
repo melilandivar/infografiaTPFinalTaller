@@ -50,14 +50,6 @@ div#infoModosDeCarga {
   height: 80px;
 }
 
-.itemX {
-  position: relative;
-  display: inline;
-  margin: 0 auto;
-  flex-direction: column;
-  align-items: center;
-}
-
 .itemX img {
   margin-top: 10px;
   margin-bottom: 30px;
@@ -109,9 +101,11 @@ div#infoModosDeCarga {
 }
 
 #txt_torre {
-  display: none;
+  visibility: hidden;
+  
 }
-#txt_titulo_torre {
+#txt_titulo_torre {  
+  
   display: flex;
 }
 #torreCargaLenta-Noseleccionada {
@@ -122,7 +116,8 @@ div#infoModosDeCarga {
 }
 
 #txt_casaCargaLenta {
-  display: none;
+  visibility: hidden;
+  
 }
 #txt_titulo_casa {
   display: flex;
@@ -135,7 +130,8 @@ div#infoModosDeCarga {
 }
 
 #txt_conectorCargaLenta {
-  display: none;
+  visibility: hidden;
+  
 }
 #txt_titulo_conector {
   display: flex;
@@ -148,7 +144,8 @@ div#infoModosDeCarga {
 }
 
 #txt_autoCargaLenta {
-  display: none;
+  visibility: hidden;
+  
 }
 #txt_titulo_auto {
   display: flex;
@@ -220,7 +217,7 @@ div#infoModosDeCarga {
 }
 
 #txt_torre_cargasemirapida {
-  display: none;
+  visibility: hidden;  
 }
 #txt_titulo_torre_cargasemirapida {
   display: flex;
@@ -233,7 +230,7 @@ div#infoModosDeCarga {
 }
 
 #txt_casa_cargasemirapida {
-  display: none;
+  visibility: hidden;  
 }
 #txt_titulo_casa_cargasemirapida {
   display: flex;
@@ -249,7 +246,7 @@ div#infoModosDeCarga {
   display: flex;
 }
 #txt_conector_cargasemirapida {
-  display: none;
+  visibility: hidden;  
 }
 #conectorCargaSemiRapida-Noseleccionada {
   display: flex;
@@ -262,7 +259,7 @@ div#infoModosDeCarga {
   display: flex;
 }
 #txt_auto_cargasemirapida {
-  display: none;
+    visibility: hidden; 
 }
 #autoCargaSemiRapida-Noseleccionada {
   display: flex;
@@ -330,7 +327,7 @@ div#infoModosDeCarga {
 }
 
 #txt_torre_cargarapida {
-  display: none;
+   visibility: hidden;   
 }
 #txt_titulo_torre_cargarapida {
   display: flex;
@@ -343,7 +340,7 @@ div#infoModosDeCarga {
 }
 
 #txt_casa_cargarapida {
-  display: none;
+   visibility: hidden;   
 }
 #txt_titulo_casa_cargarapida {
   display: flex;
@@ -356,7 +353,7 @@ div#infoModosDeCarga {
 }
 
 #txt_conector_cargarapida {
-  display: none;
+   visibility: hidden;   
 }
 #txt_titulo_conector_cargarapida {
   display: flex;
@@ -369,7 +366,7 @@ div#infoModosDeCarga {
 }
 
 #txt_auto_cargarapida {
-  display: none;
+   visibility: hidden;   
 }
 #txt_titulo_auto_cargarapida {
   display: flex;
