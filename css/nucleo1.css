@@ -68,6 +68,11 @@
     text-align: center;
     overflow-y: hidden;   
    }
+   .item3 img{
+      width: 55px;
+      height: 63px;
+      padding-top: 10%;
+   }
 
    #plugCarga {
        display:none;
