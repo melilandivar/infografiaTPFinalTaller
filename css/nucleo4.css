@@ -1,7 +1,9 @@
 /* Utilidades */
 #nucleo4 {
   background-size: cover;
-  background-image: url(../img/fondo_introduccion.png);
+  background-image: url(../img/nucleo4/fondo-ventajas.svg);
+  display: grid;
+  grid-template-rows: 20% 20% 60%;
 }
 
 /*
@@ -17,197 +19,121 @@
   padding-top: 30rem;
 }
 
-.nucleo4__ventajas {
+.nucleo4__header__botones {
   display: flex;
   justify-content: center;
-  width: 100%;
-  margin-top: 2%;
 }
 
-.nucleo4__ventajas__numerada {
+.nucleo4__header__botones__item {
+  margin-top: 10rem;
+  padding: 0 70rem;
+  font-size: 28rem;
+  box-shadow: none;
+  border-radius: 0rem;
   background-color: transparent;
-  height: 80rem;
-  width: 80rem;
-  border: 2rem solid #84c374;
-  border-radius: 50%;
-  display: inline-block;
-  margin-right: 2%;
-  text-align: center;
-  align-items: center;
-}
-
-.nucleo4__ventajas__numerada p {
-  display: block;
-  margin: 25% auto auto auto;
-}
-
-.nucleo4__ventajas__numerada:hover {
-  background-color: #84c374;
+  cursor: pointer;
 }
 
 /*
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 */
-
-/* Style tab links */
-.tablink {
-  box-shadow: none;
-  background-color: transparent !important;
-  color: black;
-  float: left;
-  border: none;
-
-  border-radius: 0rem;
-  outline: none;
-
-  padding: 14rem 16rem;
-  font-size: 28rem;
-  width: 25%;
-}
-
-.tablink:hover {
-  background-color: #777;
-  border-bottom: black solid 2rem;
-}
-
-.tablink:active {
-  border-bottom: black solid 2rem;
-}
-
-/* Style the tab content (and add height:100% for full page content) */
-.tabcontent {
-  color: black;
+/* Opciones numeradas */
+.nucleo4__opciones-container {
   display: flex;
-  padding-top: 12em;
-  height: 100%;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
 }
 
-.botones_seleccion_nucleo4 {
+.nucleo4__opciones {
   display: flex;
   justify-content: center;
-  width: 200%;
-  background-color: transparent !important;
+  margin: 0 auto;
+  width: 100%;
+}
+#ventajas-container div {
+  border: 4rem solid #84c374;
+}
+#ventajas-container div:hover {
+  background-color: #84c374;
+}
+#desventajas-container div {
+  border: 4rem solid #dd6a57;
+}
+#desventajas-container div:hover {
+  background-color: #dd6a57;
 }
 
-#flecha {
+.nucleo4__opciones__item {
   display: inline-block;
-  margin-right: 2%;
-  text-align: center;
-}
-
-#oculta4-1 {
-  display: flex;
-  position: absolute;
+  background-color: transparent;
+  height: 80rem;
+  width: 80rem;
+  margin: 0 2%;
+  border-radius: 50%;
   text-align: center;
   align-items: center;
-  flex-direction: column;
-  height: auto;
-  top: 30%;
 }
-#oculta4-2 {
+
+.nucleo4__opciones__item p {
+  display: block;
+  margin: 25% auto auto auto;
+}
+
+/*
+
+*/
+/* Contenido */
+.nucleo4__contenido {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.nucleo4__contenido__item {
   display: none;
   position: absolute;
   text-align: center;
   flex-direction: column;
   height: auto;
-  top: 30%;
+  top: 40%;
 }
-#oculta4-3 {
-  display: none;
-  position: absolute;
-  text-align: center;
-  flex-direction: column;
-  height: auto;
-  top: 30%;
+
+.nucleo4__contenido__item:first-child {
+  display: flex;
 }
-#oculta4-4 {
-  display: none;
-  position: absolute;
-  text-align: center;
-  flex-direction: column;
-  height: auto;
-  top: 30%;
-}
-#oculta4-5 {
-  display: none;
-  position: absolute;
-  text-align: center;
-  flex-direction: column;
-  height: auto;
-  top: 30%;
-}
-#oculta4-6 {
-  display: none;
-  position: absolute;
-  text-align: center;
-  flex-direction: column;
-  height: auto;
-  top: 30%;
-}
-#oculta4-7 {
-  display: none;
-  position: absolute;
-  text-align: center;
-  flex-direction: column;
-  height: auto;
-  top: 30%;
-}
-p {
+
+.nucleo4__contenido__item p {
   font-weight: bold;
-}
-p#oculta4 {
-  margin-top: 30%;
-}
-
-#texto_verde {
-  color: #84c374;
-  font-size: 72rem;
-  font-weight: bold;
-}
-
-.txt4-1 {
   height: auto;
 }
-.img4-1 {
+
+.nucleo4__contenido__item__imagen {
   position: relative;
-  height: 500rem;
+  height: 400rem;
 }
 
-#oculta4-1 .img4-1 img {
+#ventaja1 .nucleo4__contenido__item__imagen img {
   position: relative;
   top: 60%;
 }
-#oculta4-3 .img4-1 img {
+#ventaja3 .nucleo4__contenido__item__imagen img {
   position: relative;
   top: 60%;
 }
-#oculta4-4 .img4-1 img {
+#ventaja4 .nucleo4__contenido__item__imagen img {
   position: relative;
   top: 30%;
 }
-#oculta4-5 .img4-1 img {
+#ventaja5 .nucleo4__contenido__item__imagen img {
   position: relative;
   top: 60%;
 }
-#oculta4-7 .img4-1 img {
+#ventaja7 .nucleo4__contenido__item__imagen img {
   position: relative;
   top: 50%;
 }

@@ -654,58 +654,89 @@
         <div class="nucleo4__header">
           <h1>Ventajas y desventajas de los autos eléctricos</h1>
           <div class="nucleo4__header__botones">
-            <button class="nucleo2__header__botones__item underline" id="nucleo4__ventajas">Auto electrico</button>
-            <button class="nucleo2__header__botones__item" id="nucleo4__desventajas">Auto a combustión</button>
+            <button class="nucleo4__header__botones__item underline" id="nucleo4__ventajas">Ventajas</button>
+            <button class="nucleo4__header__botones__item" id="nucleo4__desventajas">Desventajas</button>
           </div>
         </div>
 
-        <div class="nucleo4__ventajas">
-          <div class="nucleo4__ventajas__numerada backgroundVerde" onclick="MostrarVentaja(1)"><p>1</p></div>
-          <div class="nucleo4__ventajas__numerada" onclick="MostrarVentaja(2)"><p>2</p></div>
-          <div class="nucleo4__ventajas__numerada" onclick="MostrarVentaja(3)"><p>3</p></div>
-          <div class="nucleo4__ventajas__numerada" onclick="MostrarVentaja(4)"><p>4</p></div>
-          <div class="nucleo4__ventajas__numerada" onclick="MostrarVentaja(5)"><p>5</p></div>
-          <div class="nucleo4__ventajas__numerada" onclick="MostrarVentaja(6)"><p>6</p></div>
-          <div class="nucleo4__ventajas__numerada" onclick="MostrarVentaja(7)"><p>7</p></div>
-
-          <div id="oculta4-1">
-            <div class="txt4-1">
-              <p>No contaminan el aire, ya que no emiten CO2 ni otras partículas tóxicas.</p>
-            </div>
-            <div class="img4-1"><img src="img/autosNucleo4_0.png" alt="" /></div>
+        <div class="nucleo4__opciones-container">
+          <div class="nucleo4__opciones" id="ventajas-container">
+            <div class="nucleo4__opciones__item item-verde" onclick="MostrarVentaja(1)"><p>1</p></div>
+            <div class="nucleo4__opciones__item" onclick="MostrarVentaja(2)"><p>2</p></div>
+            <div class="nucleo4__opciones__item" onclick="MostrarVentaja(3)"><p>3</p></div>
+            <div class="nucleo4__opciones__item" onclick="MostrarVentaja(4)"><p>4</p></div>
+            <div class="nucleo4__opciones__item" onclick="MostrarVentaja(5)"><p>5</p></div>
+            <div class="nucleo4__opciones__item" onclick="MostrarVentaja(6)"><p>6</p></div>
+            <div class="nucleo4__opciones__item" onclick="MostrarVentaja(7)"><p>7</p></div>
           </div>
-          <div id="oculta4-2">
+          <div class="nucleo4__opciones ocultar" id="desventajas-container">
+            <div class="nucleo4__opciones__item item-rojo" onclick="MostrarDesventaja(1)"><p>1</p></div>
+            <div class="nucleo4__opciones__item" onclick="MostrarDesventaja(2)"><p>2</p></div>
+            <div class="nucleo4__opciones__item" onclick="MostrarDesventaja(3)"><p>3</p></div>
+            <div class="nucleo4__opciones__item" onclick="MostrarDesventaja(4)"><p>4</p></div>
+          </div>
+        </div>
+
+        <div class="nucleo4__contenido">
+          <!-- Ventaja 1 -->
+          <div class="nucleo4__contenido__item" id="ventaja1">
+            <p>No contaminan el aire, ya que no emiten CO2 ni otras partículas tóxicas.</p>
+            <div class="nucleo4__contenido__item__imagen"><img src="img/nucleo4/autosNucleo4_0.png" alt="" /></div>
+          </div>
+
+          <!-- Ventaja 2 -->
+          <div class="nucleo4__contenido__item" id="ventaja2">
             <p>no genera contaminacion sonora</p>
           </div>
 
-          <div id="oculta4-3">
-            <div class="txt4-1">
-              <p>Sus componentes son reemplazables y actualizables, por lo que mantienen un ciclo de vida más largo.</p>
-            </div>
-            <div class="img4-1"><img src="img/N4Ventaja3.svg" alt="Ventaja3" /></div>
+          <!-- Ventaja 3 -->
+          <div class="nucleo4__contenido__item" id="ventaja3">
+            <p>Sus componentes son reemplazables y actualizables, por lo que mantienen un ciclo de vida más largo.</p>
+            <div class="nucleo4__contenido__item__imagen"><img src="img/nucleo4/N4Ventaja3.svg" alt="Ventaja3" /></div>
           </div>
-          <div id="oculta4-4">
-            <div class="txt4-1"><p>El coste de carga y mantenimiento es relativamente bajo.</p></div>
-            <div class="img4-1"><img src="img/N4Ventaja4.svg" alt="Ventaja4" /></div>
+
+          <!-- Ventaja 4 -->
+          <div class="nucleo4__contenido__item" id="ventaja4">
+            <p>El coste de carga y mantenimiento es relativamente bajo.</p>
+            <div class="nucleo4__contenido__item__imagen"><img src="img/nucleo4/N4Ventaja4.svg" alt="Ventaja4" /></div>
           </div>
-          <div id="oculta4-5">
-            <div class="txt4-1">
-              <p>Los costos a largo plazo son mucho más accesible en comparación a un auto a combustión.</p>
-            </div>
-            <div class="img4-1"><img src="img/N4Ventaja5.svg" alt="Ventaja5" /></div>
+
+          <!-- Ventaja 5 -->
+          <div class="nucleo4__contenido__item" id="ventaja5">
+            <p>Los costos a largo plazo son mucho más accesible en comparación a un auto a combustión.</p>
+            <div class="nucleo4__contenido__item__imagen"><img src="img/nucleo4/N4Ventaja5.svg" alt="Ventaja5" /></div>
           </div>
-          <div id="oculta4-6">
+
+          <!-- Ventaja 6 -->
+          <div class="nucleo4__contenido__item" id="ventaja6">
             <p>Su uso masivo disminuye notablemente la emisión de CO2.</p>
           </div>
-          <div id="oculta4-7">
-            <div class="txt4-1"><p>Son la nueva apuesta de la industria automotriz moderna.</p></div>
-            <div class="img4-1"><img src="img/N4Ventaja7.svg" alt="Ventaja7" /></div>
-          </div>
-        </div>
 
-        <!-- <div id="News" class="tabcontent">
-        <p>chau</p>
-      </div> -->
+          <!-- Ventaja 7 -->
+          <div class="nucleo4__contenido__item" id="ventaja7">
+            <p>Son la nueva apuesta de la industria automotriz moderna.</p>
+            <div class="nucleo4__contenido__item__imagen"><img src="img/nucleo4/N4Ventaja7.svg" alt="Ventaja7" /></div>
+          </div>
+
+          <!-- Desventaja 1 -->
+          <div class="nucleo4__contenido__item" id="desventaja1">
+            <p>1</p>
+          </div>
+          <!-- Desventaja 2 -->
+          <div class="nucleo4__contenido__item" id="desventaja2">
+            <p>1</p>
+          </div>
+          <!-- Desventaja 3 -->
+          <div class="nucleo4__contenido__item" id="desventaja3">
+            <p>1</p>
+          </div>
+          <!-- Desventaja 4 -->
+          <div class="nucleo4__contenido__item" id="desventaja4">
+            <p>1</p>
+          </div>
+
+          <!-- end nucleo4__contenido-->
+        </div>
       </div>
 
       <div id="nucleo5">
@@ -779,15 +810,15 @@
       </div>
       <!--Fin de Carrete-->
     </div>
+
+    <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/nucleo5.js"></script>
+    <script src="js/nucleo4.js"></script>
+    <script src="js/nucleo2.js"></script>
+    <script src="js/nucleo0__menu.js"></script>
+    <script src="js/modosdeCarga.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/carrete.js"></script>
   </body>
 </html>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="js/nucleo5.js"></script>
-<script src="js/nucleo4.js"></script>
-<script src="js/nucleo2.js"></script>
-<script src="js/nucleo0__menu.js"></script>
-<script src="js/modosdeCarga.js"></script>
-<script src="js/index.js"></script>
-<script src="js/carrete.js"></script>
-<!--link al archivo js-->

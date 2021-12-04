@@ -65,3 +65,13 @@ p#oculta {
   font-size: 72rem;
   font-weight: bold;
 }
+
+p#oculta4 {
+  margin-top: 30%;
+}
+
+#texto_verde {
+  color: #84c374;
+  font-size: 72rem;
+  font-weight: bold;
+}

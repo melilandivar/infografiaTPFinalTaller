@@ -66,9 +66,16 @@ button:focus {
   outline: none !important;
 }
 
+/*
+
+*/
 /* ----- Utilidades ----- */
-.backgroundVerde {
+.item-verde {
   background-color: #84c374 !important;
+}
+
+.item-rojo {
+  background-color: #dd6a57 !important;
 }
 
 .ocultar {
