@@ -3,18 +3,6 @@
   background-color: #e6fbe1;
 }
 
-.ocultar {
-  display: none !important;
-}
-
-.placeHolder {
-  opacity: 30%;
-}
-
-.underline {
-  text-decoration: underline black;
-}
-
 #nucleo2 {
   display: grid;
   grid-template-rows: 20% 25% 30% 25%;

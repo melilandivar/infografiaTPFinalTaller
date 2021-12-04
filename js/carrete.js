@@ -6,20 +6,16 @@ let moveDistance;
 let nucleo = new Array(6);
 let nucleoPositionX = new Array(nucleo.length);
 
-let nucleoActual = 0; //Si ponen el numero del nucleo en el que trabajan, la web empieza alli
+let nucleoActual = 4; //Si ponen el numero del nucleo en el que trabajan, la web empieza alli
 
 GetNucleoReference();
 SetNucleosPosition();
 ReubicarCarrete(); //Ubica el carrete en el "nucleoActual" al inicio
 
-/* Metodo antiguio y simple para verificar que que presionas el click izq
-carrete.onmousedown = function (e) {
-  isDown = true;
-};
-*/
+/* LISTENERS */
 document.onmousedown = function (e) {
   if (estasClickeandoElCarrete(e)) isDown = true;
-  console.log(estasClickeandoElCarrete(e));
+  //console.log(estasClickeandoElCarrete(e));
 };
 document.onmouseup = function (e) {
   isDown = false;
@@ -39,6 +35,12 @@ carrete.onmousemove = function (e) {
 window.onresize = function (e) {
   ReubicarCarrete();
 };
+
+/* Metodo antiguio y simple para verificar que que presionas el click izq
+carrete.onmousedown = function (e) {
+  isDown = true;
+};
+*/
 
 /*
 
@@ -148,7 +150,7 @@ function estasClickeandoElCarrete(_event) {
 
   for (let i = 0; i < nucleo.length; i++) {
     if (_id != nucleo[i] || _id == `` || _id == carrete) {
-      console.log(_id);
+      //console.log(_id);
       //console.log("activado");
       return true;
     }

@@ -36,102 +36,88 @@ controller.oninput = () => {
 /*fin js del menu*/
 
 /* FUNCIONES NUCLEO 1*/
-function agregarPlug(){
-  if(document.getElementById('plugCarga').style.display='none'){
-    document.getElementById('plugCarga').style.display='flex';
-    document.getElementById('infoModosDeCarga').style.display='flex';
-    document.getElementById('auto_cuerpo').style.display='none';
-    document.getElementById('auto_plug').style.display='flex';
-    
-  } else
-  if(document.getElementById('plugCarga').style.display='flex'){
-    document.getElementById('plugCarga').style.display='none';
-    
-    
-  }
-  
-  
-}
-function agregarBateria(){
-  if(document.getElementById('bateriaLitio').style.display='none'){
-    document.getElementById('bateriaLitio').style.display='flex';
-    document.getElementById('auto_cuerpo').style.display='none';
-    document.getElementById('auto_plug').style.display='none';
-    document.getElementById('auto_plug_bateria').style.display='flex';
-  } else {
-    document.getElementById('bateriaLitio').style.display='none';
+function agregarPlug() {
+  if ((document.getElementById("plugCarga").style.display = "none")) {
+    document.getElementById("plugCarga").style.display = "flex";
+    document.getElementById("infoModosDeCarga").style.display = "flex";
+    document.getElementById("auto_cuerpo").style.display = "none";
+    document.getElementById("auto_plug").style.display = "flex";
+  } else if ((document.getElementById("plugCarga").style.display = "flex")) {
+    document.getElementById("plugCarga").style.display = "none";
   }
 }
-function agregarMotor(){
-
-  if(document.getElementById('motorElectrico').style.display='none'){
-    document.getElementById('motorElectrico').style.display='flex';
-    document.getElementById('auto_cuerpo').style.display='none';
-    document.getElementById('auto_plug').style.display='none';
-    document.getElementById('auto_plug_bateria').style.display='none';
-    document.getElementById('auto_plug_bateria_motor').style.display='flex';
+function agregarBateria() {
+  if ((document.getElementById("bateriaLitio").style.display = "none")) {
+    document.getElementById("bateriaLitio").style.display = "flex";
+    document.getElementById("auto_cuerpo").style.display = "none";
+    document.getElementById("auto_plug").style.display = "none";
+    document.getElementById("auto_plug_bateria").style.display = "flex";
   } else {
-    document.getElementById('motorElectrico').style.display='none';
+    document.getElementById("bateriaLitio").style.display = "none";
+  }
+}
+function agregarMotor() {
+  if ((document.getElementById("motorElectrico").style.display = "none")) {
+    document.getElementById("motorElectrico").style.display = "flex";
+    document.getElementById("auto_cuerpo").style.display = "none";
+    document.getElementById("auto_plug").style.display = "none";
+    document.getElementById("auto_plug_bateria").style.display = "none";
+    document.getElementById("auto_plug_bateria_motor").style.display = "flex";
+  } else {
+    document.getElementById("motorElectrico").style.display = "none";
   }
 }
 
 /*FUNCIONES NUCLEO 2*/
 
 function cambiarIcono() {
-
-  if(document.getElementById('nucleo2_icono_agregar').style.display='flex') { //si se puede agregar 
-    document.getElementById('nucleo2_icono_agregar').style.display='none'; //que se elimine el de agregar
-    document.getElementById('nucleo2_icono_eliminar').style.display='flex'; //se agrega el de quitar
+  if ((document.getElementById("nucleo2_icono_agregar").style.display = "flex")) {
+    //si se puede agregar
+    document.getElementById("nucleo2_icono_agregar").style.display = "none"; //que se elimine el de agregar
+    document.getElementById("nucleo2_icono_eliminar").style.display = "flex"; //se agrega el de quitar
   } else {
-    document.getElementById('nucleo2_icono_agregar').style.display='flex'; //sino, se agrega el de agregar
-    document.getElementById('nucleo2_icono_eliminar').style.display='none'; //se quita el de eliminar
-  } 
-
-  if(document.getElementById('nucleo2_auto_grafico').style.display='flex'){
-    document.getElementById('nucleo2_auto_grafico').style.display='none';
-    document.getElementById('nucleo2_auto_carroceria').style.display='flex';
-  } else {
-    document.getElementById('nucleo2_auto_grafico').style.display='flex';
-    document.getElementById('nucleo2_auto_carroceria').style.display='none';
-
+    document.getElementById("nucleo2_icono_agregar").style.display = "flex"; //sino, se agrega el de agregar
+    document.getElementById("nucleo2_icono_eliminar").style.display = "none"; //se quita el de eliminar
   }
 
- 
-
-
+  if ((document.getElementById("nucleo2_auto_grafico").style.display = "flex")) {
+    document.getElementById("nucleo2_auto_grafico").style.display = "none";
+    document.getElementById("nucleo2_auto_carroceria").style.display = "flex";
+  } else {
+    document.getElementById("nucleo2_auto_grafico").style.display = "flex";
+    document.getElementById("nucleo2_auto_carroceria").style.display = "none";
+  }
 }
 
 /*FIN NUCLEO 2*/
 /* FUNCIONES NUCLEO 3*/
-(function(){
+(function () {
   var kgDia = "1.2";
   var kgMes = "36";
   var kgAño = "432";
   var kgDiaC = "2.14";
   var kgMesC = "64.2";
-  var kgAñoC= "770";   //aca agregue una C, esta bien?
+  var kgAñoC = "770"; //aca agregue una C, esta bien?
   cantidadBotellasC = "";
   cantidadBotellasE = "";
   cantidadCelularesC = "";
   cantidadCelularesE = "";
   cantidadPasajerosC = "";
   cantidadPasajerosE = "";
-//tomar variables de js y utilizarlas en html mediante el id
-document.getElementById("kgAño").innerHTML = kgAño;
-document.getElementById("kgMes").innerHTML = kgMes;
-document.getElementById("kgDia").innerHTML = kgDia;
-document.getElementById("kgAñoC").innerHTML = kgAño;
-document.getElementById("kgMesC").innerHTML = kgMesC;
-document.getElementById("kgDiaC").innerHTML = kgDiaC;
-document.getElementById("cantidadBotellasC").innerHTML = cantidadBotellasC;
-document.getElementById("cantidadBotellasE").innerHTML = cantidadBotellasE;
-document.getElementById("cantidadCelularesC").innerHTML = cantidadCelularesC;
-document.getElementById("cantidadCelularesE").innerHTML = cantidadCelularesE;
-document.getElementById("cantidadPasajerosC").innerHTML = cantidadPasajerosC;
-document.getElementById("cantidadPasajerosE").innerHTML = cantidadPasajerosE;
-})
-
-
+  //tomar variables de js y utilizarlas en html mediante el id
+  document.getElementById("kgAño").innerHTML = kgAño;
+  document.getElementById("kgMes").innerHTML = kgMes;
+  document.getElementById("kgDia").innerHTML = kgDia;
+  document.getElementById("kgAñoC").innerHTML = kgAño;
+  document.getElementById("kgMesC").innerHTML = kgMesC;
+  document.getElementById("kgDiaC").innerHTML = kgDiaC;
+  document.getElementById("cantidadBotellasC").innerHTML = cantidadBotellasC;
+  document.getElementById("cantidadBotellasE").innerHTML = cantidadBotellasE;
+  document.getElementById("cantidadCelularesC").innerHTML = cantidadCelularesC;
+  document.getElementById("cantidadCelularesE").innerHTML = cantidadCelularesE;
+  document.getElementById("cantidadPasajerosC").innerHTML = cantidadPasajerosC;
+  document.getElementById("cantidadPasajerosE").innerHTML = cantidadPasajerosE;
+});
 
 function progreso() {
   var valor = document.getElementById("progressbar");
@@ -206,132 +192,19 @@ function progreso() {
     cantidadPasajerosC = "60";
     cantidadPasajerosE = "28";
   }
-  
-    //tomar variables de js y utilizarlas en html mediante el id
-    document.getElementById("kgAño").innerHTML = kgAño;
-    document.getElementById("kgMes").innerHTML = kgMes;
-    document.getElementById("kgDia").innerHTML = kgDia;
-    document.getElementById("kgAñoC").innerHTML = kgAñoC;
-    document.getElementById("kgMesC").innerHTML = kgMesC;
-    document.getElementById("kgDiaC").innerHTML = kgDiaC;
-    document.getElementById("cantidadBotellasC").innerHTML = cantidadBotellasC;
-    document.getElementById("cantidadBotellasE").innerHTML = cantidadBotellasE;
-    document.getElementById("cantidadCelularesC").innerHTML = cantidadCelularesC;
-    document.getElementById("cantidadCelularesE").innerHTML = cantidadCelularesE;
-    document.getElementById("cantidadPasajerosC").innerHTML = cantidadPasajerosC;
-    document.getElementById("cantidadPasajerosE").innerHTML = cantidadPasajerosE;
 
+  //tomar variables de js y utilizarlas en html mediante el id
+  document.getElementById("kgAño").innerHTML = kgAño;
+  document.getElementById("kgMes").innerHTML = kgMes;
+  document.getElementById("kgDia").innerHTML = kgDia;
+  document.getElementById("kgAñoC").innerHTML = kgAñoC;
+  document.getElementById("kgMesC").innerHTML = kgMesC;
+  document.getElementById("kgDiaC").innerHTML = kgDiaC;
+  document.getElementById("cantidadBotellasC").innerHTML = cantidadBotellasC;
+  document.getElementById("cantidadBotellasE").innerHTML = cantidadBotellasE;
+  document.getElementById("cantidadCelularesC").innerHTML = cantidadCelularesC;
+  document.getElementById("cantidadCelularesE").innerHTML = cantidadCelularesE;
+  document.getElementById("cantidadPasajerosC").innerHTML = cantidadPasajerosC;
+  document.getElementById("cantidadPasajerosE").innerHTML = cantidadPasajerosE;
 }
 /*FIN NUCLEO 3*/
-
-/*FUNCIONES NUCLEO 4*/
-
-function mostrarItem1() {
-  console.log("lementso");
-
-  if(document.getElementById('oculta4-1').style.display='none') { //si se puede agregar 
-    document.getElementById('oculta4-1').style.display='flex';
-    document.getElementById('oculta4-2').style.display='none';
-    document.getElementById('oculta4-3').style.display='none';
-    document.getElementById('oculta4-4').style.display='none';
-    document.getElementById('oculta4-5').style.display='none';
-    document.getElementById('oculta4-6').style.display='none';
-    document.getElementById('oculta4-7').style.display='none'; 
-     
-  } 
- 
-}
-
-function mostrarItem2() {
-  console.log("lementso");
-
-  if(document.getElementById('oculta4-2').style.display='none') { //si se puede agregar 
-    document.getElementById('oculta4-2').style.display='flex'; 
-    document.getElementById('oculta4-1').style.display='none';
-    document.getElementById('oculta4-3').style.display='none';
-    document.getElementById('oculta4-4').style.display='none';
-    document.getElementById('oculta4-5').style.display='none';
-    document.getElementById('oculta4-6').style.display='none';
-    document.getElementById('oculta4-7').style.display='none';
-     
-  } 
- 
-}
-function mostrarItem3() {
-  console.log("lementso");
-
-  if(document.getElementById('oculta4-3').style.display='none') { //si se puede agregar 
-    document.getElementById('oculta4-3').style.display='flex'; 
-    document.getElementById('oculta4-1').style.display='none';
-    document.getElementById('oculta4-2').style.display='none';
-    document.getElementById('oculta4-4').style.display='none';
-    document.getElementById('oculta4-5').style.display='none';
-    document.getElementById('oculta4-6').style.display='none';
-    document.getElementById('oculta4-7').style.display='none';
-     
-  } 
- 
-}
-function mostrarItem4() {
-  console.log("lementso");
-
-  if(document.getElementById('oculta4-4').style.display='none') { //si se puede agregar 
-    document.getElementById('oculta4-4').style.display='flex'; 
-    document.getElementById('oculta4-1').style.display='none';
-    document.getElementById('oculta4-2').style.display='none';
-    document.getElementById('oculta4-3').style.display='none';
-    document.getElementById('oculta4-5').style.display='none';
-    document.getElementById('oculta4-6').style.display='none';
-    document.getElementById('oculta4-7').style.display='none';
-     
-  } 
- 
-}
-function mostrarItem5() {
-  console.log("lementso");
-
-  if(document.getElementById('oculta4-5').style.display='none') { //si se puede agregar 
-    document.getElementById('oculta4-5').style.display='flex'; 
-    document.getElementById('oculta4-1').style.display='none';
-    document.getElementById('oculta4-2').style.display='none';
-    document.getElementById('oculta4-3').style.display='none';
-    document.getElementById('oculta4-4').style.display='none';
-    document.getElementById('oculta4-6').style.display='none';
-    document.getElementById('oculta4-7').style.display='none';
-     
-  } 
- 
-}
-function mostrarItem6() {
-  console.log("lementso");
-
-  if(document.getElementById('oculta4-6').style.display='none') { //si se puede agregar 
-    document.getElementById('oculta4-6').style.display='flex'; 
-    document.getElementById('oculta4-1').style.display='none';
-    document.getElementById('oculta4-2').style.display='none';
-    document.getElementById('oculta4-3').style.display='none';
-    document.getElementById('oculta4-4').style.display='none';
-    document.getElementById('oculta4-5').style.display='none';
-    document.getElementById('oculta4-7').style.display='none';
-     
-  } 
- 
-}
-function mostrarItem7() {
-  console.log("lementso");
-
-  if(document.getElementById('oculta4-7').style.display='none') { //si se puede agregar 
-    document.getElementById('oculta4-7').style.display='flex'; 
-    document.getElementById('oculta4-1').style.display='none';
-    document.getElementById('oculta4-2').style.display='none';
-    document.getElementById('oculta4-3').style.display='none';
-    document.getElementById('oculta4-4').style.display='none';
-    document.getElementById('oculta4-5').style.display='none';
-    document.getElementById('oculta4-6').style.display='none';
-     
-  } 
- 
-}
-
-/*FIN NUCLEO 4*/
- 

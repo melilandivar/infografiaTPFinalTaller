@@ -1,26 +1,70 @@
-* {
-  box-sizing: border-box;
+/* Utilidades */
+#nucleo4 {
+  background-size: cover;
+  background-image: url(../img/fondo_introduccion.png);
 }
 
-.contenedor_nucleo4 {
+/*
+
+
+*/
+/* ----- Header ------ */
+.nucleo4__header {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   align-content: center;
-  margin-top: 3%;
+  align-items: center;
+  padding-top: 30rem;
 }
 
-.fondo_4 {
-  height: 100vh;
-  width: auto;
-  background-image: url(../img/fondo_introduccion.png);
-  background-size: cover;
-  /*lo siguiente es para el fondo full screen*/
-  background-position: center;
-  position: relative;
-  overflow-x: hidden;
+.nucleo4__ventajas {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 2%;
 }
+
+.nucleo4__ventajas__numerada {
+  background-color: transparent;
+  height: 80rem;
+  width: 80rem;
+  border: 2rem solid #84c374;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 2%;
+  text-align: center;
+  align-items: center;
+}
+
+.nucleo4__ventajas__numerada p {
+  display: block;
+  margin: 25% auto auto auto;
+}
+
+.nucleo4__ventajas__numerada:hover {
+  background-color: #84c374;
+}
+
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
 
 /* Style tab links */
 .tablink {
@@ -63,45 +107,14 @@
   background-color: transparent !important;
 }
 
-.items4 {
-  width: 1300rem;
-  margin-top: 2%;
-
-  display: flex;
-  justify-content: center;
-}
-#item4 {
-  background-color: #e6fbe1;
-  height: 80rem;
-  width: 80rem;
-  border: 2rem solid #84c374;
-  border-radius: 50%;
-  display: inline-block;
-  margin-right: 2%;
-  text-align: center;
-  align-items: center;
-}
 #flecha {
   display: inline-block;
   margin-right: 2%;
   text-align: center;
 }
-#item4 P {
-  display: block;
-  margin: auto;
-  margin-top: 25%;
-}
-#item4:hover {
-  background-color: #84c374;
-  height: 80rem;
-  width: 80rem;
-  border: 2rem solid #84c374;
-  border-radius: 50%;
-  display: inline-block;
-}
 
 #oculta4-1 {
-  display: none;
+  display: flex;
   position: absolute;
   text-align: center;
   align-items: center;

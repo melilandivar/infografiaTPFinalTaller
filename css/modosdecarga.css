@@ -1,4 +1,4 @@
-/*MODOS DE CARGA*/ 
+/*MODOS DE CARGA*/
 
 div#infoModosDeCarga {
   display: none;
@@ -11,46 +11,46 @@ div#infoModosDeCarga {
   margin: 0 auto;
   border: 2px solid rgba(36, 122, 63, 1);
   border-radius: 15px;
-  color:white;
-}   
-#titulos_CARGA{
+  color: white;
+}
+#titulos_CARGA {
   position: fixed;
   margin-top: 180px;
   font-size: 18px;
 }
 
-#titulo_componentes_electricos{
+#titulo_componentes_electricos {
   display: flex;
 }
-#subtitulo_componenetes_electricos{
-display: flex;
+#subtitulo_componenetes_electricos {
+  display: flex;
 }
-#titulo_mododecarga{
+#titulo_mododecarga {
   display: none;
 }
-#subtitulo_mododecarga{
-display: none;
+#subtitulo_mododecarga {
+  display: none;
 }
 
-   /* CARGA LENTA */
+/* CARGA LENTA */
 
-.itemX{
+.itemX {
   position: relative;
   display: inline-flex;
   margin: 0 auto;
   flex-direction: column;
   align-items: center;
 }
-  
-.itemX img{
+
+.itemX img {
   margin: 0 auto;
   margin-top: 10px;
   margin-bottom: 30px;
   width: 80px;
   height: 80px;
-}   
+}
 
-.itemX{
+.itemX {
   position: relative;
   display: inline;
   margin: 0 auto;
@@ -58,16 +58,16 @@ display: none;
   align-items: center;
 }
 
-.itemX img{
+.itemX img {
   margin-top: 10px;
   margin-bottom: 30px;
   width: 80px;
   height: 80px;
 }
 
-.item_Carga1{
-  background-color: #E6FBE1;
-  justify-content: center;        
+.item_Carga1 {
+  background-color: #e6fbe1;
+  justify-content: center;
   margin-right: 5%;
   height: 89px;
   width: 89px;
@@ -76,92 +76,92 @@ display: none;
   align-items: center;
   text-align: center;
   overflow-y: hidden;
-  border: 4px solid #84C374; 
-} 
+  border: 4px solid #84c374;
+}
 
-.ConexionCargaLenta{
+.ConexionCargaLenta {
   position: relative;
   margin-top: 100px;
 }
 
 #CargaLenta_secuencia {
-  display: none;  
+  display: none;
 }
 
-#CargaLenta_nucleo1{
-  display: none;       
-  text-align: center;  
+#CargaLenta_nucleo1 {
+  display: none;
+  text-align: center;
 }
-#CargaLenta_nucleo1 p{
-  display: block;    
+#CargaLenta_nucleo1 p {
+  display: block;
 }
 
-#progresoCargaLenta{
+#progresoCargaLenta {
   display: none;
   position: absolute;
   top: 25%;
   left: 14%;
-  width:2%;
+  width: 2%;
   height: 30px;
-  border-bottom: 5px solid #4B81BD; 
+  border-bottom: 5px solid #4b81bd;
   transition: width 1s;
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
 
 #txt_torre {
   display: none;
 }
-#txt_titulo_torre{
-display: flex;
-}
-#torreCargaLenta-Noseleccionada{
-  display: flex;        
-}       
-#torreCargaLenta-seleccionada{
-  display: none;
-}
-
-#txt_casaCargaLenta{
-  display: none;
-}
-#txt_titulo_casa{
-  display: flex;    
-}
-#casaCargaLenta-Noseleccionada{
+#txt_titulo_torre {
   display: flex;
 }
-#casaCargaLenta-seleccionada{
+#torreCargaLenta-Noseleccionada {
+  display: flex;
+}
+#torreCargaLenta-seleccionada {
   display: none;
 }
 
-#txt_conectorCargaLenta{
-   display: none;
-}
-#txt_titulo_conector{
-   display: flex;    
-}
-#conectorCargaLenta-Noseleccionada{
-  display: flex;    
-}
-#conectorCargaLenta-seleccionada{
-  display: none;    
-}
-
-#txt_autoCargaLenta{
+#txt_casaCargaLenta {
   display: none;
 }
-#txt_titulo_auto{
-  display: flex;    
+#txt_titulo_casa {
+  display: flex;
 }
-#autoCargaLenta-Noseleccionada{
-  display: flex;        
+#casaCargaLenta-Noseleccionada {
+  display: flex;
 }
-#autoCargaLenta-seleccionada{
-  display: none;        
+#casaCargaLenta-seleccionada {
+  display: none;
 }
-        
-                          /* CARGA SEMIRAPIDA */
-.item_CargaSemirapida{
+
+#txt_conectorCargaLenta {
+  display: none;
+}
+#txt_titulo_conector {
+  display: flex;
+}
+#conectorCargaLenta-Noseleccionada {
+  display: flex;
+}
+#conectorCargaLenta-seleccionada {
+  display: none;
+}
+
+#txt_autoCargaLenta {
+  display: none;
+}
+#txt_titulo_auto {
+  display: flex;
+}
+#autoCargaLenta-Noseleccionada {
+  display: flex;
+}
+#autoCargaLenta-seleccionada {
+  display: none;
+}
+
+/* CARGA SEMIRAPIDA */
+.item_CargaSemirapida {
   position: relative;
   display: inline-flex;
   margin: 0 auto;
@@ -169,7 +169,7 @@ display: flex;
   align-items: center;
 }
 
-.item_CargaSemirapida img{
+.item_CargaSemirapida img {
   margin-top: 10px;
   margin-bottom: 30px;
   width: 80px;
@@ -177,8 +177,8 @@ display: flex;
 }
 
 .item_Carga2 {
-  justify-content: center;   
-  background-color: #E6FBE1;
+  justify-content: center;
+  background-color: #e6fbe1;
   margin-right: 5%;
   height: 89px;
   width: 89px;
@@ -187,108 +187,108 @@ display: flex;
   align-items: center;
   text-align: center;
   overflow-y: hidden;
-  border: 4px solid #84C374;     
+  border: 4px solid #84c374;
 }
 
-.ConexionCargaSemiRapida{
+.ConexionCargaSemiRapida {
   position: relative;
   margin-top: 100px;
 }
 
-#CargaSemiRapida_secuencia{
-  display: none;          
+#CargaSemiRapida_secuencia {
+  display: none;
 }
 
 #CargaSemiRapida_nucleo1 {
-  display: none;  
+  display: none;
 }
 #CargaSemiRapida_nucleo1:hover {
   display: none;
-  background-color: #9FD791;
+  background-color: #9fd791;
 }
 
-#progresoCargaSemiRapida{
+#progresoCargaSemiRapida {
   display: none;
   position: absolute;
   top: 25%;
   left: 14%;
-  width:2%;
+  width: 2%;
   height: 30px;
-  border-bottom: 5px solid #4B81BD;   
-    transition: width 1s;
-    overflow-x: hidden; 
-  }
+  border-bottom: 5px solid #4b81bd;
+  transition: width 1s;
+  overflow-x: hidden;
+}
 
 #txt_torre_cargasemirapida {
   display: none;
 }
-#txt_titulo_torre_cargasemirapida{
-  display: flex;        
+#txt_titulo_torre_cargasemirapida {
+  display: flex;
 }
-#torreCargaSemiRapida-Noseleccionada{
-  display: flex;          
-}         
-#torreCargaSemiRapida-seleccionada{
-  display: none;  
+#torreCargaSemiRapida-Noseleccionada {
+  display: flex;
 }
-
-#txt_casa_cargasemirapida{
-  display: none;          
-}
-#txt_titulo_casa_cargasemirapida{
-  display:  flex;              
-}
-#casaCargaSemiRapida-Noseleccionada{
-  display: flex;  
-} 
-#casaCargaSemiRapida-seleccionada{
-display: none;
-}
-        
-#txt_titulo_conector_cargasemirapida{
-display:  flex;
-}
-#txt_conector_cargasemirapida{
-display: none;
-}
-#conectorCargaSemiRapida-Noseleccionada{
-  display: flex;      
-}     
-#conectorCargaSemiRapida-seleccionada{
-display: none;
-}
-
-#txt_titulo_auto_cargasemirapida{
-  display:  flex;
-}
-#txt_auto_cargasemirapida{
+#torreCargaSemiRapida-seleccionada {
   display: none;
-}   
-#autoCargaSemiRapida-Noseleccionada{
-  display: flex;    
-}     
-#autoCargaSemiRapida-seleccionada{
-display: none;
 }
 
-                        /* CARGA RAPIDA */
-.item_CargaRapida{
+#txt_casa_cargasemirapida {
+  display: none;
+}
+#txt_titulo_casa_cargasemirapida {
+  display: flex;
+}
+#casaCargaSemiRapida-Noseleccionada {
+  display: flex;
+}
+#casaCargaSemiRapida-seleccionada {
+  display: none;
+}
+
+#txt_titulo_conector_cargasemirapida {
+  display: flex;
+}
+#txt_conector_cargasemirapida {
+  display: none;
+}
+#conectorCargaSemiRapida-Noseleccionada {
+  display: flex;
+}
+#conectorCargaSemiRapida-seleccionada {
+  display: none;
+}
+
+#txt_titulo_auto_cargasemirapida {
+  display: flex;
+}
+#txt_auto_cargasemirapida {
+  display: none;
+}
+#autoCargaSemiRapida-Noseleccionada {
+  display: flex;
+}
+#autoCargaSemiRapida-seleccionada {
+  display: none;
+}
+
+/* CARGA RAPIDA */
+.item_CargaRapida {
   position: relative;
   display: inline-flex;
   margin: 0 auto;
   flex-direction: column;
   align-items: center;
 }
-.item_CargaRapida img{
+.item_CargaRapida img {
   margin-top: 10px;
   margin-bottom: 30px;
   width: 80px;
   height: 80px;
 }
 
-.item_Carga3{
-  justify-content: center;   
-  background-color: #E6FBE1;
+.item_Carga3 {
+  justify-content: center;
+  background-color: #e6fbe1;
   margin-right: 5%;
   height: 89px;
   width: 89px;
@@ -297,86 +297,86 @@ display: none;
   align-items: center;
   text-align: center;
   overflow-y: hidden;
-  border: 4px solid #84C374; 
+  border: 4px solid #84c374;
 }
 
-.ConexionCargaRapida{
+.ConexionCargaRapida {
   position: relative;
   margin-top: 100px;
 }
 
-#CargaRapida_secuencia{
-  display: none;  
+#CargaRapida_secuencia {
+  display: none;
 }
 
 #CargaRapida_nucleo1 {
-  display: none;  
+  display: none;
 }
 #CargaRapida_nucleo1:hover {
   display: none;
-  background-color: #9FD791;  
+  background-color: #9fd791;
 }
 
-#progresoCargaRapida{
+#progresoCargaRapida {
   display: none;
   position: absolute;
   top: 25%;
   left: 14%;
-  width:2%;
+  width: 2%;
   height: 30px;
-  border-bottom: 5px solid #4B81BD;     
+  border-bottom: 5px solid #4b81bd;
   transition: width 1s;
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
 
 #txt_torre_cargarapida {
   display: none;
 }
-#txt_titulo_torre_cargarapida{
-display:  flex;
+#txt_titulo_torre_cargarapida {
+  display: flex;
 }
-#torreCargaRapida-Noseleccionada{
-  display: flex;  
-} 
-#torreCargaRapida-seleccionada{
-display: none;
+#torreCargaRapida-Noseleccionada {
+  display: flex;
+}
+#torreCargaRapida-seleccionada {
+  display: none;
 }
 
 #txt_casa_cargarapida {
   display: none;
 }
-#txt_titulo_casa_cargarapida{
-display:  flex;
+#txt_titulo_casa_cargarapida {
+  display: flex;
 }
-#casaCargaRapida-Noseleccionada{
-  display: flex;  
-} 
-#casaCargaRapida-seleccionada{
-display: none;
+#casaCargaRapida-Noseleccionada {
+  display: flex;
+}
+#casaCargaRapida-seleccionada {
+  display: none;
 }
 
 #txt_conector_cargarapida {
   display: none;
 }
-#txt_titulo_conector_cargarapida{
-display:  flex;
+#txt_titulo_conector_cargarapida {
+  display: flex;
 }
-#conectorCargaRapida-Noseleccionada{
-  display: flex;  
-} 
-#conectorCargaRapida-seleccionada{
-display: none;
+#conectorCargaRapida-Noseleccionada {
+  display: flex;
+}
+#conectorCargaRapida-seleccionada {
+  display: none;
 }
 
 #txt_auto_cargarapida {
   display: none;
 }
-#txt_titulo_auto_cargarapida{
-display:  flex;
+#txt_titulo_auto_cargarapida {
+  display: flex;
 }
-#autoCargaRapida-Noseleccionada{
-  display: flex;  
-} 
-#autoCargaRapida-seleccionada{
-display: none;
-}  
+#autoCargaRapida-Noseleccionada {
+  display: flex;
+}
+#autoCargaRapida-seleccionada {
+  display: none;
+}

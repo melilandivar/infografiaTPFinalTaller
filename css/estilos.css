@@ -65,3 +65,20 @@ button:active,
 button:focus {
   outline: none !important;
 }
+
+/* ----- Utilidades ----- */
+.backgroundVerde {
+  background-color: #84c374 !important;
+}
+
+.ocultar {
+  display: none !important;
+}
+
+.placeHolder {
+  opacity: 30%;
+}
+
+.underline {
+  text-decoration: underline black;
+}

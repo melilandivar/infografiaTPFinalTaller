@@ -64,7 +64,7 @@ function CambiarImagen(elemento, ruta) {
   imagen.src = ruta;
 }
 
-function CambiarFondoItem(item, colorElectrico, colorCombustion) {
+function CambiarFondoAutoPartes(item, colorElectrico, colorCombustion) {
   let fondoDelItem = item.getElementsByTagName("div")[0];
   if (eligioElectrico) {
     fondoDelItem.style.backgroundColor = colorElectrico;
@@ -77,7 +77,7 @@ function ActivarItem(item, index) {
   let iconos = item.getElementsByTagName("i");
   iconos[0].style.cssText = "display: none !important";
   iconos[1].style.cssText = "display: inline-block !important";
-  CambiarFondoItem(item, "#84C374", "#84C374");
+  CambiarFondoAutoPartes(item, "#84C374", "#84C374");
 
   if (eligioElectrico) estaActivadoItemElectrico[index] = true;
   else estaActivadoItemCombustion[index] = true;
@@ -87,7 +87,7 @@ function DesactivarItem(item, index) {
   let iconos = item.getElementsByTagName("i");
   iconos[0].style.cssText = "display: inline-block !important";
   iconos[1].style.cssText = "display: none !important";
-  CambiarFondoItem(item, "#D1E8BA", "#FFCBC3");
+  CambiarFondoAutoPartes(item, "#D1E8BA", "#FFCBC3");
 
   if (eligioElectrico) estaActivadoItemElectrico[index] = false;
   else estaActivadoItemCombustion[index] = false;
