@@ -13,7 +13,8 @@ function modosDeCarga(){
     document.getElementById('subtitulo_componentes_electricos').style.display='none';
     document.getElementById('titulo_mododecarga').style.display='flex';
     document.getElementById('subtitulo_mododecarga').style.display='flex';
-    document.getElementsByClassName("nucleo1_items")[0].style.paddingLeft= "5%";       
+    document.getElementsByClassName("nucleo1_items")[0].style.paddingLeft= "5%";
+    document.getElementsByClassName("item_Carga1")[0].style.backgroundColor = "#84c374";       
   }    
 }
 
@@ -22,7 +23,10 @@ function CargaLenta(){
   if(document.getElementById('CargaLenta_nucleo1').style.display='flex'){
     document.getElementById('CargaLenta_secuencia').style.display='flex';       
     document.getElementById('CargaSemiRapida_secuencia').style.display='none';
-    document.getElementById('CargaRapida_secuencia').style.display='none';      
+    document.getElementById('CargaRapida_secuencia').style.display='none';
+    document.getElementsByClassName("item_Carga1")[0].style.backgroundColor = "#84c374";
+    document.getElementsByClassName("item_Carga2")[0].style.backgroundColor = "#e6fbe1";
+    document.getElementsByClassName("item_Carga3")[0].style.backgroundColor = "#e6fbe1";     
   } 
 }
 
@@ -63,7 +67,7 @@ function autoCargaLenta(){
      document.getElementById('txt_titulo_auto').style.display='flex';
      document.getElementById('autoCargaLenta-Noseleccionada').style.display='none';
      document.getElementById('autoCargaLenta-seleccionada').style.display='flex';
-     document.getElementById('progresoCargaLenta').style.width = `7515%`; 
+     document.getElementById('progresoCargaLenta').style.width = `75%`; 
   } 
 }
 
@@ -73,7 +77,10 @@ function CargaSemiRapida(){
   if(document.getElementById('CargaSemiRapida_nucleo1').style.display='flex'){
     document.getElementById('CargaLenta_secuencia').style.display='none';
     document.getElementById('CargaRapida_secuencia').style.display='none';
-    document.getElementById('CargaSemiRapida_secuencia').style.display='flex';   
+    document.getElementById('CargaSemiRapida_secuencia').style.display='flex';
+    document.getElementsByClassName("item_Carga1")[0].style.backgroundColor = "#e6fbe1";
+    document.getElementsByClassName("item_Carga2")[0].style.backgroundColor = "#84c374";
+    document.getElementsByClassName("item_Carga3")[0].style.backgroundColor = "#e6fbe1";     
   } 
 }
 function torreCargaSemiRapida(){
@@ -120,7 +127,10 @@ function CargaRapida(){
   if(document.getElementById('CargaRapida_nucleo1').style.display='flex'){
     document.getElementById('CargaLenta_secuencia').style.display='none';
     document.getElementById('CargaSemiRapida_secuencia').style.display='none';
-    document.getElementById('CargaRapida_secuencia').style.display='flex';    
+    document.getElementById('CargaRapida_secuencia').style.display='flex';
+    document.getElementsByClassName("item_Carga1")[0].style.backgroundColor = "#e6fbe1";    
+    document.getElementsByClassName("item_Carga2")[0].style.backgroundColor = "#e6fbe1";
+    document.getElementsByClassName("item_Carga3")[0].style.backgroundColor = "#84c374";    
   } 
 }
 function torreCargaRapida(){
