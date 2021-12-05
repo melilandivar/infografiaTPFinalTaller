@@ -14,7 +14,12 @@ function modosDeCarga(){
     document.getElementById('titulo_mododecarga').style.display='flex';
     document.getElementById('subtitulo_mododecarga').style.display='flex';
     document.getElementsByClassName("nucleo1_items")[0].style.paddingLeft= "5%";
-    document.getElementsByClassName("item_Carga1")[0].style.backgroundColor = "#84c374";       
+    document.getElementsByClassName("item_Carga1")[0].style.backgroundColor = "#84c374";
+    document.getElementById('txt_torre').style.visibility='visible';
+    document.getElementById('torreCargaLenta-Noseleccionada').style.display='none';
+    document.getElementById('torreCargaLenta-seleccionada').style.display='flex';
+    document.getElementById('progresoCargaLenta').style.display = 'flex';   
+    document.getElementById('progresoCargaLenta').style.width = `15%`;        
   }    
 }
 
@@ -31,13 +36,9 @@ function CargaLenta(){
 }
 
 function torreCargaLenta(){
-  if(document.getElementById('itemX_Torre').style.display='flex'){
-    document.getElementById('txt_torre').style.visibility='visible';
-    document.getElementById('txt_titulo_torre').style.display='flex';
-    document.getElementById('torreCargaLenta-Noseleccionada').style.display='none';
-    document.getElementById('torreCargaLenta-seleccionada').style.display='flex';
-    document.getElementById('progresoCargaLenta').style.display = 'flex';   
-    document.getElementById('progresoCargaLenta').style.width = `15%`; 
+  if(document.getElementById('itemX_Torre').style.display='flex'){    
+    document.getElementById('txt_titulo_torre').style.display='flex';    
+    
   } 
 }
 
@@ -78,19 +79,20 @@ function CargaSemiRapida(){
     document.getElementById('CargaLenta_secuencia').style.display='none';
     document.getElementById('CargaRapida_secuencia').style.display='none';
     document.getElementById('CargaSemiRapida_secuencia').style.display='flex';
+    document.getElementById('txt_torre_cargasemirapida').style.visibility='visible';
+    document.getElementById('torreCargaSemiRapida-Noseleccionada').style.display='none';
+    document.getElementById('torreCargaSemiRapida-seleccionada').style.display='flex'; 
+    document.getElementById('progresoCargaSemiRapida').style.display = 'flex';   
+    document.getElementById('progresoCargaSemiRapida').style.width = `15%`;
     document.getElementsByClassName("item_Carga1")[0].style.backgroundColor = "#e6fbe1";
     document.getElementsByClassName("item_Carga2")[0].style.backgroundColor = "#84c374";
     document.getElementsByClassName("item_Carga3")[0].style.backgroundColor = "#e6fbe1";     
   } 
 }
 function torreCargaSemiRapida(){
-  if(document.getElementById('itemX_Torre').style.display='flex'){
-    document.getElementById('txt_torre_cargasemirapida').style.visibility='visible';
+  if(document.getElementById('itemX_Torre').style.display='flex'){   
     document.getElementById('txt_titulo_torre_cargasemirapida').style.display='flex';
-    document.getElementById('torreCargaSemiRapida-Noseleccionada').style.display='none';
-    document.getElementById('torreCargaSemiRapida-seleccionada').style.display='flex'; 
-    document.getElementById('progresoCargaSemiRapida').style.display = 'flex';   
-    document.getElementById('progresoCargaSemiRapida').style.width = `15%`;    
+        
   } 
 }
 function casaCargaSemiRapida(){
@@ -128,19 +130,20 @@ function CargaRapida(){
     document.getElementById('CargaLenta_secuencia').style.display='none';
     document.getElementById('CargaSemiRapida_secuencia').style.display='none';
     document.getElementById('CargaRapida_secuencia').style.display='flex';
+    document.getElementById('txt_torre_cargarapida').style.visibility='visible';
+    document.getElementById('torreCargaRapida-Noseleccionada').style.display='none';
+    document.getElementById('torreCargaRapida-seleccionada').style.display='flex';
+    document.getElementById('progresoCargaRapida').style.display = 'flex';   
+    document.getElementById('progresoCargaRapida').style.width = `15%`; 
     document.getElementsByClassName("item_Carga1")[0].style.backgroundColor = "#e6fbe1";    
     document.getElementsByClassName("item_Carga2")[0].style.backgroundColor = "#e6fbe1";
     document.getElementsByClassName("item_Carga3")[0].style.backgroundColor = "#84c374";    
   } 
 }
 function torreCargaRapida(){
-  if(document.getElementById('itemX_Torre').style.display='flex'){
-    document.getElementById('txt_torre_cargarapida').style.visibility='visible';
+  if(document.getElementById('itemX_Torre').style.display='flex'){    
     document.getElementById('txt_titulo_torre_cargarapida').style.display='flex';
-    document.getElementById('torreCargaRapida-Noseleccionada').style.display='none';
-    document.getElementById('torreCargaRapida-seleccionada').style.display='flex';
-    document.getElementById('progresoCargaRapida').style.display = 'flex';   
-    document.getElementById('progresoCargaRapida').style.width = `15%`;     
+        
   } 
 }
 function casaCargaRapida(){
