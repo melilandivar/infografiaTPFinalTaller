@@ -18,133 +18,106 @@
   align-items: center;
   text-align: center;
   justify-content: center;
-  margin-bottom: 100px;
-  padding-left: 10%;
+  margin-bottom: 100rem;
+  /*padding-left: 10%;*/
+  padding: 0% 10%;
 }
 #titulos_iconos_nucleo1 {
-  position: fixed;
-  margin-top: 32px;
-  font-size: 18px;
+  position: absolute;
+  margin-top: 10rem;
+  margin-left: -12rem;
+  font-size: 18rem;
 }
 
 .items_nucleo1 {
-    width: 100%;
-    margin-top: 2%;
-    margin-left: 5%;
-    align-items: center;
-    justify-content: center;
-    display: contents;
-}   
-   .item1{
-    background-color: #D1E8BA;
-    height: 89px;
-    width: 89px;
-    border-radius: 50%;
-    display: inline-block;
-    margin-right: 10%;
-    align-items: center;
-    text-align: center;
-    overflow-y: hidden;   
-   }
-   .item2{
-    background-color: #D1E8BA;
-    height: 89px;
-    width: 89px;
-    border-radius: 50%;
-    display: inline-block;
-    margin-right: 10%;
-    align-items: center;
-    text-align: center;
-    overflow-y: hidden;   
-   }
-   .item3{
-    background-color: #D1E8BA;
-    height: 89px;
-    width: 89px;
-    border-radius: 50%;
-    display: inline-block;
-    margin-right: 10%;
-    align-items: center;
-    text-align: center;
-    overflow-y: hidden;   
-   }
-   .item3 img{
-      width: 55px;
-      height: 63px;
-      padding-top: 10%;
-   }
-
-   #plugCarga {
-       display:none;
-       position: absolute;
-       top:42%;
-       left:39%;
-       width: 40px;
-   }
-   #bateriaLitio {
-       display: none;
-       position: absolute;
-       top:50%;
-       left:48%;
-   }
-   #motorElectrico {
-       display: none;
-       position: absolute;
-       top:43%;
-       left:57%;
-   }
-    #item_nucleo1:hover {
-      background-color: #9FD791;
-      height: 89px;
-      width: 89px;
-      border: 2px solid #9FD791;
-      border-radius: 50%;
-      display: inline-block;
-    }
+  width: 100%;
+  margin-top: 2%;
+  margin-left: 5%;
+  align-items: center;
+  justify-content: center;
+  display: contents;
+}
+.nucleo1__item {
+  background-color: #d1e8ba;
+  height: 100rem;
+  width: 100rem;
+  border-radius: 50%;
+  display: inline-block;
+  /*margin-right: 10%;*/
+  margin: 0% 10%;
+  align-items: center;
+  text-align: center;
+  overflow-y: hidden;
+}
+.nucleo1__item img {
+  width: 100%;
+}
 
 #plugCarga {
-  display: none; 
-  
+  display: none;
+  position: absolute;
+  top: 42%;
+  left: 39%;
+  width: 40rem;
 }
 #bateriaLitio {
-  display: none;  
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 48%;
 }
 #motorElectrico {
   display: none;
-   
+  position: absolute;
+  top: 43%;
+  left: 57%;
 }
 #item_nucleo1:hover {
   background-color: #9fd791;
-  height: 89px;
-  width: 89px;
-  border: 2px solid #9fd791;
+  height: 89rem;
+  width: 89rem;
+  border: 2rem solid #9fd791;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+#plugCarga {
+  display: none;
+}
+#bateriaLitio {
+  display: none;
+}
+#motorElectrico {
+  display: none;
+}
+#item_nucleo1:hover {
+  background-color: #9fd791;
+  height: 89rem;
+  width: 89rem;
+  border: 2rem solid #9fd791;
   border-radius: 50%;
   display: inline-block;
 }
 #item_nucleo3:hover {
   background-color: #9fd791;
-  height: 89px;
-  width: 89px;
-  border: 2px solid #9fd791;
+  height: 89rem;
+  width: 89rem;
+  border: 2rem solid #9fd791;
   border-radius: 50%;
   display: inline-block;
 }
 
-#item_nucleo1img {
-  padding-top: 10%;
-  width: 55px;
-}
 #item_nucleo1_combustion img {
   padding-top: 10%;
-  width: 55px;
+  width: 55rem;
 }
 #item_nucleo1_combustion {
   overflow-y: hidden;
 }
 #item_nucleo1_combustion {
   background-color: #ffcbc3;
-  height: 89px;
-  width: 89px;
+  height: 89rem;
+  width: 89rem;
   border-radius: 50%;
   display: inline-block;
   margin-right: 3%;
@@ -153,9 +126,9 @@
 
 #item_nucleo1_combustion:hover {
   background-color: #9fd791;
-  height: 89px;
-  width: 89px;
-  border: 2px solid #9fd791;
+  height: 89rem;
+  width: 89rem;
+  border: 2rem solid #9fd791;
   border-radius: 50%;
   display: inline-block;
 }
@@ -163,36 +136,29 @@
 /*agregar/sacar icono */
 
 #nucleo1_icono_agregar img {
-  width: 24px;
+  width: 24rem;
 }
 
 div#nucleo1_icono_agregar {
   position: absolute;
   display: flex;
-  margin-left: 60px;
+  margin-left: 60rem;
 }
 div#nucleo1_icono_eliminar {
   position: absolute;
   display: none;
-  margin-left: 60px;
-}
-#item_nucleo1 img {
-  padding-top: 10%;
-  width: 55px;
+  margin-left: 60rem;
 }
 
-#auto_cuerpo{
-display: flex;
+#auto_cuerpo {
+  display: flex;
 }
-#auto_plug{
-  display: none;  
+#auto_plug {
+  display: none;
 }
-#auto_plug_bateria{
-  display: none;  
+#auto_plug_bateria {
+  display: none;
 }
-#auto_plug_bateria_motor{
-  display: none;  
+#auto_plug_bateria_motor {
+  display: none;
 }
-
-   
-    

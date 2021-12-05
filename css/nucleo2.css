@@ -6,6 +6,7 @@
 #nucleo2 {
   display: grid;
   grid-template-rows: 20% 25% 30% 25%;
+  cursor: url("../img/cursor.png"), auto;
 }
 
 /*

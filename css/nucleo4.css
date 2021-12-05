@@ -4,6 +4,7 @@
   background-image: url(../img/nucleo4/fondo-ventajas.svg);
   display: grid;
   grid-template-rows: 20% 20% 60%;
+  cursor: url("../img/cursor.png"), auto;
 }
 
 /*
@@ -33,7 +34,6 @@
   background-color: transparent;
   cursor: pointer;
 }
-
 /*
 
 
@@ -74,6 +74,7 @@
   border-radius: 50%;
   text-align: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .nucleo4__opciones__item p {

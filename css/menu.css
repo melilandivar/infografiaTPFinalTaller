@@ -91,6 +91,7 @@ body.open:after {
 .b-link--active {
   border-left: rgba(68, 68, 68, 1) solid 2rem;
   padding-left: 30rem;
+  cursor: pointer;
 }
 .b-menu {
   background: #ffc727;

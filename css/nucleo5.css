@@ -23,6 +23,7 @@
   width: 625rem;
   margin-top: 2%;
   margin-left: 5%;
+  cursor: pointer;
 }
 #item {
   background-color: #e6fbe1;
