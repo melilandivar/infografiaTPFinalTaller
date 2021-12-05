@@ -28,6 +28,24 @@
   margin-left: -12rem;
   font-size: 18rem;
 }
+#texto_plug_nucleo1 {
+  position: fixed;
+  visibility: hidden;
+  margin-top: 60px;
+  font-size: 18px;
+}
+#texto_bateria_nucleo1 {
+  position: fixed;
+  visibility: hidden;
+  margin-top: 60px;
+  font-size: 18px;
+}
+#texto_motor_nucleo1 {
+  position: fixed;
+  visibility: hidden;
+  margin-top: 60px;
+  font-size: 18px;
+}
 
 .items_nucleo1 {
   width: 100%;
