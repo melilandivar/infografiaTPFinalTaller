@@ -26,6 +26,24 @@
   margin-top: 32px;
   font-size: 18px;
 }
+#texto_plug_nucleo1{
+  position: fixed;
+  visibility: hidden;
+  margin-top: 60px;
+  font-size: 18px;
+}
+#texto_bateria_nucleo1{
+  position: fixed;
+  visibility: hidden;
+  margin-top: 60px;
+  font-size: 18px;
+}
+#texto_motor_nucleo1{
+  position: fixed;
+  visibility: hidden;
+  margin-top: 60px;
+  font-size: 18px;
+}
 
 .items_nucleo1 {
     width: 100%;
@@ -193,6 +211,8 @@ display: flex;
 #auto_plug_bateria_motor{
   display: none;  
 }
+
+
 
    
     
