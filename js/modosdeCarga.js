@@ -43,7 +43,7 @@ function componentesCircuito(){
     document.getElementById("titulo_componentes_electricos").style.display = "flex";
     document.getElementById("subtitulo_componentes_electricos").style.display = "flex";
     document.getElementsByClassName("nucleo1_grafico")[0].style.display = "flex";
-    document.getElementById("infoModosDeCarga").style.display = "flex";
+    document.getElementById("infoModosDeCarga").style.display = "flex";    
   }
 
 
