@@ -37,13 +37,14 @@ function componentesCircuito(){
     document.getElementById("titulo_mododecarga").style.display = "none";
     document.getElementById("subtitulo_mododecarga").style.display = "none";
     document.getElementsByClassName("VolverComponentes-container")[0].style.display = "none";
-    document.getElementById("item_nucleo1").style.display = "flex";
-    document.getElementById("item_nucleo2").style.display = "flex";
-    document.getElementById("item_nucleo3").style.display = "flex";
+    document.getElementById("item_nucleo1").style.display = "initial";
+    document.getElementById("item_nucleo2").style.display = "initial";
+    document.getElementById("item_nucleo3").style.display = "initial";
     document.getElementById("titulo_componentes_electricos").style.display = "flex";
     document.getElementById("subtitulo_componentes_electricos").style.display = "flex";
     document.getElementsByClassName("nucleo1_grafico")[0].style.display = "flex";
-    document.getElementById("infoModosDeCarga").style.display = "flex";    
+    document.getElementById("infoModosDeCarga").style.display = "flex";
+       
   }
 
 
