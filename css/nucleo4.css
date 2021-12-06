@@ -18,7 +18,6 @@ v/* Utilidades */
   align-items: center;
   padding-top: 30rem;
   height: 145rem;
-
 }
 .nucleo4__header__botones {
   display: flex;
@@ -35,7 +34,7 @@ v/* Utilidades */
   background-color: transparent;
   cursor: pointer;
 }
- 
+
 .primerKm {
   float: left;
 }
@@ -60,6 +59,7 @@ v/* Utilidades */
   margin: 0 auto;
   width: 100%;
   margin-top: 35rem;
+  cursor: pointer;
 }
 #ventajas-container div {
   border: 4rem solid #84c374;

@@ -8,7 +8,11 @@
   justify-content: center;
   align-items: center;
   align-content: center;
-  margin-top: 3%;
+  padding-top: 20rem;
+}
+
+#subtitulo_componentes_electricos {
+  margin-top: 10rem;
 }
 
 .nucleo1_contenido {
@@ -24,7 +28,7 @@
   justify-content: center;
   margin-bottom: 100rem;
   /*padding-left: 10%;*/
-  padding: 0% 10%;
+  padding: 30rem 10%;
 }
 #titulos_iconos_nucleo1 {
   position: absolute;
@@ -122,13 +126,17 @@ div#nucleo1_icono_eliminar {
 
 #auto_cuerpo {
   display: flex;
+  margin-top: 10rem;
 }
 #auto_plug {
   display: none;
+  margin-top: 10rem;
 }
 #auto_plug_bateria {
   display: none;
+  margin-top: 10rem;
 }
 #auto_plug_bateria_motor {
   display: none;
+  margin-top: 10rem;
 }

@@ -3,21 +3,32 @@
 
 div#infoModosDeCarga {
   display: none;
-  position: relative;
-  text-align: center;
   background-color: rgba(36, 122, 63, 1);
-  width: 430px;
-  top: 25%;
-  padding: 15px;
+  width: 550rem;
+  height: 100rem;
   margin: 0 auto;
-  border: 2px solid rgba(36, 122, 63, 1);
-  border-radius: 15px;
+  border-radius: 15rem;
+  cursor: pointer;
+}
+
+#infoModosDeCarga p {
+  margin: 8rem auto 0 auto;
+  font-size: 18rem;
   color: white;
 }
+
+.infoModosDeCarga-container {
+  position: absolute;
+  bottom: 0vh;
+  width: 100%;
+  height: 40rem;
+  overflow-y: hidden;
+}
+
 #titulos_CARGA {
   position: fixed;
-  margin-top: 180px;
-  font-size: 18px;
+  margin-top: 180rem;
+  font-size: 18rem;
 }
 
 #titulo_componentes_electricos {
@@ -46,37 +57,37 @@ div#infoModosDeCarga {
 
 .itemX img {
   margin: 0 auto;
-  margin-top: 10px;
-  margin-bottom: 30px;
-  width: 80px;
-  height: 80px;
+  margin-top: 10rem;
+  margin-bottom: 30rem;
+  width: 80rem;
+  height: 80rem;
 }
 
 .itemX img {
-  margin-top: 10px;
-  margin-bottom: 30px;
-  width: 80px;
-  height: 80px;
+  margin-top: 10rem;
+  margin-bottom: 30rem;
+  width: 80rem;
+  height: 80rem;
 }
 
 .item_Carga1 {
   background-color: #e6fbe1;
   justify-content: center;
   margin: 0% 5%;
-  height: 89px;
-  width: 89px;
+  height: 89rem;
+  width: 89rem;
   border-radius: 50%;
   display: inline-block;
   align-items: center;
   text-align: center;
   overflow-y: hidden;
-  border: 4px solid #84c374;
+  border: 4rem solid #84c374;
   cursor: pointer;
 }
 
 .ConexionCargaLenta {
   position: relative;
-  margin-top: 100px;
+  margin-top: 100rem;
 }
 
 #CargaLenta_secuencia {
@@ -97,8 +108,8 @@ div#infoModosDeCarga {
   top: 25%;
   left: 12%;
   width: 2%;
-  height: 30px;
-  border-bottom: 5px solid #247a3f;
+  height: 30rem;
+  border-bottom: 5rem solid #247a3f;
   transition: width 1s;
   overflow-x: hidden;
 }
@@ -175,30 +186,30 @@ div#infoModosDeCarga {
 }
 
 .item_CargaSemirapida img {
-  margin-top: 10px;
-  margin-bottom: 30px;
-  width: 80px;
-  height: 80px;
+  margin-top: 10rem;
+  margin-bottom: 30rem;
+  width: 80rem;
+  height: 80rem;
 }
 
 .item_Carga2 {
   justify-content: center;
   background-color: #e6fbe1;
   margin-right: 5%;
-  height: 89px;
-  width: 89px;
+  height: 89rem;
+  width: 89rem;
   border-radius: 50%;
   display: inline-block;
   align-items: center;
   text-align: center;
   overflow-y: hidden;
-  border: 4px solid #84c374;
+  border: 4rem solid #84c374;
   cursor: pointer;
 }
 
 .ConexionCargaSemiRapida {
   position: relative;
-  margin-top: 100px;
+  margin-top: 100rem;
 }
 
 #CargaSemiRapida_secuencia {
@@ -219,8 +230,8 @@ div#infoModosDeCarga {
   top: 25%;
   left: 11%;
   width: 2%;
-  height: 30px;
-  border-bottom: 5px solid #247a3f;
+  height: 30rem;
+  border-bottom: 5rem solid #247a3f;
   transition: width 1s;
   overflow-x: hidden;
 }
@@ -296,30 +307,30 @@ div#infoModosDeCarga {
   align-items: center;
 }
 .item_CargaRapida img {
-  margin-top: 10px;
-  margin-bottom: 30px;
-  width: 80px;
-  height: 80px;
+  margin-top: 10rem;
+  margin-bottom: 30rem;
+  width: 80rem;
+  height: 80rem;
 }
 
 .item_Carga3 {
   justify-content: center;
   background-color: #e6fbe1;
   margin-right: 5%;
-  height: 89px;
-  width: 89px;
+  height: 89rem;
+  width: 89rem;
   border-radius: 50%;
   display: inline-block;
   align-items: center;
   text-align: center;
   overflow-y: hidden;
-  border: 4px solid #84c374;
+  border: 4rem solid #84c374;
   cursor: pointer;
 }
 
 .ConexionCargaRapida {
   position: relative;
-  margin-top: 100px;
+  margin-top: 100rem;
 }
 
 #CargaRapida_secuencia {
@@ -340,8 +351,8 @@ div#infoModosDeCarga {
   top: 25%;
   left: 12%;
   width: 2%;
-  height: 30px;
-  border-bottom: 5px solid #247a3f;
+  height: 30rem;
+  border-bottom: 5rem solid #247a3f;
   transition: width 1s;
   overflow-x: hidden;
 }
