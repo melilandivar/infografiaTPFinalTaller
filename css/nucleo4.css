@@ -1,9 +1,10 @@
-v/* Utilidades */
+/* Utilidades */
 #nucleo4 {
   background-size: cover;
   background-image: url(../img/nucleo4/fondo-ventajas.svg);
   display: grid;
   grid-template-rows: 20% 20% 60%;
+  cursor: url("../img/cursor.svg"), auto;
 }
 
 /*
