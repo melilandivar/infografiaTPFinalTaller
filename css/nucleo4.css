@@ -41,7 +41,19 @@
 }
 #texto1 {
   float: left;
+  width: 200rem;
 }
+#texto2 {
+  float: right;
+  width: 200rem;
+}
+#texto1 p {
+  font-size: 18rem;
+}
+#texto2 p {
+  font-size: 18rem;
+}
+
 /*
 
 
@@ -120,11 +132,12 @@
 .nucleo4__contenido__item p {
   font-weight: bold;
   height: auto;
+  margin-top: 15rem;
 }
 
 .nucleo4__contenido__item__imagen {
   position: relative;
-  height: 400rem;
+  margin-top: 140rem;
 }
 
 #ventaja1 .nucleo4__contenido__item__imagen img {
@@ -149,6 +162,11 @@
 }
 .datosElectrico {
   float: left;
+  margin-left: 35rem;
+}
+.datosCombustion {
+  float: right;
+  margin-right: 60rem;
 }
 .datosCombustion label {
   font-family: "Roboto";
@@ -160,3 +178,30 @@
   font-size: 44rem;
   font-weight: bolder;
 }
+.video {
+  float: left;
+  margin-right: 50rem;
+}
+.infoVentaja2 {
+  margin-top: 25rem;
+}
+#flechaKm {
+  margin-top: 9rem;
+  width: 450rem;
+}
+div#progressbar2 {
+  /* text-align: center; */
+  margin-left: 348rem;
+  margin-bottom: 19rem;
+}
+div#progressbar3 {
+  margin-left: 22rem;
+}
+#km_dia_nucleo4 {
+  font-size: 24px;
+  margin-top: -30rem;
+  font-weight: bold;
+  overflow-y: hidden;
+  margin-bottom: 0rem;
+}
+

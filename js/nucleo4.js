@@ -96,10 +96,6 @@ function MostrarDesventaja(numeroVentaja) {
 
 /*funciones de la barra de progreso */
 
-setProgress(controller2.value);
-controller2.oninput = () => {
-  setProgress(controller2.value);
-};
 
 function cambiarCantidadAutos() {
   // setearDatos();
@@ -166,23 +162,23 @@ function cambiarTiempoCarga() {
     setProgress(controller.value);
   };
 
-  var valor = document.getElementById("progressbar3");
+  var valor =  document.getElementById("progressbar3");
   console.log("progreso nucleo" + valor.ariaValueNow);
 
   if (valor.ariaValueNow == "0") {
-    valorCarga= "0 %";
+    valorCarga= "Nivel de carga: 0 %";
   }
   if (valor.ariaValueNow == "90") {
-    valorCarga= "30 %";
+    valorCarga= "Nivel de carga: 30 %";
   }
   if (valor.ariaValueNow == "180") {
-    valorCarga= "50 %";
+    valorCarga= "Nivel de carga: 50 %";
   }
   if (valor.ariaValueNow == "270") {
-    valorCarga= "70 %";
+    valorCarga= "Nivel de carga: 70 %";
   }
   if (valor.ariaValueNow == "360") {
-    valorCarga= "100 %";
+    valorCarga= "Nivel de carga: 100 %";
   }
 
   //tomar variables de js y utilizarlas en html mediante el id

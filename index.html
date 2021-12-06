@@ -602,6 +602,7 @@
         </div>
       </div>
 
+ 
       <div id="nucleo4">
         <div class="nucleo4__header">
           <h1>Ventajas y desventajas de los autos eléctricos</h1>
@@ -666,8 +667,8 @@
             <div class="infoVentaja2">
               <div class="video">
                 <iframe
-                  width="560"
-                  height="315"
+                  width="439"
+                  height="217"
                   src="https://www.youtube.com/embed/bBPyfeKNB4c?start=100"
                   title="YouTube video player"
                   frameborder="0"
@@ -690,7 +691,7 @@
                     </p>
                   </div>
                 </div>
-                <img src="img/nucleo4/lineaRectaVentaja2.svg" alt="" />
+                <img src="img/nucleo4/lineaRectaVentaja2.svg" id="flechaKm" alt="" />
                 <div class="kmTexto">
                   <div class="primerKm">
                     <p>Hasta los 30km</p>
@@ -735,14 +736,14 @@
               class="RadialProgress"
               id="progressbar2"
               role="progressbar"
-              aria-valuenow="0"
-              aria-valuemin="0"
+              aria-valuenow="100"
+              aria-valuemin="100"
               aria-valuemax="1000"
             ></div>
             <h2 id="km_dia_nucleo3">Cantidad de autos</h2>
             <!--la barra interactiva está hecha con bootstrap-->
             <div onclick="cambiarCantidadAutos()">
-              <input type="range" id="barraProgreso" class="form-range" value="0" min="0" max="1000" step="500" />
+              <input type="range" id="barraProgreso" class="form-range" value="100" min="100" max="900" step="400" />
             </div>
 
             <div class="datosCO2">
@@ -786,8 +787,8 @@
               aria-valuemin="0"
               aria-valuemax="360"
             ></div>
-            <h2 id="km_dia_nucleo3">mins</h2>
-            <p id="seleccionar_km_nucleo3">Nivel de carga: <label for="" id="valorCarga"></label></p>
+            <h2 id="km_dia_nucleo4">mins</h2>
+            <p id="seleccionar_km_nucleo3"><label for="" id="valorCarga"></label></p>
             <!--la barra interactiva está hecha con bootstrap-->
             <div onclick="cambiarTiempoCarga()">
               <input type="range" id="barraProgreso2" class="form-range" value="0" min="0" max="360" step="90" />
