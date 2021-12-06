@@ -66,6 +66,7 @@ h5 {
 #bg_elec {
   background-color: #a4e8b6;
   /*  height: 90rem; */
+  overflow-y: hidden;
 }
 #bg_combD {
   background-color: #f4ae98;
