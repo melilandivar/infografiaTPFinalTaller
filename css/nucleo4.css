@@ -1,10 +1,9 @@
-/* Utilidades */
+v/* Utilidades */
 #nucleo4 {
   background-size: cover;
   background-image: url(../img/nucleo4/fondo-ventajas.svg);
   display: grid;
   grid-template-rows: 20% 20% 60%;
-  cursor: url("../img/cursor.svg"), auto;
 }
 
 /*
@@ -18,11 +17,13 @@
   align-content: center;
   align-items: center;
   padding-top: 30rem;
-}
+  height: 145rem;
 
+}
 .nucleo4__header__botones {
   display: flex;
   justify-content: center;
+  overflow-y: hidden;
 }
 
 .nucleo4__header__botones__item {
@@ -33,6 +34,13 @@
   border-radius: 0rem;
   background-color: transparent;
   cursor: pointer;
+}
+ 
+.primerKm {
+  float: left;
+}
+#texto1 {
+  float: left;
 }
 /*
 
@@ -51,6 +59,7 @@
   justify-content: center;
   margin: 0 auto;
   width: 100%;
+  margin-top: 35rem;
 }
 #ventajas-container div {
   border: 4rem solid #84c374;
@@ -74,7 +83,6 @@
   border-radius: 50%;
   text-align: center;
   align-items: center;
-  cursor: pointer;
 }
 
 .nucleo4__opciones__item p {
@@ -137,4 +145,17 @@
 #ventaja7 .nucleo4__contenido__item__imagen img {
   position: relative;
   top: 50%;
+}
+.datosElectrico {
+  float: left;
+}
+.datosCombustion label {
+  font-family: "Roboto";
+  font-size: 44rem;
+  font-weight: bolder;
+}
+.datosElectrico label {
+  font-family: "Roboto";
+  font-size: 44rem;
+  font-weight: bolder;
 }

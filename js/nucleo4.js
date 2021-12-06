@@ -18,8 +18,8 @@ let desventajas = [
 ];
 
 let eligioVentajas = true;
-let numeroVentajaActivo = 1;
-let numeroDesentajaActivo = 1;
+let numeroVentajaActivo = 0;
+let numeroDesentajaActivo = 0;
 let ventajasBoton = document.getElementById("nucleo4__ventajas");
 let desventajasBoton = document.getElementById("nucleo4__desventajas");
 
@@ -77,7 +77,9 @@ function MostrarVentaja(numeroVentaja) {
 }
 
 function MostrarDesventaja(numeroVentaja) {
-  botones = desventajasContainer.getElementsByClassName("nucleo4__opciones__item");
+  botones = desventajasContainer.getElementsByClassName(
+    "nucleo4__opciones__item"
+  );
 
   for (let i = 0; i < desventajas.length; i++) {
     if (i == numeroVentaja - 1) {
@@ -91,3 +93,99 @@ function MostrarDesventaja(numeroVentaja) {
     }
   }
 }
+
+/*funciones de la barra de progreso */
+
+setProgress(controller2.value);
+controller2.oninput = () => {
+  setProgress(controller2.value);
+};
+
+function cambiarCantidadAutos() {
+  // setearDatos();
+  /* FUNCIONES NUCLEO 3*/
+  const controller = document.getElementById("barraProgreso");
+  const radialProgress = document.getElementById("progressbar2");
+
+  const setProgress = (progress) => {
+    const value = `${progress}`;
+    radialProgress.style.setProperty("--progress", value);
+    radialProgress.innerHTML = value;
+    radialProgress.setAttribute("aria-valuenow", value);
+  };
+
+    setProgress(controller.value);
+  
+ 
+  controller.oninput = () => {
+    setProgress(controller.value);
+  };
+
+  var valor = document.getElementById("progressbar2");
+  console.log("progreso nucleo" + valor.ariaValueNow);
+
+  if (valor.ariaValueNow == "0") {
+    cO2Combustion = "0";
+    cO2Electrico = "0";
+  }
+  if (valor.ariaValueNow == "100") {
+     cO2Combustion = "4.900.000";
+     cO2Electrico = "3.900.000";
+  }
+  if (valor.ariaValueNow == "500") {
+    cO2Electrico = '19.500.000';
+    cO2Combustion = '24.500.000';
+  }
+  if (valor.ariaValueNow == "900") {
+    cO2Electrico = "39.000.000";
+    cO2Combustion = "49.000.000";
+  }
+
+  //tomar variables de js y utilizarlas en html mediante el id
+  document.getElementById("cO2Electrico").innerHTML = cO2Electrico;
+  document.getElementById("cO2Combustion").innerHTML = cO2Combustion;
+}
+
+function cambiarTiempoCarga() {
+  // setearDatos();
+  /* FUNCIONES NUCLEO 3*/
+  const controller = document.getElementById("barraProgreso2");
+  const radialProgress = document.getElementById("progressbar3");
+
+  const setProgress = (progress) => {
+    const value = `${progress}`;
+    radialProgress.style.setProperty("--progress", value);
+    radialProgress.innerHTML = value;
+    radialProgress.setAttribute("aria-valuenow", value);
+  };
+
+    setProgress(controller.value);
+  
+ 
+  controller.oninput = () => {
+    setProgress(controller.value);
+  };
+
+  var valor = document.getElementById("progressbar3");
+  console.log("progreso nucleo" + valor.ariaValueNow);
+
+  if (valor.ariaValueNow == "0") {
+    valorCarga= "0 %";
+  }
+  if (valor.ariaValueNow == "90") {
+    valorCarga= "30 %";
+  }
+  if (valor.ariaValueNow == "180") {
+    valorCarga= "50 %";
+  }
+  if (valor.ariaValueNow == "270") {
+    valorCarga= "70 %";
+  }
+  if (valor.ariaValueNow == "360") {
+    valorCarga= "100 %";
+  }
+
+  //tomar variables de js y utilizarlas en html mediante el id
+  document.getElementById("valorCarga").innerHTML = valorCarga;
+}
+/*FIN NUCLEO 4*/
