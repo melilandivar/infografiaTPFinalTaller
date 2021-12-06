@@ -132,7 +132,7 @@ h5 {
   display: flex;
   justify-content: center;
   margin-bottom: 0rem;
-  padding: 24rem;
+  align-items: center;
   background-color: #89c779;
 }
 #iconos_combustion_nucleo3 {
@@ -162,6 +162,7 @@ h5 {
   height: 90%;
   display: flex;
   flex-direction: column;
+  overflow-y: hidden;
 }
 .col_1 {
   background-color: #fa8d78;
