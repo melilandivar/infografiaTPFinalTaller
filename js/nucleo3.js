@@ -27,6 +27,9 @@
   document.getElementById("cantidadPasajerosE").innerHTML = cantidadPasajerosE;
 });
 
+/*Marca el valor inicial*/
+progreso();
+
 function progreso() {
   const controller = document.querySelector("input[type=range]");
   const radialProgress = document.querySelector(".RadialProgress");
@@ -42,6 +45,7 @@ function progreso() {
   controller.oninput = () => {
     setProgress(controller.value);
   };
+
   var valor = document.getElementById("progressbar");
   console.log("progreso nucleo 3");
   if (valor.ariaValueNow == "0") {
@@ -129,4 +133,3 @@ function progreso() {
   document.getElementById("cantidadPasajerosC").innerHTML = cantidadPasajerosC;
   document.getElementById("cantidadPasajerosE").innerHTML = cantidadPasajerosE;
 }
-/*FIN NUCLEO 3*/

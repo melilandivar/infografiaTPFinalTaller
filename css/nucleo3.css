@@ -4,14 +4,13 @@
 
 /*NUCLEO 3*/
 #nucleo3 {
-  background-image: url(../img/fondo_introduccion.png);
+  background-image: url(../img/nucleo3/ciudad.svg);
   background-size: cover;
-    display: flex;
-    flex-direction: column;
-    cursor: url("../img/cursor.png"), auto;
-    justify-content: center;
-    align-items: center;
-  
+  display: flex;
+  flex-direction: column;
+  cursor: url("../img/cursor.png"), auto;
+  justify-content: center;
+  align-items: center;
 }
 .nucleo3_header {
   display: flex;
@@ -23,16 +22,13 @@
 .contenedor_nucleo3 {
   display: flex;
   flex-direction: column;
-position: relative;
+  position: relative;
   align-content: center;
   align-items: center;
   margin-top: 10rem;
   width: 90%;
   margin: auto 0;
- 
 }
-
-
 
 #bg_comb label {
   font-family: "Roboto";
@@ -97,7 +93,7 @@ h5 {
   font-size: 24px;
   margin-top: -30rem;
   font-weight: bold;
-  overflow-y: hidden; 
+  overflow-y: hidden;
 }
 #progressbar {
   font-size: 54px;
@@ -109,7 +105,7 @@ h5 {
   overflow-y: hidden;
 }
 
-.nucleo3_iconos_referencia{
+.nucleo3_iconos_referencia {
   display: flex;
   width: 100%;
   flex-direction: row;
@@ -170,7 +166,6 @@ h5 {
   background-color: #fa8d78;
   width: 30%;
   height: 90%;
-  
 }
 .col_2 {
   display: flex;
@@ -234,4 +229,8 @@ h5 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.form-range {
+  cursor: pointer;
 }
