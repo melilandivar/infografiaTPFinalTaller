@@ -7,6 +7,8 @@ function agregarPlug() {
     document.getElementById("infoModosDeCarga").style.display = "flex";
     document.getElementById("auto_cuerpo").style.display = "none";
     document.getElementById("auto_plug").style.display = "flex";
+    document.getElementById("auto_plug_bateria").style.display = "none";
+    document.getElementById("auto_plug_bateria_motor").style.display = "none";
     document.getElementById("texto_plug_nucleo1").style.visibility = "visible";
     document.getElementsByClassName("nucleo1__item")[0].style.backgroundColor = "#84C374";
   } else if ((document.getElementById("plugCarga").style.display = "flex")) {
@@ -19,6 +21,7 @@ function agregarBateria() {
     document.getElementById("auto_cuerpo").style.display = "none";
     document.getElementById("auto_plug").style.display = "none";
     document.getElementById("auto_plug_bateria").style.display = "flex";
+    document.getElementById("auto_plug_bateria_motor").style.display = "none";
     document.getElementById("texto_bateria_nucleo1").style.visibility = "visible";
     document.getElementsByClassName("nucleo1__item")[1].style.backgroundColor = "#84C374";
   } else {

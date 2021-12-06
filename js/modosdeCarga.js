@@ -6,12 +6,12 @@ function modosDeCarga() {
     document.getElementById("infoModosDeCarga").style.display = "none";
     document.getElementsByClassName("nucleo1_grafico")[0].style.display = "none";
     document.getElementsByClassName("item2")[0].style.display = "none";
+    document.getElementById("titulo_componentes_electricos").style.display = "none";
+    document.getElementById("subtitulo_componentes_electricos").style.display = "none";
     document.getElementById("CargaLenta_nucleo1").style.display = "flex";
     document.getElementById("CargaSemiRapida_nucleo1").style.display = "flex";
     document.getElementById("CargaRapida_nucleo1").style.display = "flex";
-    document.getElementById("CargaLenta_secuencia").style.display = "flex";
-    document.getElementById("titulo_componentes_electricos").style.display = "none";
-    document.getElementById("subtitulo_componentes_electricos").style.display = "none";
+    document.getElementById("CargaLenta_secuencia").style.display = "flex";    
     document.getElementById("titulo_mododecarga").style.display = "flex";
     document.getElementById("subtitulo_mododecarga").style.display = "flex";
     document.getElementsByClassName("nucleo1_items")[0].style.padding = "0% 5%";
@@ -21,7 +21,32 @@ function modosDeCarga() {
     document.getElementById("torreCargaLenta-seleccionada").style.display = "flex";
     document.getElementById("progresoCargaLenta").style.display = "flex";
     document.getElementById("progresoCargaLenta").style.width = `15%`;
+    document.getElementsByClassName("VolverComponentes-container")[0].style.display = "flex";
+   
   }
+}
+
+function componentesCircuito(){
+  if ((document.getElementsByClassName("VolverComponentes-container")[0].style.display = "flex")) {
+    document.getElementById("CargaLenta_secuencia").style.display = "none";
+    document.getElementById("CargaSemiRapida_secuencia").style.display = "none";
+    document.getElementById("CargaRapida_secuencia").style.display = "none";
+    document.getElementById("CargaLenta_nucleo1").style.display = "none";
+    document.getElementById("CargaSemiRapida_nucleo1").style.display = "none";
+    document.getElementById("CargaRapida_nucleo1").style.display = "none";
+    document.getElementById("titulo_mododecarga").style.display = "none";
+    document.getElementById("subtitulo_mododecarga").style.display = "none";
+    document.getElementsByClassName("VolverComponentes-container")[0].style.display = "none";
+    document.getElementById("item_nucleo1").style.display = "flex";
+    document.getElementById("item_nucleo2").style.display = "flex";
+    document.getElementById("item_nucleo3").style.display = "flex";
+    document.getElementById("titulo_componentes_electricos").style.display = "flex";
+    document.getElementById("subtitulo_componentes_electricos").style.display = "flex";
+    document.getElementsByClassName("nucleo1_grafico")[0].style.display = "flex";
+    document.getElementById("infoModosDeCarga").style.display = "flex";
+  }
+
+
 }
 
 /* CARGA LENTA*/
