@@ -19,7 +19,7 @@ let desventajas = [
 
 let eligioVentajas = true;
 let numeroVentajaActivo = 0;
-let numeroDesentajaActivo = 0;
+let numeroDesventajaActivo = 0;
 let ventajasBoton = document.getElementById("nucleo4__ventajas");
 let desventajasBoton = document.getElementById("nucleo4__desventajas");
 
@@ -40,6 +40,8 @@ ventajasBoton.onclick = function (e) {
     desventajas[i].style.display = "none"; //Ocultar desventaja
   }
   ventajas[numeroVentajaActivo].style.display = `flex`;
+  ventajasBoton.classList.add("underline");
+  desventajasBoton.classList.remove("underline");
 };
 
 desventajasBoton.onclick = function (e) {
@@ -52,7 +54,9 @@ desventajasBoton.onclick = function (e) {
   for (let i = 0; i < ventajas.length; i++) {
     ventajas[i].style.display = "none";
   }
-  desventajas[numeroVentajaActivo].style.display = `flex`;
+  desventajas[numeroDesventajaActivo].style.display = `flex`;
+  ventajasBoton.classList.remove("underline");
+  desventajasBoton.classList.add("underline");
 };
 
 /*
@@ -77,9 +81,7 @@ function MostrarVentaja(numeroVentaja) {
 }
 
 function MostrarDesventaja(numeroVentaja) {
-  botones = desventajasContainer.getElementsByClassName(
-    "nucleo4__opciones__item"
-  );
+  botones = desventajasContainer.getElementsByClassName("nucleo4__opciones__item");
 
   for (let i = 0; i < desventajas.length; i++) {
     if (i == numeroVentaja - 1) {
@@ -96,7 +98,6 @@ function MostrarDesventaja(numeroVentaja) {
 
 /*funciones de la barra de progreso */
 
-
 function cambiarCantidadAutos() {
   // setearDatos();
   /* FUNCIONES NUCLEO 3*/
@@ -110,9 +111,8 @@ function cambiarCantidadAutos() {
     radialProgress.setAttribute("aria-valuenow", value);
   };
 
-    setProgress(controller.value);
-  
- 
+  setProgress(controller.value);
+
   controller.oninput = () => {
     setProgress(controller.value);
   };
@@ -125,12 +125,12 @@ function cambiarCantidadAutos() {
     cO2Electrico = "0";
   }
   if (valor.ariaValueNow == "100") {
-     cO2Combustion = "4.900.000";
-     cO2Electrico = "3.900.000";
+    cO2Combustion = "4.900.000";
+    cO2Electrico = "3.900.000";
   }
   if (valor.ariaValueNow == "500") {
-    cO2Electrico = '19.500.000';
-    cO2Combustion = '24.500.000';
+    cO2Electrico = "19.500.000";
+    cO2Combustion = "24.500.000";
   }
   if (valor.ariaValueNow == "900") {
     cO2Electrico = "39.000.000";
@@ -155,33 +155,38 @@ function cambiarTiempoCarga() {
     radialProgress.setAttribute("aria-valuenow", value);
   };
 
-    setProgress(controller.value);
-  
- 
+  setProgress(controller.value);
+
   controller.oninput = () => {
     setProgress(controller.value);
   };
 
-  var valor =  document.getElementById("progressbar3");
+  var valor = document.getElementById("progressbar3");
   console.log("progreso nucleo" + valor.ariaValueNow);
 
   if (valor.ariaValueNow == "0") {
-    valorCarga= "Nivel de carga: 0 %";
+    valorCarga = "Nivel de carga: 0 %";
   }
   if (valor.ariaValueNow == "90") {
-    valorCarga= "Nivel de carga: 30 %";
+    valorCarga = "Nivel de carga: 30 %";
   }
   if (valor.ariaValueNow == "180") {
-    valorCarga= "Nivel de carga: 50 %";
+    valorCarga = "Nivel de carga: 50 %";
   }
   if (valor.ariaValueNow == "270") {
-    valorCarga= "Nivel de carga: 70 %";
+    valorCarga = "Nivel de carga: 70 %";
   }
   if (valor.ariaValueNow == "360") {
-    valorCarga= "Nivel de carga: 100 %";
+    valorCarga = "Nivel de carga: 100 %";
   }
 
   //tomar variables de js y utilizarlas en html mediante el id
   document.getElementById("valorCarga").innerHTML = valorCarga;
 }
-/*FIN NUCLEO 4*/
+
+/*
+
+
+*/
+cambiarCantidadAutos();
+cambiarTiempoCarga();

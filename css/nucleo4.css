@@ -3,7 +3,7 @@
   background-size: cover;
   background-image: url(../img/nucleo4/fondo-ventajas.svg);
   display: grid;
-  grid-template-rows: 20% 20% 60%;
+  grid-template-rows: 20% 15% 65%;
   cursor: url("../img/cursor.svg"), auto;
 }
 
@@ -71,7 +71,7 @@
   justify-content: center;
   margin: 0 auto;
   width: 100%;
-  margin-top: 35rem;
+  margin-top: 30rem;
   cursor: pointer;
 }
 #ventajas-container div {
@@ -132,29 +132,36 @@
 .nucleo4__contenido__item p {
   font-weight: bold;
   height: auto;
-  margin-top: 15rem;
+  margin-top: -10rem;
 }
 
 .nucleo4__contenido__item__imagen {
   position: relative;
   margin-top: 140rem;
+  overflow-y: visible;
 }
 
 #ventaja1 .nucleo4__contenido__item__imagen img {
+  margin-top: 3%;
   position: relative;
   top: 60%;
 }
 #ventaja3 .nucleo4__contenido__item__imagen img {
+  margin-top: 5%;
   position: relative;
   top: 60%;
 }
 #ventaja4 .nucleo4__contenido__item__imagen img {
   position: relative;
   top: 30%;
+  width: 575rem;
+  height: auto;
+  margin-top: -16%;
 }
 #ventaja5 .nucleo4__contenido__item__imagen img {
   position: relative;
   top: 60%;
+  margin-top: 5%;
 }
 #ventaja7 .nucleo4__contenido__item__imagen img {
   position: relative;
@@ -172,18 +179,20 @@
   font-family: "Roboto";
   font-size: 44rem;
   font-weight: bolder;
+  line-height: 52rem;
 }
 .datosElectrico label {
   font-family: "Roboto";
   font-size: 44rem;
   font-weight: bolder;
+  line-height: 52rem;
 }
 .video {
   float: left;
   margin-right: 50rem;
 }
 .infoVentaja2 {
-  margin-top: 25rem;
+  margin-top: 7.5%;
 }
 #flechaKm {
   margin-top: 9rem;
@@ -191,17 +200,30 @@
 }
 div#progressbar2 {
   /* text-align: center; */
-  margin-left: 348rem;
-  margin-bottom: 19rem;
+  margin: 0 auto 5rem auto;
+  font-size: 54rem !important;
 }
 div#progressbar3 {
-  margin-left: 22rem;
+  margin: 0 auto;
 }
 #km_dia_nucleo4 {
   font-size: 24px;
-  margin-top: -30rem;
+  margin-top: -25rem;
   font-weight: bold;
   overflow-y: hidden;
-  margin-bottom: 0rem;
+  margin-bottom: 10rem;
 }
 
+.datosCO2 p {
+  font-weight: normal;
+  margin-top: -5rem;
+  margin-bottom: 30rem;
+}
+
+#desventaja2__imagen {
+  margin-top: 50rem;
+}
+
+#desventaja4__imagen {
+  margin-top: 25%;
+}
