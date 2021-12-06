@@ -41,6 +41,7 @@ div#infoModosDeCarga {
   margin: 0 auto;
   flex-direction: column;
   align-items: center;
+  cursor: pointer;
 }
 
 .itemX img {
@@ -70,6 +71,7 @@ div#infoModosDeCarga {
   text-align: center;
   overflow-y: hidden;
   border: 4px solid #84c374;
+  cursor: pointer;
 }
 
 .ConexionCargaLenta {
@@ -191,6 +193,7 @@ div#infoModosDeCarga {
   text-align: center;
   overflow-y: hidden;
   border: 4px solid #84c374;
+  cursor: pointer;
 }
 
 .ConexionCargaSemiRapida {
@@ -311,6 +314,7 @@ div#infoModosDeCarga {
   text-align: center;
   overflow-y: hidden;
   border: 4px solid #84c374;
+  cursor: pointer;
 }
 
 .ConexionCargaRapida {

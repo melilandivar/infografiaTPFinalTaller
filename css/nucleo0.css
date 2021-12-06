@@ -3,6 +3,7 @@
   background-size: cover;
   /*lo siguiente es para el fondo full screen*/
   background-position: center;
+  cursor: url("../img/cursor.svg"), auto;
 }
 
 /*BOTON NUCLEO Y ACTIVA EL AUTO */
