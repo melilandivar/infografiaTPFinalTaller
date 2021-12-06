@@ -78,6 +78,7 @@ div#VolverComponentes{
   flex-direction: column;
   align-items: center;
   cursor: pointer;
+  
 }
 
 .itemX img {
@@ -208,6 +209,7 @@ div#VolverComponentes{
   margin: 0 auto;
   flex-direction: column;
   align-items: center;
+  cursor: pointer;
 }
 
 .item_CargaSemirapida img {
@@ -330,6 +332,7 @@ div#VolverComponentes{
   margin: 0 auto;
   flex-direction: column;
   align-items: center;
+  cursor: pointer;
 }
 .item_CargaRapida img {
   margin-top: 10rem;
