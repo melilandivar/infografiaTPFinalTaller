@@ -67,6 +67,11 @@
   text-align: center;
   overflow-y: hidden;
 }
+
+.nucleo1__item:hover {
+  background-color: #9fd791;
+}
+
 .nucleo1__item img {
   width: 100%;
 }
@@ -90,14 +95,6 @@
   top: 43%;
   left: 57%;
 }
-#item_nucleo1:hover {
-  background-color: #9fd791;
-  height: 89rem;
-  width: 89rem;
-  border: 2rem solid #9fd791;
-  border-radius: 50%;
-  display: inline-block;
-}
 
 #plugCarga {
   display: none;
@@ -107,48 +104,6 @@
 }
 #motorElectrico {
   display: none;
-}
-#item_nucleo1:hover {
-  background-color: #9fd791;
-  height: 89rem;
-  width: 89rem;
-  border: 2rem solid #9fd791;
-  border-radius: 50%;
-  display: inline-block;
-}
-#item_nucleo3:hover {
-  background-color: #9fd791;
-  height: 89rem;
-  width: 89rem;
-  border: 2rem solid #9fd791;
-  border-radius: 50%;
-  display: inline-block;
-}
-
-#item_nucleo1_combustion img {
-  padding-top: 10%;
-  width: 55rem;
-}
-#item_nucleo1_combustion {
-  overflow-y: hidden;
-}
-#item_nucleo1_combustion {
-  background-color: #ffcbc3;
-  height: 89rem;
-  width: 89rem;
-  border-radius: 50%;
-  display: inline-block;
-  margin-right: 3%;
-  text-align: center;
-}
-
-#item_nucleo1_combustion:hover {
-  background-color: #9fd791;
-  height: 89rem;
-  width: 89rem;
-  border: 2rem solid #9fd791;
-  border-radius: 50%;
-  display: inline-block;
 }
 
 /*agregar/sacar icono */

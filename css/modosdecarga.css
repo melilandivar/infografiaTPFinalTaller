@@ -1,6 +1,5 @@
 /*MODOS DE CARGA*/
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 div#infoModosDeCarga {
   display: none;
@@ -62,7 +61,7 @@ div#infoModosDeCarga {
 .item_Carga1 {
   background-color: #e6fbe1;
   justify-content: center;
-  margin-right: 5%;
+  margin: 0% 5%;
   height: 89px;
   width: 89px;
   border-radius: 50%;
@@ -97,7 +96,7 @@ div#infoModosDeCarga {
   left: 12%;
   width: 2%;
   height: 30px;
-  border-bottom: 5px solid #247A3F;
+  border-bottom: 5px solid #247a3f;
   transition: width 1s;
   overflow-x: hidden;
 }
@@ -105,11 +104,11 @@ div#infoModosDeCarga {
 #txt_torre {
   visibility: hidden;
   font-family: "Roboto", sans-serif;
-  font-weight: 400; 
+  font-weight: 400;
 }
 #txt_titulo_torre {
   font-family: "Roboto", sans-serif;
-  font-weight: 0,700;    
+  font-weight: 0, 700;
   display: flex;
 }
 #torreCargaLenta-Noseleccionada {
@@ -122,7 +121,7 @@ div#infoModosDeCarga {
 #txt_casaCargaLenta {
   visibility: hidden;
   font-family: "Roboto", sans-serif;
-  font-weight: 400;  
+  font-weight: 400;
 }
 #txt_titulo_casa {
   display: flex;
@@ -137,7 +136,7 @@ div#infoModosDeCarga {
 #txt_conectorCargaLenta {
   visibility: hidden;
   font-family: "Roboto", sans-serif;
-  font-weight: 400;  
+  font-weight: 400;
 }
 #txt_titulo_conector {
   display: flex;
@@ -152,7 +151,7 @@ div#infoModosDeCarga {
 #txt_autoCargaLenta {
   visibility: hidden;
   font-family: "Roboto", sans-serif;
-  font-weight: 400;  
+  font-weight: 400;
 }
 #txt_titulo_auto {
   display: flex;
@@ -218,7 +217,7 @@ div#infoModosDeCarga {
   left: 11%;
   width: 2%;
   height: 30px;
-  border-bottom: 5px solid #247A3F;
+  border-bottom: 5px solid #247a3f;
   transition: width 1s;
   overflow-x: hidden;
 }
@@ -226,12 +225,12 @@ div#infoModosDeCarga {
 #txt_torre_cargasemirapida {
   visibility: hidden;
   font-family: "Roboto", sans-serif;
-  font-weight: 400;   
+  font-weight: 400;
 }
 #txt_titulo_torre_cargasemirapida {
   display: flex;
   font-family: "Roboto", sans-serif;
-  font-weight: 0,700; 
+  font-weight: 0, 700;
 }
 #torreCargaSemiRapida-Noseleccionada {
   display: flex;
@@ -243,7 +242,7 @@ div#infoModosDeCarga {
 #txt_casa_cargasemirapida {
   visibility: hidden;
   font-family: "Roboto", sans-serif;
-  font-weight: 400;   
+  font-weight: 400;
 }
 #txt_titulo_casa_cargasemirapida {
   display: flex;
@@ -261,7 +260,7 @@ div#infoModosDeCarga {
 #txt_conector_cargasemirapida {
   visibility: hidden;
   font-family: "Roboto", sans-serif;
-  font-weight: 400;   
+  font-weight: 400;
 }
 #conectorCargaSemiRapida-Noseleccionada {
   display: flex;
@@ -274,9 +273,9 @@ div#infoModosDeCarga {
   display: flex;
 }
 #txt_auto_cargasemirapida {
-    visibility: hidden;
-    font-family: "Roboto", sans-serif;
-  font-weight: 400;  
+  visibility: hidden;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
 }
 #autoCargaSemiRapida-Noseleccionada {
   display: flex;
@@ -338,15 +337,15 @@ div#infoModosDeCarga {
   left: 12%;
   width: 2%;
   height: 30px;
-  border-bottom: 5px solid #247A3F;
+  border-bottom: 5px solid #247a3f;
   transition: width 1s;
   overflow-x: hidden;
 }
 
 #txt_torre_cargarapida {
-   visibility: hidden;
-   font-family: "Roboto", sans-serif;
-  font-weight: 400;    
+  visibility: hidden;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
 }
 #txt_titulo_torre_cargarapida {
   display: flex;
@@ -359,9 +358,9 @@ div#infoModosDeCarga {
 }
 
 #txt_casa_cargarapida {
-   visibility: hidden;
-   font-family: "Roboto", sans-serif;
-  font-weight: 400;    
+  visibility: hidden;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
 }
 #txt_titulo_casa_cargarapida {
   display: flex;
@@ -374,9 +373,9 @@ div#infoModosDeCarga {
 }
 
 #txt_conector_cargarapida {
-   visibility: hidden;
-   font-family: "Roboto", sans-serif;
-  font-weight: 400;    
+  visibility: hidden;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
 }
 #txt_titulo_conector_cargarapida {
   display: flex;
@@ -389,9 +388,9 @@ div#infoModosDeCarga {
 }
 
 #txt_auto_cargarapida {
-   visibility: hidden;
-   font-family: "Roboto", sans-serif;
-  font-weight: 400;    
+  visibility: hidden;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
 }
 #txt_titulo_auto_cargarapida {
   display: flex;
