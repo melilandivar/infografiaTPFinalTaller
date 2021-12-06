@@ -26,6 +26,7 @@ div#infoModosDeCarga {
 }
 
 div#VolverComponentes{  
+  display: flex;
   background-color: rgba(36, 122, 63, 1);
   width: 550rem;
   height: 100rem;
