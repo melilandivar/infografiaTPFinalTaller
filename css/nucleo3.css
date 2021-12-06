@@ -1,6 +1,4 @@
-#nucleo3 {
-  cursor: url("../img/cursor.svg"), auto;
-}
+
 
 /*NUCLEO 3*/
 #nucleo3 {
@@ -8,7 +6,7 @@
   background-size: cover;
   display: flex;
   flex-direction: column;
-  cursor: url("../img/cursor.png"), auto;
+  cursor: url("../img/cursor.svg"), auto;
   justify-content: center;
   align-items: center;
 }
